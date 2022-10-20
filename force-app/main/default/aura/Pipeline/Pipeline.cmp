@@ -1,0 +1,22 @@
+<aura:component >
+	<lightning:navigation aura:id="navService"/>
+
+    <aura:attribute name="searchResult" type="List" description="use for store and display pipeline list return from server"/>
+    <aura:attribute name="FiscalYear" type="String" description="use for store fiscal year values"/>
+    <aura:attribute name="Fellow" type="String" description="use for store fellow values"/>
+     <aura:attribute name="FiscalYearselected" type="string" default="" />
+    <aura:attribute name="Fellowselected" type="string" default="" />
+    
+    <aura:attribute name="Message" type="boolean" default="false" description="use for display no record found message"/>
+    <aura:attribute name="TotalNumberOfRecord" type="integer" default="0" description="use for display Number of records"/>
+  
+    <aura:attribute name="searchToggle" type="Boolean" default="false" />
+    <!-- SHOW LOADING SPINNER--> 
+    <lightning:spinner variant="brand" size="large" aura:id="Id_spinner" class="slds-hide" />
+    
+    <lightning:layout verticalAlign="end">
+            <lightning:layoutItem size="3" padding="horizontal-small">
+                <label for="fiscalYear"><b>Pipeline Search</b></label>
+            </lightning:layoutItem>
+        </lightning:layout>   
+</aura:component>

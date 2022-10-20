@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Oct 05 2022 9:38:21 AM",
+    "testExecutionTimeInMs": 1345,
+    "testTotalTimeInMs": 1345,
+    "commandTimeInMs": 304,
+    "hostname": "https://libertyfund--dev.sandbox.my.salesforce.com",
+    "orgId": "00D2h0000001bUXEAY",
+    "username": "jason.juan@libertyfund.org.dev",
+    "testRunId": "7072h00001m1BwJ",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M2h000009GQjfEAG",
+      "queueItemId": "7092h000001B5F8AAK",
+      "stackTrace": "Class.ContactSearchCntlrTest.ContactSearch: line 10, column 1",
+      "message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_FILTER_VALIDATION_EXCEPTION, Value does not exist or does not match filter criteria. (Related object.field: Account Contact Relationship.Account): []",
+      "asyncApexJobId": "7072h00001m1BwJAAU",
+      "methodName": "ContactSearch",
+      "outcome": "Fail",
+      "apexLogId": "07L2h00000Dpa5GEAR",
+      "apexClass": {
+        "id": "01p4S000000fO0eQAE",
+        "name": "ContactSearchCntlrTest",
+        "namespacePrefix": null,
+        "fullName": "ContactSearchCntlrTest"
+      },
+      "runTime": 1345,
+      "testTimestamp": "2022-10-05T16:38:21.000+0000",
+      "fullName": "ContactSearchCntlrTest.ContactSearch",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_FILTER_VALIDATION_EXCEPTION, Value does not exist or does not match filter criteria. (Related object.field: Account Contact Relationship.Account): []",
+        "exceptionStackTrace": "Class.ContactSearchCntlrTest.ContactSearch: line 10, column 1",
+        "className": "ContactSearchCntlrTest",
+        "compileProblem": "",
+        "lineNumber": 10,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+<template>
+    <lightning-card title="Conferee Search" icon-name="utility:people">
+        <div slot="footer"></div>
+
+        <div class="slds-p-horizontal_small">
+            <lightning-layout>
+                <lightning-layout-item
+                    padding="around-small"
+                    flexibility="auto"
+                >
+                    <div onkeyup={handleKeyUp}>
+                        <lightning-input
+                            name="keywords"
+                            type="search"
+                            placeholder="Enter name or keyword to search"
+                            value={keywords}
+                            onchange={handleChange}
+                            is-loading={isLoading}
+                            data-id="keywords"
+                        >
+                        </lightning-input>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item
+                    padding="around-small"
+                    flexibility="no-grow"
+                    alignment-bump="left"
+                >
+                    <div style="margin-top: 23px; margin-left: -17px">
+                        <lightning-helptext
+                            content="Keyword Search Tips: 
+                                (1) Match all keywords [default]: John Smith Economics ==> John AND Smith AND Economics 
+                                (2) Match any keywords: John OR Smith OR Economics 
+                                (3) Exclude keyword: John Smith AND NOT Economics 
+                                (4) Complex logic: Jones OR (John AND Economics)"
+                        >
+                        </lightning-helptext>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item
+                    padding="around-small"
+                    flexibility="no-grow"
+                    alignment-bump="left"
+                >
+                    <div style="margin-top: 19px">
+                        <lightning-button
+                            label="Search"
+                            title="search"
+                            variant="brand"
+                            onclick={doSearch}
+                            icon-name="utility:search"
+                        >
+                        </lightning-button>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item
+                    padding="around-small"
+                    flexibility="no-grow"
+                    alignment-bump="left"
+                >
+                    <div style="margin-top: 19px" if:true={queryResults}>
+                        <lightning-button
+                            label="Reset Search Filters"
+                            title="resetSearch"
+                            variant="brand-outline"
+                            onclick={doSearchReset}
+                            icon-name="action:reset_password"
+                        >
+                        </lightning-button>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <!-- Should Search Name only appear after handleChange determines keyword is an empty string? -->
+                <lightning-layout-item padding="around-small">
+                    <lightning-input
+                        label="Search Name Only"
+                        name="searchByName"
+                        type="checkbox"
+                        value={searchByName}
+                        field-level-help="If unchecked (default), the search will evaluate all fields for the keyword. If checked, the keyword search is restricted to Name only."
+                        data-id="searchByName"
+                        onchange={handleChange}
+                    >
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-input
+                        label="Search Leads Only"
+                        name="searchByLeads"
+                        type="checkbox"
+                        value={searchByLeads}
+                        field-level-help="If unchecked (default), the search only includes contacts. If checked, the search only includes leads."
+                        data-id="searchByLeads"
+                        onchange={handleChange}
+                    >
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        <lightning-accordion
+            allow-multiple-sections-open
+            active-section-name={activeSections}
+            class="slds-form-element_compound"
+        >
+            <lightning-accordion-section
+                name="resultFilters"
+                label="Filter Your Results"
+            >
+                <!--Contains the search filters-->
+                <lightning-layout multiple-rows="true" horizontal-align="space">
+                    <lightning-layout-item
+                        padding="around-small"
+                        flexibility="auto"
+                    >
+                        <lightning-combobox
+                            label="Person Type"
+                            name="personType"
+                            placeholder="Person Type"
+                            options={personTypeOptions}
+                            value={personType}
+                            data-id="personType"
+                            onchange={handleChange}
+                        >
+                        </lightning-combobox>
+                        <lightning-combobox
+                            label="Primary Expertise"
+                            name="primaryExpertise"
+                            placeholder="Primary Expertise"
+                            options={primaryExpertiseOptions}
+                            value={primaryExpertise}
+                            data-id="primaryExpertise"
+                            onchange={handleChange}
+                        >
+                        </lightning-combobox>
+                        <lightning-input
+                            label="Source"
+                            name="source"
+                            type="text"
+                            placeholder="Source"
+                            value={source}
+                            data-id="source"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item
+                        padding="around-small"
+                        flexibility="auto"
+                    >
+                        <div style="margin-left: -7px">
+                            Number of Core Conferences Attended
+                        </div>
+                        <div class="slds-form__row">
+                            <lightning-input
+                                name="minCoreConf"
+                                type="number"
+                                style="margin-top: -17px"
+                                placeholder="Min"
+                                min="0"
+                                max="999"
+                                value={minCoreConf}
+                                data-id="minCoreConf"
+                                onchange={handleChange}
+                            >
+                            </lightning-input>
+                            <lightning-input
+                                style="margin-top: -17px"
+                                name="maxCoreConf"
+                                type="number"
+                                placeholder="Max"
+                                min="0"
+                                max="999"
+                                value={maxCoreConf}
+                                data-id="maxCoreConf"
+                                onchange={handleChange}
+                            >
+                            </lightning-input>
+                        </div>
+                        <br />
+                        <div style="margin-left: -7px; margin-top: -17px">
+                            Geography
+                        </div>
+                        <lightning-input
+                            name="country"
+                            type="text"
+                            style="margin-left: -12px; margin-top: -17px"
+                            placeholder="Country (USA, United Kingdom, Japan)"
+                            value={country}
+                            data-id="country"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <div class="slds-form__row">
+                            <lightning-input
+                                name="state"
+                                type="text"
+                                placeholder="State (IN, NY, CA)"
+                                value={state}
+                                style="margin-top: -17px"
+                                data-id="state"
+                                onchange={handleChange}
+                            >
+                            </lightning-input>
+                            <lightning-combobox
+                                name="region"
+                                placeholder="Region"
+                                options={regionOptions}
+                                value={region}
+                                style="margin-top: -17px"
+                                data-id="region"
+                                onchange={handleChange}
+                            >
+                            </lightning-combobox>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item
+                        padding="around-small"
+                        flexibility="auto"
+                    >
+                        <h2>Only include people who are:</h2>
+                        <lightning-input
+                            label="Core Program Network"
+                            name="coreProgNetwork"
+                            type="checkbox"
+                            value={coreNetwork}
+                            data-id="coreNetwork"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Co-Sponsor Program Network"
+                            name="cospoNetwork"
+                            type="checkbox"
+                            value={cospoNetwork}
+                            data-id="cospoNetwork"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="LF Website Contributor"
+                            name="webContributor"
+                            type="checkbox"
+                            value={webContributor}
+                            data-id="webContributor"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="LF Book Editor/Author"
+                            name="bookEditorAuthor"
+                            type="checkbox"
+                            value={bookEditorAuthor}
+                            data-id="bookEditorAuthor"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Conference Director"
+                            name="confDirector"
+                            type="checkbox"
+                            value={confDirector}
+                            data-id="confDirector"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Conference Discussion Leads"
+                            name="confDiscLead"
+                            type="checkbox"
+                            value={confDiscLead}
+                            data-id="confDiscLead"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Active within the last"
+                            name="activeLastYears"
+                            type="checkbox"
+                            value={activeLastYears}
+                            field-level-help="Includes core and/or co-sponsor participation"
+                            data-id="activeLastYears"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            name="numYearsActive"
+                            type="number"
+                            placeholder="# Years"
+                            min="0"
+                            max="999"
+                            value={numYearsActive}
+                            style="margin-top: -17px; margin-left: 24px"
+                            data-id="numYearsActive"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item
+                        padding="around-small"
+                        flexibility="auto"
+                    >
+                        <h2>Include evaluation ratings:</h2>
+                        <lightning-input
+                            label="Exceptional"
+                            name="evalExceptional"
+                            type="checkbox"
+                            value={evalExceptional}
+                            data-id="evalExceptional"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Above Expectations"
+                            name="evalAboveExp"
+                            type="checkbox"
+                            value={evalAboveExp}
+                            data-id="evalAboveExp"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Within Expectations"
+                            name="evalWithinExp"
+                            type="checkbox"
+                            value={evalWithinExp}
+                            data-id="evalWithinExp"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Promising"
+                            name="evalPromising"
+                            type="checkbox"
+                            value={evalPromising}
+                            data-id="evalPromising"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Below Expectations"
+                            name="evalBelowExp"
+                            type="checkbox"
+                            value={evalBelowExp}
+                            data-id="evalBelowExp"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                        <lightning-input
+                            label="Disruptive"
+                            name="evalDisruptive"
+                            type="checkbox"
+                            value={evalDisruptive}
+                            data-id="evalDisruptive"
+                            onchange={handleChange}
+                        >
+                        </lightning-input>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-accordion-section>
+            <lightning-accordion-section
+                name="results"
+                label="View Your Results"
+            >
+                <template 
+                    if:true={queryResults}
+                >
+                    <lightning-layout 
+                        vertical-align="center" 
+                        multiple-rows
+                    >
+                        <lightning-layout-item
+                            alignment-bump="right"
+                            padding="around-small"
+                        >
+                                Your search returned {queryResultCount} results
+                        </lightning-layout-item>
+                        <lightning-layout-item
+                            padding="around-small"
+                        >
+                            <lightning-button
+                                label="Suggest Conferees"
+                                title="suggestConferees"
+                                variant="neutral"
+                                onclick={invokeFlowSuggestConferees}
+                                icon-name="utility:groups"
+                            >
+                            </lightning-button>
+                        </lightning-layout-item>
+                        <!-- <lightning-layout-item
+                            padding="around-small"
+                        >
+                            <lightning-button
+                                label="Add Topic"
+                                title="addTopic"
+                                variant="neutral"
+                                onclick={invokeFlowAddTopic}
+                                icon-name="utility:topic2"
+                            >
+                            </lightning-button>
+                        </lightning-layout-item> -->
+                        <lightning-layout-item
+                            padding="around-small"
+                            if:false={searchByLeads}
+                        >
+                            <lightning-button
+                                label="Request Merge"
+                                title="requestMerge"
+                                variant="neutral"
+                                onclick={invokeFlowRequestMerge}
+                                icon-name="utility:merge"
+                            >
+                            </lightning-button>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <br>
+                    <div style="height: 300px">
+                        <lightning-datatable
+                            key-field="id"
+                            data={datatableData}
+                            columns={columns}
+                            default-sort-direction={defaultSortDirection}
+                            sorted-direction={sortDirection}
+                            sorted-by={sortedBy}
+                            onsort={onHandleSort}
+                            enable-infinite-loading
+                            onloadmore={loadMoreData}
+                            load-more-offset={loadMoreOffSet}
+                            show-row-number-column
+                        >
+                        </lightning-datatable>
+                    </div>
+                    <div align="center">
+                        {loadMoreStatus}
+                    </div>
+                </template>
+            </lightning-accordion-section>
+        </lightning-accordion>
+        <!-- </div> -->
+    </lightning-card>
+</template>

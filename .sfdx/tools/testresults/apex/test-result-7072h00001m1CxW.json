@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 2,
+    "passing": 1,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "50%",
+    "failRate": "50%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Oct 05 2022 10:11:01 AM",
+    "testExecutionTimeInMs": 4956,
+    "testTotalTimeInMs": 4956,
+    "commandTimeInMs": 448,
+    "hostname": "https://libertyfund--dev.sandbox.my.salesforce.com",
+    "orgId": "00D2h0000001bUXEAY",
+    "username": "jason.juan@libertyfund.org.dev",
+    "testRunId": "7072h00001m1CxW",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M2h000009GQqfEAG",
+      "queueItemId": "7092h000001B5GzAAK",
+      "stackTrace": "Class.ContactSearchCntlr.fetchContact: line 341, column 1\nClass.ContactSearchCntlrTest.ContactSearch: line 57, column 1",
+      "message": "System.QueryException: expecting a colon, found 'Yes'",
+      "asyncApexJobId": "7072h00001m1CxWAAU",
+      "methodName": "ContactSearch",
+      "outcome": "Fail",
+      "apexLogId": "07L2h00000DpaHWEAZ",
+      "apexClass": {
+        "id": "01p4S000000fO0eQAE",
+        "name": "ContactSearchCntlrTest",
+        "namespacePrefix": null,
+        "fullName": "ContactSearchCntlrTest"
+      },
+      "runTime": 4282,
+      "testTimestamp": "2022-10-05T17:11:01.000+0000",
+      "fullName": "ContactSearchCntlrTest.ContactSearch",
+      "diagnostic": {
+        "exceptionMessage": "System.QueryException: expecting a colon, found 'Yes'",
+        "exceptionStackTrace": "Class.ContactSearchCntlr.fetchContact: line 341, column 1\nClass.ContactSearchCntlrTest.ContactSearch: line 57, column 1",
+        "className": "ContactSearchCntlr",
+        "compileProblem": "",
+        "lineNumber": 341,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M2h000009GQqgEAG",
+      "queueItemId": "7092h000001B5GzAAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7072h00001m1CxWAAU",
+      "methodName": "LeadSearch",
+      "outcome": "Pass",
+      "apexLogId": "07L2h00000DpaHWEAZ",
+      "apexClass": {
+        "id": "01p4S000000fO0eQAE",
+        "name": "ContactSearchCntlrTest",
+        "namespacePrefix": null,
+        "fullName": "ContactSearchCntlrTest"
+      },
+      "runTime": 674,
+      "testTimestamp": "2022-10-05T17:11:13.000+0000",
+      "fullName": "ContactSearchCntlrTest.LeadSearch"
+    }
+  ]
+}

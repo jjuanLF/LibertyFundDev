@@ -1,0 +1,459 @@
+<aura:component controller="ContactSearchCntlr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">   
+    
+    <lightning:navigation aura:id="navService"/>
+    
+    <aura:attribute name="searchResult" type="List" description="use for store and display contact list return from server"/>
+    <aura:attribute name="searchKeyword" type="String" description="use for store user search input"/>
+    <aura:attribute name="isConferencesAttendLow" type="String" description="use for store conf attendence low"/>
+    <aura:attribute name="isConferencesAttendHigh" type="String" description="use for store conf attendence high"/>
+    <aura:attribute name="MailingCountry" type="String" description="use for store mailing country"/>
+    <aura:attribute name="MailingState" type="String" description="use for store mailing state"/>
+    <aura:attribute name="Region" type="String" description="use for store region values"/>
+    
+    <aura:attribute name="Message" type="boolean" default="false" description="use for display no record found message"/>
+    <aura:attribute name="TotalNumberOfRecord" type="integer" default="0" description="use for display Number of records"/>
+    <aura:attribute name="statusOptions" type="List" default="[]"/>
+    <aura:attribute name="regionOptions" type="List" default="[]"/>
+    <aura:attribute name="expertiseOptions" type="List" default="[]"/>
+    <aura:handler name="init" value="{! this }" action="{! c.loadOptions }"/>
+    
+    <aura:attribute name="ContactList" type="contact[]"/>   
+    <aura:attribute name="PageNumber" type="integer" default="1"/>
+    <aura:attribute name="TotalPages" type="integer" default="0"/>
+    <aura:attribute name="TotalRecords" type="integer" default="0"/>
+    <aura:attribute name="RecordStart" type="integer" default="0"/>
+    <aura:attribute name="RecordEnd" type="integer" default="0"/>
+    <aura:attribute name="arrowDirection" type="string" default="arrowup" description="Use for change arrow sign direction on header based on click"/>
+    <aura:attribute name="isAsc" type="boolean" default="true" description="boolean flag for pass sorting condition to apex class"/>
+    <aura:attribute name="selectedTabsort" type="string" description="Use for show/hide arraow sign on header based on conditions"/>
+    <aura:attribute name="previousTabsort" type="string" description="Use for show/hide arraow sign on header based on conditions"/>
+    
+    <aura:attribute name="end" type="Integer"/>    
+    <aura:attribute name="ischeckBoolean" type="Boolean" default="false" />
+    <aura:attribute name="useLeads" type="Boolean" default="false" />
+    <aura:attribute name="isAttendConfCheck" type="Boolean" default="false" />
+    <aura:attribute name="isAttendCoSponsorCheck" type="Boolean" default="false" />
+    <aura:attribute name="isContWebsitecheck" type="Boolean" default="false" />
+    <aura:attribute name="ispublicationcheck" type="Boolean" default="false" />
+    <aura:attribute name="isDirectedConfcheck" type="Boolean" default="false" />
+    <aura:attribute name="isLedConfcheck" type="Boolean" default="false" /> 
+    <aura:attribute name="PersonTypeselected" type="string" default="" />
+    <aura:attribute name="Expertiseselected" type="string" default="" />
+    <aura:attribute name="PrimaryExpertise" type="string" default="" />
+    <aura:attribute name="Source" type="string" default="" />
+    <aura:attribute name="isRecentlyActive" type="Boolean" default="false" />
+    <aura:attribute name="numActiveYears" type="String" default="10"/>
+    
+    <aura:attribute name="isEvalExcCheck" type="Boolean" default="false" /> 
+    <aura:attribute name="isEvalAboveCheck" type="Boolean" default="false" /> 
+    <aura:attribute name="isEvalWithinCheck" type="Boolean" default="false" /> 
+    <aura:attribute name="isEvalPromCheck" type="Boolean" default="false" /> 
+    <aura:attribute name="isEvalBelowCheck" type="Boolean" default="false" /> 
+    <aura:attribute name="isEvalDisruptiveCheck" type="Boolean" default="false" /> 
+    
+    <aura:attribute name="searchToggle" type="Boolean" default="false" />
+    
+    <!-- SHOW LOADING SPINNER--> 
+    <lightning:spinner variant="brand" size="large" aura:id="Id_spinner" class="slds-hide" />
+    <div class="slds-m-around_x-small" onkeyup="{!c.formPress}">    
+        <!-- SEARCH INPUT AND SEARCH BUTTON--> 
+        <!-- <lightning:tabset>
+            <lightning:tab label="Person Search">       -->
+        
+        <!-- SEARCH INPUT AND SEARCH BUTTON--> 
+        <lightning:layout verticalAlign="end">
+            <lightning:layoutItem size="3" padding="horizontal-small">
+                <lightning:input value="{!v.searchKeyword}"
+                                 placeholder="Keyword Search.."
+                                 aura:id="searchField"
+                                 />
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem size="2" padding="horizontal-small">
+                <lightning:button onclick="{!c.Search}"
+                                  variant="brand-outline"
+                                  label="Search"
+                                  iconName="utility:search"/> 
+                
+                <div class="slds-form-element__icon">
+                    &nbsp;&nbsp;&nbsp;
+                    <button class="slds-button slds-button_icon" onclick="{!c.handleSearchTooltipToggle}">
+                        <lightning:icon iconName="utility:info" size="small" alternativeText="Keyword Tips"></lightning:icon>
+                    </button>
+                    <aura:if isTrue="{!v.searchToggle == true}">
+                        <div class="slds-popover slds-popover_tooltip slds-nubbin_left" role="tooltip" id="help" 
+                             style="position:absolute;top:-55px;left:50px;width:1000px">
+                            <div class="slds-popover__body"><b>Keyword Search Tips</b><br/><br/>
+                                Match all keywords:<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John Smith Economics -- <i>AND is implied</i><br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John AND Smith AND Economics<br/><br/>
+                                Match any keywords:<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John OR Smith OR Economics<br/><br/>
+                                Exclude keyword:<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John Smith AND NOT Economics<br/><br/>
+                                Complex logic:<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jones OR (John AND Economics)
+                            </div>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.searchToggle != true}">
+                        <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left" role="tooltip" id="help" 
+                             style="display:none">
+                            <div class="slds-popover__body">Some helpful information.</div>
+                        </div>
+                    </aura:if>
+                </div>
+                
+            </lightning:layoutItem>
+            
+            <!--                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="checkbox-unique-id-286">Search Names</label>
+                    <div class="slds-form-element__control">
+                        <span class="slds-checkbox slds-checkbox_standalone">
+                            <input type="checkbox" id="checkbox-unique-id-286" name="label" value="option" />
+                            <span class="slds-checkbox_faux"></span>
+                        </span>
+                    </div>
+                </div>
+-->                
+        </lightning:layout>   
+        
+        <lightning:layout verticalAlign="end">
+            <lightning:layoutItem size="1" padding="around-small">
+                <lightning:input type="checkbox" aura:id="searchNamecheck" checked="{!v.ischeckBoolean}" label="Search Name" style="left: 15px;"/>   <br/> 
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem size="1" padding="around-small">
+                <lightning:input type="checkbox" aura:id="useLeads" checked="{!v.useLeads}" label="Use Leads" style="left: 15px;"/>   <br/> 
+            </lightning:layoutItem>
+        </lightning:layout>   
+        
+        
+        <lightning:layout verticalAlign="end">
+            <lightning:layoutItem size="3" padding="horizontal-small">
+                <label for="personType"><b>FILTER YOUR RESULTS</b></label>
+            </lightning:layoutItem>
+        </lightning:layout>   
+        <!--        
+        <lightning:recordEditForm
+                                  onsubmit="{!c.handleSubmit}"
+                                  onsuccess="{!c.handleSuccess}"                                    
+                                  objectApiName="Contact">
+-->            
+        <div class="slds-grid slds-p-top_xx-small">
+            &nbsp;
+            <div class="slds-col slds-size_2-of-12">
+                
+                <!--                <label for="personType"><b>Person Type</b></label>  -->
+                <lightning:combobox aura:id="selectItem" name="status" label="Person Type"
+                                    placeholder="Person Type"
+                                    value="new"
+                                    onchange="{!c.getPersonType}"
+                                    options="{!v.statusOptions}"/>
+                <br/>
+                
+                <!--                <label for="Primary Expertise"><b>Primary Expertise</b></label>  -->
+                <lightning:combobox aura:id="selectExpertise" name="status" label="Primary Expertise"
+                                    placeholder="Primary Expertise"
+                                    value="new"
+                                    onchange="{!c.getExpertise}"
+                                    options="{!v.expertiseOptions}"/> 
+                <br/>
+                <!--                <lightning:input value="{!v.PrimaryExpertise}" placeholder="Primary Expertise" aura:id="PrimaryExpertiseId" /> 
+                <br/><br/>
+-->                
+                <!--                <label for="Source"><b>Source</b></label>  -->
+                <lightning:input value="{!v.Source}" placeholder="Source" label="Source" aura:id="SourceFilter" /> 
+            </div>
+            
+            &nbsp; &nbsp; 
+            <div class="slds-col slds-size_3-of-9">
+                &nbsp;
+            </div>
+            &nbsp;
+            <div class="slds-col slds-size_2-of-9">
+                <!--                    <label for="ConfAttended"><b>Core Conferences Attended</b></label>  -->
+                <lightning:layout verticalAlign="end">
+                    <lightning:layoutItem size="5" padding="horizontal-xx-small">
+                        <lightning:input value="{!v.isConferencesAttendLow}" placeholder="Low" aura:id="ConferencesAttendedLow" label="Core Conferences Attended" type="number" />                   
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="1" padding="horizontal-xx-small">
+                        <p>&nbsp;&nbsp;to</p>                 
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="5" padding="horizontal-xx-small">
+                        <lightning:input value="{!v.isConferencesAttendHigh}" placeholder="High" aura:id="ConferencesAttendedhigh" type="number" />                   	  
+                    </lightning:layoutItem>
+                </lightning:layout>  
+                
+                &nbsp;
+                <div class="slds-col slds-size_3-of-4">
+                    <!--                    <label for="Geography"><b>Geography</b></label>  -->
+                    <lightning:input value="{!v.MailingCountry}" placeholder="Country (USA, United Kingdom, Japan)" aura:id="MailingCountryid" label="Geography" />
+                    <lightning:input value="{!v.MailingState}" placeholder="State (IN, NY, CA)" aura:id="MailingStateId" />                   	    
+                    <!--                    <lightning:input value="{!v.Region}" placeholder="Region" aura:id="RegionId" />                   	     -->
+                    <lightning:combobox aura:id="selectRegion" name="region" 
+                                        placeholder="Region"
+                                        value="new"
+                                        onchange="{!c.getRegion}"
+                                        options="{!v.regionOptions}"/>
+                    <!-- <br/><br/>  -->
+                </div>
+                
+            </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="slds-col slds-size_2-of-12"> 
+                <b>Only include people who have:</b>
+                <lightning:input type="checkbox" aura:id="AttendConf" checked="{!v.isAttendConfCheck}" label="Core Program Network" style="left: 5px; top: 5px;"/>
+                <lightning:input type="checkbox" aura:id="AttendCoSponsor" checked="{!v.isAttendCoSponsorCheck}" label="Co-Sponsor Program Network" style="left: 5px; top: 10px;"/>
+                <lightning:input type="checkbox" aura:id="ContWebsite" checked="{!v.isContWebsitecheck}" label="LF Website Contributor" style="left: 5px; top: 15px;"/>
+                <lightning:input type="checkbox" aura:id="publication" checked="{!v.ispublicationcheck}" label="LF Book Editor/Author" style="left: 5px; top: 20px;"/>
+                <lightning:input type="checkbox" aura:id="DirectedConf" checked="{!v.isDirectedConfcheck}" label="Conference Directors" style="left: 5px; top: 25px;"/>
+                <lightning:input type="checkbox" aura:id="LedConf" checked="{!v.isLedConfcheck}" label="Conference Discussion Leads" style="left: 5px; top: 30px;"/>
+            </div>    
+            
+            &nbsp;<div class="slds-col slds-size_2-of-12"> 
+            <b>Include evaluation ratings:</b>
+            <lightning:input type="checkbox" aura:id="EvalExc" checked="{!v.isEvalExcCheck}" label="Exceptional" style="left: 5px; top: 5px;"/>
+            <lightning:input type="checkbox" aura:id="EvalAbove" checked="{!v.isEvalAboveCheck}" label="Above Expectations" style="left: 5px; top: 10px;"/>
+            <lightning:input type="checkbox" aura:id="EvalMeet" checked="{!v.isEvalWithinCheck}" label="Within Expectations" style="left: 5px; top: 15px;"/>
+            <lightning:input type="checkbox" aura:id="EvalProm" checked="{!v.isEvalPromCheck}" label="Promising" style="left: 5px; top: 20px;"/>
+            <lightning:input type="checkbox" aura:id="EvalBelow" checked="{!v.isEvalBelowCheck}" label="Below Expectations" style="left: 5px; top: 25px;"/>
+            <lightning:input type="checkbox" aura:id="EvalDisrupt" checked="{!v.isEvalDisruptiveCheck}" label="Disruptive" style="left: 5px; top: 30px;"/>
+            </div>    
+            
+            &nbsp;<div class="slds-col slds-size_2-of-12"> 
+            <b>Additional Search Options</b>
+            <lightning:input type="checkbox" aura:id="isRecentlyActive" checked="{!v.isRecentlyActive}" label="Filter by recently active" style="left: 5px;"/>
+            <lightning:layout verticalAlign="end">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <lightning:layoutItem size="3" padding="horizontal-x-small">
+                    <lightning:input value="{!v.numActiveYears}" type="number" max="20" min="1" placeholder="numActiveYrs" aura:id="numActiveYears" />                   
+                </lightning:layoutItem>
+                <lightning:layoutItem size="1" padding="horizontal-x-small">
+                    &nbsp;&nbsp;years                 
+                </lightning:layoutItem>
+            </lightning:layout>  
+            
+            </div>    
+            
+        </div> 
+        <!--        </lightning:recordEditForm>           	                -->
+        
+        <div class="slds-float_left">
+            <lightning:layout multipleRows="true" horizontalAlign="center">
+                <div style="padding-left: 560px;">                        
+                    <aura:if isTrue="{!v.TotalRecords >= 49900}">
+                        <lightning:icon iconName="utility:warning" variant="error" size="small"></lightning:icon>
+                        <b>Exceeded Maximum Record Count</b>
+                    </aura:if>
+                </div>
+            </lightning:layout>
+        </div>
+        
+        <!-- TOTAL RECORDS BADGES--> 
+        <br/><div class="slds-float_left">     
+        
+        <lightning:layout multipleRows="true" horizontalAlign="center">
+            <aura:if isTrue="{!v.TotalRecords > 0}">
+                <div style="padding-left: 500px;">                        
+                    <lightning:button disabled="{!v.PageNumber == 1}" variant="brand" aura:id="prevPage" iconName="utility:left" iconPosition="left" onclick="{!c.handlePrev}" />
+                    Displaying {!v.RecordStart}-{!v.RecordEnd} of {!v.TotalRecords}  | Page {!v.PageNumber} of {!v.TotalPages}
+                    <lightning:button disabled="{!v.PageNumber >= v.TotalPages}" aura:id="nextPage" variant="brand" iconName="utility:right" iconPosition="right" onclick="{!c.handleNext}"/>
+                </div >	
+            </aura:if>
+            
+            <aura:if isTrue="{!v.TotalRecords == 0}">
+                <div style="padding-left: 500px;">                        
+                </div >	
+            </aura:if>
+            
+            <div class="slds-float_left" style="padding-left: 200px;">
+                Results Per Page: 
+            </div>    
+            <div style="padding-right: 40px;">
+                <ui:inputSelect aura:id="pageSize" change="{!c.onSelectChange}" >
+                    <ui:inputSelectOption text="25" label="25" value="true"/>
+                    <ui:inputSelectOption text="50" label="50"/>
+                    <ui:inputSelectOption text="100" label="100"/>
+                </ui:inputSelect>           
+            </div> 
+            
+            
+        </lightning:layout>
+        </div> <br/><br/>
+        
+        
+        <!-- ERROR MESSAGE IF NOT RECORDS FOUND--> 
+        <aura:if isTrue="{!v.Message}">
+            <div class="slds-notify_container slds-is-relative">
+                <div class="slds-notify slds-notify_toast slds-theme_error" role="alert">
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small">No Records Found...</h2>
+                    </div>
+                </div>
+            </div>
+        </aura:if>
+        
+        <!-- Evaluation Image Legend -->
+        <div class="slds-float_left">
+            <B>Indicator Legend:</B>&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=0154S0000009GFN'}"/> Exceptional or Above Expectations
+            &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=0154S0000009GOb'}"/> Promising
+            <!-- &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=0154S0000009GLi'}"/> Disruptive  -->
+            &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=0154S0000009GKK'}"/> Inactive
+            &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=0154S0000009GJy'}"/> Deceased
+            <!-- 0154S0000009GIm sandbox             <B>Evaluation Key:</B>&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=01555000000lwT3'}"/> Exceptional or Above Expectations
+     &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=01555000000lwcI'}"/> Promising
+     &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=01555000000lwZP'}"/> Disruptive
+               &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=0154S0000009GKK'}"/> Inactive
+               &nbsp;&nbsp;&nbsp;<img src="{!'/servlet/servlet.FileDownload?file=0154S0000009GJy'}"/> Deceased -->
+        </div>
+        <!-- TABLE CONTENT--> 
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer" >
+            <thead>  
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="S.no">C/L</div>
+                    </th>                    
+                    
+                    
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortFirstName}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="Name">Name</span> 
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'Name') }">&nbsp;  &#9660; </aura:if>  
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'Name') }"> &nbsp;  &#9650; </aura:if>                        
+                        </a>
+                    </th>
+                    
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortAffiliation}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="Affiliation">Affiliation</span>
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'npsp__Primary_Affiliation__r.Name') }">&nbsp;  &#9660;</aura:if>
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'npsp__Primary_Affiliation__r.Name') }">&nbsp;  &#9650;</aura:if>
+                        </a>
+                    </th>
+                    
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortPrimaryExpertise}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="Primary Expertise">Primary Expertise</span>
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'Primary_Expertise__c') }">&nbsp;  &#9660;</aura:if>
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'Primary_Expertise__c') }">&nbsp;  &#9650;</aura:if>    
+                        </a>
+                    </th>
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortMostRecent}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="Most Recent Attendance">Most Recent Attendance</span>
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'Most_Recent_Attended_Date__c') }">&nbsp;  &#9660;</aura:if>
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'Most_Recent_Attended_Date__c') }">&nbsp;  &#9650;</aura:if>    
+                        </a>
+                    </th>
+                    
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortFutureConf}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="Future Core Conferences">Core Future</span>
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'Future_Conferences__c') }">&nbsp;  &#9660;</aura:if>
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'Future_Conferences__c') }">&nbsp;  &#9650;</aura:if>    
+                        </a>
+                    </th>
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortConfAttended}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="Core Conferences Attended Past Year">#Past 12 mos</span>
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'Conferences_Attended_Past_Year__c') }">&nbsp;  &#9660;</aura:if>
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'Conferences_Attended_Past_Year__c') }">&nbsp;  &#9650;</aura:if>    
+                        </a>
+                    </th>
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortTotalConf}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="Total Core Conferences Attended">Core Total</span>
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'Total_Conferences_Attended__c') }">&nbsp;  &#9660;</aura:if>
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'Total_Conferences_Attended__c') }">&nbsp;  &#9650;</aura:if>    
+                        </a>
+                    </th>
+                    
+                    <th scope="col">
+                        <div class="slds-truncate" title="#Dir/#DL">#Dir/#DL</div>
+                    </th>
+                    
+                    <th scope="col">
+                        <div class="slds-truncate" title="Evals">Indicators</div>
+                    </th>
+                    <th class="slds-is-sortable slds-text-title--caps" scope="col" onclick="{!c.sortTMapInd}">
+                        <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset">
+                            <span class="slds-assistive-text">Sort</span>
+                            <span class="slds-truncate" title="TMap Indicator">TMap</span>
+                            <aura:if isTrue="{! and(v.arrowDirection == 'arrowdown', v.selectedTabsoft == 'TMap_Indicator__c') }">&nbsp;  &#9660;</aura:if>
+                            <aura:if isTrue="{! and(v.arrowDirection != 'arrowdown', v.selectedTabsoft == 'TMap_Indicator__c') }">&nbsp;  &#9650;</aura:if>    
+                        </a>
+                    </th>
+                    
+                </tr>
+            </thead>
+            <tbody> 
+                <!--### display all records of searchResult attribute by aura:iteration ###-->
+                <aura:iteration items="{!v.searchResult}" var="res" indexVar="count">
+                    <tr>
+                        
+                        <td>
+                            <div class="slds-truncate">{!res.resultIndicator}</div>
+                        </td>
+                        <th scope="row">
+                            
+                            <!--                            <div class="slds-truncate" title="{!res.recordName}" >
+                                <a href = "" aura:id="{!res.recordId}" onclick="{!c.navigateToResultRecord}">{!res.recordName}</a>
+                            </div> --> 
+                            <a onclick = "{!c.navigateToRecord}" data-Id="{!res.recordId}">{!res.recordName}</a>
+                            <!--div onclick="{!c.navigateToRecord}" class="slds-truncate" title="{!con.Name}"  id="{!con.Id}"  data-record="{!con.id}" >{!con.Name}</div -->
+                        </th>
+                        <td>
+                            <div class="slds-truncate">{!res.primaryAffiliation}</div>
+                        </td>
+                        <!--                         <aura:if isTrue="{!res.mailingCountry=='USA'}">     
+                             <td>
+                                 <div class="slds-truncate">{!res.mailingCity},{!res.mailingState}</div>
+                             </td>
+                         </aura:if>  
+                         <aura:if isTrue="{!res.mailingCountry !='USA'}">     
+                             <td>
+                                 <div class="slds-truncate">{!res.mailingCity},{!res.mailingCountry}</div>
+                             </td>
+                         </aura:if> 
+-->                         
+                        <td>
+                            <div class="slds-truncate">{!res.primaryExpertise}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">{!res.mostRecentAttendedDate}</div>
+                        </td>
+                        
+                        <th scope="row">
+                            <div class="slds-truncate"  title="{!res.attendedFuture}">{!res.attendedFuture}</div>
+                        </th>
+                        <th scope="row">
+                            <div class="slds-truncate" title="{!res.attendedRecent}">{!res.attendedRecent}</div>
+                        </th>
+                        <th scope="row">
+                            <div class="slds-truncate" title="{!res.AttendedConfTotal}">{!res.attendedConfTotal}</div>
+                        </th>
+                        
+                        <td>
+                            <div class="slds-truncate">{!res.countDirector}/{!res.countDiscLead}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate"><aura:unescapedHtml value="{!res.evaluationImage}" /></div>
+                        </td>                               
+                        <td>
+                            <div class="slds-truncate"><aura:unescapedHtml value="{!res.tMapImage}" /></div>
+                        </td>                               
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+        <!--      </lightning:tab>
+        </lightning:tabset>  -->
+    </div>
+</aura:component>

@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Oct 05 2022 9:46:41 AM",
+    "testExecutionTimeInMs": 912,
+    "testTotalTimeInMs": 912,
+    "commandTimeInMs": 285,
+    "hostname": "https://libertyfund--dev.sandbox.my.salesforce.com",
+    "orgId": "00D2h0000001bUXEAY",
+    "username": "jason.juan@libertyfund.org.dev",
+    "testRunId": "7072h00001m1CDY",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M2h000009GQkcEAG",
+      "queueItemId": "7092h000001B5FmAAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7072h00001m1CDYAA2",
+      "methodName": "LeadSearch",
+      "outcome": "Pass",
+      "apexLogId": "07L2h00000Dpa6YEAR",
+      "apexClass": {
+        "id": "01p4S000000fO0eQAE",
+        "name": "ContactSearchCntlrTest",
+        "namespacePrefix": null,
+        "fullName": "ContactSearchCntlrTest"
+      },
+      "runTime": 912,
+      "testTimestamp": "2022-10-05T16:46:43.000+0000",
+      "fullName": "ContactSearchCntlrTest.LeadSearch"
+    }
+  ]
+}

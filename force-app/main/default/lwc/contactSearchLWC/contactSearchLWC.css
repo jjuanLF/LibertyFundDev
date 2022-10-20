@@ -1,0 +1,27 @@
+.yellow-icon{
+    --lwc-colorTextIconDefault: yellow;
+}
+.red-icon{
+    /*--lwc-colorTextIconDefault: #F62217;*/
+    --sds-c-button-color-background: #F62217;
+}
+.green-icon{
+    --lwc-colorTextIconDefault: #00FF00
+    ;
+}
+.orange-icon{
+    --lwc-colorTextIconDefault: #FFA500
+    ;
+}
+.text-button > button {
+    cursor: default;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #080707;
+}
+.text-button > button:hover {
+    color: #080707;
+}

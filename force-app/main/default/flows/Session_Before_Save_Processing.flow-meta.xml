@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Populate_Unique_Session_Key</name>
+        <label>Populate Unique Session Key</label>
+        <locationX>481</locationX>
+        <locationY>131</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Unique_Session_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fConcatUniqueKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Populates the Name field with the first 80 characters of Title</description>
+    <formulas>
+        <name>fConcatUniqueKey</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Program__c}&amp;&quot;-&quot;&amp;TEXT({!$Record.Session_Number__c})</expression>
+    </formulas>
+    <interviewLabel>Session Before Save Processing {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Session Before Save Processing</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>58</locationX>
+        <locationY>65</locationY>
+        <connector>
+            <targetReference>Populate_Unique_Session_Key</targetReference>
+        </connector>
+        <object>Session__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>
