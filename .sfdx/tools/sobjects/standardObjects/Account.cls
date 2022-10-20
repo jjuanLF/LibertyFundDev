@@ -13,6 +13,8 @@ global class Account {
     global Id MasterRecordId;
     global String Name;
     global String Type;
+    global RecordType RecordType;
+    global Id RecordTypeId;
     global Account Parent;
     global Id ParentId;
     global String BillingStreet;
@@ -61,18 +63,31 @@ global class Account {
     global Datetime LastReferencedDate;
     global String Jigsaw;
     global String JigsawCompanyId;
-    global String CleanStatus;
     global String AccountSource;
-    global String DunsNumber;
-    global String Tradestyle;
-    global String NaicsCode;
-    global String NaicsDesc;
-    global String YearStarted;
     global String SicDesc;
-    global DandBCompany DandbCompany;
-    global Id DandbCompanyId;
+    global String Billing_Contact_Email__c;
+    global String Billing_Contact__c;
+    global Boolean Billing_Same_as_Shipping__c;
+    global String Hotel_URL__c;
+    /* AcctCode from Liberty Fund Conference database
+    */
+    global String LF_Account_Code__c;
+    /* ID from Liberty Fund Conference database
+    */
+    global String LF_Vendor_ID__c;
+    global String LF_Vendor_Number__c;
+    global String Org_Desc__c;
+    global String Org_Type__c;
+    global String Vendor_Contact_Cell__c;
+    global String Vendor_Contact_Email__c;
+    global String Vendor_Contact__c;
+    global String Billing_Contact_Phone__c;
+    global String Billing_Contact_FAX__c;
+    global String Shipping_Address_Display__c;
+    global String Affiliation_Name__c;
+    global String LID__LinkedIn_Company_Id__c;
     global List<Account> ChildAccounts;
-    global List<AccountCleanInfo> AccountCleanInfos;
+    global List<AccountContactRelation> AccountContactRelations;
     global List<AccountContactRole> AccountContactRoles;
     global List<AccountFeed> Feeds;
     global List<AccountHistory> Histories;
@@ -83,12 +98,19 @@ global class Account {
     global List<Asset> Assets;
     global List<Asset> ProvidedAssets;
     global List<Asset> ServicedAssets;
+    global List<AssociatedLocation> AssociatedLocations;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
+    global List<Campaign> Campaigns1__r;
+    global List<Campaign> Campaigns2__r;
     global List<Case> Cases;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
     global List<Contact> Contacts;
+    global List<Contact> Contacts__r;
+    global List<Contact> People__r;
+    global List<Contact> Peoples__r;
     global List<ContactPointEmail> ContactPointEmails;
     global List<ContactPointPhone> ContactPointPhones;
     global List<ContactRequest> ContactRequests;
@@ -106,13 +128,17 @@ global class Account {
     global List<Order> Orders;
     global List<Partner> PartnersFrom;
     global List<Partner> PartnersTo;
+    global List<Payment__c> Payments__r;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
+    global List<SocialPersona> Personas;
+    global List<SocialPost> Posts;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
     global List<User> Users;
+    global List<slackv2__Slack_Message__c> slackv2__Slack_Messages__r;
     global List<AccountChangeEvent> Parent;
     global List<AccountContactRoleChangeEvent> Account;
     global List<AssetChangeEvent> AssetProvidedBy;
@@ -128,8 +154,6 @@ global class Account {
     global List<FlowRecordRelation> RelatedRecord;
     global List<Lead> ConvertedAccount;
     global List<OpportunityChangeEvent> Account;
-    global List<OutgoingEmail> RelatedTo;
-    global List<Task> Account;
     global List<TaskChangeEvent> What;
     global List<UserChangeEvent> Account;
     global List<UserRole> PortalAccount;

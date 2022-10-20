@@ -23,14 +23,12 @@ global class Pricebook2 {
     global Boolean IsArchived;
     global String Description;
     global Boolean IsStandard;
-    global List<Contract> Contracts;
     global List<Opportunity> Opportunities;
     global List<Order> Orders;
     global List<Pricebook2History> Histories;
     global List<PricebookEntry> PricebookEntries;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
-    global List<ContractChangeEvent> Pricebook2;
     global List<FlowRecordRelation> RelatedRecord;
     global List<OpportunityChangeEvent> Pricebook2;
 

@@ -18,6 +18,10 @@ global class Case {
     global Id AccountId;
     global Asset Asset;
     global Id AssetId;
+    global SObject Source;
+    global Id SourceId;
+    global BusinessHours BusinessHours;
+    global Id BusinessHoursId;
     global Case Parent;
     global Id ParentId;
     global String SuppliedName;
@@ -25,9 +29,12 @@ global class Case {
     global String SuppliedPhone;
     global String SuppliedCompany;
     global String Type;
+    global RecordType RecordType;
+    global Id RecordTypeId;
     global String Status;
     global String Reason;
     global String Origin;
+    global String Language;
     global String Subject;
     global String Priority;
     global String Description;
@@ -50,8 +57,14 @@ global class Case {
     global String Comments;
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
+    global Campaign Program__r;
+    global Id Program__c;
+    /* Automatically populated when a user submits feedback from the Give Feedback flow.
+    */
+    global String Page_Submitted_From__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
     global List<Case> Cases;
     global List<CaseComment> CaseComments;
@@ -75,8 +88,10 @@ global class Case {
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
+    global List<SocialPost> Posts;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
+    global List<slackv2__Slack_Message__c> slackv2__Slack_Messages__r;
     global List<CaseChangeEvent> Parent;
     global List<ContentDistribution> RelatedRecord;
     global List<ContentVersion> FirstPublishLocation;

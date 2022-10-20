@@ -1,0 +1,493 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Custom Metadata Record ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Custom Metadata Record Name",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Label",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Master Language",
+      "name": "Language",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "English",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "German",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "French",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italian",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japanese",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swedish",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Korean",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Traditional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Simplified)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portuguese (Brazil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dutch",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danish",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thai",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnish",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russian",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish (Mexico)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norwegian",
+          "validFor": null,
+          "value": "no"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Hungarian",
+          "validFor": null,
+          "value": "hu"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Polish",
+          "validFor": null,
+          "value": "pl"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Czech",
+          "validFor": null,
+          "value": "cs"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Turkish",
+          "validFor": null,
+          "value": "tr"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Indonesian",
+          "validFor": null,
+          "value": "in"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Romanian",
+          "validFor": null,
+          "value": "ro"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Vietnamese",
+          "validFor": null,
+          "value": "vi"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Ukrainian",
+          "validFor": null,
+          "value": "uk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hebrew",
+          "validFor": null,
+          "value": "iw"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Greek",
+          "validFor": null,
+          "value": "el"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Bulgarian",
+          "validFor": null,
+          "value": "bg"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "English (UK)",
+          "validFor": null,
+          "value": "en_GB"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Arabic",
+          "validFor": null,
+          "value": "ar"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Slovak",
+          "validFor": null,
+          "value": "sk"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Portuguese (European)",
+          "validFor": null,
+          "value": "pt_PT"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Croatian",
+          "validFor": null,
+          "value": "hr"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Slovene",
+          "validFor": null,
+          "value": "sl"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Namespace Prefix",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Label",
+      "name": "Label",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Qualified API Name",
+      "name": "QualifiedApiName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Provide the API Name of the field in the queried table that contains the external Id",
+      "label": "Query Field",
+      "name": "Query_Field__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Provide the API Name of the object to query for the provided external Id",
+      "label": "Query Object",
+      "name": "Query_Object__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Provide the API Name of the field on the staging table where the data originates",
+      "label": "Source Field",
+      "name": "Source_Field__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Provide the API Name of the staging table where the data originates",
+      "label": "Source Object",
+      "name": "Source_Object__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Provide the API Name of the field on the object where the data should be inserted",
+      "label": "Target Field",
+      "name": "Target_Field__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Provide the API Name of the table where the data should be inserted",
+      "label": "Target Object",
+      "name": "Target_Object__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": "If a value needs to be truncated during conversion, provide the truncated character limit here.  Do not apply to reference field mappings (that use a query object & field).  Apply to text/string values ONLY.",
+      "label": "Truncation Limit",
+      "name": "Truncation_Limit__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    }
+  ],
+  "label": "Integration Staging Table Field Mapping",
+  "childRelationships": [],
+  "custom": true,
+  "name": "Integration_Staging_Table_Field_Mapping__mdt",
+  "queryable": true
+}

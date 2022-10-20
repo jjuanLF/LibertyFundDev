@@ -10,8 +10,6 @@ global class Contract {
     global Id Id;
     global Account Account;
     global Id AccountId;
-    global Pricebook2 Pricebook2;
-    global Id Pricebook2Id;
     global String OwnerExpirationNotice;
     global Date StartDate;
     global Date EndDate;
@@ -24,6 +22,15 @@ global class Contract {
     global Double BillingLongitude;
     global String BillingGeocodeAccuracy;
     global Address BillingAddress;
+    global String ShippingStreet;
+    global String ShippingCity;
+    global String ShippingState;
+    global String ShippingPostalCode;
+    global String ShippingCountry;
+    global Double ShippingLatitude;
+    global Double ShippingLongitude;
+    global String ShippingGeocodeAccuracy;
+    global Address ShippingAddress;
     global Integer ContractTerm;
     global User Owner;
     global Id OwnerId;
@@ -55,7 +62,9 @@ global class Contract {
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
     global List<ActivityHistory> ActivityHistories;
+    global List<Approval> Approvals;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
@@ -69,6 +78,7 @@ global class Contract {
     global List<Note> Notes;
     global List<NoteAndAttachment> NotesAndAttachments;
     global List<OpenActivity> OpenActivities;
+    global List<Opportunity> Opportunities;
     global List<Order> Orders;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
@@ -81,8 +91,7 @@ global class Contract {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
-    global List<OrderChangeEvent> Contract;
-    global List<OutgoingEmail> RelatedTo;
+    global List<OpportunityChangeEvent> Contract;
     global List<TaskChangeEvent> What;
 
     global Contract () 

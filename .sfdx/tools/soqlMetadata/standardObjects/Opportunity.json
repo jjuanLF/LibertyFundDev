@@ -54,6 +54,25 @@
       "type": "reference"
     },
     {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": "RecordType",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
       "aggregatable": false,
       "custom": false,
       "defaultValue": false,
@@ -126,51 +145,16 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Qualification",
+          "label": "Pledged",
           "validFor": null,
-          "value": "Qualification"
+          "value": "Pledged"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Needs Analysis",
+          "label": "Closed Lost",
           "validFor": null,
-          "value": "Needs Analysis"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Value Proposition",
-          "validFor": null,
-          "value": "Value Proposition"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Id. Decision Makers",
-          "validFor": null,
-          "value": "Id. Decision Makers"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Perception Analysis",
-          "validFor": null,
-          "value": "Perception Analysis"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Proposal/Price Quote",
-          "validFor": null,
-          "value": "Proposal/Price Quote"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Negotiation/Review",
-          "validFor": null,
-          "value": "Negotiation/Review"
+          "value": "Closed Lost"
         },
         {
           "active": true,
@@ -182,9 +166,107 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Closed Lost",
+          "label": "LOI Submitted",
           "validFor": null,
-          "value": "Closed Lost"
+          "value": "LOI Submitted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Application Submitted",
+          "validFor": null,
+          "value": "Application Submitted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cultivating",
+          "validFor": null,
+          "value": "Cultivating"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In-Kind Not Yet Received",
+          "validFor": null,
+          "value": "In-Kind Not Yet Received"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In-Kind Received",
+          "validFor": null,
+          "value": "In-Kind Received"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Withdrawn",
+          "validFor": null,
+          "value": "Withdrawn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identification",
+          "validFor": null,
+          "value": "Identification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Qualification",
+          "validFor": null,
+          "value": "Qualification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cultivation",
+          "validFor": null,
+          "value": "Cultivation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Solicitation",
+          "validFor": null,
+          "value": "Solicitation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal/Review",
+          "validFor": null,
+          "value": "Proposal/Review"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Verbal Commitment",
+          "validFor": null,
+          "value": "Verbal Commitment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Awarded",
+          "validFor": null,
+          "value": "Awarded"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Posted",
+          "validFor": null,
+          "value": "Posted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Declined",
+          "validFor": null,
+          "value": "Declined"
         }
       ],
       "referenceTo": [],
@@ -292,30 +374,16 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Existing Customer - Upgrade",
+          "label": "Existing Funding",
           "validFor": null,
-          "value": "Existing Customer - Upgrade"
+          "value": "Existing Funding"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Existing Customer - Replacement",
+          "label": "New Funding",
           "validFor": null,
-          "value": "Existing Customer - Replacement"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Existing Customer - Downgrade",
-          "validFor": null,
-          "value": "Existing Customer - Downgrade"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "New Customer",
-          "validFor": null,
-          "value": "New Customer"
+          "value": "New Funding"
         }
       ],
       "referenceTo": [],
@@ -355,16 +423,16 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Web",
+          "label": "LinkedIn",
           "validFor": null,
-          "value": "Web"
+          "value": "LinkedIn"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Phone Inquiry",
+          "label": "Other",
           "validFor": null,
-          "value": "Phone Inquiry"
+          "value": "Other"
         },
         {
           "active": true,
@@ -376,6 +444,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Phone Inquiry",
+          "validFor": null,
+          "value": "Phone Inquiry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Purchased List",
           "validFor": null,
           "value": "Purchased List"
@@ -383,9 +458,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Other",
+          "label": "Web",
           "validFor": null,
-          "value": "Other"
+          "value": "Web"
         }
       ],
       "referenceTo": [],
@@ -459,6 +534,13 @@
           "label": "Best Case",
           "validFor": null,
           "value": "BestCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Most Likely",
+          "validFor": null,
+          "value": "MostLikely"
         },
         {
           "active": true,
@@ -541,7 +623,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Campaign ID",
+      "label": "Program ID",
       "name": "CampaignId",
       "nillable": true,
       "picklistValues": [],
@@ -772,7 +854,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Contact ID",
+      "label": "People",
       "name": "ContactId",
       "nillable": true,
       "picklistValues": [],
@@ -818,6 +900,25 @@
       "type": "datetime"
     },
     {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contract ID",
+      "name": "ContractId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contract"
+      ],
+      "relationshipName": "Contract",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
       "aggregatable": false,
       "custom": false,
       "defaultValue": false,
@@ -850,6 +951,23 @@
       "relationshipName": null,
       "sortable": false,
       "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "LinkedIn Company Id",
+      "name": "LID__LinkedIn_Company_Id__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
   "label": "Opportunity",
@@ -882,6 +1000,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
       "restrictedDelete": false
     },
     {
@@ -1175,16 +1303,6 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": false,
-      "childSObject": "OutgoingEmail",
-      "deprecatedAndHidden": false,
-      "field": "RelatedToId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": null,
-      "restrictedDelete": false
-    },
-    {
       "cascadeDelete": true,
       "childSObject": "Partner",
       "deprecatedAndHidden": false,
@@ -1262,6 +1380,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "slackv2__Slack_Message__c",
+      "deprecatedAndHidden": false,
+      "field": "slackv2__Opportunity__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "slackv2__Slack_Messages__r",
       "restrictedDelete": false
     }
   ],

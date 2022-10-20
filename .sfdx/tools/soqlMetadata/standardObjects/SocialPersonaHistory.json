@@ -1,0 +1,395 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Social Persona History ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Social Persona ID",
+      "name": "SocialPersonaId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "SocialPersona"
+      ],
+      "relationshipName": "SocialPersona",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Are we following",
+          "validFor": null,
+          "value": "AreWeFollowing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Author Labels",
+          "validFor": null,
+          "value": "AuthorLabels"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Author Status",
+          "validFor": null,
+          "value": "AuthorStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Author Status Last Updated",
+          "validFor": null,
+          "value": "AuthorStatusLastUpdated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bio",
+          "validFor": null,
+          "value": "Bio"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Blocklisted",
+          "validFor": null,
+          "value": "IsBlacklisted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Followers",
+          "validFor": null,
+          "value": "Followers"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Following",
+          "validFor": null,
+          "value": "Following"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Influencer Score",
+          "validFor": null,
+          "value": "InfluencerScore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is following us",
+          "validFor": null,
+          "value": "IsFollowingUs"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Klout Rating",
+          "validFor": null,
+          "value": "Klout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Listed Count",
+          "validFor": null,
+          "value": "ListedCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Number Of Friends",
+          "validFor": null,
+          "value": "NumberOfFriends"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Number Of Tweets",
+          "validFor": null,
+          "value": "NumberOfTweets"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Page Scoped Id Migrated",
+          "validFor": null,
+          "value": "IsPageScopedIdMigrated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profile Type",
+          "validFor": null,
+          "value": "ProfileType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profile URL",
+          "validFor": null,
+          "value": "ProfileUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Provider External Picture URL",
+          "validFor": null,
+          "value": "ExternalPictureURL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Real Name",
+          "validFor": null,
+          "value": "RealName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Handle",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Network",
+          "validFor": null,
+          "value": "Provider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Media Provider",
+          "validFor": null,
+          "value": "MediaProvider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Media Type",
+          "validFor": null,
+          "value": "MediaType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Source Id",
+          "validFor": null,
+          "value": "R6SourceId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source App",
+          "validFor": null,
+          "value": "SourceApp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Topic Type",
+          "validFor": null,
+          "value": "TopicType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Verified",
+          "validFor": null,
+          "value": "IsVerified"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Social Persona History",
+  "childRelationships": [],
+  "custom": false,
+  "name": "SocialPersonaHistory",
+  "queryable": true
+}

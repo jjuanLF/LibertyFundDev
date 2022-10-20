@@ -1,0 +1,591 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Program Field History ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Program ID",
+      "name": "CampaignId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Campaign"
+      ],
+      "relationshipName": "Campaign",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active",
+          "validFor": null,
+          "value": "IsActive"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Cost in Program",
+          "validFor": null,
+          "value": "ActualCost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Admin",
+          "validFor": null,
+          "value": "lfadmin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Board Approved Date",
+          "validFor": null,
+          "value": "Board_Approved_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Board Reviewed Date",
+          "validFor": null,
+          "value": "Board_Reviewed_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Budgeted Cost in Program",
+          "validFor": null,
+          "value": "BudgetedCost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Budget Status",
+          "validFor": null,
+          "value": "Budget_Status__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign Member Type",
+          "validFor": null,
+          "value": "CampaignMemberRecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Category I",
+          "validFor": null,
+          "value": "CategoryPrimary__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Category II",
+          "validFor": null,
+          "value": "Category2__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CEP",
+          "validFor": null,
+          "value": "CEP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "City__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conferee Type",
+          "validFor": null,
+          "value": "Conferee_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conference ID",
+          "validFor": null,
+          "value": "E_number__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conf Type",
+          "validFor": null,
+          "value": "Conf_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Core Categories",
+          "validFor": null,
+          "value": "Core_Categories__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Co-Sponsor",
+          "validFor": null,
+          "value": "CoSponsor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "Country__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Director",
+          "validFor": null,
+          "value": "Director__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Director Display",
+          "validFor": null,
+          "value": "Director_Display__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dir Report",
+          "validFor": null,
+          "value": "Dir_Report__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End Date",
+          "validFor": null,
+          "value": "EndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expected Response (%)",
+          "validFor": null,
+          "value": "ExpectedResponse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expected Revenue in Program",
+          "validFor": null,
+          "value": "ExpectedRevenue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fiscal Year",
+          "validFor": null,
+          "value": "Fiscal_Year__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Has Reader",
+          "validFor": null,
+          "value": "Has_Reader__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hotel",
+          "validFor": null,
+          "value": "Hotel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indianapolis?",
+          "validFor": null,
+          "value": "Indianapolis__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LF Books Read?",
+          "validFor": null,
+          "value": "LF_Books_Read__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LFBudgId",
+          "validFor": null,
+          "value": "LFBudgId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LF Rep",
+          "validFor": null,
+          "value": "Fellow__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lookup Reference Fields",
+          "validFor": null,
+          "value": "Lookup_Reference_Fields__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Meals Inclusive",
+          "validFor": null,
+          "value": "Inclusive__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Num Sent in Program",
+          "validFor": null,
+          "value": "NumberSent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ORI Proposal",
+          "validFor": null,
+          "value": "ORI_Proposal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Program",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEP",
+          "validFor": null,
+          "value": "PEP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Planner/Admin",
+          "validFor": null,
+          "value": "Planner__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program ID",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Invite Settings",
+          "validFor": null,
+          "value": "Program_Invite_Settings__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Owner",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Record Type",
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Short Name",
+          "validFor": null,
+          "value": "Short_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Title Long",
+          "validFor": null,
+          "value": "Long_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal ID",
+          "validFor": null,
+          "value": "Proposal_ID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rank",
+          "validFor": null,
+          "value": "Rank__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Region",
+          "validFor": null,
+          "value": "Location__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repeat Of",
+          "validFor": null,
+          "value": "Repeat_Of__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shepherd",
+          "validFor": null,
+          "value": "Shepherd__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Start Date",
+          "validFor": null,
+          "value": "StartDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "State__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Submitting LF Rep",
+          "validFor": null,
+          "value": "Submitting_Fellow__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type",
+          "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Workflow Step",
+          "validFor": null,
+          "value": "Workflow_Step__c"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Program Field History",
+  "childRelationships": [],
+  "custom": false,
+  "name": "CampaignHistory",
+  "queryable": true
+}

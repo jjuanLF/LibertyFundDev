@@ -70,10 +70,6 @@ declare module "@salesforce/schema/Order.CustomerAuthorizedById" {
   const CustomerAuthorizedById:any;
   export default CustomerAuthorizedById;
 }
-declare module "@salesforce/schema/Order.CustomerAuthorizedDate" {
-  const CustomerAuthorizedDate:any;
-  export default CustomerAuthorizedDate;
-}
 declare module "@salesforce/schema/Order.CompanyAuthorizedBy" {
   const CompanyAuthorizedBy:any;
   export default CompanyAuthorizedBy;
@@ -81,10 +77,6 @@ declare module "@salesforce/schema/Order.CompanyAuthorizedBy" {
 declare module "@salesforce/schema/Order.CompanyAuthorizedById" {
   const CompanyAuthorizedById:any;
   export default CompanyAuthorizedById;
-}
-declare module "@salesforce/schema/Order.CompanyAuthorizedDate" {
-  const CompanyAuthorizedDate:any;
-  export default CompanyAuthorizedDate;
 }
 declare module "@salesforce/schema/Order.Type" {
   const Type:string;
@@ -161,38 +153,6 @@ declare module "@salesforce/schema/Order.ShippingGeocodeAccuracy" {
 declare module "@salesforce/schema/Order.ShippingAddress" {
   const ShippingAddress:any;
   export default ShippingAddress;
-}
-declare module "@salesforce/schema/Order.Name" {
-  const Name:string;
-  export default Name;
-}
-declare module "@salesforce/schema/Order.PoDate" {
-  const PoDate:any;
-  export default PoDate;
-}
-declare module "@salesforce/schema/Order.PoNumber" {
-  const PoNumber:string;
-  export default PoNumber;
-}
-declare module "@salesforce/schema/Order.OrderReferenceNumber" {
-  const OrderReferenceNumber:string;
-  export default OrderReferenceNumber;
-}
-declare module "@salesforce/schema/Order.BillToContact" {
-  const BillToContact:any;
-  export default BillToContact;
-}
-declare module "@salesforce/schema/Order.BillToContactId" {
-  const BillToContactId:any;
-  export default BillToContactId;
-}
-declare module "@salesforce/schema/Order.ShipToContact" {
-  const ShipToContact:any;
-  export default ShipToContact;
-}
-declare module "@salesforce/schema/Order.ShipToContactId" {
-  const ShipToContactId:any;
-  export default ShipToContactId;
 }
 declare module "@salesforce/schema/Order.ActivatedDate" {
   const ActivatedDate:any;

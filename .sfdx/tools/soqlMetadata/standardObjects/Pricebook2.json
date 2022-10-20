@@ -247,26 +247,6 @@
   "childRelationships": [
     {
       "cascadeDelete": false,
-      "childSObject": "Contract",
-      "deprecatedAndHidden": false,
-      "field": "Pricebook2Id",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Contracts",
-      "restrictedDelete": true
-    },
-    {
-      "cascadeDelete": false,
-      "childSObject": "ContractChangeEvent",
-      "deprecatedAndHidden": false,
-      "field": "Pricebook2Id",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": null,
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": false,
       "childSObject": "FlowRecordRelation",
       "deprecatedAndHidden": false,
       "field": "RelatedRecordId",

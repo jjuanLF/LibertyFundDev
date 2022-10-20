@@ -28,6 +28,7 @@ global class Report {
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContentDocumentLink> ContentDocumentLinks;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
@@ -36,7 +37,6 @@ global class Report {
     global List<DashboardComponent> CustomReport;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
-    global List<ReportEvent> Report;
 
     global Report () 
     {

@@ -25,10 +25,8 @@ global class Order {
     global String Description;
     global Contact CustomerAuthorizedBy;
     global Id CustomerAuthorizedById;
-    global Date CustomerAuthorizedDate;
     global User CompanyAuthorizedBy;
     global Id CompanyAuthorizedById;
-    global Date CompanyAuthorizedDate;
     global String Type;
     global String BillingStreet;
     global String BillingCity;
@@ -48,14 +46,6 @@ global class Order {
     global Double ShippingLongitude;
     global String ShippingGeocodeAccuracy;
     global Address ShippingAddress;
-    global String Name;
-    global Date PoDate;
-    global String PoNumber;
-    global String OrderReferenceNumber;
-    global Contact BillToContact;
-    global Id BillToContactId;
-    global Contact ShipToContact;
-    global Id ShipToContactId;
     global Datetime ActivatedDate;
     global User ActivatedBy;
     global Id ActivatedById;
@@ -74,6 +64,7 @@ global class Order {
     global Datetime LastReferencedDate;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContentDocumentLink> ContentDocumentLinks;
@@ -101,7 +92,6 @@ global class Order {
     global List<FlowRecordRelation> RelatedRecord;
     global List<OrderChangeEvent> OriginalOrder;
     global List<OrderItemChangeEvent> Order;
-    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Order () 

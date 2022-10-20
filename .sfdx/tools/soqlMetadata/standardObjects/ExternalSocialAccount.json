@@ -1,0 +1,941 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Managed Social Account ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Master Language",
+      "name": "Language",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "English",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "German",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "French",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italian",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japanese",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swedish",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Korean",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Traditional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Simplified)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portuguese (Brazil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dutch",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danish",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thai",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnish",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russian",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish (Mexico)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norwegian",
+          "validFor": null,
+          "value": "no"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Hungarian",
+          "validFor": null,
+          "value": "hu"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Polish",
+          "validFor": null,
+          "value": "pl"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Czech",
+          "validFor": null,
+          "value": "cs"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Turkish",
+          "validFor": null,
+          "value": "tr"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Indonesian",
+          "validFor": null,
+          "value": "in"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Romanian",
+          "validFor": null,
+          "value": "ro"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Vietnamese",
+          "validFor": null,
+          "value": "vi"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Ukrainian",
+          "validFor": null,
+          "value": "uk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hebrew",
+          "validFor": null,
+          "value": "iw"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Greek",
+          "validFor": null,
+          "value": "el"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Bulgarian",
+          "validFor": null,
+          "value": "bg"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "English (UK)",
+          "validFor": null,
+          "value": "en_GB"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Arabic",
+          "validFor": null,
+          "value": "ar"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Slovak",
+          "validFor": null,
+          "value": "sk"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Portuguese (European)",
+          "validFor": null,
+          "value": "pt_PT"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Croatian",
+          "validFor": null,
+          "value": "hr"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Slovene",
+          "validFor": null,
+          "value": "sl"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Label",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "External Account Id",
+      "name": "ExternalAccountId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Username",
+      "name": "Username",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Social Network",
+      "name": "Provider",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Twitter",
+          "validFor": null,
+          "value": "Twitter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Facebook",
+          "validFor": null,
+          "value": "Facebook"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LinkedIn",
+          "validFor": null,
+          "value": "LinkedIn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "YouTube",
+          "validFor": null,
+          "value": "YouTube"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Klout",
+          "validFor": null,
+          "value": "Klout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rypple",
+          "validFor": null,
+          "value": "Rypple"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Google+",
+          "validFor": null,
+          "value": "GooglePlus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sina Weibo",
+          "validFor": null,
+          "value": "SinaWeibo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WeChat",
+          "validFor": null,
+          "value": "WeChat"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Line",
+          "validFor": null,
+          "value": "Line"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WhatsApp",
+          "validFor": null,
+          "value": "WhatsApp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pinterest",
+          "validFor": null,
+          "value": "Pinterest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Instagram",
+          "validFor": null,
+          "value": "Instagram"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "vKontakte",
+          "validFor": null,
+          "value": "vKontakte"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Azure",
+          "validFor": null,
+          "value": "Azure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Skype",
+          "validFor": null,
+          "value": "Skype"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telegram",
+          "validFor": null,
+          "value": "Telegram"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Snapchat",
+          "validFor": null,
+          "value": "Snapchat"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messenger",
+          "validFor": null,
+          "value": "Messenger"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kik",
+          "validFor": null,
+          "value": "Kik"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KakaoTalk",
+          "validFor": null,
+          "value": "KakaoTalk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "QQ",
+          "validFor": null,
+          "value": "QQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SMS",
+          "validFor": null,
+          "value": "SMS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spark",
+          "validFor": null,
+          "value": "Spark"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "InstagramBusiness",
+          "validFor": null,
+          "value": "InstagramBusiness"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GoogleRTC",
+          "validFor": null,
+          "value": "GoogleRtc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Media Type",
+          "validFor": null,
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Provider User Id",
+      "name": "ProviderUserId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Provider External Picture URL",
+      "name": "ExternalPictureURL",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Active Account",
+      "name": "IsActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Social Property Id",
+      "name": "SocialPropertyId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Account Authenticated",
+      "name": "IsAuthenticated",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Topic Profile Id",
+      "name": "TopicId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Data Source Id",
+      "name": "DataSourceId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Rule Id",
+      "name": "RuleId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active Data Source",
+      "name": "IsDataSourceActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Unique Name",
+      "name": "UniqueName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Managed Social Account ID",
+      "name": "DefaultResponseAccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ExternalSocialAccount"
+      ],
+      "relationshipName": "DefaultResponseAccount",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Profile URL",
+      "name": "ProfileUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Authorized by",
+      "name": "AuthorizedBy",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Case Creation Enabled",
+      "name": "IsCaseCreationEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "label": "Managed Social Account",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "ExternalSocialAccount",
+      "deprecatedAndHidden": false,
+      "field": "DefaultResponseAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "SetupEntityAccess",
+      "deprecatedAndHidden": false,
+      "field": "SetupEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "SetupEntityAccessItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SocialPost",
+      "deprecatedAndHidden": false,
+      "field": "OutboundSocialAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    }
+  ],
+  "custom": false,
+  "name": "ExternalSocialAccount",
+  "queryable": true
+}

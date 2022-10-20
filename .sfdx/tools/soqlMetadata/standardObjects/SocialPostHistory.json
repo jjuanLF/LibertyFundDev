@@ -1,0 +1,591 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Social Post History ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Social Post ID",
+      "name": "SocialPostId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "SocialPost"
+      ],
+      "relationshipName": "SocialPost",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Analyzer Score",
+          "validFor": null,
+          "value": "AnalyzerScore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assigned To",
+          "validFor": null,
+          "value": "AssignedTo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attachment Type",
+          "validFor": null,
+          "value": "AttachmentType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attachment URL",
+          "validFor": null,
+          "value": "AttachmentUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Classification",
+          "validFor": null,
+          "value": "Classification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comment Count",
+          "validFor": null,
+          "value": "CommentCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deleted By",
+          "validFor": null,
+          "value": "DeletedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engagement Level",
+          "validFor": null,
+          "value": "EngagementLevel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "External Post Id",
+          "validFor": null,
+          "value": "ExternalPostId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Harvest Date",
+          "validFor": null,
+          "value": "HarvestDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Headline",
+          "validFor": null,
+          "value": "Headline"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hidden By",
+          "validFor": null,
+          "value": "HiddenBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inbound Link Count",
+          "validFor": null,
+          "value": "InboundLinkCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Reply To",
+          "validFor": null,
+          "value": "ReplyTo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Outbound",
+          "validFor": null,
+          "value": "IsOutbound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Keyword Group Name",
+          "validFor": null,
+          "value": "KeywordGroupName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Language",
+          "validFor": null,
+          "value": "Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Liked By",
+          "validFor": null,
+          "value": "LikedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Likes and Votes",
+          "validFor": null,
+          "value": "LikesAndVotes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Managed Social Account",
+          "validFor": null,
+          "value": "OutboundSocialAccount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message",
+          "validFor": null,
+          "value": "Content"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message Type",
+          "validFor": null,
+          "value": "MessageType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Notes",
+          "validFor": null,
+          "value": "Notes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Posted Date",
+          "validFor": null,
+          "value": "Posted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Post Priority",
+          "validFor": null,
+          "value": "PostPriority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Post Tags",
+          "validFor": null,
+          "value": "PostTags"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Post URL",
+          "validFor": null,
+          "value": "PostUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recipient",
+          "validFor": null,
+          "value": "Recipient"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recipient Type",
+          "validFor": null,
+          "value": "RecipientType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Response Context",
+          "validFor": null,
+          "value": "ResponseContextExternalId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reviewed Status",
+          "validFor": null,
+          "value": "ReviewedStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Review Scale",
+          "validFor": null,
+          "value": "ReviewScale"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Review Score",
+          "validFor": null,
+          "value": "ReviewScore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sentiment",
+          "validFor": null,
+          "value": "Sentiment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shares",
+          "validFor": null,
+          "value": "Shares"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Handle",
+          "validFor": null,
+          "value": "Handle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Network",
+          "validFor": null,
+          "value": "Provider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Persona",
+          "validFor": null,
+          "value": "Persona"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Media Provider",
+          "validFor": null,
+          "value": "MediaProvider"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Media Type",
+          "validFor": null,
+          "value": "MediaType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Post Id",
+          "validFor": null,
+          "value": "R6PostId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Source Id",
+          "validFor": null,
+          "value": "R6SourceId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Studio Topic Id",
+          "validFor": null,
+          "value": "R6TopicId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source Tags",
+          "validFor": null,
+          "value": "SourceTags"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spam Rating",
+          "validFor": null,
+          "value": "SpamRating"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Message",
+          "validFor": null,
+          "value": "StatusMessage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thread Size",
+          "validFor": null,
+          "value": "ThreadSize"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Topic Profile Name",
+          "validFor": null,
+          "value": "TopicProfileName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Topic Type",
+          "validFor": null,
+          "value": "TopicType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unique Commentors",
+          "validFor": null,
+          "value": "UniqueCommentors"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "View Count",
+          "validFor": null,
+          "value": "ViewCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Who",
+          "validFor": null,
+          "value": "Who"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Social Post History",
+  "childRelationships": [],
+  "custom": false,
+  "name": "SocialPostHistory",
+  "queryable": true
+}

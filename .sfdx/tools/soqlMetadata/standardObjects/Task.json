@@ -53,17 +53,32 @@
         "Account",
         "Asset",
         "AssetRelationship",
+        "BookSales__c",
+        "Budget_Class__c",
+        "Budget__c",
         "Campaign",
         "Case",
+        "Category__c",
+        "Citation__c",
         "ContactRequest",
         "Contract",
-        "Fund__c",
+        "Evaluation__c",
+        "Exception__c",
+        "Expertise__c",
         "Image",
+        "Integration_Log__c",
+        "LF_Staging_Contact__c",
         "ListEmail",
+        "Location",
+        "Notes__c",
         "Opportunity",
         "Order",
+        "Payment__c",
         "Product2",
-        "Solution"
+        "Session_Readings__c",
+        "Session__c",
+        "Solution",
+        "TMap_Data__c"
       ],
       "relationshipName": "What",
       "sortable": true,
@@ -87,13 +102,6 @@
           "label": "Call",
           "validFor": null,
           "value": "Call"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Email",
-          "validFor": null,
-          "value": "Email"
         },
         {
           "active": true,
@@ -283,6 +291,52 @@
       "relationshipName": null,
       "sortable": false,
       "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Call",
+          "validFor": null,
+          "value": "Call"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Meeting",
+          "validFor": null,
+          "value": "Meeting"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Email"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
     },
     {
       "aggregatable": false,
@@ -659,6 +713,20 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT+13:45) Chatham Daylight Time (Pacific/Chatham)",
+          "validFor": null,
+          "value": "Pacific/Chatham"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+13:00) New Zealand Daylight Time (Pacific/Auckland)",
+          "validFor": null,
+          "value": "Pacific/Auckland"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT+13:00) Phoenix Islands Time (Pacific/Enderbury)",
           "validFor": null,
           "value": "Pacific/Enderbury"
@@ -673,23 +741,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+12:45) Chatham Standard Time (Pacific/Chatham)",
-          "validFor": null,
-          "value": "Pacific/Chatham"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)",
           "validFor": null,
           "value": "Asia/Kamchatka"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+12:00) New Zealand Standard Time (Pacific/Auckland)",
-          "validFor": null,
-          "value": "Pacific/Auckland"
         },
         {
           "active": true,
@@ -701,6 +755,27 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT+12:00) Norfolk Island Daylight Time (Pacific/Norfolk)",
+          "validFor": null,
+          "value": "Pacific/Norfolk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) Lord Howe Daylight Time (Australia/Lord_Howe)",
+          "validFor": null,
+          "value": "Australia/Lord_Howe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) Australian Eastern Daylight Time (Australia/Sydney)",
+          "validFor": null,
+          "value": "Australia/Sydney"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT+11:00) Solomon Islands Time (Pacific/Guadalcanal)",
           "validFor": null,
           "value": "Pacific/Guadalcanal"
@@ -708,16 +783,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+11:00) Norfolk Island Time (Pacific/Norfolk)",
+          "label": "(GMT+10:30) Australian Central Daylight Time (Australia/Adelaide)",
           "validFor": null,
-          "value": "Pacific/Norfolk"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+10:30) Lord Howe Standard Time (Australia/Lord_Howe)",
-          "validFor": null,
-          "value": "Australia/Lord_Howe"
+          "value": "Australia/Adelaide"
         },
         {
           "active": true,
@@ -725,20 +793,6 @@
           "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Brisbane)",
           "validFor": null,
           "value": "Australia/Brisbane"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Sydney)",
-          "validFor": null,
-          "value": "Australia/Sydney"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+09:30) Australian Central Standard Time (Australia/Adelaide)",
-          "validFor": null,
-          "value": "Australia/Adelaide"
         },
         {
           "active": true,
@@ -897,13 +951,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+04:30) Iran Daylight Time (Asia/Tehran)",
-          "validFor": null,
-          "value": "Asia/Tehran"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "(GMT+04:00) Azerbaijan Standard Time (Asia/Baku)",
           "validFor": null,
           "value": "Asia/Baku"
@@ -928,6 +975,13 @@
           "label": "(GMT+04:00) Armenia Standard Time (Asia/Yerevan)",
           "validFor": null,
           "value": "Asia/Yerevan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:30) Iran Standard Time (Asia/Tehran)",
+          "validFor": null,
+          "value": "Asia/Tehran"
         },
         {
           "active": true,
@@ -1079,6 +1133,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT+01:00) Western European Summer Time (Africa/Casablanca)",
+          "validFor": null,
+          "value": "Africa/Casablanca"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT+01:00) Irish Standard Time (Europe/Dublin)",
           "validFor": null,
           "value": "Europe/Dublin"
@@ -1096,13 +1157,6 @@
           "label": "(GMT+01:00) British Summer Time (Europe/London)",
           "validFor": null,
           "value": "Europe/London"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+00:00) Western European Standard Time (Africa/Casablanca)",
-          "validFor": null,
-          "value": "Africa/Casablanca"
         },
         {
           "active": true,
@@ -1163,6 +1217,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT-03:00) Chile Summer Time (America/Santiago)",
+          "validFor": null,
+          "value": "America/Santiago"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT-03:00) Brasilia Standard Time (America/Sao_Paulo)",
           "validFor": null,
           "value": "America/Sao_Paulo"
@@ -1201,13 +1262,6 @@
           "label": "(GMT-04:00) Atlantic Standard Time (America/Puerto_Rico)",
           "validFor": null,
           "value": "America/Puerto_Rico"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT-04:00) Chile Standard Time (America/Santiago)",
-          "validFor": null,
-          "value": "America/Santiago"
         },
         {
           "active": true,
@@ -1706,6 +1760,13 @@
           "label": "Call",
           "validFor": null,
           "value": "Call"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LinkedIn",
+          "validFor": null,
+          "value": "LinkedIn"
         }
       ],
       "referenceTo": [],
@@ -1721,7 +1782,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Completed Date",
+      "label": "Completed Date/Time",
       "name": "CompletedDateTime",
       "nillable": true,
       "picklistValues": [],
@@ -1741,6 +1802,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
       "restrictedDelete": false
     },
     {

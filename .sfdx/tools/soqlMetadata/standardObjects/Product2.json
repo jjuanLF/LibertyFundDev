@@ -407,6 +407,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "Attachment",
       "deprecatedAndHidden": false,
       "field": "ParentId",
@@ -576,16 +586,6 @@
       "restrictedDelete": true
     },
     {
-      "cascadeDelete": false,
-      "childSObject": "OutgoingEmail",
-      "deprecatedAndHidden": false,
-      "field": "RelatedToId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": null,
-      "restrictedDelete": false
-    },
-    {
       "cascadeDelete": true,
       "childSObject": "PricebookEntry",
       "deprecatedAndHidden": false,
@@ -633,16 +633,6 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Histories",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
-      "childSObject": "ProductConsumptionSchedule",
-      "deprecatedAndHidden": false,
-      "field": "ProductId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "ProductConsumptionSchedules",
       "restrictedDelete": false
     },
     {

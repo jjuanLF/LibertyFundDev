@@ -26,9 +26,21 @@ declare module "@salesforce/schema/Lead.Salutation" {
   const Salutation:string;
   export default Salutation;
 }
+declare module "@salesforce/schema/Lead.MiddleName" {
+  const MiddleName:string;
+  export default MiddleName;
+}
 declare module "@salesforce/schema/Lead.Name" {
   const Name:string;
   export default Name;
+}
+declare module "@salesforce/schema/Lead.RecordType" {
+  const RecordType:any;
+  export default RecordType;
+}
+declare module "@salesforce/schema/Lead.RecordTypeId" {
+  const RecordTypeId:any;
+  export default RecordTypeId;
 }
 declare module "@salesforce/schema/Lead.Title" {
   const Title:string;
@@ -134,6 +146,10 @@ declare module "@salesforce/schema/Lead.OwnerId" {
   const OwnerId:any;
   export default OwnerId;
 }
+declare module "@salesforce/schema/Lead.HasOptedOutOfEmail" {
+  const HasOptedOutOfEmail:boolean;
+  export default HasOptedOutOfEmail;
+}
 declare module "@salesforce/schema/Lead.IsConverted" {
   const IsConverted:boolean;
   export default IsConverted;
@@ -202,6 +218,14 @@ declare module "@salesforce/schema/Lead.LastActivityDate" {
   const LastActivityDate:any;
   export default LastActivityDate;
 }
+declare module "@salesforce/schema/Lead.DoNotCall" {
+  const DoNotCall:boolean;
+  export default DoNotCall;
+}
+declare module "@salesforce/schema/Lead.HasOptedOutOfFax" {
+  const HasOptedOutOfFax:boolean;
+  export default HasOptedOutOfFax;
+}
 declare module "@salesforce/schema/Lead.LastViewedDate" {
   const LastViewedDate:any;
   export default LastViewedDate;
@@ -210,6 +234,10 @@ declare module "@salesforce/schema/Lead.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
+declare module "@salesforce/schema/Lead.LastTransferDate" {
+  const LastTransferDate:any;
+  export default LastTransferDate;
+}
 declare module "@salesforce/schema/Lead.Jigsaw" {
   const Jigsaw:string;
   export default Jigsaw;
@@ -217,22 +245,6 @@ declare module "@salesforce/schema/Lead.Jigsaw" {
 declare module "@salesforce/schema/Lead.JigsawContactId" {
   const JigsawContactId:string;
   export default JigsawContactId;
-}
-declare module "@salesforce/schema/Lead.CleanStatus" {
-  const CleanStatus:string;
-  export default CleanStatus;
-}
-declare module "@salesforce/schema/Lead.CompanyDunsNumber" {
-  const CompanyDunsNumber:string;
-  export default CompanyDunsNumber;
-}
-declare module "@salesforce/schema/Lead.DandbCompany" {
-  const DandbCompany:any;
-  export default DandbCompany;
-}
-declare module "@salesforce/schema/Lead.DandbCompanyId" {
-  const DandbCompanyId:any;
-  export default DandbCompanyId;
 }
 declare module "@salesforce/schema/Lead.EmailBouncedReason" {
   const EmailBouncedReason:string;
@@ -249,4 +261,48 @@ declare module "@salesforce/schema/Lead.Individual" {
 declare module "@salesforce/schema/Lead.IndividualId" {
   const IndividualId:any;
   export default IndividualId;
+}
+declare module "@salesforce/schema/Lead.Region__c" {
+  const Region__c:string;
+  export default Region__c;
+}
+declare module "@salesforce/schema/Lead.Name_Sort_Key__c" {
+  const Name_Sort_Key__c:string;
+  export default Name_Sort_Key__c;
+}
+declare module "@salesforce/schema/Lead.TMap_Indicator__c" {
+  const TMap_Indicator__c:boolean;
+  export default TMap_Indicator__c;
+}
+declare module "@salesforce/schema/Lead.TMap_Image__c" {
+  const TMap_Image__c:string;
+  export default TMap_Image__c;
+}
+declare module "@salesforce/schema/Lead.LID__LinkedIn_Company_Id__c" {
+  const LID__LinkedIn_Company_Id__c:string;
+  export default LID__LinkedIn_Company_Id__c;
+}
+declare module "@salesforce/schema/Lead.LID__LinkedIn_Member_Token__c" {
+  const LID__LinkedIn_Member_Token__c:string;
+  export default LID__LinkedIn_Member_Token__c;
+}
+declare module "@salesforce/schema/Lead.sansancard__CreatedByScanToSalesforce__c" {
+  const sansancard__CreatedByScanToSalesforce__c:boolean;
+  export default sansancard__CreatedByScanToSalesforce__c;
+}
+declare module "@salesforce/schema/Lead.Lead_Submission_Note__c" {
+  const Lead_Submission_Note__c:string;
+  export default Lead_Submission_Note__c;
+}
+declare module "@salesforce/schema/Lead.Affiliate__c" {
+  const Affiliate__c:string;
+  export default Affiliate__c;
+}
+declare module "@salesforce/schema/Lead.Strategic_Lead__c" {
+  const Strategic_Lead__c:boolean;
+  export default Strategic_Lead__c;
+}
+declare module "@salesforce/schema/Lead.Strategic_Lead_Date__c" {
+  const Strategic_Lead_Date__c:any;
+  export default Strategic_Lead_Date__c;
 }

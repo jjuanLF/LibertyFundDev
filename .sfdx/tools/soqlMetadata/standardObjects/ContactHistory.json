@@ -1,0 +1,969 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contact History ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contact ID",
+      "name": "ContactId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": "Contact",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Name",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Fellow?",
+          "validFor": null,
+          "value": "Active_Fellow__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Additional Website",
+          "validFor": null,
+          "value": "Additional_Website1__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Additional Website",
+          "validFor": null,
+          "value": "Additional_Website2__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Address Notes",
+          "validFor": null,
+          "value": "Address_Notes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Affiliation",
+          "validFor": null,
+          "value": "Affiliation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assistant",
+          "validFor": null,
+          "value": "AssistantName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asst. Email Address",
+          "validFor": null,
+          "value": "Asst_Email_Address__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asst. Phone",
+          "validFor": null,
+          "value": "AssistantPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bio",
+          "validFor": null,
+          "value": "Bio__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Birthdate",
+          "validFor": null,
+          "value": "Birthdate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Citizenship",
+          "validFor": null,
+          "value": "Citizenship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conferences Attended Past Year",
+          "validFor": null,
+          "value": "Conferences_Attended_Past_Year__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Owner",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Record Type",
+          "validFor": null,
+          "value": "Contact_Record_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Record Type",
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Correspondence Address",
+          "validFor": null,
+          "value": "Correspondence_Address__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Correspondence Email",
+          "validFor": null,
+          "value": "Correspondence_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cosponsor PID",
+          "validFor": null,
+          "value": "CSPid__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Count as Director",
+          "validFor": null,
+          "value": "Count_as_Director__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Count as Disc Lead",
+          "validFor": null,
+          "value": "Count_as_Disc_Lead__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created by lead convert",
+          "validFor": null,
+          "value": "contactCreatedFromLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created by Scan to Salesforce",
+          "validFor": null,
+          "value": "sansancard__CreatedByScanToSalesforce__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data.com Key",
+          "validFor": null,
+          "value": "Jigsaw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deceased",
+          "validFor": null,
+          "value": "Deceased__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Department",
+          "validFor": null,
+          "value": "Department"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Display Name",
+          "validFor": null,
+          "value": "Display_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Do Not Call",
+          "validFor": null,
+          "value": "DoNotCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Do Not Contact",
+          "validFor": null,
+          "value": "DoNotContact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Bounced Date",
+          "validFor": null,
+          "value": "EmailBouncedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Bounced Reason",
+          "validFor": null,
+          "value": "EmailBouncedReason"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Opt Out",
+          "validFor": null,
+          "value": "HasOptedOutOfEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fax",
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fax Opt Out",
+          "validFor": null,
+          "value": "HasOptedOutOfFax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fellow Code",
+          "validFor": null,
+          "value": "Fellow_Code__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First/Middle Names",
+          "validFor": null,
+          "value": "First_Middle_Names__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Conference",
+          "validFor": null,
+          "value": "First_Conference__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Conference Date",
+          "validFor": null,
+          "value": "First_Conference_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Director Date",
+          "validFor": null,
+          "value": "First_Director_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First DL Date",
+          "validFor": null,
+          "value": "First_DL_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Future Conferences",
+          "validFor": null,
+          "value": "Future_Conferences__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gender",
+          "validFor": null,
+          "value": "Gender__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Home Phone",
+          "validFor": null,
+          "value": "HomePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Household",
+          "validFor": null,
+          "value": "HouseholdId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Intacct Vendor ID",
+          "validFor": null,
+          "value": "Intacct_Vendor_ID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead converted to People",
+          "validFor": null,
+          "value": "contactUpdatedByLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead Source",
+          "validFor": null,
+          "value": "LeadSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LFPID",
+          "validFor": null,
+          "value": "LFPID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LF Source",
+          "validFor": null,
+          "value": "LF_Source__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LinkedIn Company Id",
+          "validFor": null,
+          "value": "LID__LinkedIn_Company_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LinkedIn Member Token",
+          "validFor": null,
+          "value": "LID__LinkedIn_Member_Token__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Address",
+          "validFor": null,
+          "value": "MailingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing City",
+          "validFor": null,
+          "value": "MailingCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Country",
+          "validFor": null,
+          "value": "MailingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Geocode Accuracy",
+          "validFor": null,
+          "value": "MailingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Latitude",
+          "validFor": null,
+          "value": "MailingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Longitude",
+          "validFor": null,
+          "value": "MailingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing State/Province",
+          "validFor": null,
+          "value": "MailingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Street",
+          "validFor": null,
+          "value": "MailingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Zip/Postal Code",
+          "validFor": null,
+          "value": "MailingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle",
+          "validFor": null,
+          "value": "Middle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle Name",
+          "validFor": null,
+          "value": "MiddleName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mobile",
+          "validFor": null,
+          "value": "MobilePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Most Recent Attended Date",
+          "validFor": null,
+          "value": "Most_Recent_Attended_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Not at Company Flag",
+          "validFor": null,
+          "value": "LID__No_longer_at_Company__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Address",
+          "validFor": null,
+          "value": "OtherAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other City",
+          "validFor": null,
+          "value": "OtherCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Country",
+          "validFor": null,
+          "value": "OtherCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Geocode Accuracy",
+          "validFor": null,
+          "value": "OtherGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Latitude",
+          "validFor": null,
+          "value": "OtherLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Longitude",
+          "validFor": null,
+          "value": "OtherLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Phone",
+          "validFor": null,
+          "value": "OtherPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other State/Province",
+          "validFor": null,
+          "value": "OtherState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Street",
+          "validFor": null,
+          "value": "OtherStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Zip/Postal Code",
+          "validFor": null,
+          "value": "OtherPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "People Merged",
+          "validFor": null,
+          "value": "contactMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Person Type",
+          "validFor": null,
+          "value": "Person_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preferred Phone",
+          "validFor": null,
+          "value": "PreferredPhone__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primary Affiliation",
+          "validFor": null,
+          "value": "PrimaryAffiliationId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primary Expertise",
+          "validFor": null,
+          "value": "Primary_Expertise__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Public Address",
+          "validFor": null,
+          "value": "Public_Address__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Publication Editor/Author",
+          "validFor": null,
+          "value": "Publication_Editor_Author__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Public Email",
+          "validFor": null,
+          "value": "Public_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Region",
+          "validFor": null,
+          "value": "Region__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reports To",
+          "validFor": null,
+          "value": "ReportsTo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Salutation",
+          "validFor": null,
+          "value": "Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Strategic Code",
+          "validFor": null,
+          "value": "Strategic_Code__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Strategic Level",
+          "validFor": null,
+          "value": "Strategic_Level__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Strategic Person",
+          "validFor": null,
+          "value": "Strategic_Person__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Strategic Person Date",
+          "validFor": null,
+          "value": "Strategic_Person_date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suffix",
+          "validFor": null,
+          "value": "Suffix__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Temp. Addr. End Date",
+          "validFor": null,
+          "value": "Temp_Addr_End_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Temporary Address",
+          "validFor": null,
+          "value": "Temporary_Address__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMap Indicator",
+          "validFor": null,
+          "value": "TMap_Indicator__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total Core Conferences",
+          "validFor": null,
+          "value": "Total_Attended_Conferences_Only__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total CoSpo Conferences",
+          "validFor": null,
+          "value": "Total_Attended_CoSpon_Only__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total Programs Attended",
+          "validFor": null,
+          "value": "Total_Conferences_Attended__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vendor",
+          "validFor": null,
+          "value": "Vendor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "W9 Status",
+          "validFor": null,
+          "value": "W9_Status__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Website",
+          "validFor": null,
+          "value": "Website__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Website Contributor",
+          "validFor": null,
+          "value": "Website_Contributor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Phone",
+          "validFor": null,
+          "value": "WorkPhone__c"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Contact History",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContactHistory",
+  "queryable": true
+}

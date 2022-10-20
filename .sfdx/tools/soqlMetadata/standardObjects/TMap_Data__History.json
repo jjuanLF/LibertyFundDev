@@ -1,0 +1,521 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Entity History ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Parent ID",
+      "name": "ParentId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "TMap_Data__c"
+      ],
+      "relationshipName": "Parent",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "_source.profilePlace.city",
+          "validFor": null,
+          "value": "source_profilePlace_city__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "_source.profilePlace.state_abbreviation",
+          "validFor": null,
+          "value": "source_profilePlace_state_abbreviation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Academia",
+          "validFor": null,
+          "value": "Academia__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Boost Score",
+          "validFor": null,
+          "value": "Boost_Score__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Business",
+          "validFor": null,
+          "value": "Business__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Candidate Email",
+          "validFor": null,
+          "value": "Candidate_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Candidate Name",
+          "validFor": null,
+          "value": "Candidate_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "College/University",
+          "validFor": null,
+          "value": "College_University__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Company/Organization",
+          "validFor": null,
+          "value": "Company_Organization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conference Quality Score",
+          "validFor": null,
+          "value": "Conference_Quality_Score__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact",
+          "validFor": null,
+          "value": "Contact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current City",
+          "validFor": null,
+          "value": "Current_City__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Country",
+          "validFor": null,
+          "value": "Current_Country__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Industry",
+          "validFor": null,
+          "value": "Current_Industry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Location",
+          "validFor": null,
+          "value": "Current_Location__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Organization",
+          "validFor": null,
+          "value": "Current_Organization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current State",
+          "validFor": null,
+          "value": "Current_State__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Degree Boost",
+          "validFor": null,
+          "value": "Degree_Boost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Doctorate Degree(s)",
+          "validFor": null,
+          "value": "Doctorate_Degree_s__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Employment History Boost",
+          "validFor": null,
+          "value": "Employment_History_Boost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Experience Boost",
+          "validFor": null,
+          "value": "Experience_Boost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Field of Study",
+          "validFor": null,
+          "value": "Field_of_Study__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Highest Degree Earned",
+          "validFor": null,
+          "value": "Highest_Degree_Earned__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "highlight.experience_companyName",
+          "validFor": null,
+          "value": "highlight_experience_companyName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Historical College/University",
+          "validFor": null,
+          "value": "Historical_College_University__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Historical Degree",
+          "validFor": null,
+          "value": "Historical_Degree__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Historical Field of Study",
+          "validFor": null,
+          "value": "Historical_Field_of_Study__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Industry Boost",
+          "validFor": null,
+          "value": "Industry_Boost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Law/Policy",
+          "validFor": null,
+          "value": "Law_Policy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead",
+          "validFor": null,
+          "value": "Lead__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LinkedIn URL",
+          "validFor": null,
+          "value": "LinkedIn_URL__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Master Degree(s)",
+          "validFor": null,
+          "value": "Master_Degree_s__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Non-Profit",
+          "validFor": null,
+          "value": "Non_Profit__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Press/Media",
+          "validFor": null,
+          "value": "Press_Media__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Publications",
+          "validFor": null,
+          "value": "Publications__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Publications Boost",
+          "validFor": null,
+          "value": "Publications_Boost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Media \"Likes\"",
+          "validFor": null,
+          "value": "Social_Media_Likes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Media Likes Depth",
+          "validFor": null,
+          "value": "Social_Media_Likes_Depth__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Title__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title Boost",
+          "validFor": null,
+          "value": "Title_Boost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMap Candidate ID",
+          "validFor": null,
+          "value": "TMap_Candidate_ID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMap Data Name",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMap Preliminary Relevance Score",
+          "validFor": null,
+          "value": "TMap_Preliminary_Relevance_Score__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMap Static Score",
+          "validFor": null,
+          "value": "TMap_Static_S__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Years of Experience",
+          "validFor": null,
+          "value": "Years_of_Experience__c"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "History: TMap Data",
+  "childRelationships": [],
+  "custom": false,
+  "name": "TMap_Data__History",
+  "queryable": true
+}

@@ -14,6 +14,14 @@ declare module "@salesforce/schema/Opportunity.AccountId" {
   const AccountId:any;
   export default AccountId;
 }
+declare module "@salesforce/schema/Opportunity.RecordType" {
+  const RecordType:any;
+  export default RecordType;
+}
+declare module "@salesforce/schema/Opportunity.RecordTypeId" {
+  const RecordTypeId:any;
+  export default RecordTypeId;
+}
 declare module "@salesforce/schema/Opportunity.IsPrivate" {
   const IsPrivate:boolean;
   export default IsPrivate;
@@ -166,6 +174,14 @@ declare module "@salesforce/schema/Opportunity.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
+declare module "@salesforce/schema/Opportunity.Contract" {
+  const Contract:any;
+  export default Contract;
+}
+declare module "@salesforce/schema/Opportunity.ContractId" {
+  const ContractId:any;
+  export default ContractId;
+}
 declare module "@salesforce/schema/Opportunity.HasOpenActivity" {
   const HasOpenActivity:boolean;
   export default HasOpenActivity;
@@ -173,4 +189,8 @@ declare module "@salesforce/schema/Opportunity.HasOpenActivity" {
 declare module "@salesforce/schema/Opportunity.HasOverdueTask" {
   const HasOverdueTask:boolean;
   export default HasOverdueTask;
+}
+declare module "@salesforce/schema/Opportunity.LID__LinkedIn_Company_Id__c" {
+  const LID__LinkedIn_Company_Id__c:string;
+  export default LID__LinkedIn_Company_Id__c;
 }

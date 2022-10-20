@@ -50,6 +50,10 @@ declare module "@salesforce/schema/Task.Description" {
   const Description:string;
   export default Description;
 }
+declare module "@salesforce/schema/Task.Type" {
+  const Type:string;
+  export default Type;
+}
 declare module "@salesforce/schema/Task.IsDeleted" {
   const IsDeleted:boolean;
   export default IsDeleted;

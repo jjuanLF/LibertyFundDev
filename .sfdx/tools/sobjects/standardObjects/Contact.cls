@@ -11,12 +11,19 @@ global class Contact {
     global Boolean IsDeleted;
     global Contact MasterRecord;
     global Id MasterRecordId;
+    /* Primary Affiliation
+    */
     global Account Account;
+    /* Primary Affiliation
+    */
     global Id AccountId;
     global String LastName;
     global String FirstName;
     global String Salutation;
+    global String MiddleName;
     global String Name;
+    global RecordType RecordType;
+    global Id RecordTypeId;
     global String OtherStreet;
     global String OtherCity;
     global String OtherState;
@@ -52,6 +59,9 @@ global class Contact {
     global String Description;
     global User Owner;
     global Id OwnerId;
+    global Boolean HasOptedOutOfEmail;
+    global Boolean HasOptedOutOfFax;
+    global Boolean DoNotCall;
     global Datetime CreatedDate;
     global User CreatedBy;
     global Id CreatedById;
@@ -70,21 +80,117 @@ global class Contact {
     global String PhotoUrl;
     global String Jigsaw;
     global String JigsawContactId;
-    global String CleanStatus;
     global Individual Individual;
     global Id IndividualId;
+    global Boolean Active_Fellow__c;
+    global Account Affiliation__r;
+    global Id Affiliation__c;
+    global String Citizenship__c;
+    global Double Conferences_Attended_Past_Year__c;
+    global String Fellow_Code__c;
+    global Date First_Conference_Date__c;
+    global Campaign First_Conference__r;
+    global Id First_Conference__c;
+    global Date First_DL_Date__c;
+    global Date First_Director_Date__c;
+    global Double Future_Conferences__c;
+    global String LFPID__c;
+    global String Primary_Expertise__c;
+    global String Person_Type__c;
+    global Double Total_Conferences_Attended__c;
+    global String W9_Status__c;
+    global String Gender__c;
+    global String Region__c;
+    global Double Count_as_Director__c;
+    global Double Count_as_Disc_Lead__c;
+    global Boolean Publication_Editor_Author__c;
+    global Double Total_Attended_CoSpon_Only__c;
+    global Double Total_Attended_Conferences_Only__c;
+    global Boolean Website_Contributor__c;
+    global String CRM_Person_Type__c;
+    global String Evaluation_Image__c;
+    global Double Evaluation_Count_Above_Exp__c;
+    global Double Evaluation_Count_Below_Exp__c;
+    global Double Evaluation_Count_Disruptive__c;
+    global Double Evaluation_Count_Exceptional__c;
+    global Double Evaluation_Count_Promising__c;
+    global Double Evaluation_Count_Within_Exp__c;
+    global String Website__c;
+    global String Correspondence_Email__c;
+    global String Public_Email__c;
+    global String LF_Source__c;
+    global Double Email_Count__c;
+    global Boolean Vendor__c;
+    global Date Most_Recent_Attended_Date__c;
+    global String Name_Sort_Key__c;
+    global Boolean TMap_Indicator__c;
+    global String TMap_Image__c;
+    /* check with accounting with questions
+    */
+    global String Intacct_Vendor_ID__c;
+    global String Middle__c;
+    global String CSPid__c;
+    /* Provide the name the contact prefers to be called. Will be used for event name tags and table tents.
+    */
+    global String Display_Name__c;
+    global String Contact_Record_Type__c;
+    global String First_Middle_Names__c;
+    global String RecordType_Name__c;
+    global Double Corres_Email_Mngd_by_Int__c;
+    global Double Public_Email_Mngd_by_Int__c;
+    global String LID__LinkedIn_Company_Id__c;
+    global String LID__LinkedIn_Member_Token__c;
+    /* Field automatically updated by LinkedIn Sales Navigator Data Validation. “Not at Company” means Contact is not with associated Account based on LinkedIn profile. No value indicates LinkedIn has no feedback to share.
+    */
+    global String LID__No_longer_at_Company__c;
+    global String Address_Notes__c;
+    global String Asst_Email_Address__c;
+    /* Click the Image icon to upload a photo.
+    */
+    global String Bio__c;
+    global String Current_Correspondence_Address__c;
+    global String Correspondence_Address__c;
+    global Date Temp_Addr_End_Date__c;
+    /* Please provide Street, City, State, Zip/Postal Code, and Country
+    */
+    global String Temporary_Address__c;
+    global Boolean sansancard__CreatedByScanToSalesforce__c;
+    global String Suffix__c;
+    global String Public_Address__c;
+    global Boolean Strategic_Person__c;
+    global String Additional_Website1__c;
+    global String Additional_Website2__c;
+    global Date Strategic_Person_date__c;
+    global String Strategic_Level__c;
+    global String Strategic_Code__c;
+    global Boolean Deceased__c;
+    global String WorkPhone__c;
+    global String PreferredPhone__c;
+    global Boolean DoNotContact__c;
+    global Account HouseholdId__r;
+    global Id HouseholdId__c;
+    global Account PrimaryAffiliationId__r;
+    global Id PrimaryAffiliationId__c;
     global List<AcceptedEventRelation> AcceptedEventRelations;
+    global List<AccountContactRelation> AccountContactRelations;
     global List<AccountContactRole> AccountContactRoles;
     global List<ActivityHistory> ActivityHistories;
+    global List<Affiliation__c> Affiliations__r;
     global List<Asset> Assets;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
+    global List<BookSales__c> BookSales__r;
+    global List<Campaign> Campaigns__r;
+    global List<Campaign> ProgramPlanner__r;
+    global List<Campaign> ProposalsSubmitted__r;
+    global List<Campaign> Programs__r;
     global List<CampaignMember> CampaignMembers;
     global List<Case> Cases;
     global List<CaseContactRole> CaseContactRoles;
+    global List<Category__c> Categories__r;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
-    global List<ContactCleanInfo> ContactCleanInfos;
     global List<ContactFeed> Feeds;
     global List<ContactHistory> Histories;
     global List<ContactRequest> ContactRequests;
@@ -96,25 +202,41 @@ global class Contact {
     global List<DuplicateRecordItem> DuplicateRecordItems;
     global List<EmailMessageRelation> EmailMessageRelations;
     global List<EmailStatus> EmailStatuses;
+    global List<Email_Address__c> Email_Addresses__r;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
+    global List<Evaluation__c> Evaluations__r;
     global List<Event> Events;
     global List<EventRelation> EventRelations;
+    global List<Expertise__c> Expertise__r;
+    global List<Invitation__c> Invitations__r;
+    global List<LF_Web_Contributor__c> LF_Web_Contributors__r;
     global List<ListEmailIndividualRecipient> ListEmailIndividualRecipients;
+    global List<MyList_Conferee__c> Suggested_Conferees__r;
     global List<Note> Notes;
     global List<NoteAndAttachment> NotesAndAttachments;
     global List<OpenActivity> OpenActivities;
     global List<Opportunity> Opportunities;
     global List<OpportunityContactRole> OpportunityContactRoles;
-    global List<OutgoingEmailRelation> OutgoingEmailRelations;
+    global List<Other_Event_Participation__c> Other_Event_Participations__r;
+    global List<PID_History__c> PID_Histories__r;
+    global List<Payment__c> Payments__r;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
+    global List<Program_Exp_Report__c> Program_Exp_Reports__r;
+    global List<Program_Payments__c> Program_Payments__r;
+    global List<Proposal_Author__c> Authors__r;
+    global List<Publication_Role__c> Publication_Roles__r;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
+    global List<SocialPersona> Personas;
+    global List<SocialPost> Posts;
+    global List<TMap_Data__c> TMap_Data__r;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
     global List<UndecidedEventRelation> UndecidedEventRelations;
     global List<User> Users;
     global List<UserEmailPreferredPerson> PersonRecord;
+    global List<slackv2__Slack_Message__c> slackv2__Slack_Messages__r;
     global List<AccountContactRoleChangeEvent> Contact;
     global List<CampaignMember> LeadOrContact;
     global List<CampaignMemberChangeEvent> Contact;
@@ -130,13 +252,8 @@ global class Contact {
     global List<Lead> ConvertedContact;
     global List<MatchingInformation> SFDCId;
     global List<OpportunityChangeEvent> Contact;
-    global List<Order> BillToContact;
     global List<Order> CustomerAuthorizedBy;
-    global List<Order> ShipToContact;
-    global List<OrderChangeEvent> BillToContact;
-    global List<OrderChangeEvent> CustomerAuthorizedBy;
-    global List<OrderChangeEvent> ShipToContact;
-    global List<OutgoingEmail> Who;
+    global List<TaskChangeEvent> Who;
     global List<UserChangeEvent> Contact;
 
     global Contact () 

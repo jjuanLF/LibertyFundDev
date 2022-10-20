@@ -42,6 +42,22 @@ declare module "@salesforce/schema/Case.AssetId" {
   const AssetId:any;
   export default AssetId;
 }
+declare module "@salesforce/schema/Case.Source" {
+  const Source:any;
+  export default Source;
+}
+declare module "@salesforce/schema/Case.SourceId" {
+  const SourceId:any;
+  export default SourceId;
+}
+declare module "@salesforce/schema/Case.BusinessHours" {
+  const BusinessHours:any;
+  export default BusinessHours;
+}
+declare module "@salesforce/schema/Case.BusinessHoursId" {
+  const BusinessHoursId:any;
+  export default BusinessHoursId;
+}
 declare module "@salesforce/schema/Case.Parent" {
   const Parent:any;
   export default Parent;
@@ -70,6 +86,14 @@ declare module "@salesforce/schema/Case.Type" {
   const Type:string;
   export default Type;
 }
+declare module "@salesforce/schema/Case.RecordType" {
+  const RecordType:any;
+  export default RecordType;
+}
+declare module "@salesforce/schema/Case.RecordTypeId" {
+  const RecordTypeId:any;
+  export default RecordTypeId;
+}
 declare module "@salesforce/schema/Case.Status" {
   const Status:string;
   export default Status;
@@ -81,6 +105,10 @@ declare module "@salesforce/schema/Case.Reason" {
 declare module "@salesforce/schema/Case.Origin" {
   const Origin:string;
   export default Origin;
+}
+declare module "@salesforce/schema/Case.Language" {
+  const Language:string;
+  export default Language;
 }
 declare module "@salesforce/schema/Case.Subject" {
   const Subject:string;
@@ -169,4 +197,16 @@ declare module "@salesforce/schema/Case.LastViewedDate" {
 declare module "@salesforce/schema/Case.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
+}
+declare module "@salesforce/schema/Case.Program__r" {
+  const Program__r:any;
+  export default Program__r;
+}
+declare module "@salesforce/schema/Case.Program__c" {
+  const Program__c:any;
+  export default Program__c;
+}
+declare module "@salesforce/schema/Case.Page_Submitted_From__c" {
+  const Page_Submitted_From__c:string;
+  export default Page_Submitted_From__c;
 }

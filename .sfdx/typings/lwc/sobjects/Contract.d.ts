@@ -10,14 +10,6 @@ declare module "@salesforce/schema/Contract.AccountId" {
   const AccountId:any;
   export default AccountId;
 }
-declare module "@salesforce/schema/Contract.Pricebook2" {
-  const Pricebook2:any;
-  export default Pricebook2;
-}
-declare module "@salesforce/schema/Contract.Pricebook2Id" {
-  const Pricebook2Id:any;
-  export default Pricebook2Id;
-}
 declare module "@salesforce/schema/Contract.OwnerExpirationNotice" {
   const OwnerExpirationNotice:string;
   export default OwnerExpirationNotice;
@@ -65,6 +57,42 @@ declare module "@salesforce/schema/Contract.BillingGeocodeAccuracy" {
 declare module "@salesforce/schema/Contract.BillingAddress" {
   const BillingAddress:any;
   export default BillingAddress;
+}
+declare module "@salesforce/schema/Contract.ShippingStreet" {
+  const ShippingStreet:string;
+  export default ShippingStreet;
+}
+declare module "@salesforce/schema/Contract.ShippingCity" {
+  const ShippingCity:string;
+  export default ShippingCity;
+}
+declare module "@salesforce/schema/Contract.ShippingState" {
+  const ShippingState:string;
+  export default ShippingState;
+}
+declare module "@salesforce/schema/Contract.ShippingPostalCode" {
+  const ShippingPostalCode:string;
+  export default ShippingPostalCode;
+}
+declare module "@salesforce/schema/Contract.ShippingCountry" {
+  const ShippingCountry:string;
+  export default ShippingCountry;
+}
+declare module "@salesforce/schema/Contract.ShippingLatitude" {
+  const ShippingLatitude:number;
+  export default ShippingLatitude;
+}
+declare module "@salesforce/schema/Contract.ShippingLongitude" {
+  const ShippingLongitude:number;
+  export default ShippingLongitude;
+}
+declare module "@salesforce/schema/Contract.ShippingGeocodeAccuracy" {
+  const ShippingGeocodeAccuracy:string;
+  export default ShippingGeocodeAccuracy;
+}
+declare module "@salesforce/schema/Contract.ShippingAddress" {
+  const ShippingAddress:any;
+  export default ShippingAddress;
 }
 declare module "@salesforce/schema/Contract.ContractTerm" {
   const ContractTerm:number;

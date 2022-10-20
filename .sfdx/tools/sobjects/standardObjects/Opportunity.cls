@@ -11,6 +11,8 @@ global class Opportunity {
     global Boolean IsDeleted;
     global Account Account;
     global Id AccountId;
+    global RecordType RecordType;
+    global Id RecordTypeId;
     global Boolean IsPrivate;
     global String Name;
     global String Description;
@@ -49,11 +51,15 @@ global class Opportunity {
     global Id ContactId;
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
+    global Contract Contract;
+    global Id ContractId;
     global Boolean HasOpenActivity;
     global Boolean HasOverdueTask;
+    global String LID__LinkedIn_Company_Id__c;
     global List<AccountPartner> AccountPartners;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
@@ -80,6 +86,7 @@ global class Opportunity {
     global List<RecordActionHistory> RecordActionHistories;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
+    global List<slackv2__Slack_Message__c> slackv2__Slack_Messages__r;
     global List<ContentDistribution> RelatedRecord;
     global List<ContentVersion> FirstPublishLocation;
     global List<EventChangeEvent> What;
@@ -88,7 +95,6 @@ global class Opportunity {
     global List<FlowRecordRelation> RelatedRecord;
     global List<Lead> ConvertedOpportunity;
     global List<OpportunityContactRoleChangeEvent> Opportunity;
-    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Opportunity () 

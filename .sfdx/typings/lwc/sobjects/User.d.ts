@@ -14,6 +14,10 @@ declare module "@salesforce/schema/User.FirstName" {
   const FirstName:string;
   export default FirstName;
 }
+declare module "@salesforce/schema/User.MiddleName" {
+  const MiddleName:string;
+  export default MiddleName;
+}
 declare module "@salesforce/schema/User.Name" {
   const Name:string;
   export default Name;
@@ -258,6 +262,10 @@ declare module "@salesforce/schema/User.UserPermissionsOfflineUser" {
   const UserPermissionsOfflineUser:boolean;
   export default UserPermissionsOfflineUser;
 }
+declare module "@salesforce/schema/User.UserPermissionsAvantgoUser" {
+  const UserPermissionsAvantgoUser:boolean;
+  export default UserPermissionsAvantgoUser;
+}
 declare module "@salesforce/schema/User.UserPermissionsCallCenterAutoLogin" {
   const UserPermissionsCallCenterAutoLogin:boolean;
   export default UserPermissionsCallCenterAutoLogin;
@@ -270,10 +278,6 @@ declare module "@salesforce/schema/User.UserPermissionsSFContentUser" {
   const UserPermissionsSFContentUser:boolean;
   export default UserPermissionsSFContentUser;
 }
-declare module "@salesforce/schema/User.UserPermissionsKnowledgeUser" {
-  const UserPermissionsKnowledgeUser:boolean;
-  export default UserPermissionsKnowledgeUser;
-}
 declare module "@salesforce/schema/User.UserPermissionsInteractionUser" {
   const UserPermissionsInteractionUser:boolean;
   export default UserPermissionsInteractionUser;
@@ -281,22 +285,6 @@ declare module "@salesforce/schema/User.UserPermissionsInteractionUser" {
 declare module "@salesforce/schema/User.UserPermissionsSupportUser" {
   const UserPermissionsSupportUser:boolean;
   export default UserPermissionsSupportUser;
-}
-declare module "@salesforce/schema/User.UserPermissionsJigsawProspectingUser" {
-  const UserPermissionsJigsawProspectingUser:boolean;
-  export default UserPermissionsJigsawProspectingUser;
-}
-declare module "@salesforce/schema/User.UserPermissionsSiteforceContributorUser" {
-  const UserPermissionsSiteforceContributorUser:boolean;
-  export default UserPermissionsSiteforceContributorUser;
-}
-declare module "@salesforce/schema/User.UserPermissionsSiteforcePublisherUser" {
-  const UserPermissionsSiteforcePublisherUser:boolean;
-  export default UserPermissionsSiteforcePublisherUser;
-}
-declare module "@salesforce/schema/User.UserPermissionsWorkDotComUserFeature" {
-  const UserPermissionsWorkDotComUserFeature:boolean;
-  export default UserPermissionsWorkDotComUserFeature;
 }
 declare module "@salesforce/schema/User.ForecastEnabled" {
   const ForecastEnabled:boolean;
@@ -341,14 +329,6 @@ declare module "@salesforce/schema/User.UserPreferencesDisableLaterCommentEmail"
 declare module "@salesforce/schema/User.UserPreferencesDisProfPostCommentEmail" {
   const UserPreferencesDisProfPostCommentEmail:boolean;
   export default UserPreferencesDisProfPostCommentEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesContentNoEmail" {
-  const UserPreferencesContentNoEmail:boolean;
-  export default UserPreferencesContentNoEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesContentEmailAsAndWhen" {
-  const UserPreferencesContentEmailAsAndWhen:boolean;
-  export default UserPreferencesContentEmailAsAndWhen;
 }
 declare module "@salesforce/schema/User.UserPreferencesApexPagesDeveloperMode" {
   const UserPreferencesApexPagesDeveloperMode:boolean;
@@ -401,10 +381,6 @@ declare module "@salesforce/schema/User.UserPreferencesSortFeedByComment" {
 declare module "@salesforce/schema/User.UserPreferencesDisableMessageEmail" {
   const UserPreferencesDisableMessageEmail:boolean;
   export default UserPreferencesDisableMessageEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesJigsawListUser" {
-  const UserPreferencesJigsawListUser:boolean;
-  export default UserPreferencesJigsawListUser;
 }
 declare module "@salesforce/schema/User.UserPreferencesDisableBookmarkEmail" {
   const UserPreferencesDisableBookmarkEmail:boolean;
@@ -489,14 +465,6 @@ declare module "@salesforce/schema/User.UserPreferencesShowPostalCodeToGuestUser
 declare module "@salesforce/schema/User.UserPreferencesShowCountryToGuestUsers" {
   const UserPreferencesShowCountryToGuestUsers:boolean;
   export default UserPreferencesShowCountryToGuestUsers;
-}
-declare module "@salesforce/schema/User.UserPreferencesDisableFeedbackEmail" {
-  const UserPreferencesDisableFeedbackEmail:boolean;
-  export default UserPreferencesDisableFeedbackEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesDisableWorkEmail" {
-  const UserPreferencesDisableWorkEmail:boolean;
-  export default UserPreferencesDisableWorkEmail;
 }
 declare module "@salesforce/schema/User.UserPreferencesPipelineViewHideHelpPopover" {
   const UserPreferencesPipelineViewHideHelpPopover:boolean;
@@ -689,10 +657,6 @@ declare module "@salesforce/schema/User.DigestFrequency" {
 declare module "@salesforce/schema/User.DefaultGroupNotificationFrequency" {
   const DefaultGroupNotificationFrequency:string;
   export default DefaultGroupNotificationFrequency;
-}
-declare module "@salesforce/schema/User.JigsawImportLimitOverride" {
-  const JigsawImportLimitOverride:number;
-  export default JigsawImportLimitOverride;
 }
 declare module "@salesforce/schema/User.LastViewedDate" {
   const LastViewedDate:any;

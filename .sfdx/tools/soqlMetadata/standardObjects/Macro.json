@@ -1,0 +1,1303 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Macro ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Macro Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "richtextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Supports Classic",
+      "name": "IsAlohaSupported",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Supports Lightning",
+      "name": "IsLightningSupported",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Apply To",
+      "name": "StartingContext",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Contact Relationship",
+          "validFor": null,
+          "value": "AccountContactRelation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Staging Table",
+          "validFor": null,
+          "value": "AccountStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Affiliation",
+          "validFor": null,
+          "value": "Affiliation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset",
+          "validFor": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Relationship",
+          "validFor": null,
+          "value": "AssetRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Async Operation Result",
+          "validFor": null,
+          "value": "sf_devops__Async_Operation_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Author",
+          "validFor": null,
+          "value": "Author__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form",
+          "validFor": null,
+          "value": "AuthorizationForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form Consent",
+          "validFor": null,
+          "value": "AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form Data Use",
+          "validFor": null,
+          "value": "AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form Text",
+          "validFor": null,
+          "value": "AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Back Sync",
+          "validFor": null,
+          "value": "sf_devops__Back_Sync__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BookSales",
+          "validFor": null,
+          "value": "BookSales__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Branch",
+          "validFor": null,
+          "value": "sf_devops__Branch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Broadcast Topic",
+          "validFor": null,
+          "value": "BroadcastTopic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Budget",
+          "validFor": null,
+          "value": "Budget__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Budget Class",
+          "validFor": null,
+          "value": "Budget_Class__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Case",
+          "validFor": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Category",
+          "validFor": null,
+          "value": "Category__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Bundle",
+          "validFor": null,
+          "value": "sf_devops__Change_Bundle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Bundle Install",
+          "validFor": null,
+          "value": "sf_devops__Change_Bundle_Install__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Submission",
+          "validFor": null,
+          "value": "sf_devops__Change_Submission__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Citation",
+          "validFor": null,
+          "value": "Citation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Citation Author",
+          "validFor": null,
+          "value": "Citation_Author__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Citation Staging Table",
+          "validFor": null,
+          "value": "CitationStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Collaboration Room",
+          "validFor": null,
+          "value": "CollaborationRoom"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription",
+          "validFor": null,
+          "value": "CommSubscription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription Channel Type",
+          "validFor": null,
+          "value": "CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription Consent",
+          "validFor": null,
+          "value": "CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription Timing",
+          "validFor": null,
+          "value": "CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conference Citation",
+          "validFor": null,
+          "value": "Conference_Citation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conference Citation Staging Table",
+          "validFor": null,
+          "value": "ConferenceCitationStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Address",
+          "validFor": null,
+          "value": "ContactPointAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Email",
+          "validFor": null,
+          "value": "ContactPointEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Phone",
+          "validFor": null,
+          "value": "ContactPointPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Staging Table",
+          "validFor": null,
+          "value": "ContactStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract",
+          "validFor": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data Use Purpose",
+          "validFor": null,
+          "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deploy Component",
+          "validFor": null,
+          "value": "sf_devops__Deploy_Component__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deployment Result",
+          "validFor": null,
+          "value": "sf_devops__Deployment_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dimension",
+          "validFor": null,
+          "value": "Dimension__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document",
+          "validFor": null,
+          "value": "Documents__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Folder",
+          "validFor": null,
+          "value": "DocumentFolder__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Address",
+          "validFor": null,
+          "value": "Email_Address__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engagement Channel Type",
+          "validFor": null,
+          "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Environment",
+          "validFor": null,
+          "value": "sf_devops__Environment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Error Log",
+          "validFor": null,
+          "value": "LID__Error_Log__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ers_datatableConfig",
+          "validFor": null,
+          "value": "ers_datatableConfig__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evaluation",
+          "validFor": null,
+          "value": "Evaluation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evaluation Staging Table",
+          "validFor": null,
+          "value": "EvaluationStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Event",
+          "validFor": null,
+          "value": "Event"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exception",
+          "validFor": null,
+          "value": "Exception__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expertise",
+          "validFor": null,
+          "value": "Expertise__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed Item",
+          "validFor": null,
+          "value": "FeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Flow Personal Configuration",
+          "validFor": null,
+          "value": "FlowPersonalConfiguration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FlowTableViewDefinition",
+          "validFor": null,
+          "value": "FlowTableViewDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Graphics Pack Example",
+          "validFor": null,
+          "value": "Graphics_Pack_Example__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Group",
+          "validFor": null,
+          "value": "CollaborationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hidden Remote Change",
+          "validFor": null,
+          "value": "sf_devops__Hidden_Remote_Change__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hotel Bill",
+          "validFor": null,
+          "value": "Hotel_Bill__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Image",
+          "validFor": null,
+          "value": "Image"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IntacctGL",
+          "validFor": null,
+          "value": "IntacctGL__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Integration Log",
+          "validFor": null,
+          "value": "Integration_Log__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invitation",
+          "validFor": null,
+          "value": "Invitation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invitation Person",
+          "validFor": null,
+          "value": "Invitation_Person__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead",
+          "validFor": null,
+          "value": "Lead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LF Book Editor/Author",
+          "validFor": null,
+          "value": "Publication_Role__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LF Staging Contact",
+          "validFor": null,
+          "value": "LF_Staging_Contact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LF Web Contributor",
+          "validFor": null,
+          "value": "LF_Web_Contributor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location",
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location Trust Measure",
+          "validFor": null,
+          "value": "LocationTrustMeasure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log",
+          "validFor": null,
+          "value": "LID__Log__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Merge Result",
+          "validFor": null,
+          "value": "sf_devops__Merge_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message Destination",
+          "validFor": null,
+          "value": "slackv2__Message_Destination__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MyList",
+          "validFor": null,
+          "value": "MyList__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MyList Conferee",
+          "validFor": null,
+          "value": "MyList_Conferee__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Notes",
+          "validFor": null,
+          "value": "Notes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Object Activity",
+          "validFor": null,
+          "value": "sf_devops__Object_Activity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OpActivity",
+          "validFor": null,
+          "value": "OpActivity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity",
+          "validFor": null,
+          "value": "Opportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Contact Role",
+          "validFor": null,
+          "value": "OpportunityContactRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order",
+          "validFor": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Event",
+          "validFor": null,
+          "value": "Other_Event__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Event Participation",
+          "validFor": null,
+          "value": "Other_Event_Participation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Participation Type",
+          "validFor": null,
+          "value": "Participation_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Party Consent",
+          "validFor": null,
+          "value": "PartyConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Payment",
+          "validFor": null,
+          "value": "Payment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "People",
+          "validFor": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PID History",
+          "validFor": null,
+          "value": "PID_History__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pipeline",
+          "validFor": null,
+          "value": "sf_devops__Pipeline__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pipeline Stage",
+          "validFor": null,
+          "value": "sf_devops__Pipeline_Stage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product",
+          "validFor": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Category",
+          "validFor": null,
+          "value": "Program_Category__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Cat Link",
+          "validFor": null,
+          "value": "Program_Cat_Link__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Document",
+          "validFor": null,
+          "value": "Program_Documents__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Exp Report",
+          "validFor": null,
+          "value": "Program_Exp_Report__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Exp Report Line",
+          "validFor": null,
+          "value": "Program_Exp_Report_Line__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Invite Settings",
+          "validFor": null,
+          "value": "Program_Invite_Settings__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Member Staging Table",
+          "validFor": null,
+          "value": "ProgramMemberStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Payment",
+          "validFor": null,
+          "value": "Program_Payments__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Staging Table",
+          "validFor": null,
+          "value": "ProgramStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project",
+          "validFor": null,
+          "value": "sf_devops__Project__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal Author",
+          "validFor": null,
+          "value": "Proposal_Author__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Publication",
+          "validFor": null,
+          "value": "Publication__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quip Document from List View",
+          "validFor": null,
+          "value": "ContentDocumentListViewMapping"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recent Channel",
+          "validFor": null,
+          "value": "slackv2__Recent_Channel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Region",
+          "validFor": null,
+          "value": "Region__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Remote Change",
+          "validFor": null,
+          "value": "sf_devops__Remote_Change__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repository",
+          "validFor": null,
+          "value": "sf_devops__Repository__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment Group",
+          "validFor": null,
+          "value": "ServiceAppointmentGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session",
+          "validFor": null,
+          "value": "Session__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session Readings",
+          "validFor": null,
+          "value": "Session_Readings__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Setup Data",
+          "validFor": null,
+          "value": "LID__Setup_Data__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Setup Data",
+          "validFor": null,
+          "value": "slackv2__Setup_Data__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slack Auth",
+          "validFor": null,
+          "value": "slackv2__Slack_Auth__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slack Message",
+          "validFor": null,
+          "value": "slackv2__Slack_Message__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Post",
+          "validFor": null,
+          "value": "SocialPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source Member Reference",
+          "validFor": null,
+          "value": "sf_devops__Source_Member_Reference__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSCard",
+          "validFor": null,
+          "value": "sansancard__SSCard__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sticker",
+          "validFor": null,
+          "value": "Sticker__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Submit Component",
+          "validFor": null,
+          "value": "sf_devops__Submit_Component__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription",
+          "validFor": null,
+          "value": "slackv2__Subscription__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription Condition",
+          "validFor": null,
+          "value": "slackv2__Subscription_Condition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription Object",
+          "validFor": null,
+          "value": "slackv2__Subscription_Object__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription Type",
+          "validFor": null,
+          "value": "slackv2__Subscription_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swarm",
+          "validFor": null,
+          "value": "Swarm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sync History",
+          "validFor": null,
+          "value": "Sync_History__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Task",
+          "validFor": null,
+          "value": "Task"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMap Data",
+          "validFor": null,
+          "value": "TMap_Data__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer Metadata",
+          "validFor": null,
+          "value": "sansancard__TransferMeta__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User",
+          "validFor": null,
+          "value": "User"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User OAuth",
+          "validFor": null,
+          "value": "LID__User_OAuth__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VCS Event",
+          "validFor": null,
+          "value": "sf_devops__Vcs_Event__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Web Cart Document",
+          "validFor": null,
+          "value": "WebCartDocument"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Item",
+          "validFor": null,
+          "value": "sf_devops__Work_Item__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Item Promote",
+          "validFor": null,
+          "value": "sf_devops__Work_Item_Promote__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Procedure",
+          "validFor": null,
+          "value": "WorkProcedure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Procedure Step",
+          "validFor": null,
+          "value": "WorkProcedureStep"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Macro",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "MacroHistory",
+      "deprecatedAndHidden": false,
+      "field": "MacroId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Histories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "MacroInstruction",
+      "deprecatedAndHidden": false,
+      "field": "MacroId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "MacroShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MacroUsage",
+      "deprecatedAndHidden": false,
+      "field": "MacroId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "Macro",
+  "queryable": true
+}

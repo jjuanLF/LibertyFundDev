@@ -20,6 +20,7 @@ global class Task {
     global User Owner;
     global Id OwnerId;
     global String Description;
+    global String Type;
     global Boolean IsDeleted;
     global Account Account;
     global Id AccountId;
@@ -54,6 +55,7 @@ global class Task {
     global String TaskSubtype;
     global Datetime CompletedDateTime;
     global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContentDocumentLink> ContentDocumentLinks;

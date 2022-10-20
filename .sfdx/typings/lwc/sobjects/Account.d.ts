@@ -22,6 +22,14 @@ declare module "@salesforce/schema/Account.Type" {
   const Type:string;
   export default Type;
 }
+declare module "@salesforce/schema/Account.RecordType" {
+  const RecordType:any;
+  export default RecordType;
+}
+declare module "@salesforce/schema/Account.RecordTypeId" {
+  const RecordTypeId:any;
+  export default RecordTypeId;
+}
 declare module "@salesforce/schema/Account.Parent" {
   const Parent:any;
   export default Parent;
@@ -214,43 +222,79 @@ declare module "@salesforce/schema/Account.JigsawCompanyId" {
   const JigsawCompanyId:string;
   export default JigsawCompanyId;
 }
-declare module "@salesforce/schema/Account.CleanStatus" {
-  const CleanStatus:string;
-  export default CleanStatus;
-}
 declare module "@salesforce/schema/Account.AccountSource" {
   const AccountSource:string;
   export default AccountSource;
-}
-declare module "@salesforce/schema/Account.DunsNumber" {
-  const DunsNumber:string;
-  export default DunsNumber;
-}
-declare module "@salesforce/schema/Account.Tradestyle" {
-  const Tradestyle:string;
-  export default Tradestyle;
-}
-declare module "@salesforce/schema/Account.NaicsCode" {
-  const NaicsCode:string;
-  export default NaicsCode;
-}
-declare module "@salesforce/schema/Account.NaicsDesc" {
-  const NaicsDesc:string;
-  export default NaicsDesc;
-}
-declare module "@salesforce/schema/Account.YearStarted" {
-  const YearStarted:string;
-  export default YearStarted;
 }
 declare module "@salesforce/schema/Account.SicDesc" {
   const SicDesc:string;
   export default SicDesc;
 }
-declare module "@salesforce/schema/Account.DandbCompany" {
-  const DandbCompany:any;
-  export default DandbCompany;
+declare module "@salesforce/schema/Account.Billing_Contact_Email__c" {
+  const Billing_Contact_Email__c:string;
+  export default Billing_Contact_Email__c;
 }
-declare module "@salesforce/schema/Account.DandbCompanyId" {
-  const DandbCompanyId:any;
-  export default DandbCompanyId;
+declare module "@salesforce/schema/Account.Billing_Contact__c" {
+  const Billing_Contact__c:string;
+  export default Billing_Contact__c;
+}
+declare module "@salesforce/schema/Account.Billing_Same_as_Shipping__c" {
+  const Billing_Same_as_Shipping__c:boolean;
+  export default Billing_Same_as_Shipping__c;
+}
+declare module "@salesforce/schema/Account.Hotel_URL__c" {
+  const Hotel_URL__c:string;
+  export default Hotel_URL__c;
+}
+declare module "@salesforce/schema/Account.LF_Account_Code__c" {
+  const LF_Account_Code__c:string;
+  export default LF_Account_Code__c;
+}
+declare module "@salesforce/schema/Account.LF_Vendor_ID__c" {
+  const LF_Vendor_ID__c:string;
+  export default LF_Vendor_ID__c;
+}
+declare module "@salesforce/schema/Account.LF_Vendor_Number__c" {
+  const LF_Vendor_Number__c:string;
+  export default LF_Vendor_Number__c;
+}
+declare module "@salesforce/schema/Account.Org_Desc__c" {
+  const Org_Desc__c:string;
+  export default Org_Desc__c;
+}
+declare module "@salesforce/schema/Account.Org_Type__c" {
+  const Org_Type__c:string;
+  export default Org_Type__c;
+}
+declare module "@salesforce/schema/Account.Vendor_Contact_Cell__c" {
+  const Vendor_Contact_Cell__c:string;
+  export default Vendor_Contact_Cell__c;
+}
+declare module "@salesforce/schema/Account.Vendor_Contact_Email__c" {
+  const Vendor_Contact_Email__c:string;
+  export default Vendor_Contact_Email__c;
+}
+declare module "@salesforce/schema/Account.Vendor_Contact__c" {
+  const Vendor_Contact__c:string;
+  export default Vendor_Contact__c;
+}
+declare module "@salesforce/schema/Account.Billing_Contact_Phone__c" {
+  const Billing_Contact_Phone__c:string;
+  export default Billing_Contact_Phone__c;
+}
+declare module "@salesforce/schema/Account.Billing_Contact_FAX__c" {
+  const Billing_Contact_FAX__c:string;
+  export default Billing_Contact_FAX__c;
+}
+declare module "@salesforce/schema/Account.Shipping_Address_Display__c" {
+  const Shipping_Address_Display__c:string;
+  export default Shipping_Address_Display__c;
+}
+declare module "@salesforce/schema/Account.Affiliation_Name__c" {
+  const Affiliation_Name__c:string;
+  export default Affiliation_Name__c;
+}
+declare module "@salesforce/schema/Account.LID__LinkedIn_Company_Id__c" {
+  const LID__LinkedIn_Company_Id__c:string;
+  export default LID__LinkedIn_Company_Id__c;
 }

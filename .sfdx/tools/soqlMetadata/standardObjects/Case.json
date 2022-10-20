@@ -135,6 +135,45 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
+      "label": "Source ID",
+      "name": "SourceId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "EmailMessage",
+        "SocialPost"
+      ],
+      "relationshipName": "Source",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Business Hours ID",
+      "name": "BusinessHoursId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "BusinessHours"
+      ],
+      "relationshipName": "BusinessHours",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
       "label": "Parent Case ID",
       "name": "ParentId",
       "nillable": true,
@@ -229,43 +268,48 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Mechanical",
+          "label": "Problem",
           "validFor": null,
-          "value": "Mechanical"
+          "value": "Problem"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Electrical",
+          "label": "Feature Request",
           "validFor": null,
-          "value": "Electrical"
+          "value": "Feature Request"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Electronic",
+          "label": "Question",
           "validFor": null,
-          "value": "Electronic"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Structural",
-          "validFor": null,
-          "value": "Structural"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Other",
-          "validFor": null,
-          "value": "Other"
+          "value": "Question"
         }
       ],
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
       "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": "RecordType",
+      "sortable": true,
+      "type": "reference"
     },
     {
       "aggregatable": true,
@@ -289,9 +333,37 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Working",
+          "label": "Fix In Progress",
           "validFor": null,
-          "value": "Working"
+          "value": "Fix In Progress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Under Consideration",
+          "validFor": null,
+          "value": "Under Consideration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prioritized",
+          "validFor": null,
+          "value": "Prioritized"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Build in Progress",
+          "validFor": null,
+          "value": "Build in Progress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "On Hold",
+          "validFor": null,
+          "value": "On Hold"
         },
         {
           "active": true,
@@ -303,9 +375,16 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Closed",
+          "label": "Closed - Resolved",
           "validFor": null,
-          "value": "Closed"
+          "value": "Closed - Resolved"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed - Rejected/Unresolved",
+          "validFor": null,
+          "value": "Closed - Rejected/Unresolved"
         }
       ],
       "referenceTo": [],
@@ -328,51 +407,37 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Installation",
+          "label": "User didn't attend training",
           "validFor": null,
-          "value": "Installation"
+          "value": "User didn't attend training"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Equipment Complexity",
+          "label": "Complex functionality",
           "validFor": null,
-          "value": "Equipment Complexity"
+          "value": "Complex functionality"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Performance",
+          "label": "Existing problem",
           "validFor": null,
-          "value": "Performance"
+          "value": "Existing problem"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Breakdown",
+          "label": "Instructions not clear",
           "validFor": null,
-          "value": "Breakdown"
+          "value": "Instructions not clear"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Equipment Design",
+          "label": "New problem",
           "validFor": null,
-          "value": "Equipment Design"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Feedback",
-          "validFor": null,
-          "value": "Feedback"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Other",
-          "validFor": null,
-          "value": "Other"
+          "value": "New problem"
         }
       ],
       "referenceTo": [],
@@ -395,13 +460,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Phone",
-          "validFor": null,
-          "value": "Phone"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Email",
           "validFor": null,
           "value": "Email"
@@ -409,9 +467,286 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Web",
+          "label": "Meeting/In-Person",
           "validFor": null,
-          "value": "Web"
+          "value": "Meeting/In-Person"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Feedback Button",
+          "validFor": null,
+          "value": "User Feedback Button"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Language",
+      "name": "Language",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "English",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "German",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "French",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italian",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japanese",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swedish",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Korean",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Traditional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Simplified)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portuguese (Brazil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dutch",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danish",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thai",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnish",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russian",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish (Mexico)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norwegian",
+          "validFor": null,
+          "value": "no"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Hungarian",
+          "validFor": null,
+          "value": "hu"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Polish",
+          "validFor": null,
+          "value": "pl"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Czech",
+          "validFor": null,
+          "value": "cs"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Turkish",
+          "validFor": null,
+          "value": "tr"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Indonesian",
+          "validFor": null,
+          "value": "in"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Romanian",
+          "validFor": null,
+          "value": "ro"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Vietnamese",
+          "validFor": null,
+          "value": "vi"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Ukrainian",
+          "validFor": null,
+          "value": "uk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hebrew",
+          "validFor": null,
+          "value": "iw"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Greek",
+          "validFor": null,
+          "value": "el"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Bulgarian",
+          "validFor": null,
+          "value": "bg"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "English (UK)",
+          "validFor": null,
+          "value": "en_GB"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Arabic",
+          "validFor": null,
+          "value": "ar"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Slovak",
+          "validFor": null,
+          "value": "sk"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Portuguese (European)",
+          "validFor": null,
+          "value": "pt_PT"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Croatian",
+          "validFor": null,
+          "value": "hr"
+        },
+        {
+          "active": false,
+          "defaultValue": false,
+          "label": "Slovene",
+          "validFor": null,
+          "value": "sl"
         }
       ],
       "referenceTo": [],
@@ -711,7 +1046,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Contact Fax",
+      "label": "People Fax",
       "name": "ContactFax",
       "nillable": true,
       "picklistValues": [],
@@ -770,6 +1105,42 @@
       "relationshipName": null,
       "sortable": true,
       "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Program",
+      "name": "Program__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Campaign"
+      ],
+      "relationshipName": "Program__r",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Automatically populated when a user submits feedback from the Give Feedback flow.",
+      "label": "Page Submitted From",
+      "name": "Page_Submitted_From__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
     }
   ],
   "label": "Case",
@@ -792,6 +1163,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
       "restrictedDelete": false
     },
     {
@@ -1105,6 +1486,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "SocialPost",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Posts",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "Task",
       "deprecatedAndHidden": false,
@@ -1132,6 +1523,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "slackv2__Slack_Message__c",
+      "deprecatedAndHidden": false,
+      "field": "slackv2__Case__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "slackv2__Slack_Messages__r",
       "restrictedDelete": false
     }
   ],

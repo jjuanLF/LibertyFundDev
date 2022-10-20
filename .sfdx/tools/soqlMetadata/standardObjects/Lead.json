@@ -130,15 +130,39 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Prof.",
+          "label": "Mx.",
           "validFor": null,
-          "value": "Prof."
+          "value": "Mx."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Professor",
+          "validFor": null,
+          "value": "Professor"
         }
       ],
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
       "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Middle Name",
+      "name": "MiddleName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     },
     {
       "aggregatable": true,
@@ -156,6 +180,25 @@
       "relationshipName": null,
       "sortable": true,
       "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": "RecordType",
+      "sortable": true,
+      "type": "reference"
     },
     {
       "aggregatable": true,
@@ -556,16 +599,16 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Web",
+          "label": "LinkedIn",
           "validFor": null,
-          "value": "Web"
+          "value": "LinkedIn"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Phone Inquiry",
+          "label": "Other",
           "validFor": null,
-          "value": "Phone Inquiry"
+          "value": "Other"
         },
         {
           "active": true,
@@ -577,6 +620,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Phone Inquiry",
+          "validFor": null,
+          "value": "Phone Inquiry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Purchased List",
           "validFor": null,
           "value": "Purchased List"
@@ -584,9 +634,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Other",
+          "label": "Web",
           "validFor": null,
-          "value": "Other"
+          "value": "Web"
         }
       ],
       "referenceTo": [],
@@ -983,6 +1033,23 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
+      "label": "Email Opt Out",
+      "name": "HasOptedOutOfEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
       "label": "Converted",
       "name": "IsConverted",
       "nillable": false,
@@ -1190,6 +1257,40 @@
       "type": "date"
     },
     {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Do Not Call",
+      "name": "DoNotCall",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fax Opt Out",
+      "name": "HasOptedOutOfFax",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
       "aggregatable": true,
       "custom": false,
       "defaultValue": null,
@@ -1231,6 +1332,23 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
+      "label": "Last Transfer Date",
+      "name": "LastTransferDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
       "label": "Data.com Key",
       "name": "Jigsaw",
       "nillable": true,
@@ -1256,116 +1374,6 @@
       "relationshipName": "JigsawContact",
       "sortable": true,
       "type": "string"
-    },
-    {
-      "aggregatable": true,
-      "custom": false,
-      "defaultValue": null,
-      "extraTypeInfo": null,
-      "filterable": true,
-      "groupable": true,
-      "inlineHelpText": null,
-      "label": "Clean Status",
-      "name": "CleanStatus",
-      "nillable": true,
-      "picklistValues": [
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "In Sync",
-          "validFor": null,
-          "value": "Matched"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Different",
-          "validFor": null,
-          "value": "Different"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Reviewed",
-          "validFor": null,
-          "value": "Acknowledged"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Not Found",
-          "validFor": null,
-          "value": "NotFound"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Inactive",
-          "validFor": null,
-          "value": "Inactive"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Not Compared",
-          "validFor": null,
-          "value": "Pending"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Select Match",
-          "validFor": null,
-          "value": "SelectMatch"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Skipped",
-          "validFor": null,
-          "value": "Skipped"
-        }
-      ],
-      "referenceTo": [],
-      "relationshipName": null,
-      "sortable": true,
-      "type": "picklist"
-    },
-    {
-      "aggregatable": true,
-      "custom": false,
-      "defaultValue": null,
-      "extraTypeInfo": null,
-      "filterable": true,
-      "groupable": true,
-      "inlineHelpText": null,
-      "label": "Company D-U-N-S Number",
-      "name": "CompanyDunsNumber",
-      "nillable": true,
-      "picklistValues": [],
-      "referenceTo": [],
-      "relationshipName": null,
-      "sortable": true,
-      "type": "string"
-    },
-    {
-      "aggregatable": true,
-      "custom": false,
-      "defaultValue": null,
-      "extraTypeInfo": null,
-      "filterable": true,
-      "groupable": true,
-      "inlineHelpText": null,
-      "label": "D&B Company ID",
-      "name": "DandbCompanyId",
-      "nillable": true,
-      "picklistValues": [],
-      "referenceTo": [
-        "DandBCompany"
-      ],
-      "relationshipName": "DandbCompany",
-      "sortable": true,
-      "type": "reference"
     },
     {
       "aggregatable": true,
@@ -1419,6 +1427,193 @@
       "relationshipName": "Individual",
       "sortable": true,
       "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Region",
+      "name": "Region__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Name Sort Key",
+      "name": "Name_Sort_Key__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "TMap Indicator",
+      "name": "TMap_Indicator__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "TMap Image",
+      "name": "TMap_Image__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "LinkedIn Company Id",
+      "name": "LID__LinkedIn_Company_Id__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "LinkedIn Member Token",
+      "name": "LID__LinkedIn_Member_Token__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created by Scan to Salesforce",
+      "name": "sansancard__CreatedByScanToSalesforce__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Lead Submission Note",
+      "name": "Lead_Submission_Note__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Affiliate",
+      "name": "Affiliate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Strategic Lead?",
+      "name": "Strategic_Lead__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Strategic Lead Date",
+      "name": "Strategic_Lead_Date__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
     }
   ],
   "label": "Lead",
@@ -1451,6 +1646,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
       "restrictedDelete": false
     },
     {
@@ -1675,16 +1880,6 @@
     },
     {
       "cascadeDelete": true,
-      "childSObject": "LeadCleanInfo",
-      "deprecatedAndHidden": false,
-      "field": "LeadId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "LeadCleanInfos",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
       "childSObject": "LeadFeed",
       "deprecatedAndHidden": false,
       "field": "ParentId",
@@ -1724,6 +1919,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "MyList_Conferee__c",
+      "deprecatedAndHidden": false,
+      "field": "Lead__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Suggestion_Lists2__r",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "Note",
       "deprecatedAndHidden": false,
@@ -1751,26 +1956,6 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "OpenActivities",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": false,
-      "childSObject": "OutgoingEmail",
-      "deprecatedAndHidden": false,
-      "field": "WhoId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": null,
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": false,
-      "childSObject": "OutgoingEmailRelation",
-      "deprecatedAndHidden": false,
-      "field": "RelationId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "OutgoingEmailRelations",
       "restrictedDelete": false
     },
     {
@@ -1811,6 +1996,36 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "RecordActionHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "SocialPersona",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Personas",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SocialPost",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Posts",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TMap_Data__c",
+      "deprecatedAndHidden": false,
+      "field": "Lead__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "TMap_Data__r",
       "restrictedDelete": false
     },
     {
@@ -1861,6 +2076,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "PersonRecord",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "slackv2__Slack_Message__c",
+      "deprecatedAndHidden": false,
+      "field": "slackv2__Lead__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "slackv2__Slack_Messages__r",
       "restrictedDelete": false
     }
   ],
