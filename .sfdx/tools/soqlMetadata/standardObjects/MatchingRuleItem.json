@@ -2185,6 +2185,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "FullName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "FullName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Future_Conferences"
         },
         {
@@ -2808,6 +2822,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "MergeContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Message"
         },
         {
@@ -2872,6 +2893,13 @@
           "label": null,
           "validFor": null,
           "value": "MimeType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Mobile"
         },
         {
           "active": true,
@@ -3684,6 +3712,13 @@
           "label": null,
           "validFor": null,
           "value": "Person_Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Phone"
         },
         {
           "active": true,

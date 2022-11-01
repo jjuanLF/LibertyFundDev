@@ -59,6 +59,12 @@ global class ContactStagingTable__c {
     global String Assistant_Phone__c;
     global String Assistant_Email__c;
     global String Address_Instructions__c;
+    global String FullName__c;
+    global Contact MergeContactId__r;
+    global Id MergeContactId__c;
+    global String Mobile__c;
+    global String Phone__c;
+    global String MergeFields__c;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;

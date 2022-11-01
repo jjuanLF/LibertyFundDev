@@ -156,6 +156,7 @@ global class ContactChangeEvent {
     global Boolean DoNotContact__c;
     global Account HouseholdId__c;
     global Account PrimaryAffiliationId__c;
+    global String FullName__c;
 
     global ContactChangeEvent () 
     {

@@ -598,3 +598,7 @@ declare module "@salesforce/schema/Contact.PrimaryAffiliationId__c" {
   const PrimaryAffiliationId__c:any;
   export default PrimaryAffiliationId__c;
 }
+declare module "@salesforce/schema/Contact.FullName__c" {
+  const FullName__c:string;
+  export default FullName__c;
+}

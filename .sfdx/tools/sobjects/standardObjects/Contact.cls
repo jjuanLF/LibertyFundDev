@@ -171,6 +171,7 @@ global class Contact {
     global Id HouseholdId__c;
     global Account PrimaryAffiliationId__r;
     global Id PrimaryAffiliationId__c;
+    global String FullName__c;
     global List<AcceptedEventRelation> AcceptedEventRelations;
     global List<AccountContactRelation> AccountContactRelations;
     global List<AccountContactRole> AccountContactRoles;
@@ -195,6 +196,7 @@ global class Contact {
     global List<ContactHistory> Histories;
     global List<ContactRequest> ContactRequests;
     global List<ContactShare> Shares;
+    global List<ContactStagingTable__c> Imported_Contacts__r;
     global List<ContentDocumentLink> ContentDocumentLinks;
     global List<Contract> ContractsSigned;
     global List<ContractContactRole> ContractContactRoles;

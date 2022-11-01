@@ -3530,6 +3530,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "TriggerHandlerFunction__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "TwoFactorTempCode"
         },
         {
@@ -20044,6 +20051,55 @@
           "label": null,
           "validFor": null,
           "value": "Topic.TalkingAbout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.DeveloperName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.Label"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.MasterLabel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.NamespacePrefix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.QualifiedApiName"
         },
         {
           "active": true,
@@ -37401,6 +37457,55 @@
           "label": null,
           "validFor": null,
           "value": "Topic.TalkingAbout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.DeveloperName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.Label"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.MasterLabel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.NamespacePrefix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TriggerHandlerFunction__mdt.QualifiedApiName"
         },
         {
           "active": true,

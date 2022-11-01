@@ -198,3 +198,27 @@ declare module "@salesforce/schema/ContactStagingTable__c.Address_Instructions__
   const Address_Instructions__c:string;
   export default Address_Instructions__c;
 }
+declare module "@salesforce/schema/ContactStagingTable__c.FullName__c" {
+  const FullName__c:string;
+  export default FullName__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.MergeContactId__r" {
+  const MergeContactId__r:any;
+  export default MergeContactId__r;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.MergeContactId__c" {
+  const MergeContactId__c:any;
+  export default MergeContactId__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.Mobile__c" {
+  const Mobile__c:string;
+  export default Mobile__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.Phone__c" {
+  const Phone__c:string;
+  export default Phone__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.MergeFields__c" {
+  const MergeFields__c:string;
+  export default MergeFields__c;
+}

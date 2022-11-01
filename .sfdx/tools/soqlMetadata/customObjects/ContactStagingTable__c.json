@@ -62,7 +62,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Contact Staging Number",
+      "label": "Imported Contact",
       "name": "Name",
       "nillable": false,
       "picklistValues": [],
@@ -277,7 +277,7 @@
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
-      "type": "string"
+      "type": "email"
     },
     {
       "aggregatable": true,
@@ -362,7 +362,7 @@
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
-      "type": "string"
+      "type": "email"
     },
     {
       "aggregatable": true,
@@ -379,7 +379,7 @@
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
-      "type": "string"
+      "type": "email"
     },
     {
       "aggregatable": true,
@@ -396,7 +396,7 @@
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
-      "type": "string"
+      "type": "email"
     },
     {
       "aggregatable": true,
@@ -634,7 +634,7 @@
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
-      "type": "string"
+      "type": "email"
     },
     {
       "aggregatable": true,
@@ -790,9 +790,96 @@
       "relationshipName": null,
       "sortable": false,
       "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Full Name",
+      "name": "FullName__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Merge Contact",
+      "name": "MergeContactId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": "MergeContactId__r",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mobile",
+      "name": "Mobile__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Phone",
+      "name": "Phone__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "MergeFields",
+      "name": "MergeFields__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
     }
   ],
-  "label": "Contact Staging Table",
+  "label": "Imported Contact",
   "childRelationships": [
     {
       "cascadeDelete": true,

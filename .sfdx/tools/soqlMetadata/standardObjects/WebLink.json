@@ -1280,6 +1280,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "TriggerHandlerFunction__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "User"
         },
         {

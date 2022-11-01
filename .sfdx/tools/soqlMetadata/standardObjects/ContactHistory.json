@@ -419,6 +419,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Full Name",
+          "validFor": null,
+          "value": "FullName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Future Conferences",
           "validFor": null,
           "value": "Future_Conferences__c"

@@ -321,7 +321,7 @@
       "type": "boolean"
     }
   ],
-  "label": "Share: Contact Staging Table",
+  "label": "Share: Imported Contact",
   "childRelationships": [],
   "custom": false,
   "name": "ContactStagingTable__Share",

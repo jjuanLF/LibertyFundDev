@@ -44985,6 +44985,27 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "runtime_cdp:dataShareTargetConnectionDetails"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_cdp:dataShareTargetDeleteAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_cdp:dataShareTargetDeleteModal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "runtime_cdp:dataShareTargetNewAction"
         },
         {
@@ -53301,6 +53322,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "runtime_sales_easy:easyHomeDesktopTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "runtime_sales_easy:emptyContent"
         },
         {
@@ -53330,6 +53358,13 @@
           "label": null,
           "validFor": null,
           "value": "runtime_sales_easy:objectHomeDesktop"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_sales_easy:spotlight"
         },
         {
           "active": true,
@@ -121422,6 +121457,27 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "runtime_cdp:dataShareTargetConnectionDetails"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_cdp:dataShareTargetDeleteAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_cdp:dataShareTargetDeleteModal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "runtime_cdp:dataShareTargetNewAction"
         },
         {
@@ -129738,6 +129794,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "runtime_sales_easy:easyHomeDesktopTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "runtime_sales_easy:emptyContent"
         },
         {
@@ -129767,6 +129830,13 @@
           "label": null,
           "validFor": null,
           "value": "runtime_sales_easy:objectHomeDesktop"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_sales_easy:spotlight"
         },
         {
           "active": true,

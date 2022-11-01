@@ -2914,6 +2914,23 @@
       "relationshipName": "PrimaryAffiliationId__r",
       "sortable": true,
       "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Full Name",
+      "name": "FullName__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
   "label": "People",
@@ -3246,6 +3263,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactStagingTable__c",
+      "deprecatedAndHidden": false,
+      "field": "MergeContactId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Imported_Contacts__r",
       "restrictedDelete": false
     },
     {

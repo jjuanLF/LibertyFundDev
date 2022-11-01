@@ -3152,6 +3152,10 @@
     "custom": false
   },
   {
+    "name": "TriggerHandlerFunction__mdt",
+    "custom": true
+  },
+  {
     "name": "UiFormulaCriterion",
     "custom": false
   },

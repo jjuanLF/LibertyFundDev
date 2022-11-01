@@ -512,13 +512,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Contact Staging Table",
-          "validFor": null,
-          "value": "ContactStagingTable__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Contract",
           "validFor": null,
           "value": "Contract"
@@ -690,6 +683,13 @@
           "label": "Image",
           "validFor": null,
           "value": "Image"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Imported Contact",
+          "validFor": null,
+          "value": "ContactStagingTable__c"
         },
         {
           "active": true,

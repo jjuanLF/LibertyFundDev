@@ -186,3 +186,23 @@ declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.Address_Inst
   const Address_Instructions__c:string;
   export default Address_Instructions__c;
 }
+declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.FullName__c" {
+  const FullName__c:string;
+  export default FullName__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.MergeContactId__c" {
+  const MergeContactId__c:any;
+  export default MergeContactId__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.Mobile__c" {
+  const Mobile__c:string;
+  export default Mobile__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.Phone__c" {
+  const Phone__c:string;
+  export default Phone__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.MergeFields__c" {
+  const MergeFields__c:string;
+  export default MergeFields__c;
+}

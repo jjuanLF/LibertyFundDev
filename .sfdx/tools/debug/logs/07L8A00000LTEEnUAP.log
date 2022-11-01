@@ -1,0 +1,892 @@
+56.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,FINER;WAVE,INFO;WORKFLOW,INFO
+17:38:45.0 (223295)|USER_INFO|[EXTERNAL]|0054S000000JwFC|jason.juan@libertyfund.org.jason|(GMT-04:00) Eastern Daylight Time (America/Indiana/Indianapolis)|GMT-04:00
+17:38:45.0 (286120)|EXECUTION_STARTED
+17:38:45.0 (293877)|CODE_UNIT_STARTED|[EXTERNAL]|apex://ContactStagingController/ACTION$convertContact
+17:38:45.0 (968436)|CODE_UNIT_STARTED|[EXTERNAL]|01p8A00000H3HZh|ContactStagingController.convertContact()
+17:38:45.0 (1264742)|HEAP_ALLOCATE|[79]|Bytes:3
+17:38:45.0 (1353831)|HEAP_ALLOCATE|[84]|Bytes:152
+17:38:45.0 (1385285)|HEAP_ALLOCATE|[399]|Bytes:408
+17:38:45.0 (1421234)|HEAP_ALLOCATE|[412]|Bytes:408
+17:38:45.0 (1455974)|HEAP_ALLOCATE|[520]|Bytes:48
+17:38:45.0 (1496554)|HEAP_ALLOCATE|[139]|Bytes:6
+17:38:45.0 (1581041)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+17:38:45.0 (1596617)|METHOD_ENTRY|[1]|01p8A00000H3HZh|ContactStagingController.ContactStagingController()
+17:38:45.0 (1612359)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (1620519)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (1703516)|HEAP_ALLOCATE|[52]|Bytes:5
+17:38:45.0 (1743358)|HEAP_ALLOCATE|[58]|Bytes:5
+17:38:45.0 (1757533)|HEAP_ALLOCATE|[66]|Bytes:7
+17:38:45.0 (1794958)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:38:45.0 (1814816)|METHOD_EXIT|[1]|ContactStagingController
+17:38:45.0 (1835516)|HEAP_ALLOCATE|[20]|Bytes:5
+17:38:45.0 (1843064)|STATEMENT_EXECUTE|[19]
+17:38:45.0 (1849115)|STATEMENT_EXECUTE|[20]
+17:38:45.0 (1852531)|STATEMENT_EXECUTE|[20]
+17:38:45.0 (1856346)|STATEMENT_EXECUTE|[21]
+17:38:45.0 (2643744)|VARIABLE_SCOPE_BEGIN|[8]|ContactStagingConversion.CONTACTSTAGINGTABLEOBJECT|String|false|true
+17:38:45.0 (3019263)|VARIABLE_SCOPE_BEGIN|[10]|ContactStagingConversion.fieldMappingMap|Map<String,Integration_Staging_Table_Field_Mapping__mdt>|true|true
+17:38:45.0 (3129506)|VARIABLE_SCOPE_BEGIN|[11]|ContactStagingConversion.foreignKeyWrapperMap|Map<String,ContactStagingConversion.ForeignKeyWrapper>|true|true
+17:38:45.0 (3152903)|VARIABLE_SCOPE_BEGIN|[9]|ContactStagingConversion.soqlQuery|String|false|true
+17:38:45.0 (3186686)|HEAP_ALLOCATE|[21]|Bytes:17
+17:38:45.0 (3200114)|HEAP_ALLOCATE|[21]|Bytes:16
+17:38:45.0 (3211231)|HEAP_ALLOCATE|[21]|Bytes:22
+17:38:45.0 (3297315)|VARIABLE_ASSIGNMENT|[21]|ContactStagingConversion.CONTACTSTAGINGTABLEOBJECT|"ContactStagingTable_ (2 more) ..."
+17:38:45.0 (3330555)|METHOD_ENTRY|[1]|01p8A00000H3INm|ContactStagingConversion.ContactStagingConversion()
+17:38:45.0 (3343514)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (3353438)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (3367811)|SYSTEM_MODE_ENTER|true
+17:38:45.0 (3382132)|HEAP_ALLOCATE|[9]|Bytes:5
+17:38:45.0 (3393554)|STATEMENT_EXECUTE|[2]
+17:38:45.0 (3397187)|STATEMENT_EXECUTE|[9]
+17:38:45.0 (3404350)|HEAP_ALLOCATE|[9]|Bytes:59
+17:38:45.0 (3433661)|VARIABLE_ASSIGNMENT|[9]|ContactStagingConversion.soqlQuery|"SELECT Id, $ FROM *  (39 more) ..."
+17:38:45.0 (3445300)|STATEMENT_EXECUTE|[10]
+17:38:45.0 (3468821)|HEAP_ALLOCATE|[10]|Bytes:4
+17:38:45.0 (3557786)|VARIABLE_ASSIGNMENT|[10]|ContactStagingConversion.fieldMappingMap|{}|0x2b81ffdd
+17:38:45.0 (3573503)|STATEMENT_EXECUTE|[11]
+17:38:45.0 (3586366)|HEAP_ALLOCATE|[11]|Bytes:4
+17:38:45.0 (3627178)|VARIABLE_ASSIGNMENT|[11]|ContactStagingConversion.foreignKeyWrapperMap|{}|0x74586b
+17:38:45.0 (3647226)|SYSTEM_MODE_EXIT|true
+17:38:45.0 (3667479)|METHOD_EXIT|[1]|ContactStagingConversion
+17:38:45.0 (3700979)|METHOD_ENTRY|[21]|01p8A00000H3INm|ContactStagingConversion.convertContact()
+17:38:45.0 (3760648)|SYSTEM_MODE_ENTER|true
+17:38:45.0 (3773249)|HEAP_ALLOCATE|[14]|Bytes:5
+17:38:45.0 (3781152)|STATEMENT_EXECUTE|[13]
+17:38:45.0 (3785018)|STATEMENT_EXECUTE|[14]
+17:38:45.0 (3932790)|HEAP_ALLOCATE|[14]|Bytes:4
+17:38:45.0 (4096454)|VARIABLE_SCOPE_BEGIN|[14]|contactList|List<Contact>|true|false
+17:38:45.0 (4123478)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (4150413)|VARIABLE_ASSIGNMENT|[14]|contactList|[]|0x4aaa7bd0
+17:38:45.0 (4166592)|STATEMENT_EXECUTE|[15]
+17:38:45.0 (4887206)|HEAP_ALLOCATE|[15]|Bytes:4
+17:38:45.0 (4915153)|METHOD_ENTRY|[1]|01p8A00000H3HA2|ContactStagingQuery.ContactStagingQuery()
+17:38:45.0 (4938092)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (4947188)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (4959337)|SYSTEM_MODE_ENTER|false
+17:38:45.0 (4972034)|HEAP_ALLOCATE|[15]|Bytes:5
+17:38:45.0 (4984963)|SYSTEM_MODE_EXIT|false
+17:38:45.0 (5003024)|METHOD_EXIT|[1]|ContactStagingQuery
+17:38:45.0 (5025787)|METHOD_ENTRY|[15]|01p8A00000H3HA2|ContactStagingQuery.getContactStagingTable()
+17:38:45.0 (5063781)|SYSTEM_MODE_ENTER|false
+17:38:45.0 (5074080)|HEAP_ALLOCATE|[18]|Bytes:5
+17:38:45.0 (5084753)|STATEMENT_EXECUTE|[17]
+17:38:45.0 (5088653)|STATEMENT_EXECUTE|[18]
+17:38:45.0 (5095799)|HEAP_ALLOCATE|[18]|Bytes:232
+17:38:45.0 (5126398)|HEAP_ALLOCATE|[18]|Bytes:4
+17:38:45.0 (8015470)|SOQL_EXECUTE_BEGIN|[18]|Aggregations:0|SELECT First_Name__c, Last_Name__c, FullName__c, Middle__c, Affiliation_Name__c, Public_Email__c, Correspondence_Email__c, Email01__c, Phone__c, Mobile__c, MergeFields__c, MergeContactId__c, Salutation__c FROM ContactStagingTable__c
+17:38:45.0 (15096163)|SOQL_EXECUTE_END|[18]|Rows:1
+17:38:45.0 (15160085)|HEAP_ALLOCATE|[18]|Bytes:8
+17:38:45.0 (15221584)|HEAP_ALLOCATE|[18]|Bytes:120
+17:38:45.0 (15370691)|HEAP_ALLOCATE|[18]|Bytes:8
+17:38:45.0 (15407432)|SYSTEM_MODE_EXIT|false
+17:38:45.0 (15437601)|METHOD_EXIT|[15]|01p8A00000H3HA2|ContactStagingQuery.getContactStagingTable()
+17:38:45.0 (15464388)|VARIABLE_SCOPE_BEGIN|[15]|contactStagingTableList|List<ContactStagingTable__c>|true|false
+17:38:45.0 (15547304)|VARIABLE_ASSIGNMENT|[15]|contactStagingTableList|[{"First_Name__c":"Test","Last_Name__c":"Test","FullName__c":"TESTTEST","Affiliation_Name__c":"Test","Id":"a178A000002vj4sQAA"}]|0x3f7cb33b
+17:38:45.0 (15567259)|STATEMENT_EXECUTE|[17]
+17:38:45.0 (16350684)|HEAP_ALLOCATE|[17]|Bytes:1
+17:38:45.0 (16395685)|METHOD_ENTRY|[1]|01p8A00000H3IIr|IntegrationStagingTableFieldMappingQuery.IntegrationStagingTableFieldMappingQuery()
+17:38:45.0 (16409387)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (16417898)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (16446788)|HEAP_ALLOCATE|[17]|Bytes:5
+17:38:45.0 (16468747)|METHOD_EXIT|[1]|IntegrationStagingTableFieldMappingQuery
+17:38:45.0 (16499490)|METHOD_ENTRY|[17]|01p8A00000H3IIr|IntegrationStagingTableFieldMappingQuery.IntegrationStagingTableFieldMappingByObject(String)
+17:38:45.0 (16550921)|VARIABLE_SCOPE_BEGIN|[2]|sourceObjectName|String|false|false
+17:38:45.0 (16591014)|VARIABLE_ASSIGNMENT|[2]|sourceObjectName|"ContactStagingTable_ (2 more) ..."
+17:38:45.0 (16609789)|HEAP_ALLOCATE|[5]|Bytes:5
+17:38:45.0 (16622589)|STATEMENT_EXECUTE|[4]
+17:38:45.0 (16626608)|STATEMENT_EXECUTE|[5]
+17:38:45.0 (16658813)|HEAP_ALLOCATE|[5]|Bytes:4
+17:38:45.0 (16686362)|VARIABLE_SCOPE_BEGIN|[5]|fieldMappingMap|Map<String,Integration_Staging_Table_Field_Mapping__mdt>|true|false
+17:38:45.0 (16728073)|VARIABLE_ASSIGNMENT|[5]|fieldMappingMap|{}|0x1819d184
+17:38:45.0 (16743862)|STATEMENT_EXECUTE|[7]
+17:38:45.0 (16751688)|HEAP_ALLOCATE|[7]|Bytes:217
+17:38:45.0 (16775340)|HEAP_ALLOCATE|[7]|Bytes:4
+17:38:45.0 (16786053)|HEAP_ALLOCATE|[7]|Bytes:7
+17:38:45.0 (18478271)|SOQL_EXECUTE_BEGIN|[7]|Aggregations:0|SELECT Id, Source_Object__c, Source_Field__c, Target_Object__c, Target_Field__c, Query_Object__c, Query_Field__c, Truncation_Limit__c FROM Integration_Staging_Table_Field_Mapping__mdt WHERE Source_Object__c = :tmpVar1
+17:38:45.0 (28865382)|SOQL_EXECUTE_END|[7]|Rows:32
+17:38:45.0 (28933326)|HEAP_ALLOCATE|[7]|Bytes:132
+17:38:45.0 (29115074)|HEAP_ALLOCATE|[7]|Bytes:5492
+17:38:45.0 (29230307)|HEAP_ALLOCATE|[7]|Bytes:132
+17:38:45.0 (29263938)|VARIABLE_SCOPE_BEGIN|[7]|integrationStagingTableFieldMappingList|List<Integration_Staging_Table_Field_Mapping__mdt>|true|false
+17:38:45.0 (29320108)|VARIABLE_ASSIGNMENT|[7]|integrationStagingTableFieldMappingList|"List of size 32 too large to display"|0x6097ef0f
+17:38:45.0 (29617662)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (29708823)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (29727074)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (29777666)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa1UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"First_DL_Date__c","Target_Object__c":"Contact","Target_Field__c":"First_DL_Date__c"}|0x8b72e7a
+17:38:45.0 (29792025)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (29795146)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (29898771)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (29939124)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (29957932)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (29968301)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30005451)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa4UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Future_Conferences__ (1 more) ...","Target_Object__c":"Contact","Target_Field__c":"Future_Conferences__ (1 more) ..."}|0x3b501dec
+17:38:45.0 (30017739)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30020489)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30035678)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30056839)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30069447)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30075214)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30103796)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004dKUUAY","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Assistant_Email__c","Target_Object__c":"Contact","Target_Field__c":"Asst_Email_Address__ (1 more) ..."}|0x7f40ae49
+17:38:45.0 (30114980)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30117528)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30129201)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30143441)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30153709)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30161419)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30188116)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZtUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Correspondence_Email (3 more) ...","Target_Object__c":"Contact","Target_Field__c":"Correspondence_Email (3 more) ..."}|0x77a6b034
+17:38:45.0 (30199079)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30201528)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30214062)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30226343)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30237899)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30245166)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30270895)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZuUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"CosponsorPID__c","Target_Object__c":"Contact","Target_Field__c":"CSPid__c"}|0x46539444
+17:38:45.0 (30279429)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30283576)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30292213)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30306044)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30316986)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30322259)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30347067)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aaEUAQ","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"URL__c","Target_Object__c":"Contact","Target_Field__c":"Website__c"}|0x7dd74e1f
+17:38:45.0 (30357583)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30360039)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30370560)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30382512)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30393586)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30400718)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30426432)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZwUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Count_as_Discussion_ (9 more) ...","Target_Object__c":"Contact","Target_Field__c":"Count_as_Disc_Lead__ (1 more) ..."}|0x79f850a
+17:38:45.0 (30436832)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30439248)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30447813)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30462127)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30473975)|HEAP_ALLOCATE|[21]|Bytes:32
+17:38:45.0 (30481180)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30508584)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZzUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"First_Conference__c","Target_Object__c":"Contact","Target_Field__c":"First_Conference__c","Query_Object__c":"Campaign","Query_Field__c":"E_number__c"}|0x457aa2dd
+17:38:45.0 (30518779)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30521463)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30529859)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30543575)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30554558)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30561499)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30584121)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa6UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"LFPID__c","Target_Object__c":"Contact","Target_Field__c":"LFPID__c"}|0x1fd1ef82
+17:38:45.0 (30594457)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30596887)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30607128)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30621232)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30630374)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30637594)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30661831)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa7UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Last_Name__c","Target_Object__c":"Contact","Target_Field__c":"LastName"}|0x5831fdd1
+17:38:45.0 (30671589)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30674046)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30682511)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30696306)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30707408)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30714348)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30737940)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa9UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Person_Type__c","Target_Object__c":"Contact","Target_Field__c":"Person_Type__c"}|0x23fd9408
+17:38:45.0 (30747934)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30750353)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30760746)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30772771)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30784190)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30791371)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30816744)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZvUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Count_as_Director__c","Target_Object__c":"Contact","Target_Field__c":"Count_as_Director__c"}|0x3301b6e0
+17:38:45.0 (30827439)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30830037)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30838394)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (30852960)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (30870411)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (30881534)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (30944972)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aeWUAQ","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Display_Name__c","Target_Object__c":"Contact","Target_Field__c":"Display_Name__c"}|0x233cf2fd
+17:38:45.0 (30964273)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (30969311)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (30991701)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31018026)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31036955)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31050867)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31083730)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZpUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Active_Fellow__c","Target_Object__c":"Contact","Target_Field__c":"Active_Fellow__c"}|0x74345c3e
+17:38:45.0 (31094511)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31096912)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31106209)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31121609)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31140210)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31153094)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31201375)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa0UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"First_Conference_Dat (4 more) ...","Target_Object__c":"Contact","Target_Field__c":"First_Conference_Dat (4 more) ..."}|0x3ba6cb64
+17:38:45.0 (31220397)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31223935)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31239810)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31263699)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31283789)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31295956)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31340451)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa2UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"First_Director_Date_ (2 more) ...","Target_Object__c":"Contact","Target_Field__c":"First_Director_Date_ (2 more) ..."}|0x5aecc46
+17:38:45.0 (31359229)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31363074)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31375735)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31391311)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31404600)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31411888)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31437310)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H8A0000008uLIUAY","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"MergeContactId__c","Target_Object__c":"Contact","Target_Field__c":"Id"}|0x41c16d14
+17:38:45.0 (31454106)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31456474)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31467589)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31480172)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31492232)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31499746)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31524672)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa5UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Intacct_Vendor_ID__c","Target_Object__c":"Contact","Target_Field__c":"Intacct_Vendor_ID__c"}|0x17421cbe
+17:38:45.0 (31540779)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31543463)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31552374)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31567227)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31578798)|HEAP_ALLOCATE|[21]|Bytes:32
+17:38:45.0 (31585647)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31612971)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZqUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Affiliation_Name__c","Target_Object__c":"Contact","Target_Field__c":"AccountId","Query_Object__c":"Account","Query_Field__c":"Name"}|0x1ab208d9
+17:38:45.0 (31624272)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31626664)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31637015)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31650721)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31668245)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31675764)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31703228)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZsUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Conferences_Attended (13 more) ...","Target_Object__c":"Contact","Target_Field__c":"Conferences_Attended (13 more) ..."}|0x698d3b35
+17:38:45.0 (31714104)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31716482)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31725034)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31739027)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31750773)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31758053)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31782338)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa8UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Middle__c","Target_Object__c":"Contact","Target_Field__c":"MiddleName"}|0x236e42dd
+17:38:45.0 (31793717)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31797757)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31806253)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31820310)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31831816)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31837161)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31863950)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004dfhUAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Address_Instructions (3 more) ...","Target_Object__c":"Contact","Target_Field__c":"Address_Notes__c"}|0x24ce1de2
+17:38:45.0 (31874462)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31876916)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31885179)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31899243)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (31910864)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (31926228)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (31955877)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZyUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Fellow_Code__c","Target_Object__c":"Contact","Target_Field__c":"Fellow_Code__c"}|0x2eb03d62
+17:38:45.0 (31966103)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (31968617)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (31977557)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (31992068)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32003466)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32009426)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32035623)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aaDUAQ","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Salutation__c","Target_Object__c":"Contact","Target_Field__c":"Salutation"}|0x2e64ff12
+17:38:45.0 (32046079)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32048480)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32059173)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32071111)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32082519)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32090073)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32117783)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aaCUAQ","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Record_Type_Id__c","Target_Object__c":"Contact","Target_Field__c":"RecordTypeId"}|0x7fcd38a9
+17:38:45.0 (32126741)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32131074)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32141311)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32155202)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32167116)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32172480)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32198044)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aa3UAA","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"First_Name__c","Target_Object__c":"Contact","Target_Field__c":"FirstName"}|0x2b381bbf
+17:38:45.0 (32211155)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32214525)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32231397)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32255199)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32271860)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32284729)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32330131)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZrUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Affiliation_Title__c","Target_Object__c":"Contact","Target_Field__c":"Title"}|0x4cc7897
+17:38:45.0 (32341412)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32343961)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32354203)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32369487)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32382215)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32389916)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32415439)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004dKKUAY","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Assistant_Name__c","Target_Object__c":"Contact","Target_Field__c":"AssistantName"}|0xdd98b73
+17:38:45.0 (32426684)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32429084)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32440239)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32466294)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32483045)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32494103)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32547820)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aZxUAI","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Deceased__c","Target_Object__c":"Contact","Target_Field__c":"Deceased__c"}|0x1bc7e211
+17:38:45.0 (32564264)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32567282)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32580845)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32600732)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32616344)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32626096)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32663505)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aaAUAQ","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Primary_Expertise__c","Target_Object__c":"Contact","Target_Field__c":"Primary_Expertise__c"}|0x7049f735
+17:38:45.0 (32679811)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32685414)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32699181)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32719077)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32735898)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32744797)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32783470)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004aaBUAQ","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Public_Email__c","Target_Object__c":"Contact","Target_Field__c":"Public_Email__c"}|0x1726216b
+17:38:45.0 (32799081)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32802243)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32815658)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32837988)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32855304)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (32866327)|VARIABLE_SCOPE_BEGIN|[22]|integrationStagingTableFieldMapping|Integration_Staging_Table_Field_Mapping__mdt|true|false
+17:38:45.0 (32903654)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|{"Id":"m0H4S0000004dKZUAY","Source_Object__c":"ContactStagingTable_ (2 more) ...","Source_Field__c":"Assistant_Phone__c","Target_Object__c":"Contact","Target_Field__c":"AssistantPhone"}|0x56e5a2ef
+17:38:45.0 (32931456)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (32937499)|STATEMENT_EXECUTE|[24]
+17:38:45.0 (32954287)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (32976225)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (32998544)|VARIABLE_ASSIGNMENT|[22]|integrationStagingTableFieldMapping|null|
+17:38:45.0 (33010753)|STATEMENT_EXECUTE|[30]
+17:38:45.0 (33034212)|METHOD_EXIT|[17]|01p8A00000H3IIr|IntegrationStagingTableFieldMappingQuery.IntegrationStagingTableFieldMappingByObject(String)
+17:38:45.0 (33082299)|VARIABLE_ASSIGNMENT|[17]|ContactStagingConversion.fieldMappingMap|"Map of size 32 too large to display"|0x1819d184
+17:38:45.0 (33343574)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (33378237)|HEAP_ALLOCATE|[21]|Bytes:24
+17:38:45.0 (33393825)|VARIABLE_SCOPE_BEGIN|[21]|contactStagingTable|ContactStagingTable__c|true|false
+17:38:45.0 (33438618)|VARIABLE_ASSIGNMENT|[21]|contactStagingTable|{"First_Name__c":"Test","Last_Name__c":"Test","FullName__c":"TESTTEST","Affiliation_Name__c":"Test","Id":"a178A000002vj4sQAA"}|0x164f424b
+17:38:45.0 (33458281)|STATEMENT_EXECUTE|[21]
+17:38:45.0 (33461909)|STATEMENT_EXECUTE|[22]
+17:38:45.0 (33486322)|HEAP_ALLOCATE|[22]|Bytes:4
+17:38:45.0 (33506744)|VARIABLE_SCOPE_BEGIN|[22]|fieldValueMap|Map<String,ANY>|true|false
+17:38:45.0 (33539765)|VARIABLE_ASSIGNMENT|[22]|fieldValueMap|{}|0x7d2edc52
+17:38:45.0 (33567260)|STATEMENT_EXECUTE|[30]
+17:38:45.0 (33570488)|STATEMENT_EXECUTE|[31]
+17:38:45.0 (33799464)|HEAP_ALLOCATE|[31]|Bytes:24
+17:38:45.0 (34329990)|VARIABLE_ASSIGNMENT|[31]|fieldValueMap|"{Affiliation_Name__c=Test, First_Name__c=Test, FullName__c=TESTTEST, Id=a178A000002vj4sQAA, Last_Name__c=Test}"|0x788ea478
+17:38:45.0 (34356676)|STATEMENT_EXECUTE|[33]
+17:38:45.0 (34398120)|METHOD_ENTRY|[33]|01p8A00000H3INm|ContactStagingConversion.createContactRecord(Map<String,ANY>)
+17:38:45.0 (34482614)|VARIABLE_SCOPE_BEGIN|[39]|fieldValueMap|Map<String,ANY>|true|false
+17:38:45.0 (34670759)|VARIABLE_ASSIGNMENT|[39]|fieldValueMap|"{Affiliation_Name__c=Test, First_Name__c=Test, FullName__c=TESTTEST, Id=a178A000002vj4sQAA, Last_Name__c=Test}"|0x788ea478
+17:38:45.0 (34711094)|HEAP_ALLOCATE|[40]|Bytes:5
+17:38:45.0 (34724628)|STATEMENT_EXECUTE|[39]
+17:38:45.0 (34728923)|STATEMENT_EXECUTE|[40]
+17:38:45.0 (34770526)|HEAP_ALLOCATE|[40]|Bytes:4
+17:38:45.0 (34943108)|VARIABLE_SCOPE_BEGIN|[40]|contact|Contact|true|false
+17:38:45.0 (34981089)|VARIABLE_ASSIGNMENT|[40]|contact|{}|0x1ff87ea1
+17:38:45.0 (35015562)|HEAP_ALLOCATE|[42]|Bytes:4
+17:38:45.0 (35141706)|HEAP_ALLOCATE|[42]|Bytes:81
+17:38:45.0 (35182085)|HEAP_ALLOCATE|[42]|Bytes:20
+17:38:45.0 (35233822)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (35268248)|VARIABLE_SCOPE_BEGIN|[42]|field|String|false|false
+17:38:45.0 (35295201)|VARIABLE_ASSIGNMENT|[42]|field|"First_Name__c"
+17:38:45.0 (35309079)|STATEMENT_EXECUTE|[42]
+17:38:45.0 (35377867)|STATEMENT_EXECUTE|[43]
+17:38:45.0 (35381345)|STATEMENT_EXECUTE|[44]
+17:38:45.0 (37176368)|STATEMENT_EXECUTE|[45]
+17:38:45.0 (37209891)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (37245789)|VARIABLE_SCOPE_BEGIN|[42]|field|String|false|false
+17:38:45.0 (37278695)|VARIABLE_ASSIGNMENT|[42]|field|"Last_Name__c"
+17:38:45.0 (37291064)|STATEMENT_EXECUTE|[42]
+17:38:45.0 (37312376)|STATEMENT_EXECUTE|[43]
+17:38:45.0 (37316335)|STATEMENT_EXECUTE|[44]
+17:38:45.0 (37500149)|STATEMENT_EXECUTE|[45]
+17:38:45.0 (37521530)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (37547771)|VARIABLE_SCOPE_BEGIN|[42]|field|String|false|false
+17:38:45.0 (37575172)|VARIABLE_ASSIGNMENT|[42]|field|"FullName__c"
+17:38:45.0 (37586321)|STATEMENT_EXECUTE|[42]
+17:38:45.0 (37603825)|STATEMENT_EXECUTE|[43]
+17:38:45.0 (37619389)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (37637299)|VARIABLE_SCOPE_BEGIN|[42]|field|String|false|false
+17:38:45.0 (37664080)|VARIABLE_ASSIGNMENT|[42]|field|"Affiliation_Name__c"
+17:38:45.0 (37675066)|STATEMENT_EXECUTE|[42]
+17:38:45.0 (37692682)|STATEMENT_EXECUTE|[43]
+17:38:45.0 (37696594)|STATEMENT_EXECUTE|[44]
+17:38:45.0 (37916789)|STATEMENT_EXECUTE|[45]
+17:38:45.0 (37991026)|STATEMENT_EXECUTE|[48]
+17:38:45.0 (37995080)|STATEMENT_EXECUTE|[49]
+17:38:45.0 (38024941)|HEAP_ALLOCATE|[49]|Bytes:176
+17:38:45.0 (38045113)|HEAP_ALLOCATE|[49]|Bytes:7
+17:38:45.0 (38061528)|HEAP_ALLOCATE|[49]|Bytes:20
+17:38:45.0 (38116646)|CONSTRUCTOR_ENTRY|[49]|01p8A00000H3INm|<init>()|ContactStagingConversion.ForeignKeyWrapper
+17:38:45.0 (38162092)|VARIABLE_SCOPE_BEGIN|[2]|this|ContactStagingConversion.ForeignKeyWrapper|true|false
+17:38:45.0 (38240326)|VARIABLE_ASSIGNMENT|[2]|this|{}|0x59f3fee1
+17:38:45.0 (38262645)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+17:38:45.0 (45834471)|STATEMENT_EXECUTE|[2]
+17:38:45.0 (45842954)|STATEMENT_EXECUTE|[3]
+17:38:45.0 (45847098)|STATEMENT_EXECUTE|[4]
+17:38:45.0 (45850467)|STATEMENT_EXECUTE|[5]
+17:38:45.0 (45853942)|STATEMENT_EXECUTE|[6]
+17:38:45.0 (45868141)|CONSTRUCTOR_EXIT|[49]|01p8A00000H3INm|<init>()|ContactStagingConversion.ForeignKeyWrapper
+17:38:45.0 (45902047)|VARIABLE_SCOPE_BEGIN|[49]|foreignKeyWrapper|ContactStagingConversion.ForeignKeyWrapper|true|false
+17:38:45.0 (45985130)|VARIABLE_ASSIGNMENT|[49]|foreignKeyWrapper|{}|0x59f3fee1
+17:38:45.0 (45999691)|STATEMENT_EXECUTE|[50]
+17:38:45.0 (46201524)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x59f3fee1
+17:38:45.0 (46232467)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"Account"
+17:38:45.0 (46258290)|VARIABLE_ASSIGNMENT|[3]|this.table|"Account"|0x59f3fee1
+17:38:45.0 (46283777)|STATEMENT_EXECUTE|[51]
+17:38:45.0 (46447925)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"table":"Account"}|0x59f3fee1
+17:38:45.0 (46610242)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"Name"
+17:38:45.0 (46650736)|VARIABLE_ASSIGNMENT|[4]|this.searchField|"Name"|0x59f3fee1
+17:38:45.0 (46681611)|STATEMENT_EXECUTE|[52]
+17:38:45.0 (46723461)|HEAP_ALLOCATE|[52]|Bytes:4
+17:38:45.0 (46901146)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"searchField":"Name","table":"Account"}|0x59f3fee1
+17:38:45.0 (46978314)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|["Test"]|0x799fa7f3
+17:38:45.0 (47007239)|VARIABLE_ASSIGNMENT|[5]|this.lookupSet|["Test"]|0x59f3fee1
+17:38:45.0 (47029202)|STATEMENT_EXECUTE|[53]
+17:38:45.0 (47058890)|HEAP_ALLOCATE|[53]|Bytes:4
+17:38:45.0 (47148356)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"lookupSet":"0x799fa7f3","searchField":"Name","table":"Account"}|0x59f3fee1
+17:38:45.0 (47184107)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{}|0x3b028e
+17:38:45.0 (47210297)|VARIABLE_ASSIGNMENT|[6]|this.queryResultMap|{}|0x59f3fee1
+17:38:45.0 (47234116)|STATEMENT_EXECUTE|[54]
+17:38:45.0 (47339122)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+17:38:45.0 (47392706)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (47428563)|VARIABLE_SCOPE_BEGIN|[42]|field|String|false|false
+17:38:45.0 (47458367)|VARIABLE_ASSIGNMENT|[42]|field|"Id"
+17:38:45.0 (47472375)|STATEMENT_EXECUTE|[42]
+17:38:45.0 (47491024)|STATEMENT_EXECUTE|[43]
+17:38:45.0 (47504911)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (47527539)|VARIABLE_ASSIGNMENT|[42]|field|null
+17:38:45.0 (47539604)|STATEMENT_EXECUTE|[59]
+17:38:45.0 (47560113)|METHOD_EXIT|[33]|01p8A00000H3INm|ContactStagingConversion.createContactRecord(Map<String,ANY>)
+17:38:45.0 (47593566)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (47620972)|HEAP_ALLOCATE|[21]|Bytes:5
+17:38:45.0 (47638928)|VARIABLE_ASSIGNMENT|[21]|contactStagingTable|null|
+17:38:45.0 (47649132)|STATEMENT_EXECUTE|[36]
+17:38:45.0 (47716683)|DML_BEGIN|[36]|Op:Upsert|Type:Contact|Rows:1
+17:38:45.0 (47784172)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (56853454)|DML_END|[36]
+17:38:45.0 (56968012)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (57048146)|HEAP_ALLOCATE|[36]|Bytes:8
+17:38:45.0 (57133361)|METHOD_ENTRY|[36]|01p8A00000H3INm|ContactStagingConversion.returnResults(List<Database.UpsertResult>, List<ContactStagingTable__c>)
+17:38:45.0 (57153949)|VARIABLE_SCOPE_BEGIN|[62]|upsertResultList|List<Database.UpsertResult>|true|false
+17:38:45.0 (57217140)|VARIABLE_ASSIGNMENT|[62]|upsertResultList|[null: Account ID: id value of incorrect type: Test]|0x2348650
+17:38:45.0 (57230139)|VARIABLE_SCOPE_BEGIN|[62]|contactStagingTableList|List<ContactStagingTable__c>|true|false
+17:38:45.0 (57270964)|VARIABLE_ASSIGNMENT|[62]|contactStagingTableList|[{"First_Name__c":"Test","Last_Name__c":"Test","FullName__c":"TESTTEST","Affiliation_Name__c":"Test","Id":"a178A000002vj4sQAA"}]|0x3f7cb33b
+17:38:45.0 (57306700)|HEAP_ALLOCATE|[66]|Bytes:5
+17:38:45.0 (57316448)|STATEMENT_EXECUTE|[65]
+17:38:45.0 (57319725)|STATEMENT_EXECUTE|[66]
+17:38:45.0 (57347822)|HEAP_ALLOCATE|[66]|Bytes:4
+17:38:45.0 (57373333)|HEAP_ALLOCATE|[67]|Bytes:7
+17:38:45.0 (57388563)|HEAP_ALLOCATE|[67]|Bytes:4
+17:38:45.0 (57497992)|HEAP_ALLOCATE|[68]|Bytes:7
+17:38:45.0 (57508529)|HEAP_ALLOCATE|[68]|Bytes:4
+17:38:45.0 (57538255)|HEAP_ALLOCATE|[69]|Bytes:6
+17:38:45.0 (57546724)|HEAP_ALLOCATE|[69]|Bytes:4
+17:38:45.0 (57571594)|VARIABLE_SCOPE_BEGIN|[66]|resultMap|Map<String,List<String>>|true|false
+17:38:45.0 (57618224)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (57631860)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (57642148)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (57668914)|VARIABLE_ASSIGNMENT|[66]|resultMap|{"Created":[],"Updated":[],"Failed":[]}|0x9d43f1c
+17:38:45.0 (57677679)|STATEMENT_EXECUTE|[71]
+17:38:45.0 (57689663)|HEAP_ALLOCATE|[71]|Bytes:4
+17:38:45.0 (57712666)|VARIABLE_SCOPE_BEGIN|[71]|deleteRecordList|List<ContactStagingTable__c>|true|false
+17:38:45.0 (57729377)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (57740083)|VARIABLE_ASSIGNMENT|[71]|deleteRecordList|[]|0x16373cfc
+17:38:45.0 (57748463)|STATEMENT_EXECUTE|[72]
+17:38:45.0 (57755873)|HEAP_ALLOCATE|[72]|Bytes:4
+17:38:45.0 (57771627)|VARIABLE_SCOPE_BEGIN|[72]|updateRecordList|List<ContactStagingTable__c>|true|false
+17:38:45.0 (57786545)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (57793464)|VARIABLE_ASSIGNMENT|[72]|updateRecordList|[]|0x50582805
+17:38:45.0 (57802870)|STATEMENT_EXECUTE|[74]
+17:38:45.0 (57810321)|VARIABLE_SCOPE_BEGIN|[74]|i|Integer|false|false
+17:38:45.0 (57824252)|HEAP_ALLOCATE|[74]|Bytes:4
+17:38:45.0 (57837689)|VARIABLE_ASSIGNMENT|[74]|i|0
+17:38:45.0 (58050757)|HEAP_ALLOCATE|[75]|Bytes:5
+17:38:45.0 (58222237)|HEAP_ALLOCATE|[75]|Bytes:4
+17:38:45.0 (58265670)|VARIABLE_SCOPE_BEGIN|[75]|upsertResult|Database.UpsertResult|true|false
+17:38:45.0 (58291971)|VARIABLE_ASSIGNMENT|[75]|upsertResult|null: Account ID: id value of incorrect type: Test|0x7103d8ab
+17:38:45.0 (58304434)|STATEMENT_EXECUTE|[75]
+17:38:45.0 (58307273)|STATEMENT_EXECUTE|[76]
+17:38:45.0 (58313694)|VARIABLE_SCOPE_BEGIN|[76]|type|String|false|false
+17:38:45.0 (58334807)|VARIABLE_ASSIGNMENT|[76]|type|"Updated"
+17:38:45.0 (58375448)|STATEMENT_EXECUTE|[82]
+17:38:45.0 (58378479)|STATEMENT_EXECUTE|[83]
+17:38:45.0 (58388047)|VARIABLE_ASSIGNMENT|[83]|type|"Failed"
+17:38:45.0 (58395350)|STATEMENT_EXECUTE|[84]
+17:38:45.0 (58405413)|HEAP_ALLOCATE|[84]|Bytes:4
+17:38:45.0 (58435151)|VARIABLE_SCOPE_BEGIN|[84]|errorMessage|List<String>|true|false
+17:38:45.0 (58461351)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (58474639)|VARIABLE_ASSIGNMENT|[84]|errorMessage|[]|0x600ace8e
+17:38:45.0 (58498933)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (58549535)|HEAP_ALLOCATE|[85]|Bytes:8
+17:38:45.0 (58660454)|HEAP_ALLOCATE|[85]|Bytes:5
+17:38:45.0 (58707154)|HEAP_ALLOCATE|[85]|Bytes:4
+17:38:45.0 (58729181)|VARIABLE_SCOPE_BEGIN|[85]|error|Database.Error|true|false
+17:38:45.0 (58888388)|VARIABLE_ASSIGNMENT|[85]|error|"Error [statusCode=MALFORMED_ID, code=[xmlrpc=1253, statusCode=MALFORMED_ID, exceptionCode=MALFORMED_ID, scope=PublicApi, http=400], message=Account ID: id value of incorrect type: Test, fields=[AccountId]]"|0x40f2a2
+17:38:45.0 (58902535)|STATEMENT_EXECUTE|[85]
+17:38:45.0 (58905533)|STATEMENT_EXECUTE|[86]
+17:38:45.0 (58933485)|HEAP_ALLOCATE|[86]|Bytes:44
+17:38:45.0 (58981968)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (59007288)|HEAP_ALLOCATE|[85]|Bytes:5
+17:38:45.0 (59027292)|VARIABLE_ASSIGNMENT|[85]|error|null|
+17:38:45.0 (59036252)|STATEMENT_EXECUTE|[88]
+17:38:45.0 (59091313)|HEAP_ALLOCATE|[89]|Bytes:4
+17:38:45.0 (59204113)|HEAP_ALLOCATE|[90]|Bytes:24
+17:38:45.0 (59292979)|VARIABLE_ASSIGNMENT|[89]|this.Id|"a178A000002vj4sQAA"|0x5b63400c
+17:38:45.0 (59306918)|HEAP_ALLOCATE|[91]|Bytes:2
+17:38:45.0 (75060293)|HEAP_ALLOCATE|[91]|Bytes:5
+17:38:45.0 (75093049)|HEAP_ALLOCATE|[91]|Bytes:44
+17:38:45.0 (75103499)|HEAP_ALLOCATE|[91]|Bytes:5
+17:38:45.0 (75112304)|HEAP_ALLOCATE|[91]|Bytes:44
+17:38:45.0 (75243861)|VARIABLE_ASSIGNMENT|[89]|this.ErrorMessage__c|"Account ID: id value (24 more) ..."|0x5b63400c
+17:38:45.0 (75337990)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (75350559)|STATEMENT_EXECUTE|[96]
+17:38:45.0 (75432293)|HEAP_ALLOCATE|[96]|Bytes:24
+17:38:45.0 (75473088)|HEAP_ALLOCATE|[96]|Bytes:1
+17:38:45.0 (75483731)|HEAP_ALLOCATE|[96]|Bytes:24
+17:38:45.0 (75515309)|HEAP_ALLOCATE|[96]|Bytes:9
+17:38:45.0 (75541968)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (75553035)|STATEMENT_EXECUTE|[97]
+17:38:45.0 (75558380)|HEAP_ALLOCATE|[97]|Bytes:4
+17:38:45.0 (75575317)|VARIABLE_ASSIGNMENT|[97]|i|1
+17:38:45.0 (75597007)|HEAP_ALLOCATE|[75]|Bytes:5
+17:38:45.0 (75620381)|VARIABLE_ASSIGNMENT|[75]|upsertResult|null|
+17:38:45.0 (75629916)|STATEMENT_EXECUTE|[99]
+17:38:45.0 (75728651)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (75737465)|STATEMENT_EXECUTE|[100]
+17:38:45.0 (75781976)|DML_BEGIN|[100]|Op:Update|Type:ContactStagingTable__c|Rows:1
+17:38:45.0 (75845516)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (87635530)|CODE_UNIT_STARTED|[EXTERNAL]|01q8A0000002VG0|ContactStagingTableTrigger on ContactStagingTable trigger event BeforeUpdate|__sfdc_trigger/ContactStagingTableTrigger
+17:38:45.0 (87721967)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (87835015)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (87994359)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:38:45.0 (88028393)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactStagingTableTrigger|true|false
+17:38:45.0 (88098169)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x67f1adf4
+17:38:45.0 (88153097)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:38:45.0 (88164265)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactStagingTableTrigger|true|false
+17:38:45.0 (88201843)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x67f1adf4
+17:38:45.0 (88223634)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (88230962)|STATEMENT_EXECUTE|[9]
+17:38:45.0 (88239022)|HEAP_ALLOCATE|[9]|Bytes:22
+17:38:45.0 (88313830)|VARIABLE_ASSIGNMENT|[9]|this.TRIGGEROBJECT|"ContactStagingTable_ (2 more) ..."|0x67f1adf4
+17:38:45.0 (88328595)|STATEMENT_EXECUTE|[10]
+17:38:45.0 (88465575)|HEAP_ALLOCATE|[10]|Bytes:19
+17:38:45.0 (88561020)|METHOD_ENTRY|[1]|01p8A00000H3HG0|TriggerHandler.TriggerHandler()
+17:38:45.0 (88572489)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (88577062)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (88592740)|HEAP_ALLOCATE|[10]|Bytes:5
+17:38:45.0 (88611201)|METHOD_EXIT|[1]|TriggerHandler
+17:38:45.0 (88630329)|HEAP_ALLOCATE|[10]|Bytes:8
+17:38:45.0 (88671039)|CONSTRUCTOR_ENTRY|[10]|01p8A00000H3HG0|<init>(String)|TriggerHandler
+17:38:45.0 (88708543)|VARIABLE_SCOPE_BEGIN|[4]|this|TriggerHandler|true|false
+17:38:45.0 (88760182)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x3f3b4ddd
+17:38:45.0 (88772844)|VARIABLE_SCOPE_BEGIN|[4]|table|String|false|false
+17:38:45.0 (88801612)|VARIABLE_ASSIGNMENT|[4]|table|"ContactStagingTable_ (2 more) ..."
+17:38:45.0 (88818744)|HEAP_ALLOCATE|[5]|Bytes:5
+17:38:45.0 (88824918)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (88831795)|HEAP_ALLOCATE|[5]|Bytes:5
+17:38:45.0 (88836055)|STATEMENT_EXECUTE|[2]
+17:38:45.0 (88871637)|STATEMENT_EXECUTE|[4]
+17:38:45.0 (88876864)|STATEMENT_EXECUTE|[5]
+17:38:45.0 (89020189)|HEAP_ALLOCATE|[5]|Bytes:4
+17:38:45.0 (89164813)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (89195471)|VARIABLE_ASSIGNMENT|[5]|this.executeFunctionsList|[]|0x3f3b4ddd
+17:38:45.0 (89208587)|STATEMENT_EXECUTE|[6]
+17:38:45.0 (89299163)|HEAP_ALLOCATE|[6]|Bytes:1
+17:38:45.0 (89319320)|METHOD_ENTRY|[1]|01p8A00000H3HG5|TriggerHandlerFunctionQuery.TriggerHandlerFunctionQuery()
+17:38:45.0 (89334096)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (89339795)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (89348520)|HEAP_ALLOCATE|[6]|Bytes:5
+17:38:45.0 (89364355)|METHOD_EXIT|[1]|TriggerHandlerFunctionQuery
+17:38:45.0 (89395827)|METHOD_ENTRY|[6]|01p8A00000H3HG5|TriggerHandlerFunctionQuery.getTriggerHandlerFunctionsByObject(String)
+17:38:45.0 (89421121)|VARIABLE_SCOPE_BEGIN|[2]|objectName|String|false|false
+17:38:45.0 (89441357)|VARIABLE_ASSIGNMENT|[2]|objectName|"ContactStagingTable_ (2 more) ..."
+17:38:45.0 (89453459)|HEAP_ALLOCATE|[3]|Bytes:5
+17:38:45.0 (89461568)|STATEMENT_EXECUTE|[2]
+17:38:45.0 (89465079)|STATEMENT_EXECUTE|[3]
+17:38:45.0 (89471988)|HEAP_ALLOCATE|[3]|Bytes:141
+17:38:45.0 (89503147)|HEAP_ALLOCATE|[3]|Bytes:4
+17:38:45.0 (90524201)|SOQL_EXECUTE_BEGIN|[3]|Aggregations:0|SELECT ApexClass__c FROM TriggerHandlerFunction__mdt WHERE (Table__c = :tmpVar1 AND Active__c = TRUE) ORDER BY RunSequence__c ASC NULLS FIRST
+17:38:45.0 (95578995)|SOQL_EXECUTE_END|[3]|Rows:1
+17:38:45.0 (95637961)|HEAP_ALLOCATE|[3]|Bytes:8
+17:38:45.0 (95682205)|HEAP_ALLOCATE|[3]|Bytes:79
+17:38:45.0 (95811497)|HEAP_ALLOCATE|[3]|Bytes:8
+17:38:45.0 (95858180)|METHOD_EXIT|[6]|01p8A00000H3HG5|TriggerHandlerFunctionQuery.getTriggerHandlerFunctionsByObject(String)
+17:38:45.0 (95876620)|VARIABLE_SCOPE_BEGIN|[6]|triggerHandlerFunctionList|List<TriggerHandlerFunction__mdt>|true|false
+17:38:45.0 (95945114)|VARIABLE_ASSIGNMENT|[6]|triggerHandlerFunctionList|[{"ApexClass__c":"CalculateFullNameFor (14 more) ...","Id":"m008A000000DnNfQAK"}]|0x3bef243b
+17:38:45.0 (96190274)|HEAP_ALLOCATE|[10]|Bytes:5
+17:38:45.0 (96244215)|HEAP_ALLOCATE|[10]|Bytes:12
+17:38:45.0 (96258936)|VARIABLE_SCOPE_BEGIN|[10]|triggerHandlerFunction|TriggerHandlerFunction__mdt|true|false
+17:38:45.0 (96288498)|VARIABLE_ASSIGNMENT|[10]|triggerHandlerFunction|{"ApexClass__c":"CalculateFullNameFor (14 more) ...","Id":"m008A000000DnNfQAK"}|0x6f1a31bd
+17:38:45.0 (96302431)|STATEMENT_EXECUTE|[10]
+17:38:45.0 (96305228)|STATEMENT_EXECUTE|[11]
+17:38:45.0 (96418967)|HEAP_ALLOCATE|[12]|Bytes:30
+17:38:45.0 (96446475)|SYSTEM_METHOD_ENTRY|[1]|Type.Type()
+17:38:45.0 (96455836)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (96469967)|SYSTEM_METHOD_EXIT|[1]|Type
+17:38:45.0 (96486182)|METHOD_ENTRY|[12]||System.Type.forName(String)
+17:38:45.0 (96875091)|METHOD_EXIT|[12]||System.Type.forName(String)
+17:38:45.0 (96894705)|METHOD_ENTRY|[12]||System.Type.newInstance()
+17:38:45.0 (97041054)|METHOD_ENTRY|[1]|01p8A00000H3HGo|CalculateFullNameForDuplicateCheck.CalculateFullNameForDuplicateCheck()
+17:38:45.0 (97051054)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (97055783)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (97067641)|HEAP_ALLOCATE|[5]|Bytes:5
+17:38:45.0 (97079309)|STATEMENT_EXECUTE|[5]
+17:38:45.0 (97102307)|HEAP_ALLOCATE|[5]|Bytes:4
+17:38:45.0 (97126081)|HEAP_ALLOCATE|[6]|Bytes:4
+17:38:45.0 (97158845)|HEAP_ALLOCATE|[6]|Bytes:9
+17:38:45.0 (97173612)|HEAP_ALLOCATE|[6]|Bytes:10
+17:38:45.0 (97185897)|HEAP_ALLOCATE|[6]|Bytes:8
+17:38:45.0 (97252261)|HEAP_ALLOCATE|[7]|Bytes:4
+17:38:45.0 (97273830)|HEAP_ALLOCATE|[7]|Bytes:13
+17:38:45.0 (97279886)|HEAP_ALLOCATE|[7]|Bytes:9
+17:38:45.0 (97287612)|HEAP_ALLOCATE|[7]|Bytes:12
+17:38:45.0 (97335532)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+17:38:45.0 (97348478)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+17:38:45.0 (97387998)|VARIABLE_ASSIGNMENT|[5]|CalculateFullNameForDuplicateCheck.OBJECTNAMEFIELDMAP|{"Contact":["FirstName","MiddleName","LastName"],"ContactStagingTable__c":["First_Name__c","Middle__c","Last_Name__c"]}|0xb72e808
+17:38:45.0 (97400304)|STATEMENT_EXECUTE|[10]
+17:38:45.0 (97411794)|HEAP_ALLOCATE|[10]|Bytes:4
+17:38:45.0 (97423668)|HEAP_ALLOCATE|[11]|Bytes:6
+17:38:45.0 (97429196)|HEAP_ALLOCATE|[11]|Bytes:1
+17:38:45.0 (97465874)|HEAP_ALLOCATE|[12]|Bytes:1
+17:38:45.0 (97470502)|HEAP_ALLOCATE|[12]|Bytes:1
+17:38:45.0 (97485359)|HEAP_ALLOCATE|[13]|Bytes:1
+17:38:45.0 (97493609)|HEAP_ALLOCATE|[13]|Bytes:1
+17:38:45.0 (97507645)|HEAP_ALLOCATE|[14]|Bytes:4
+17:38:45.0 (97514512)|HEAP_ALLOCATE|[14]|Bytes:1
+17:38:45.0 (97527808)|HEAP_ALLOCATE|[15]|Bytes:4
+17:38:45.0 (97532342)|HEAP_ALLOCATE|[15]|Bytes:1
+17:38:45.0 (97545820)|HEAP_ALLOCATE|[16]|Bytes:1
+17:38:45.0 (97552365)|HEAP_ALLOCATE|[16]|Bytes:1
+17:38:45.0 (97565987)|HEAP_ALLOCATE|[17]|Bytes:5
+17:38:45.0 (97570651)|HEAP_ALLOCATE|[17]|Bytes:1
+17:38:45.0 (97584080)|HEAP_ALLOCATE|[18]|Bytes:4
+17:38:45.0 (97590741)|HEAP_ALLOCATE|[18]|Bytes:1
+17:38:45.0 (97605112)|HEAP_ALLOCATE|[19]|Bytes:2
+17:38:45.0 (97613894)|HEAP_ALLOCATE|[19]|Bytes:1
+17:38:45.0 (97640304)|VARIABLE_ASSIGNMENT|[10]|CalculateFullNameForDuplicateCheck.characterMap|"Map of size 9 too large to display"|0x78a7244b
+17:38:45.0 (97659693)|METHOD_EXIT|[1]|CalculateFullNameForDuplicateCheck
+17:38:45.0 (97668981)|HEAP_ALLOCATE|[42]|Bytes:4
+17:38:45.0 (97678763)|VARIABLE_SCOPE_BEGIN|[1]|this|CalculateFullNameForDuplicateCheck|true|false
+17:38:45.0 (97716687)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x468e753b
+17:38:45.0 (97733976)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (97758149)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (97762708)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (97785090)|METHOD_EXIT|[12]||System.Type.newInstance()
+17:38:45.0 (97828486)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (97850547)|HEAP_ALLOCATE|[10]|Bytes:5
+17:38:45.0 (97871833)|VARIABLE_ASSIGNMENT|[10]|triggerHandlerFunction|null|
+17:38:45.0 (97889238)|CONSTRUCTOR_EXIT|[10]|01p8A00000H3HG0|<init>(String)|TriggerHandler
+17:38:45.0 (97917252)|VARIABLE_ASSIGNMENT|[10]|this.triggerHandler|0x3f3b4ddd|0x67f1adf4
+17:38:45.0 (97948563)|STATEMENT_EXECUTE|[12]
+17:38:45.0 (97957086)|STATEMENT_EXECUTE|[13]
+17:38:45.0 (97963551)|STATEMENT_EXECUTE|[16]
+17:38:45.0 (97966118)|STATEMENT_EXECUTE|[17]
+17:38:45.0 (98051809)|METHOD_ENTRY|[17]|01p8A00000H3HG0|TriggerHandler.TriggerHandlerBeforeUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (98071428)|VARIABLE_SCOPE_BEGIN|[27]|this|TriggerHandler|true|false
+17:38:45.0 (98111217)|VARIABLE_ASSIGNMENT|[27]|this|{"executeFunctionsList":"0x47dfd86b"}|0x3f3b4ddd
+17:38:45.0 (98122299)|VARIABLE_SCOPE_BEGIN|[27]|newTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (98646858)|VARIABLE_ASSIGNMENT|[27]|newTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:33:59.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:33:59.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x69b39a7
+17:38:45.0 (98669630)|VARIABLE_SCOPE_BEGIN|[27]|oldTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (98932978)|VARIABLE_ASSIGNMENT|[27]|oldTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:33:59.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:33:59.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x3389b3e2
+17:38:45.0 (98959690)|HEAP_ALLOCATE|[28]|Bytes:5
+17:38:45.0 (98966304)|STATEMENT_EXECUTE|[27]
+17:38:45.0 (99079266)|HEAP_ALLOCATE|[28]|Bytes:5
+17:38:45.0 (99097934)|HEAP_ALLOCATE|[28]|Bytes:4
+17:38:45.0 (99236876)|VARIABLE_SCOPE_BEGIN|[28]|function|TriggerHandlerInterface|true|false
+17:38:45.0 (99274600)|VARIABLE_ASSIGNMENT|[28]|function|{}|0x468e753b
+17:38:45.0 (99286356)|STATEMENT_EXECUTE|[28]
+17:38:45.0 (99289015)|STATEMENT_EXECUTE|[29]
+17:38:45.0 (99302869)|METHOD_ENTRY|[29]|01p8A00000H3HGo|CalculateFullNameForDuplicateCheck.TriggerHandlerBeforeUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (99325174)|VARIABLE_SCOPE_BEGIN|[27]|this|CalculateFullNameForDuplicateCheck|true|false
+17:38:45.0 (99347158)|VARIABLE_ASSIGNMENT|[27]|this|{}|0x468e753b
+17:38:45.0 (99357618)|VARIABLE_SCOPE_BEGIN|[27]|newTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (99651762)|VARIABLE_ASSIGNMENT|[27]|newTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:33:59.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:33:59.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x69b39a7
+17:38:45.0 (99669468)|VARIABLE_SCOPE_BEGIN|[27]|oldTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (99870879)|VARIABLE_ASSIGNMENT|[27]|oldTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:33:59.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:33:59.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x3389b3e2
+17:38:45.0 (99893650)|HEAP_ALLOCATE|[28]|Bytes:5
+17:38:45.0 (99902118)|STATEMENT_EXECUTE|[27]
+17:38:45.0 (99904690)|STATEMENT_EXECUTE|[28]
+17:38:45.0 (99934702)|HEAP_ALLOCATE|[28]|Bytes:4
+17:38:45.0 (99973187)|VARIABLE_SCOPE_BEGIN|[28]|newTriggerList|List<SObject>|true|false
+17:38:45.0 (99988477)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (100002538)|VARIABLE_ASSIGNMENT|[28]|newTriggerList|[]|0x5bc1e860
+17:38:45.0 (100021318)|HEAP_ALLOCATE|[30]|Bytes:4
+17:38:45.0 (100126664)|HEAP_ALLOCATE|[30]|Bytes:26
+17:38:45.0 (100150095)|HEAP_ALLOCATE|[30]|Bytes:4
+17:38:45.0 (100184181)|HEAP_ALLOCATE|[30]|Bytes:5
+17:38:45.0 (100229778)|HEAP_ALLOCATE|[30]|Bytes:4
+17:38:45.0 (100237760)|VARIABLE_SCOPE_BEGIN|[30]|id|Id|false|false
+17:38:45.0 (100457349)|VARIABLE_ASSIGNMENT|[30]|id|"a178A000002vj4sQAA"
+17:38:45.0 (100466738)|STATEMENT_EXECUTE|[30]
+17:38:45.0 (100576124)|HEAP_ALLOCATE|[31]|Bytes:8
+17:38:45.0 (100592961)|STATEMENT_EXECUTE|[31]
+17:38:45.0 (100606788)|HEAP_ALLOCATE|[30]|Bytes:5
+17:38:45.0 (100624340)|VARIABLE_ASSIGNMENT|[30]|id|null
+17:38:45.0 (100632643)|STATEMENT_EXECUTE|[35]
+17:38:45.0 (100642915)|METHOD_ENTRY|[35]|01p8A00000H3HGo|CalculateFullNameForDuplicateCheck.calculateFullName(List<SObject>)
+17:38:45.0 (100661317)|VARIABLE_SCOPE_BEGIN|[44]|this|CalculateFullNameForDuplicateCheck|true|false
+17:38:45.0 (100693837)|VARIABLE_ASSIGNMENT|[44]|this|{}|0x468e753b
+17:38:45.0 (100704311)|VARIABLE_SCOPE_BEGIN|[44]|newTriggerList|List<SObject>|true|false
+17:38:45.0 (100721270)|VARIABLE_ASSIGNMENT|[44]|newTriggerList|[]|0x5bc1e860
+17:38:45.0 (100741012)|HEAP_ALLOCATE|[45]|Bytes:5
+17:38:45.0 (100748107)|STATEMENT_EXECUTE|[44]
+17:38:45.0 (100786784)|HEAP_ALLOCATE|[45]|Bytes:5
+17:38:45.0 (100805110)|VARIABLE_ASSIGNMENT|[45]|sObjectRecord|null|
+17:38:45.0 (100812592)|STATEMENT_EXECUTE|[45]
+17:38:45.0 (100821104)|METHOD_EXIT|[35]|01p8A00000H3HGo|CalculateFullNameForDuplicateCheck.calculateFullName(List<SObject>)
+17:38:45.0 (100835511)|METHOD_EXIT|[29]|01p8A00000H3HGo|CalculateFullNameForDuplicateCheck.TriggerHandlerBeforeUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (100850137)|HEAP_ALLOCATE|[28]|Bytes:5
+17:38:45.0 (100870698)|VARIABLE_ASSIGNMENT|[28]|function|null|
+17:38:45.0 (100882361)|METHOD_EXIT|[17]|01p8A00000H3HG0|TriggerHandler.TriggerHandlerBeforeUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (100902251)|STATEMENT_EXECUTE|[19]
+17:38:45.100 (100909838)|CUMULATIVE_LIMIT_USAGE
+17:38:45.100 (100909838)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 34 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:38:45.100 (100909838)|CUMULATIVE_LIMIT_USAGE_END
+
+17:38:45.0 (101138591)|CODE_UNIT_FINISHED|ContactStagingTableTrigger on ContactStagingTable trigger event BeforeUpdate|__sfdc_trigger/ContactStagingTableTrigger
+17:38:45.0 (102282835)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+17:38:45.0 (102311852)|DUPLICATE_DETECTION_BEGIN
+17:38:45.0 (102432330)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm8A000002E3mW|DuplicateRuleName:Contact Staging Duplicate Rule: Email|DmlType:UPDATE
+17:38:45.0 (102464743)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm8A000002E3mb|DuplicateRuleName:Contact Staging Duplicate Rule: Full Name|DmlType:UPDATE
+17:38:45.0 (102536944)|DUPLICATE_DETECTION_END
+17:38:45.0 (102547089)|CODE_UNIT_FINISHED|DuplicateDetector
+17:38:45.0 (121695455)|CODE_UNIT_STARTED|[EXTERNAL]|01q8A0000002VG0|ContactStagingTableTrigger on ContactStagingTable trigger event AfterUpdate|__sfdc_trigger/ContactStagingTableTrigger
+17:38:45.0 (121790138)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (121881925)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (122040007)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:38:45.0 (122060318)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactStagingTableTrigger|true|false
+17:38:45.0 (122148070)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1a15709c
+17:38:45.0 (122206808)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:38:45.0 (122216752)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactStagingTableTrigger|true|false
+17:38:45.0 (122263711)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1a15709c
+17:38:45.0 (122283653)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (122288686)|STATEMENT_EXECUTE|[9]
+17:38:45.0 (122339849)|VARIABLE_ASSIGNMENT|[9]|this.TRIGGEROBJECT|"ContactStagingTable_ (2 more) ..."|0x1a15709c
+17:38:45.0 (122363389)|STATEMENT_EXECUTE|[10]
+17:38:45.0 (122375922)|HEAP_ALLOCATE|[10]|Bytes:8
+17:38:45.0 (122415100)|CONSTRUCTOR_ENTRY|[10]|01p8A00000H3HG0|<init>(String)|TriggerHandler
+17:38:45.0 (122436196)|VARIABLE_SCOPE_BEGIN|[4]|this|TriggerHandler|true|false
+17:38:45.0 (122480570)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x1b27f63c
+17:38:45.0 (122495655)|VARIABLE_SCOPE_BEGIN|[4]|table|String|false|false
+17:38:45.0 (122523570)|VARIABLE_ASSIGNMENT|[4]|table|"ContactStagingTable_ (2 more) ..."
+17:38:45.0 (122549530)|HEAP_ALLOCATE|[5]|Bytes:5
+17:38:45.0 (122559927)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (122569622)|HEAP_ALLOCATE|[5]|Bytes:5
+17:38:45.0 (122576133)|STATEMENT_EXECUTE|[2]
+17:38:45.0 (122614309)|STATEMENT_EXECUTE|[4]
+17:38:45.0 (122618731)|STATEMENT_EXECUTE|[5]
+17:38:45.0 (122646890)|HEAP_ALLOCATE|[5]|Bytes:4
+17:38:45.0 (122705291)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (122732471)|VARIABLE_ASSIGNMENT|[5]|this.executeFunctionsList|[]|0x1b27f63c
+17:38:45.0 (122748992)|STATEMENT_EXECUTE|[6]
+17:38:45.0 (122767209)|METHOD_ENTRY|[6]|01p8A00000H3HG5|TriggerHandlerFunctionQuery.getTriggerHandlerFunctionsByObject(String)
+17:38:45.0 (122784585)|VARIABLE_SCOPE_BEGIN|[2]|objectName|String|false|false
+17:38:45.0 (122815406)|VARIABLE_ASSIGNMENT|[2]|objectName|"ContactStagingTable_ (2 more) ..."
+17:38:45.0 (122836644)|HEAP_ALLOCATE|[3]|Bytes:5
+17:38:45.0 (122849921)|STATEMENT_EXECUTE|[2]
+17:38:45.0 (122853084)|STATEMENT_EXECUTE|[3]
+17:38:45.0 (122871297)|HEAP_ALLOCATE|[3]|Bytes:4
+17:38:45.0 (123528946)|SOQL_EXECUTE_BEGIN|[3]|Aggregations:0|SELECT ApexClass__c FROM TriggerHandlerFunction__mdt WHERE (Table__c = :tmpVar1 AND Active__c = TRUE) ORDER BY RunSequence__c ASC NULLS FIRST
+17:38:45.0 (126980322)|SOQL_EXECUTE_END|[3]|Rows:1
+17:38:45.0 (127035319)|HEAP_ALLOCATE|[3]|Bytes:8
+17:38:45.0 (127093422)|HEAP_ALLOCATE|[3]|Bytes:79
+17:38:45.0 (127144205)|HEAP_ALLOCATE|[3]|Bytes:8
+17:38:45.0 (127184128)|METHOD_EXIT|[6]|01p8A00000H3HG5|TriggerHandlerFunctionQuery.getTriggerHandlerFunctionsByObject(String)
+17:38:45.0 (127202707)|VARIABLE_SCOPE_BEGIN|[6]|triggerHandlerFunctionList|List<TriggerHandlerFunction__mdt>|true|false
+17:38:45.0 (127271868)|VARIABLE_ASSIGNMENT|[6]|triggerHandlerFunctionList|[{"ApexClass__c":"CalculateFullNameFor (14 more) ...","Id":"m008A000000DnNfQAK"}]|0x48af3a4d
+17:38:45.0 (127333018)|HEAP_ALLOCATE|[10]|Bytes:5
+17:38:45.0 (127359329)|HEAP_ALLOCATE|[10]|Bytes:12
+17:38:45.0 (127375760)|VARIABLE_SCOPE_BEGIN|[10]|triggerHandlerFunction|TriggerHandlerFunction__mdt|true|false
+17:38:45.0 (127411507)|VARIABLE_ASSIGNMENT|[10]|triggerHandlerFunction|{"ApexClass__c":"CalculateFullNameFor (14 more) ...","Id":"m008A000000DnNfQAK"}|0x65ada3b6
+17:38:45.0 (127427605)|STATEMENT_EXECUTE|[10]
+17:38:45.0 (127433368)|STATEMENT_EXECUTE|[11]
+17:38:45.0 (127463476)|METHOD_ENTRY|[12]||System.Type.forName(String)
+17:38:45.0 (127682796)|METHOD_EXIT|[12]||System.Type.forName(String)
+17:38:45.0 (127702046)|METHOD_ENTRY|[12]||System.Type.newInstance()
+17:38:45.0 (127798518)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (127832570)|STATEMENT_EXECUTE|[1]
+17:38:45.0 (127840971)|HEAP_ALLOCATE|[42]|Bytes:5
+17:38:45.0 (127871504)|METHOD_EXIT|[12]||System.Type.newInstance()
+17:38:45.0 (127905710)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:38:45.0 (127945558)|HEAP_ALLOCATE|[10]|Bytes:5
+17:38:45.0 (127973696)|VARIABLE_ASSIGNMENT|[10]|triggerHandlerFunction|null|
+17:38:45.0 (127996721)|CONSTRUCTOR_EXIT|[10]|01p8A00000H3HG0|<init>(String)|TriggerHandler
+17:38:45.0 (128028098)|VARIABLE_ASSIGNMENT|[10]|this.triggerHandler|0x1b27f63c|0x1a15709c
+17:38:45.0 (128064299)|STATEMENT_EXECUTE|[22]
+17:38:45.0 (128072432)|STATEMENT_EXECUTE|[23]
+17:38:45.0 (128080618)|STATEMENT_EXECUTE|[26]
+17:38:45.0 (128085854)|STATEMENT_EXECUTE|[27]
+17:38:45.0 (128148606)|METHOD_ENTRY|[27]|01p8A00000H3HG0|TriggerHandler.TriggerHandlerAfterUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (128186943)|VARIABLE_SCOPE_BEGIN|[32]|this|TriggerHandler|true|false
+17:38:45.0 (128248061)|VARIABLE_ASSIGNMENT|[32]|this|{"executeFunctionsList":"0x6571bc3a"}|0x1b27f63c
+17:38:45.0 (128261359)|VARIABLE_SCOPE_BEGIN|[32]|newTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (128870366)|VARIABLE_ASSIGNMENT|[32]|newTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:38:46.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:38:46.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x54bd9f8b
+17:38:45.0 (128905515)|VARIABLE_SCOPE_BEGIN|[32]|oldTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (129372997)|VARIABLE_ASSIGNMENT|[32]|oldTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:33:59.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:33:59.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x5c0526b9
+17:38:45.0 (129417875)|HEAP_ALLOCATE|[33]|Bytes:5
+17:38:45.0 (129430301)|STATEMENT_EXECUTE|[32]
+17:38:45.0 (129514980)|HEAP_ALLOCATE|[33]|Bytes:5
+17:38:45.0 (129544888)|HEAP_ALLOCATE|[33]|Bytes:4
+17:38:45.0 (129626953)|VARIABLE_SCOPE_BEGIN|[33]|function|TriggerHandlerInterface|true|false
+17:38:45.0 (129678562)|VARIABLE_ASSIGNMENT|[33]|function|{}|0x3ab5197a
+17:38:45.0 (129693571)|STATEMENT_EXECUTE|[33]
+17:38:45.0 (129697307)|STATEMENT_EXECUTE|[34]
+17:38:45.0 (129715534)|METHOD_ENTRY|[34]|01p8A00000H3HGo|CalculateFullNameForDuplicateCheck.TriggerHandlerAfterUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (129741981)|VARIABLE_SCOPE_BEGIN|[37]|this|CalculateFullNameForDuplicateCheck|true|false
+17:38:45.0 (129772720)|VARIABLE_ASSIGNMENT|[37]|this|{}|0x3ab5197a
+17:38:45.0 (129786264)|VARIABLE_SCOPE_BEGIN|[37]|newTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (130197685)|VARIABLE_ASSIGNMENT|[37]|newTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:38:46.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:38:46.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x54bd9f8b
+17:38:45.0 (130231994)|VARIABLE_SCOPE_BEGIN|[37]|oldTriggerMap|Map<Id,SObject>|true|false
+17:38:45.0 (130490098)|VARIABLE_ASSIGNMENT|[37]|oldTriggerMap|{"a178A000002vj4sQAA":{"LastModifiedDate":"2022-11-01T21:33:59.000Z","Record_Type_Id__c":"0124S0000004UzMQAU","IsDeleted":false,"Affiliation_Name__c":"Test","Active_Fellow__c":false,"ErrorMessage__c":"Account ID: id value (24 more) ...","Name":"CST-9141727","SystemModstamp":"2022-11-01T21:33:59.000Z","Deceased__c":false,"CreatedById":"0054S000000JwFCQA0","OwnerId":"0054S000000JwFCQA0","CreatedDate":"2022-11-01T21:25:54.000Z","First_Name__c":"Test","Id":"a178A000002vj4sQAA","FullName__c":"TESTTEST","LastModifiedById":"0054S000000JwFCQA0","Last_Name__c":"Test"}}|0x5c0526b9
+17:38:45.0 (130520113)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:38:45.0 (130529300)|STATEMENT_EXECUTE|[37]
+17:38:45.0 (130545179)|METHOD_EXIT|[34]|01p8A00000H3HGo|CalculateFullNameForDuplicateCheck.TriggerHandlerAfterUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (130570644)|HEAP_ALLOCATE|[33]|Bytes:5
+17:38:45.0 (130590660)|VARIABLE_ASSIGNMENT|[33]|function|null|
+17:38:45.0 (130605576)|METHOD_EXIT|[27]|01p8A00000H3HG0|TriggerHandler.TriggerHandlerAfterUpdate(Map<Id,SObject>, Map<Id,SObject>)
+17:38:45.0 (130624932)|STATEMENT_EXECUTE|[29]
+17:38:45.130 (130633069)|CUMULATIVE_LIMIT_USAGE
+17:38:45.130 (130633069)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 35 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:38:45.130 (130633069)|CUMULATIVE_LIMIT_USAGE_END
+
+17:38:45.0 (130804875)|CODE_UNIT_FINISHED|ContactStagingTableTrigger on ContactStagingTable trigger event AfterUpdate|__sfdc_trigger/ContactStagingTableTrigger
+17:38:45.0 (134626968)|DML_END|[100]
+17:38:45.0 (134701368)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:38:45.0 (134730911)|STATEMENT_EXECUTE|[102]
+17:38:45.0 (134751527)|METHOD_EXIT|[36]|01p8A00000H3INm|ContactStagingConversion.returnResults(List<Database.UpsertResult>, List<ContactStagingTable__c>)
+17:38:45.0 (134766344)|SYSTEM_MODE_EXIT|true
+17:38:45.0 (135519569)|METHOD_EXIT|[21]|01p8A00000H3INm|ContactStagingConversion.convertContact()
+17:38:45.0 (139673269)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+17:38:45.0 (139699285)|DUPLICATE_DETECTION_BEGIN
+17:38:45.0 (139786517)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm8A000002E3mW|DuplicateRuleName:Contact Staging Duplicate Rule: Email|DmlType:UPDATE
+17:38:45.0 (157391402)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm8A000002E3mb|DuplicateRuleName:Contact Staging Duplicate Rule: Full Name|DmlType:UPDATE
+17:38:45.0 (157543483)|DUPLICATE_DETECTION_END
+17:38:45.0 (157559403)|CODE_UNIT_FINISHED|DuplicateDetector
+17:38:45.157 (157881863)|CUMULATIVE_LIMIT_USAGE
+17:38:45.157 (157881863)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 35 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:38:45.157 (157881863)|CUMULATIVE_LIMIT_USAGE_END
+
+17:38:45.0 (157948385)|CODE_UNIT_FINISHED|ContactStagingController.convertContact()
+17:38:45.0 (158209151)|CODE_UNIT_FINISHED|apex://ContactStagingController/ACTION$convertContact
+17:38:45.0 (158224232)|EXECUTION_FINISHED

@@ -554,3 +554,7 @@ declare module "@salesforce/schema/ContactChangeEvent.PrimaryAffiliationId__c" {
   const PrimaryAffiliationId__c:any;
   export default PrimaryAffiliationId__c;
 }
+declare module "@salesforce/schema/ContactChangeEvent.FullName__c" {
+  const FullName__c:string;
+  export default FullName__c;
+}

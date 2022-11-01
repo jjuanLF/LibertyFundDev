@@ -56,6 +56,11 @@ global class ContactStagingTable__ChangeEvent {
     global String Assistant_Phone__c;
     global String Assistant_Email__c;
     global String Address_Instructions__c;
+    global String FullName__c;
+    global Contact MergeContactId__c;
+    global String Mobile__c;
+    global String Phone__c;
+    global String MergeFields__c;
 
     global ContactStagingTable__ChangeEvent () 
     {

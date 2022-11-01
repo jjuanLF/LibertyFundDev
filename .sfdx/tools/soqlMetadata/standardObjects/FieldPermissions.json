@@ -3046,6 +3046,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Contact.FullName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Contact.Future_Conferences__c"
         },
         {
@@ -3942,6 +3949,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.FullName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Future_Conferences__c"
         },
         {
@@ -3970,6 +3984,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.MergeContactId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ContactStagingTable__c.MergeFields__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Middle__c"
         },
         {
@@ -3977,7 +4005,21 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.Mobile__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Person_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ContactStagingTable__c.Phone__c"
         },
         {
           "active": true,
