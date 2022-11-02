@@ -105,6 +105,7 @@ public without sharing class ContactStagingConversion {
 
 	private static void queryResult() {
 		for (String field : foreignKeyWrapperMap.keySet()) {
+			List<SObject> createSObjectList = new List<SObject>();
 			List<SObject> recordList = Database.query(
 				soqlQuery.replace('*', foreignKeyWrapperMap.get(field).table)
 					.replace('$', foreignKeyWrapperMap.get(field).searchField)
@@ -112,6 +113,22 @@ public without sharing class ContactStagingConversion {
 			);
 
 			for (SObject record : recordList) {
+				foreignKeyWrapperMap.get(field)
+					.queryResultMap.put(record.get(foreignKeyWrapperMap.get(field).searchField), (Id) record.get('Id'));
+			}
+
+			for (Object objectValue : foreignKeyWrapperMap.get(field).lookupSet) {
+				if (foreignKeyWrapperMap.get(field).queryResultMap.get(objectValue) == null) {
+					SObject newRecord = Schema.getGlobalDescribe()
+						.get(foreignKeyWrapperMap.get(field).table)
+						.newSObject();
+					newRecord.put(foreignKeyWrapperMap.get(field).searchField, objectValue);
+					createSObjectList.add(newRecord);
+				}
+			}
+
+			insert createSObjectList;
+			for (SObject record : createSObjectList) {
 				foreignKeyWrapperMap.get(field)
 					.queryResultMap.put(record.get(foreignKeyWrapperMap.get(field).searchField), (Id) record.get('Id'));
 			}
