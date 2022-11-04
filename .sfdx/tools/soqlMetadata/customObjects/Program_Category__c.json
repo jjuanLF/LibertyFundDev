@@ -62,7 +62,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program Category Name",
+      "label": "Program Name",
       "name": "Name",
       "nillable": true,
       "picklistValues": [],
@@ -500,16 +500,6 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ProcessSteps",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
-      "childSObject": "Program_Cat_Link__c",
-      "deprecatedAndHidden": false,
-      "field": "Program_Category__c",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Program_Cat_Links__r",
       "restrictedDelete": false
     },
     {

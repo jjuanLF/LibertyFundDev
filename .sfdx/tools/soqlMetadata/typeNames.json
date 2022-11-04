@@ -640,6 +640,22 @@
     "custom": false
   },
   {
+    "name": "Checklist__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Checklist__History",
+    "custom": false
+  },
+  {
+    "name": "Checklist__Share",
+    "custom": false
+  },
+  {
+    "name": "Checklist__c",
+    "custom": true
+  },
+  {
     "name": "CitationStagingTable__ChangeEvent",
     "custom": false
   },
@@ -678,6 +694,18 @@
   {
     "name": "ClientBrowser",
     "custom": false
+  },
+  {
+    "name": "CoSponsorTeam__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "CoSponsorTeam__History",
+    "custom": false
+  },
+  {
+    "name": "CoSponsorTeam__c",
+    "custom": true
   },
   {
     "name": "CollaborationGroup",
@@ -2176,6 +2204,22 @@
     "custom": false
   },
   {
+    "name": "NarrativeType__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "NarrativeType__History",
+    "custom": false
+  },
+  {
+    "name": "NarrativeType__Share",
+    "custom": false
+  },
+  {
+    "name": "NarrativeType__c",
+    "custom": true
+  },
+  {
     "name": "Note",
     "custom": false
   },
@@ -2592,6 +2636,30 @@
     "custom": false
   },
   {
+    "name": "ProgramAttendee__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "ProgramAttendee__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramAttendee__c",
+    "custom": true
+  },
+  {
+    "name": "ProgramChecklist__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "ProgramChecklist__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramChecklist__c",
+    "custom": true
+  },
+  {
     "name": "ProgramMemberStagingTable__ChangeEvent",
     "custom": false
   },
@@ -2601,6 +2669,42 @@
   },
   {
     "name": "ProgramMemberStagingTable__c",
+    "custom": true
+  },
+  {
+    "name": "ProgramNarrative__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "ProgramNarrative__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramNarrative__c",
+    "custom": true
+  },
+  {
+    "name": "ProgramSessionReading__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "ProgramSessionReading__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramSessionReading__c",
+    "custom": true
+  },
+  {
+    "name": "ProgramSession__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "ProgramSession__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramSession__c",
     "custom": true
   },
   {
@@ -2616,11 +2720,15 @@
     "custom": true
   },
   {
-    "name": "Program_Cat_Link__ChangeEvent",
+    "name": "ProgramTeam__ChangeEvent",
     "custom": false
   },
   {
-    "name": "Program_Cat_Link__c",
+    "name": "ProgramTeam__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramTeam__c",
     "custom": true
   },
   {
@@ -2681,6 +2789,22 @@
   },
   {
     "name": "Program_Payments__c",
+    "custom": true
+  },
+  {
+    "name": "Program__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Program__History",
+    "custom": false
+  },
+  {
+    "name": "Program__Share",
+    "custom": false
+  },
+  {
+    "name": "Program__c",
     "custom": true
   },
   {
@@ -3321,14 +3445,6 @@
   },
   {
     "name": "ers_datatableConfig__c",
-    "custom": true
-  },
-  {
-    "name": "p0pFD__ObjectsToDump__ChangeEvent",
-    "custom": false
-  },
-  {
-    "name": "p0pFD__ObjectsToDump__c",
     "custom": true
   },
   {

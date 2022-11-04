@@ -190,6 +190,7 @@ global class Contact {
     global List<Case> Cases;
     global List<CaseContactRole> CaseContactRoles;
     global List<Category__c> Categories__r;
+    global List<CoSponsorTeam__c> CoSponsor_Teams__r;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContactFeed> Feeds;
@@ -224,8 +225,10 @@ global class Contact {
     global List<Payment__c> Payments__r;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
+    global List<ProgramAttendee__c> Program_Attendees__r;
     global List<Program_Exp_Report__c> Program_Exp_Reports__r;
     global List<Program_Payments__c> Program_Payments__r;
+    global List<Program__c> Program1__r;
     global List<Proposal_Author__c> Authors__r;
     global List<Publication_Role__c> Publication_Roles__r;
     global List<RecordAction> RecordActions;

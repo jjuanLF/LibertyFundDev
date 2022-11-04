@@ -2346,6 +2346,48 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Checklist__c.Active__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Checklist__c.Body__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Checklist__c.DaysTaskDue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Checklist__c.EmailReminderDays__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Checklist__c.SubStage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Checklist__c.Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Citation__c.Author__c"
         },
         {
@@ -3907,6 +3949,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.ErrorMessage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Fellow_Code__c"
         },
         {
@@ -4643,6 +4692,13 @@
           "label": null,
           "validFor": null,
           "value": "Evaluation__c.Program_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Evaluation__c.ProgramId__c"
         },
         {
           "active": true,
@@ -6224,6 +6280,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "NarrativeType__c.Active__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "NarrativeType__c.Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "OpActivity__c.ConfClass__c"
         },
         {
@@ -6833,14 +6903,119 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "Program_Cat_Link__c.Category_Name__c"
+          "value": "Program__c.BudgetAmount__c"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "Program_Cat_Link__c.External_ID__c"
+          "value": "Program__c.CampaignId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.ConfereeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.ConferenceType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.EndDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.FiscalYear__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.LFRepId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.NumberOfSessions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.PartnerId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.PartnerRepId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.ProgramId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.Region__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.RepeatProgramId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.Stage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.StartDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.SubStage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.VenueId__c"
         },
         {
           "active": true,
@@ -7169,6 +7344,41 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramAttendee__c.AttendanceStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramAttendee__c.ParticipationType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramChecklist__c.Completed__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramChecklist__c.LastEmailDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramChecklist__c.LastEmailType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramMemberStagingTable__c.BudgID__c"
         },
         {
@@ -7219,6 +7429,118 @@
           "label": null,
           "validFor": null,
           "value": "ProgramMemberStagingTable__c.Suggested_Note__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramNarrative__c.Narrative__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSession__c.Narrative__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.Annotation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.BibliographyId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.Chapter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.Citation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.ConferenceCitation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.CopyPurchase__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.CreditLine__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.ExcludeFlag__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.LegacyReadingID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.Notes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.PageCount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.Pages__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.PublicationTitle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c.SortOrder__c"
         },
         {
           "active": true,
@@ -7464,6 +7786,13 @@
           "label": null,
           "validFor": null,
           "value": "ProgramStagingTable__c.Submitting_Fellow__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramTeam__c.UserId__c"
         },
         {
           "active": true,

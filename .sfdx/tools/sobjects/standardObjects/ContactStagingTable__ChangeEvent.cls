@@ -61,6 +61,7 @@ global class ContactStagingTable__ChangeEvent {
     global String Mobile__c;
     global String Phone__c;
     global String MergeFields__c;
+    global String ErrorMessage__c;
 
     global ContactStagingTable__ChangeEvent () 
     {

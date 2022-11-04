@@ -458,6 +458,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Active Checklist Tab",
+          "validFor": null,
+          "value": "Tab.Checklist__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Active Citation Author Tab",
           "validFor": null,
           "value": "Tab.Citation_Author__c"
@@ -552,6 +559,13 @@
           "label": "Active Contract Tab",
           "validFor": null,
           "value": "Tab.Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CoSponsor Team Tab",
+          "validFor": null,
+          "value": "Tab.CoSponsorTeam__c"
         },
         {
           "active": true,
@@ -843,6 +857,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Active Narrative Type Tab",
+          "validFor": null,
+          "value": "Tab.NarrativeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Active Notes Tab",
           "validFor": null,
           "value": "Tab.Notes__c"
@@ -955,6 +976,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Active Program Attendee Tab",
+          "validFor": null,
+          "value": "Tab.ProgramAttendee__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Active Program Category Tab",
           "validFor": null,
           "value": "Tab.Program_Category__c"
@@ -962,9 +990,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Active Program Cat Link Tab",
+          "label": "Active Program Checklist Tab",
           "validFor": null,
-          "value": "Tab.Program_Cat_Link__c"
+          "value": "Tab.ProgramChecklist__c"
         },
         {
           "active": true,
@@ -1004,6 +1032,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Active Program Narrative Tab",
+          "validFor": null,
+          "value": "Tab.ProgramNarrative__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Active Program Payment Tab",
           "validFor": null,
           "value": "Tab.Program_Payments__c"
@@ -1011,9 +1046,37 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Active Program Session Reading Tab",
+          "validFor": null,
+          "value": "Tab.ProgramSessionReading__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Program Session Tab",
+          "validFor": null,
+          "value": "Tab.ProgramSession__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Active Program Staging Table Tab",
           "validFor": null,
           "value": "Tab.ProgramStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Program Tab",
+          "validFor": null,
+          "value": "Tab.Program__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Program Team Tab",
+          "validFor": null,
+          "value": "Tab.ProgramTeam__c"
         },
         {
           "active": true,

@@ -208,6 +208,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Checklist__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Citation__c"
         },
         {
@@ -251,6 +258,13 @@
           "label": null,
           "validFor": null,
           "value": "ContactStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "CoSponsorTeam__c"
         },
         {
           "active": true,
@@ -481,6 +495,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "NarrativeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Notes__c"
         },
         {
@@ -537,7 +558,7 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "Program_Cat_Link__c"
+          "value": "Program__c"
         },
         {
           "active": true,
@@ -586,6 +607,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramAttendee__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramChecklist__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramMemberStagingTable__c"
         },
         {
@@ -593,7 +628,35 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramNarrative__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSession__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramTeam__c"
         },
         {
           "active": true,

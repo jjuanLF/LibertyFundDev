@@ -1,48 +1,62 @@
-<!--prettier-ignore-->
 <template>
-	<lightning-card title="Convert to Contact">
-		<template if:false={results}>
-			<lightning-button onclick={handleClick} label="Convert" slot="actions"></lightning-button>
-		</template>
-		<template if:true={processing}>
-			<lightning-spinner alternative-text="Converting"></lightning-spinner>
-		</template>
-		<template if:true={results}>
-			<div class="slds-align_absolute-center">
-				<table class="slds-table slds-table_cell-buffer slds-table_bordered">
-					<thead>
-						<tr class="slds-line-height_reset">
-							<template for:each={results} for:item="result">
-								<th key={result} class="slds-text-title_caps" scope="col">
-									<div class="slds-truncate" title="Entity Name">{result}</div>
-								</th>
-							</template>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<template for:each={created} for:item="contact">
-									<lightning-card key={index} variant="Narrow"  title={contact} icon-name="standard:contact">
-									</lightning-card>
-								</template>
-							</td>
-							<td>
-								<template for:each={updated} for:item="contact">
-									<lightning-card key={index} variant="Narrow"  title={contact} icon-name="standard:contact">
-									</lightning-card>
-								</template>
-							</td>						
-							<td>
-								<template for:each={failed} for:item="contact">
-									<lightning-card key={index} variant="Narrow"  title={contact} icon-name="standard:contact">
-									</lightning-card>
-								</template>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</template>
-	</lightning-card>
+    <lightning-card title="Convert to Contact">
+        <template if:false={results}>
+            <lightning-button onclick={handleClick} label="Convert" slot="actions"></lightning-button>
+        </template>
+        <template if:true={processing}>
+            <lightning-spinner alternative-text="Converting"></lightning-spinner>
+        </template>
+        <template if:true={results}>
+            <div class="slds-align_absolute-center">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <template for:each={results} for:item="result">
+                                <th key={result} class="slds-text-title_caps" scope="col">
+                                    <div class="slds-truncate" title="Entity Name">{result}</div>
+                                </th>
+                            </template>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <template for:each={created} for:item="contact">
+                                    <lightning-card
+                                        key={index}
+                                        variant="Narrow"
+                                        title={contact}
+                                        icon-name="standard:contact"
+                                    >
+                                    </lightning-card>
+                                </template>
+                            </td>
+                            <td>
+                                <template for:each={updated} for:item="contact">
+                                    <lightning-card
+                                        key={index}
+                                        variant="Narrow"
+                                        title={contact}
+                                        icon-name="standard:contact"
+                                    >
+                                    </lightning-card>
+                                </template>
+                            </td>
+                            <td>
+                                <template for:each={failed} for:item="contact">
+                                    <lightning-card
+                                        key={index}
+                                        variant="Narrow"
+                                        title={contact}
+                                        icon-name="standard:contact"
+                                    >
+                                    </lightning-card>
+                                </template>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+    </lightning-card>
 </template>

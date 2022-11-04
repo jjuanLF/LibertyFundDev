@@ -188,6 +188,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Program",
+          "validFor": null,
+          "value": "ProgramId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Recommend?",
           "validFor": null,
           "value": "Recommend__c"

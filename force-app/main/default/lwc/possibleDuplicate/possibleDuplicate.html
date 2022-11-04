@@ -1,27 +1,35 @@
 <template>
-	<lightning-card title="Possible Duplicates" icon-name="standard:groups">
-		<h3 slot="Possible Duplicates">Possible Duplicates</h3>
-		<p class="slds-var-p-horizontal_small">
-			<!--prettier-ignore-->
-			<template for:each={records} for:item="record">
-				<lightning-card key={record.Id} class="my-card" icon-name="standard:contact">
-					<h3 slot="title"><a href="#" onclick={navigateToRecord} title={record.Id}>{record.Name}</a></h3>
-					<lightning-button label="Choose Merge Fields" slot="actions" onclick={mergeContact} value={record.Id}></lightning-button>
-					<template for:each={record.FieldValues} for:item="fieldValue">
-						<p key={fieldValue.Id} class="slds-var-p-horizontal_small">
-							<span><b>{fieldValue.field}: </b> 
-								<template if:true={fieldValue.value}>
-									{fieldValue.value}
-								</template>
-							</span><br/>				
-						</p>
-					</template>
-				</lightning-card>
-			</template>
-		</p>
-	</lightning-card>
-	<!--prettier-ignore-->
-	<template if:true={openModal}>
-		<c-modal-merge-field-picklist onmodalevent={handleModal} values={values} tempcontactid={recordId} contactid={contactId} options={options}></c-modal-merge-field-picklist>
-	</template>
+    <lightning-card title="Possible Duplicates" icon-name="standard:groups">
+        <h3 slot="Possible Duplicates">Possible Duplicates</h3>
+        <p class="slds-var-p-horizontal_small">
+            <template for:each={records} for:item="record">
+                <lightning-card key={record.Id} class="my-card" icon-name="standard:contact">
+                    <h3 slot="title"><a href="#" onclick={navigateToRecord} title={record.Id}>{record.Name}</a></h3>
+                    <lightning-button
+                        label="Choose Merge Fields"
+                        slot="actions"
+                        onclick={mergeContact}
+                        value={record.Id}
+                    ></lightning-button>
+                    <template for:each={record.FieldValues} for:item="fieldValue">
+                        <p key={fieldValue.Id} class="slds-var-p-horizontal_small">
+                            <span
+                                ><b>{fieldValue.field}: </b>
+                                <template if:true={fieldValue.value}> {fieldValue.value} </template> </span
+                            ><br />
+                        </p>
+                    </template>
+                </lightning-card>
+            </template>
+        </p>
+    </lightning-card>
+    <template if:true={openModal}>
+        <c-modal-merge-field-picklist
+            onmodalevent={handleModal}
+            values={values}
+            tempcontactid={recordId}
+            contactid={contactId}
+            options={options}
+        ></c-modal-merge-field-picklist>
+    </template>
 </template>

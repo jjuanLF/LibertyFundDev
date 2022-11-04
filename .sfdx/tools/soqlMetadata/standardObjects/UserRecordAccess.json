@@ -403,6 +403,16 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "Checklist__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "CitationStagingTable__c",
       "deprecatedAndHidden": false,
       "field": "UserRecordAccessId",
@@ -424,6 +434,16 @@
     {
       "cascadeDelete": false,
       "childSObject": "Citation__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CoSponsorTeam__c",
       "deprecatedAndHidden": false,
       "field": "UserRecordAccessId",
       "junctionIdListNames": [],
@@ -1093,6 +1113,16 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "NarrativeType__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "Notes__c",
       "deprecatedAndHidden": false,
       "field": "UserRecordAccessId",
@@ -1243,7 +1273,57 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ProgramAttendee__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProgramChecklist__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ProgramMemberStagingTable__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProgramNarrative__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProgramSessionReading__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProgramSession__c",
       "deprecatedAndHidden": false,
       "field": "UserRecordAccessId",
       "junctionIdListNames": [],
@@ -1263,7 +1343,7 @@
     },
     {
       "cascadeDelete": false,
-      "childSObject": "Program_Cat_Link__c",
+      "childSObject": "ProgramTeam__c",
       "deprecatedAndHidden": false,
       "field": "UserRecordAccessId",
       "junctionIdListNames": [],
@@ -1324,6 +1404,16 @@
     {
       "cascadeDelete": false,
       "childSObject": "Program_Payments__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Program__c",
       "deprecatedAndHidden": false,
       "field": "UserRecordAccessId",
       "junctionIdListNames": [],

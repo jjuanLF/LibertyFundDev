@@ -421,6 +421,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Checklist",
+          "validFor": null,
+          "value": "Checklist__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Citation",
           "validFor": null,
           "value": "Citation__c"
@@ -515,6 +522,13 @@
           "label": "Contract",
           "validFor": null,
           "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CoSponsor Team",
+          "validFor": null,
+          "value": "CoSponsorTeam__c"
         },
         {
           "active": true,
@@ -806,6 +820,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Narrative Type",
+          "validFor": null,
+          "value": "NarrativeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Notes",
           "validFor": null,
           "value": "Notes__c"
@@ -918,6 +939,20 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Program",
+          "validFor": null,
+          "value": "Program__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Attendee",
+          "validFor": null,
+          "value": "ProgramAttendee__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Program Category",
           "validFor": null,
           "value": "Program_Category__c"
@@ -925,9 +960,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Program Cat Link",
+          "label": "Program Checklist",
           "validFor": null,
-          "value": "Program_Cat_Link__c"
+          "value": "ProgramChecklist__c"
         },
         {
           "active": true,
@@ -967,6 +1002,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Program Narrative",
+          "validFor": null,
+          "value": "ProgramNarrative__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Program Payment",
           "validFor": null,
           "value": "Program_Payments__c"
@@ -974,9 +1016,30 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Program Session",
+          "validFor": null,
+          "value": "ProgramSession__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Session Reading",
+          "validFor": null,
+          "value": "ProgramSessionReading__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Program Staging Table",
           "validFor": null,
           "value": "ProgramStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Team",
+          "validFor": null,
+          "value": "ProgramTeam__c"
         },
         {
           "active": true,

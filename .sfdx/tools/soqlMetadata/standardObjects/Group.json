@@ -466,6 +466,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "Checklist__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "CitationStagingTable__Share",
       "deprecatedAndHidden": false,
       "field": "UserOrGroupId",
@@ -866,6 +876,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "NarrativeType__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "Notes__Share",
       "deprecatedAndHidden": false,
       "field": "UserOrGroupId",
@@ -967,6 +987,16 @@
     {
       "cascadeDelete": true,
       "childSObject": "Program_Invite_Settings__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Program__Share",
       "deprecatedAndHidden": false,
       "field": "UserOrGroupId",
       "junctionIdListNames": [],

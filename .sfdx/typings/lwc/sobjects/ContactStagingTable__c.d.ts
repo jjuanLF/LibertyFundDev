@@ -222,3 +222,7 @@ declare module "@salesforce/schema/ContactStagingTable__c.MergeFields__c" {
   const MergeFields__c:string;
   export default MergeFields__c;
 }
+declare module "@salesforce/schema/ContactStagingTable__c.ErrorMessage__c" {
+  const ErrorMessage__c:string;
+  export default ErrorMessage__c;
+}

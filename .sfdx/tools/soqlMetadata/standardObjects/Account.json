@@ -2433,6 +2433,26 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "Program__c",
+      "deprecatedAndHidden": false,
+      "field": "PartnerId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Programs__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Program__c",
+      "deprecatedAndHidden": false,
+      "field": "VenueId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Programs1__r",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "RecordAction",
       "deprecatedAndHidden": false,

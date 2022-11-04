@@ -41,7 +41,6 @@ global class Program_Category__c {
     global List<NoteAndAttachment> NotesAndAttachments;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
-    global List<Program_Cat_Link__c> Program_Cat_Links__r;
     global List<Program_Category__Share> Shares;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;

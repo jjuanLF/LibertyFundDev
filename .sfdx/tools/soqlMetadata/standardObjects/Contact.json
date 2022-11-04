@@ -3187,6 +3187,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "CoSponsorTeam__c",
+      "deprecatedAndHidden": false,
+      "field": "ContactId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CoSponsor_Teams__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "CollaborationGroupRecord",
       "deprecatedAndHidden": false,
       "field": "RecordId",
@@ -3697,6 +3707,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "ProgramAttendee__c",
+      "deprecatedAndHidden": false,
+      "field": "ContactId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Program_Attendees__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "Program_Exp_Report__c",
       "deprecatedAndHidden": false,
       "field": "Contact__c",
@@ -3713,6 +3733,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Program_Payments__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Program__c",
+      "deprecatedAndHidden": false,
+      "field": "PartnerRepId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Program1__r",
       "restrictedDelete": false
     },
     {

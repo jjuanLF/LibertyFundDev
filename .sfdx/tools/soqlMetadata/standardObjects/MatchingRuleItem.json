@@ -449,6 +449,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "AttendanceStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Author"
         },
         {
@@ -492,6 +499,13 @@
           "label": null,
           "validFor": null,
           "value": "Bibliography"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "BibliographyId"
         },
         {
           "active": true,
@@ -646,6 +660,13 @@
           "label": null,
           "validFor": null,
           "value": "BillingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Body"
         },
         {
           "active": true,
@@ -869,7 +890,21 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ChecklistId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ChildrenCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Citation"
         },
         {
           "active": true,
@@ -1016,6 +1051,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ConfereeType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Conference_ID"
         },
         {
@@ -1038,6 +1080,13 @@
           "label": null,
           "validFor": null,
           "value": "Conferences_Attended_Past_Year"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ConferenceType"
         },
         {
           "active": true,
@@ -1310,6 +1359,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ConvictionsCount"
         },
         {
@@ -1332,6 +1395,13 @@
           "label": null,
           "validFor": null,
           "value": "Copy_Purchase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "CopyPurchase"
         },
         {
           "active": true,
@@ -1450,6 +1520,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "CreditLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "CSPid"
         },
         {
@@ -1493,6 +1570,13 @@
           "label": null,
           "validFor": null,
           "value": "Current_State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DaysTaskDue"
         },
         {
           "active": true,
@@ -1751,6 +1835,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "EmailReminderDays"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Employment_History_Boost"
         },
         {
@@ -1906,13 +1997,6 @@
           "label": null,
           "validFor": null,
           "value": "External_Id"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "External_ID"
         },
         {
           "active": true,
@@ -2172,6 +2256,13 @@
           "label": null,
           "validFor": null,
           "value": "Fiscal_Year"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "FiscalYear"
         },
         {
           "active": true,
@@ -2528,6 +2619,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "LastEmailType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "LastName"
         },
         {
@@ -2592,6 +2690,13 @@
           "label": null,
           "validFor": null,
           "value": "LeadSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "LegacyReadingID"
         },
         {
           "active": true,
@@ -3291,6 +3396,48 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Named_Credential"
         },
         {
@@ -3299,6 +3446,13 @@
           "label": null,
           "validFor": null,
           "value": "Named_Credential"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "NarrativeTypeId"
         },
         {
           "active": true,
@@ -3368,6 +3522,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Notes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "NumberOfEmployees"
         },
         {
@@ -3376,6 +3537,13 @@
           "label": null,
           "validFor": null,
           "value": "NumberOfEmployees"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "NumberOfSessions"
         },
         {
           "active": true,
@@ -3585,6 +3753,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "PageCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Pages"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Pages"
         },
         {
@@ -3656,6 +3838,27 @@
           "label": null,
           "validFor": null,
           "value": "Participation_Type_Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ParticipationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "PartnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "PartnerRepId"
         },
         {
           "active": true,
@@ -3879,13 +4082,6 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "Program_Category"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
           "value": "Program_Exp_Report"
         },
         {
@@ -3915,6 +4111,27 @@
           "label": null,
           "validFor": null,
           "value": "Program_Title_Long"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramTitle"
         },
         {
           "active": true,
@@ -3971,6 +4188,13 @@
           "label": null,
           "validFor": null,
           "value": "Proposal_ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProposalId"
         },
         {
           "active": true,
@@ -4160,6 +4384,13 @@
           "label": null,
           "validFor": null,
           "value": "Red_Amber_Green"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Region"
         },
         {
           "active": true,
@@ -4544,6 +4775,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "SortOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Source_Branch"
         },
         {
@@ -4601,6 +4839,13 @@
           "label": null,
           "validFor": null,
           "value": "Spreadsheet_ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Stage"
         },
         {
           "active": true,
@@ -4762,6 +5007,20 @@
           "label": null,
           "validFor": null,
           "value": "Subscription_Type_Lookup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SubStage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SubStage"
         },
         {
           "active": true,
@@ -5034,6 +5293,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Type_Attributes"
         },
         {
@@ -5147,6 +5420,13 @@
           "label": null,
           "validFor": null,
           "value": "Vendor_ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "VenueId"
         },
         {
           "active": true,

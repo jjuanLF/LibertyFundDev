@@ -418,6 +418,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Checklist__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Citation__ChangeEvent"
         },
         {
@@ -741,6 +748,13 @@
           "label": null,
           "validFor": null,
           "value": "ConvCoachingRecommendation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "CoSponsorTeam__ChangeEvent"
         },
         {
           "active": true,
@@ -1328,6 +1342,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "NarrativeType__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Note"
         },
         {
@@ -1580,7 +1601,7 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "Program_Cat_Link__ChangeEvent"
+          "value": "Program__ChangeEvent"
         },
         {
           "active": true,
@@ -1629,6 +1650,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramAttendee__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramChecklist__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramMemberStagingTable__ChangeEvent"
         },
         {
@@ -1636,7 +1671,35 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramNarrative__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSession__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReading__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramStagingTable__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramTeam__ChangeEvent"
         },
         {
           "active": true,

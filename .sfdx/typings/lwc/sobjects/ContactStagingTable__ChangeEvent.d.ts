@@ -206,3 +206,7 @@ declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.MergeFields_
   const MergeFields__c:string;
   export default MergeFields__c;
 }
+declare module "@salesforce/schema/ContactStagingTable__ChangeEvent.ErrorMessage__c" {
+  const ErrorMessage__c:string;
+  export default ErrorMessage__c;
+}

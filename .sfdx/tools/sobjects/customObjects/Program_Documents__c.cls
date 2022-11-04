@@ -10,6 +10,8 @@ global class Program_Documents__c {
     global Id Id;
     global Boolean IsDeleted;
     global String Name;
+    global RecordType RecordType;
+    global Id RecordTypeId;
     global Datetime CreatedDate;
     global User CreatedBy;
     global Id CreatedById;
@@ -19,7 +21,6 @@ global class Program_Documents__c {
     global Datetime SystemModstamp;
     global Campaign Program__r;
     global Id Program__c;
-    global String Doc_Type__c;
     global String External_ID__c;
     global String Icon__c;
     global String MimeType__c;
@@ -28,6 +29,7 @@ global class Program_Documents__c {
     global String PDF__c;
     global String WebLink__c;
     global String PDF_Url__c;
+    global String Doc_Type__c;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;

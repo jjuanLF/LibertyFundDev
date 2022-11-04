@@ -131,6 +131,8 @@ global class Account {
     global List<Payment__c> Payments__r;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
+    global List<Program__c> Programs__r;
+    global List<Program__c> Programs1__r;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
     global List<SocialPersona> Personas;

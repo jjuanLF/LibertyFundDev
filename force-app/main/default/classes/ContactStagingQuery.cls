@@ -29,7 +29,8 @@ public with sharing class ContactStagingQuery {
 				Mobile__c,
 				MergeFields__c,
 				MergeContactId__c,
-				Salutation__c
+				Salutation__c,
+				ProgramId__c
 			FROM ContactStagingTable__c
 		];
 	}

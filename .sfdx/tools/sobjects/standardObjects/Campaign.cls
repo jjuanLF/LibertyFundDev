@@ -170,11 +170,12 @@ global class Campaign {
     global List<Payment__c> Payments__r;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
-    global List<Program_Cat_Link__c> Program_Cat_Links__r;
     global List<Program_Documents__c> Program_Documents__r;
     global List<Program_Exp_Report__c> Program_Exp_Reports__r;
     global List<Program_Invite_Settings__c> Program_Invite_Settings__r;
     global List<Program_Payments__c> Program_Payments__r;
+    global List<Program__c> Programs1__r;
+    global List<Program__c> Programs__r;
     global List<Proposal_Author__c> Authors__r;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;

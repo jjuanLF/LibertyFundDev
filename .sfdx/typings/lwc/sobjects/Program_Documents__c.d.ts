@@ -10,6 +10,14 @@ declare module "@salesforce/schema/Program_Documents__c.Name" {
   const Name:string;
   export default Name;
 }
+declare module "@salesforce/schema/Program_Documents__c.RecordType" {
+  const RecordType:any;
+  export default RecordType;
+}
+declare module "@salesforce/schema/Program_Documents__c.RecordTypeId" {
+  const RecordTypeId:any;
+  export default RecordTypeId;
+}
 declare module "@salesforce/schema/Program_Documents__c.CreatedDate" {
   const CreatedDate:any;
   export default CreatedDate;
@@ -46,10 +54,6 @@ declare module "@salesforce/schema/Program_Documents__c.Program__c" {
   const Program__c:any;
   export default Program__c;
 }
-declare module "@salesforce/schema/Program_Documents__c.Doc_Type__c" {
-  const Doc_Type__c:string;
-  export default Doc_Type__c;
-}
 declare module "@salesforce/schema/Program_Documents__c.External_ID__c" {
   const External_ID__c:string;
   export default External_ID__c;
@@ -81,4 +85,8 @@ declare module "@salesforce/schema/Program_Documents__c.WebLink__c" {
 declare module "@salesforce/schema/Program_Documents__c.PDF_Url__c" {
   const PDF_Url__c:string;
   export default PDF_Url__c;
+}
+declare module "@salesforce/schema/Program_Documents__c.Doc_Type__c" {
+  const Doc_Type__c:string;
+  export default Doc_Type__c;
 }

@@ -3645,16 +3645,6 @@
     },
     {
       "cascadeDelete": true,
-      "childSObject": "Program_Cat_Link__c",
-      "deprecatedAndHidden": false,
-      "field": "Program__c",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Program_Cat_Links__r",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
       "childSObject": "Program_Documents__c",
       "deprecatedAndHidden": false,
       "field": "Program__c",
@@ -3691,6 +3681,26 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Program_Payments__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Program__c",
+      "deprecatedAndHidden": false,
+      "field": "CampaignId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Programs1__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Program__c",
+      "deprecatedAndHidden": false,
+      "field": "RepeatProgramId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Programs__r",
       "restrictedDelete": false
     },
     {

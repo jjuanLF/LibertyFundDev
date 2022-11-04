@@ -1,0 +1,1206 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event ID",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Replay ID",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event Header",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "<Entity>",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Budget Amount",
+      "name": "BudgetAmount__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Campaign Id",
+      "name": "CampaignId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Campaign"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Conferee Type",
+      "name": "ConfereeType__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Academic",
+          "validFor": null,
+          "value": "Academic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Academic/Professional",
+          "validFor": null,
+          "value": "Academic/Professional"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cosponsor",
+          "validFor": null,
+          "value": "Cosponsor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Graduate Student",
+          "validFor": null,
+          "value": "Graduate Student"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HS Teacher",
+          "validFor": null,
+          "value": "HS Teacher"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Judge",
+          "validFor": null,
+          "value": "Judge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Non-Academic",
+          "validFor": null,
+          "value": "Non-Academic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Professional",
+          "validFor": null,
+          "value": "Professional"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Student, Academic & Professional",
+          "validFor": null,
+          "value": "Student, Academic & Professional"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Students & Academics",
+          "validFor": null,
+          "value": "Students & Academics"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Undergrad & Grad Students",
+          "validFor": null,
+          "value": "Undergrad & Grad Students"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Undergraduate",
+          "validFor": null,
+          "value": "Undergraduate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Young Scholar",
+          "validFor": null,
+          "value": "Young Scholar"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Conference Type",
+      "name": "ConferenceType__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "End Date",
+      "name": "EndDate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fiscal Year",
+      "name": "FiscalYear__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2023-24",
+          "validFor": null,
+          "value": "2023-24"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2022-23",
+          "validFor": null,
+          "value": "2022-23"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2021-22",
+          "validFor": null,
+          "value": "2021-22"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2020-21",
+          "validFor": null,
+          "value": "2020-21"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2019-20",
+          "validFor": null,
+          "value": "2019-20"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2018-19",
+          "validFor": null,
+          "value": "2018-19"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2017-18",
+          "validFor": null,
+          "value": "2017-18"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2016-17",
+          "validFor": null,
+          "value": "2016-17"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2015-16",
+          "validFor": null,
+          "value": "2015-16"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2014-15",
+          "validFor": null,
+          "value": "2014-15"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2013-14",
+          "validFor": null,
+          "value": "2013-14"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2012-13",
+          "validFor": null,
+          "value": "2012-13"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2011-12",
+          "validFor": null,
+          "value": "2011-12"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2010-11",
+          "validFor": null,
+          "value": "2010-11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2009-10",
+          "validFor": null,
+          "value": "2009-10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2008-09",
+          "validFor": null,
+          "value": "2008-09"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2007-08",
+          "validFor": null,
+          "value": "2007-08"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2006-07",
+          "validFor": null,
+          "value": "2006-07"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2005-06",
+          "validFor": null,
+          "value": "2005-06"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2004-05",
+          "validFor": null,
+          "value": "2004-05"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2003-04",
+          "validFor": null,
+          "value": "2003-04"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2002-03",
+          "validFor": null,
+          "value": "2002-03"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2001-02",
+          "validFor": null,
+          "value": "2001-02"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2000-01",
+          "validFor": null,
+          "value": "2000-01"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1999-00",
+          "validFor": null,
+          "value": "1999-00"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1998-99",
+          "validFor": null,
+          "value": "1998-99"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1997-98",
+          "validFor": null,
+          "value": "1997-98"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1996-97",
+          "validFor": null,
+          "value": "1996-97"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1995-96",
+          "validFor": null,
+          "value": "1995-96"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1994-95",
+          "validFor": null,
+          "value": "1994-95"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1993-94",
+          "validFor": null,
+          "value": "1993-94"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1992-93",
+          "validFor": null,
+          "value": "1992-93"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1991-92",
+          "validFor": null,
+          "value": "1991-92"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1990-91",
+          "validFor": null,
+          "value": "1990-91"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1989-90",
+          "validFor": null,
+          "value": "1989-90"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1988-89",
+          "validFor": null,
+          "value": "1988-89"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1987-88",
+          "validFor": null,
+          "value": "1987-88"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1986-87",
+          "validFor": null,
+          "value": "1986-87"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1985-86",
+          "validFor": null,
+          "value": "1985-86"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1984-85",
+          "validFor": null,
+          "value": "1984-85"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1983-84",
+          "validFor": null,
+          "value": "1983-84"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1982-83",
+          "validFor": null,
+          "value": "1982-83"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1981-82",
+          "validFor": null,
+          "value": "1981-82"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1980-81",
+          "validFor": null,
+          "value": "1980-81"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1979-80",
+          "validFor": null,
+          "value": "1979-80"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1978-79",
+          "validFor": null,
+          "value": "1978-79"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1977-78",
+          "validFor": null,
+          "value": "1977-78"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1976-77",
+          "validFor": null,
+          "value": "1976-77"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1975-76",
+          "validFor": null,
+          "value": "1975-76"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1974-75",
+          "validFor": null,
+          "value": "1974-75"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1973-74",
+          "validFor": null,
+          "value": "1973-74"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1972-73",
+          "validFor": null,
+          "value": "1972-73"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1971-72",
+          "validFor": null,
+          "value": "1971-72"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1969-70",
+          "validFor": null,
+          "value": "1969-70"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1966-67",
+          "validFor": null,
+          "value": "1966-67"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1964-65",
+          "validFor": null,
+          "value": "1964-65"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1963-64",
+          "validFor": null,
+          "value": "1963-64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1962-63",
+          "validFor": null,
+          "value": "1962-63"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "LF Rep",
+      "name": "LFRepId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Number of Sessions",
+      "name": "NumberOfSessions__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Co-Sponsor",
+      "name": "PartnerId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Co-Sponsor Rep",
+      "name": "PartnerRepId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Program Id",
+      "name": "ProgramId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Program Title",
+      "name": "ProgramTitle__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Proposal Id",
+      "name": "ProposalId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Region",
+      "name": "Region__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "North America",
+          "validFor": null,
+          "value": "North America"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latin America",
+          "validFor": null,
+          "value": "Latin America"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Europe",
+          "validFor": null,
+          "value": "Europe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Africa",
+          "validFor": null,
+          "value": "Africa"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle East",
+          "validFor": null,
+          "value": "Middle East"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Australia",
+          "validFor": null,
+          "value": "Australia"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asia",
+          "validFor": null,
+          "value": "Asia"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "United Kingdom",
+          "validFor": null,
+          "value": "United Kingdom"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Repeat",
+      "name": "RepeatProgramId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Campaign"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Stage",
+      "name": "Stage__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal",
+          "validFor": null,
+          "value": "Proposal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conference",
+          "validFor": null,
+          "value": "Conference"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Start Date",
+      "name": "StartDate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Venue",
+      "name": "VenueId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Sub Stage",
+      "name": "SubStage__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEP - Initiated",
+          "validFor": "gAAA",
+          "value": "PEP - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEP - Rep",
+          "validFor": "gAAA",
+          "value": "PEP - Rep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEP - Committee",
+          "validFor": "gAAA",
+          "value": "PEP - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEP - Board",
+          "validFor": "gAAA",
+          "value": "PEP - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEP - Approved",
+          "validFor": "gAAA",
+          "value": "PEP - Approved"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PCP - Initiated",
+          "validFor": "gAAA",
+          "value": "PCP - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PCP - Committee",
+          "validFor": "gAAA",
+          "value": "PCP - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PCP - Board",
+          "validFor": "gAAA",
+          "value": "PCP - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PCP - Approved",
+          "validFor": "gAAA",
+          "value": "PCP - Approved"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer",
+          "validFor": "QAAA",
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Agreement",
+          "validFor": "QAAA",
+          "value": "ProgramAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Development",
+          "validFor": "QAAA",
+          "value": "Development"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Completed",
+          "validFor": "QAAA",
+          "value": "Completed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed",
+          "validFor": "QAAA",
+          "value": "Closed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Converted",
+          "validFor": "",
+          "value": "Converted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Abandoned",
+          "validFor": "wAAA",
+          "value": "Abandoned"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    }
+  ],
+  "label": "Change Event: Program",
+  "childRelationships": [],
+  "custom": false,
+  "name": "Program__ChangeEvent",
+  "queryable": false
+}

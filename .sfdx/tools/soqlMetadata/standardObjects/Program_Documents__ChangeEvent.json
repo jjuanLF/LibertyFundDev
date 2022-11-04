@@ -76,6 +76,25 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
       "label": "Created Date",
       "name": "CreatedDate",
       "nillable": true,
@@ -158,23 +177,6 @@
       "relationshipName": null,
       "sortable": false,
       "type": "reference"
-    },
-    {
-      "aggregatable": false,
-      "custom": true,
-      "defaultValue": null,
-      "extraTypeInfo": null,
-      "filterable": false,
-      "groupable": false,
-      "inlineHelpText": null,
-      "label": "Doc Type",
-      "name": "Doc_Type__c",
-      "nillable": true,
-      "picklistValues": [],
-      "referenceTo": [],
-      "relationshipName": null,
-      "sortable": false,
-      "type": "string"
     },
     {
       "aggregatable": false,
@@ -311,6 +313,171 @@
       "relationshipName": null,
       "sortable": false,
       "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Doc Type",
+      "name": "Doc_Type__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assistant Summary Report",
+          "validFor": null,
+          "value": "Assistant Summary Report"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BEO",
+          "validFor": null,
+          "value": "BEO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Board Observer Evaluation",
+          "validFor": null,
+          "value": "Board Observer Evaluation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closing Conference File - Checklist",
+          "validFor": null,
+          "value": "Closing Conference File - Checklist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conferee List",
+          "validFor": null,
+          "value": "Conferee List"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Director Summary Report",
+          "validFor": null,
+          "value": "Director Summary Report"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Executive Observer Evaluation",
+          "validFor": null,
+          "value": "Executive Observer Evaluation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory Proposal",
+          "validFor": null,
+          "value": "Exploratory Proposal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hotel Contract",
+          "validFor": null,
+          "value": "Hotel Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hotel Insurance Certificate",
+          "validFor": null,
+          "value": "Hotel Insurance Certificate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invitation - Author",
+          "validFor": null,
+          "value": "Invitation - Author"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invitation - Conferee",
+          "validFor": null,
+          "value": "Invitation - Conferee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LOA-Assistant",
+          "validFor": null,
+          "value": "LOA-Assistant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LOA - Other",
+          "validFor": null,
+          "value": "LOA - Other"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Observer Evaluation",
+          "validFor": null,
+          "value": "Observer Evaluation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal",
+          "validFor": null,
+          "value": "Proposal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reading List",
+          "validFor": null,
+          "value": "Reading List"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule",
+          "validFor": null,
+          "value": "Schedule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Acceptance Email",
+          "validFor": null,
+          "value": "Virtual Acceptance Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Update Email",
+          "validFor": null,
+          "value": "Virtual Update Email"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
     }
   ],
   "label": "Change Event: Program Document",

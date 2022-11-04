@@ -68,6 +68,7 @@ global class Citation__c {
     global List<OpenActivity> OpenActivities;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
+    global List<ProgramSessionReading__c> Program_Session_Readings__r;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
     global List<Session_Readings__c> Session_Readings__r;

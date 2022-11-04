@@ -14,6 +14,14 @@ declare module "@salesforce/schema/Program_Documents__ChangeEvent.Name" {
   const Name:string;
   export default Name;
 }
+declare module "@salesforce/schema/Program_Documents__ChangeEvent.RecordType" {
+  const RecordType:any;
+  export default RecordType;
+}
+declare module "@salesforce/schema/Program_Documents__ChangeEvent.RecordTypeId" {
+  const RecordTypeId:any;
+  export default RecordTypeId;
+}
 declare module "@salesforce/schema/Program_Documents__ChangeEvent.CreatedDate" {
   const CreatedDate:any;
   export default CreatedDate;
@@ -41,10 +49,6 @@ declare module "@salesforce/schema/Program_Documents__ChangeEvent.LastModifiedBy
 declare module "@salesforce/schema/Program_Documents__ChangeEvent.Program__c" {
   const Program__c:any;
   export default Program__c;
-}
-declare module "@salesforce/schema/Program_Documents__ChangeEvent.Doc_Type__c" {
-  const Doc_Type__c:string;
-  export default Doc_Type__c;
 }
 declare module "@salesforce/schema/Program_Documents__ChangeEvent.External_ID__c" {
   const External_ID__c:string;
@@ -77,4 +81,8 @@ declare module "@salesforce/schema/Program_Documents__ChangeEvent.WebLink__c" {
 declare module "@salesforce/schema/Program_Documents__ChangeEvent.PDF_Url__c" {
   const PDF_Url__c:string;
   export default PDF_Url__c;
+}
+declare module "@salesforce/schema/Program_Documents__ChangeEvent.Doc_Type__c" {
+  const Doc_Type__c:string;
+  export default Doc_Type__c;
 }

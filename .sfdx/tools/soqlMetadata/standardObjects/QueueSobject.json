@@ -123,6 +123,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Checklist__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Citation__c"
         },
         {
@@ -396,6 +403,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "NarrativeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Notes__c"
         },
         {
@@ -446,6 +460,13 @@
           "label": null,
           "validFor": null,
           "value": "ProcessException"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c"
         },
         {
           "active": true,
