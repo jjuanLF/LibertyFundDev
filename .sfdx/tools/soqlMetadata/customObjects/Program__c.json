@@ -60,11 +60,11 @@
       "defaultValue": null,
       "extraTypeInfo": null,
       "filterable": true,
-      "groupable": false,
+      "groupable": true,
       "inlineHelpText": null,
       "label": "Program Name",
       "name": "Name",
-      "nillable": false,
+      "nillable": true,
       "picklistValues": [],
       "referenceTo": [],
       "relationshipName": null,
@@ -1054,7 +1054,7 @@
     {
       "aggregatable": true,
       "custom": true,
-      "defaultValue": null,
+      "defaultValue": "Proposal",
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
@@ -1065,10 +1065,17 @@
       "picklistValues": [
         {
           "active": true,
-          "defaultValue": false,
+          "defaultValue": true,
           "label": "Proposal",
           "validFor": null,
           "value": "Proposal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposed Co-Sponsor Project",
+          "validFor": null,
+          "value": "Proposed Co-Sponsor Project"
         },
         {
           "active": true,
@@ -1122,7 +1129,7 @@
     {
       "aggregatable": true,
       "custom": true,
-      "defaultValue": null,
+      "defaultValue": "PEP - Initiated",
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
@@ -1133,7 +1140,7 @@
       "picklistValues": [
         {
           "active": true,
-          "defaultValue": false,
+          "defaultValue": true,
           "label": "PEP - Initiated",
           "validFor": "gAAA",
           "value": "PEP - Initiated"
@@ -1170,63 +1177,63 @@
           "active": true,
           "defaultValue": false,
           "label": "PCP - Initiated",
-          "validFor": "gAAA",
+          "validFor": "QAAA",
           "value": "PCP - Initiated"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "PCP - Committee",
-          "validFor": "gAAA",
+          "validFor": "QAAA",
           "value": "PCP - Committee"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "PCP - Board",
-          "validFor": "gAAA",
+          "validFor": "QAAA",
           "value": "PCP - Board"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "PCP - Approved",
-          "validFor": "gAAA",
+          "validFor": "QAAA",
           "value": "PCP - Approved"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "Transfer",
-          "validFor": "QAAA",
+          "validFor": "IAAA",
           "value": "Transfer"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "Program Agreement",
-          "validFor": "QAAA",
+          "validFor": "IAAA",
           "value": "ProgramAgreement"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "Development",
-          "validFor": "QAAA",
+          "validFor": "IAAA",
           "value": "Development"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "Completed",
-          "validFor": "QAAA",
+          "validFor": "IAAA",
           "value": "Completed"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "Closed",
-          "validFor": "QAAA",
+          "validFor": "IAAA",
           "value": "Closed"
         },
         {
@@ -1240,7 +1247,7 @@
           "active": true,
           "defaultValue": false,
           "label": "Abandoned",
-          "validFor": "wAAA",
+          "validFor": "4AAA",
           "value": "Abandoned"
         }
       ],
@@ -1294,16 +1301,6 @@
     },
     {
       "cascadeDelete": true,
-      "childSObject": "CoSponsorTeam__c",
-      "deprecatedAndHidden": false,
-      "field": "ProgramId__c",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "CoSponsorTeam__r",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
       "childSObject": "CollaborationGroupRecord",
       "deprecatedAndHidden": false,
       "field": "RecordId",
@@ -1331,6 +1328,16 @@
       "junctionReferenceTo": [],
       "relationshipName": "ContactRequests",
       "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactStagingTable__c",
+      "deprecatedAndHidden": false,
+      "field": "ProgramId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ImportedContact__r",
+      "restrictedDelete": true
     },
     {
       "cascadeDelete": true,
@@ -1483,6 +1490,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ProcessInstance",
       "deprecatedAndHidden": false,
@@ -1516,10 +1533,20 @@
       "cascadeDelete": true,
       "childSObject": "ProgramChecklist__c",
       "deprecatedAndHidden": false,
-      "field": "Programid__c",
+      "field": "ProgramId__c",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": "Program_Checklists__r",
+      "relationshipName": "ProgramChecklist__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProgramCoSponsorTeam__c",
+      "deprecatedAndHidden": false,
+      "field": "ProgramId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProgramCoSponsorTeam__r",
       "restrictedDelete": false
     },
     {

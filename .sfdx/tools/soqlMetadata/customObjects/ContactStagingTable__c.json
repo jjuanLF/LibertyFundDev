@@ -894,6 +894,25 @@
       "relationshipName": null,
       "sortable": false,
       "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Program",
+      "name": "ProgramId__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Program__c"
+      ],
+      "relationshipName": "ProgramId__r",
+      "sortable": true,
+      "type": "reference"
     }
   ],
   "label": "Imported Contact",

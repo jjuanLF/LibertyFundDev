@@ -867,6 +867,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ProcessInstance",
       "deprecatedAndHidden": false,
@@ -890,10 +900,10 @@
       "cascadeDelete": false,
       "childSObject": "ProgramSessionReading__c",
       "deprecatedAndHidden": false,
-      "field": "Citation__c",
+      "field": "CitationId__c",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": "Program_Session_Readings__r",
+      "relationshipName": "ProgramSessionReading__r",
       "restrictedDelete": false
     },
     {

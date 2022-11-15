@@ -6,7 +6,7 @@
 // To edit your sObjects and their fields, edit the corresponding
 //     .object-meta.xml and .field-meta.xml files.
 
-global class CoSponsorTeam__c {
+global class ProgramCoSponsorTeam__c {
     global Id Id;
     global Boolean IsDeleted;
     global String Name;
@@ -28,7 +28,6 @@ global class CoSponsorTeam__c {
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
-    global List<CoSponsorTeam__History> Histories;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContactRequest> ContactRequests;
@@ -42,6 +41,7 @@ global class CoSponsorTeam__c {
     global List<OpenActivity> OpenActivities;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
+    global List<ProgramCoSponsorTeam__History> Histories;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
     global List<Task> Tasks;
@@ -52,9 +52,10 @@ global class CoSponsorTeam__c {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
-    global CoSponsorTeam__c () 
+    global ProgramCoSponsorTeam__c () 
     {
     }
 }

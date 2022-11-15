@@ -68,7 +68,7 @@ global class Citation__c {
     global List<OpenActivity> OpenActivities;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
-    global List<ProgramSessionReading__c> Program_Session_Readings__r;
+    global List<ProgramSessionReading__c> ProgramSessionReading__r;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
     global List<Session_Readings__c> Session_Readings__r;
@@ -80,6 +80,7 @@ global class Citation__c {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Citation__c () 

@@ -696,18 +696,6 @@
     "custom": false
   },
   {
-    "name": "CoSponsorTeam__ChangeEvent",
-    "custom": false
-  },
-  {
-    "name": "CoSponsorTeam__History",
-    "custom": false
-  },
-  {
-    "name": "CoSponsorTeam__c",
-    "custom": true
-  },
-  {
     "name": "CollaborationGroup",
     "custom": false
   },
@@ -2424,6 +2412,14 @@
     "custom": false
   },
   {
+    "name": "OutgoingEmail",
+    "custom": false
+  },
+  {
+    "name": "OutgoingEmailRelation",
+    "custom": false
+  },
+  {
     "name": "OwnedContentDocument",
     "custom": false
   },
@@ -2657,6 +2653,18 @@
   },
   {
     "name": "ProgramChecklist__c",
+    "custom": true
+  },
+  {
+    "name": "ProgramCoSponsorTeam__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "ProgramCoSponsorTeam__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramCoSponsorTeam__c",
     "custom": true
   },
   {

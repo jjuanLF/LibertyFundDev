@@ -62,3 +62,15 @@ declare module "@salesforce/schema/ProgramSession__c.Narrative__c" {
   const Narrative__c:string;
   export default Narrative__c;
 }
+declare module "@salesforce/schema/ProgramSession__c.Sequence__c" {
+  const Sequence__c:number;
+  export default Sequence__c;
+}
+declare module "@salesforce/schema/ProgramSession__c.Session__c" {
+  const Session__c:string;
+  export default Session__c;
+}
+declare module "@salesforce/schema/ProgramSession__c.Title__c" {
+  const Title__c:string;
+  export default Title__c;
+}

@@ -42,7 +42,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "CoSponsor Team Name",
+      "label": "Program CoSponsor Team Name",
       "name": "Name",
       "nillable": true,
       "picklistValues": [],
@@ -230,7 +230,7 @@
       "type": "reference"
     }
   ],
-  "label": "CoSponsor Team",
+  "label": "Program CoSponsor Team",
   "childRelationships": [
     {
       "cascadeDelete": true,
@@ -270,16 +270,6 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Attachments",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
-      "childSObject": "CoSponsorTeam__History",
-      "deprecatedAndHidden": false,
-      "field": "ParentId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Histories",
       "restrictedDelete": false
     },
     {
@@ -463,6 +453,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ProcessInstance",
       "deprecatedAndHidden": false,
@@ -480,6 +480,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ProcessSteps",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProgramCoSponsorTeam__History",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Histories",
       "restrictedDelete": false
     },
     {
@@ -534,6 +544,6 @@
     }
   ],
   "custom": true,
-  "name": "CoSponsorTeam__c",
+  "name": "ProgramCoSponsorTeam__c",
   "queryable": true
 }

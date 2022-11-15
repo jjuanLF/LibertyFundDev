@@ -22,19 +22,9 @@ global class ProgramSessionReading__c {
     global Datetime LastReferencedDate;
     global ProgramSession__c ProgramSessionId__r;
     global Id ProgramSessionId__c;
-    global String Annotation__c;
-    global String BibliographyId__c;
     global String Chapter__c;
-    global Citation__c Citation__r;
-    global Id Citation__c;
-    global Conference_Citation__c ConferenceCitation__r;
-    global Id ConferenceCitation__c;
-    global String CopyPurchase__c;
-    global String CreditLine__c;
-    global Boolean ExcludeFlag__c;
-    global String LegacyReadingID__c;
-    global String Notes__c;
-    global Double PageCount__c;
+    global Citation__c CitationId__r;
+    global Id CitationId__c;
     global String Pages__c;
     global Double SortOrder__c;
     global String PublicationTitle__c;
@@ -66,6 +56,7 @@ global class ProgramSessionReading__c {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global ProgramSessionReading__c () 

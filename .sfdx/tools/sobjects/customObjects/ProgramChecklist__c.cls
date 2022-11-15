@@ -20,8 +20,8 @@ global class ProgramChecklist__c {
     global Date LastActivityDate;
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
-    global Program__c Programid__r;
-    global Id Programid__c;
+    global Program__c ProgramId__r;
+    global Id ProgramId__c;
     global Checklist__c ChecklistId__r;
     global Id ChecklistId__c;
     global Boolean Completed__c;
@@ -55,6 +55,7 @@ global class ProgramChecklist__c {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global ProgramChecklist__c () 

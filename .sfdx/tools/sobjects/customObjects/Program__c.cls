@@ -53,10 +53,10 @@ global class Program__c {
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;
-    global List<CoSponsorTeam__c> CoSponsorTeam__r;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContactRequest> ContactRequests;
+    global List<ContactStagingTable__c> ImportedContact__r;
     global List<ContentDocumentLink> ContentDocumentLinks;
     global List<DuplicateRecordItem> DuplicateRecordItems;
     global List<EmailMessage> Emails;
@@ -68,7 +68,8 @@ global class Program__c {
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<ProgramAttendee__c> ProgramAttendee__r;
-    global List<ProgramChecklist__c> Program_Checklists__r;
+    global List<ProgramChecklist__c> ProgramChecklist__r;
+    global List<ProgramCoSponsorTeam__c> ProgramCoSponsorTeam__r;
     global List<ProgramNarrative__c> ProgramNarrative__r;
     global List<ProgramSession__c> Program_Sessions__r;
     global List<ProgramTeam__c> ProgramTeam__r;
@@ -84,6 +85,7 @@ global class Program__c {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Program__c () 

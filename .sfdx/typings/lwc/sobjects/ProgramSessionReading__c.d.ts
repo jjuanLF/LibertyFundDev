@@ -58,57 +58,17 @@ declare module "@salesforce/schema/ProgramSessionReading__c.ProgramSessionId__c"
   const ProgramSessionId__c:any;
   export default ProgramSessionId__c;
 }
-declare module "@salesforce/schema/ProgramSessionReading__c.Annotation__c" {
-  const Annotation__c:string;
-  export default Annotation__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.BibliographyId__c" {
-  const BibliographyId__c:string;
-  export default BibliographyId__c;
-}
 declare module "@salesforce/schema/ProgramSessionReading__c.Chapter__c" {
   const Chapter__c:string;
   export default Chapter__c;
 }
-declare module "@salesforce/schema/ProgramSessionReading__c.Citation__r" {
-  const Citation__r:any;
-  export default Citation__r;
+declare module "@salesforce/schema/ProgramSessionReading__c.CitationId__r" {
+  const CitationId__r:any;
+  export default CitationId__r;
 }
-declare module "@salesforce/schema/ProgramSessionReading__c.Citation__c" {
-  const Citation__c:any;
-  export default Citation__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.ConferenceCitation__r" {
-  const ConferenceCitation__r:any;
-  export default ConferenceCitation__r;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.ConferenceCitation__c" {
-  const ConferenceCitation__c:any;
-  export default ConferenceCitation__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.CopyPurchase__c" {
-  const CopyPurchase__c:string;
-  export default CopyPurchase__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.CreditLine__c" {
-  const CreditLine__c:string;
-  export default CreditLine__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.ExcludeFlag__c" {
-  const ExcludeFlag__c:boolean;
-  export default ExcludeFlag__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.LegacyReadingID__c" {
-  const LegacyReadingID__c:string;
-  export default LegacyReadingID__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.Notes__c" {
-  const Notes__c:string;
-  export default Notes__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__c.PageCount__c" {
-  const PageCount__c:number;
-  export default PageCount__c;
+declare module "@salesforce/schema/ProgramSessionReading__c.CitationId__c" {
+  const CitationId__c:any;
+  export default CitationId__c;
 }
 declare module "@salesforce/schema/ProgramSessionReading__c.Pages__c" {
   const Pages__c:string;

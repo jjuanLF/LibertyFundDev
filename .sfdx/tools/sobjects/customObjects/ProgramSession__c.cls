@@ -23,6 +23,9 @@ global class ProgramSession__c {
     global Program__c ProgramId__r;
     global Id ProgramId__c;
     global String Narrative__c;
+    global Double Sequence__c;
+    global String Session__c;
+    global String Title__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;
@@ -52,6 +55,7 @@ global class ProgramSession__c {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global ProgramSession__c () 

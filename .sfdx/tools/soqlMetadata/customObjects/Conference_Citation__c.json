@@ -518,16 +518,6 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": false,
-      "childSObject": "ProgramSessionReading__c",
-      "deprecatedAndHidden": false,
-      "field": "ConferenceCitation__c",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Program_Session_Readings__r",
-      "restrictedDelete": false
-    },
-    {
       "cascadeDelete": true,
       "childSObject": "RecordAction",
       "deprecatedAndHidden": false,

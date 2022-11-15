@@ -6,6 +6,7 @@ public without sharing class ContactStagingConversion {
         private Map<Object, Id> queryResultMap { get; set; }
     }
     private static final String CONTACTSTAGINGTABLEOBJECT = 'ContactStagingTable__c';
+    private static final String MERGECONTACTID = 'MergeContactId__c';
     private static String soqlQuery = 'SELECT Id, $ FROM * WHERE $ IN (\'%\') WITH SECURITY_ENFORCED';
     private static Map<String, Integration_Staging_Table_Field_Mapping__mdt> fieldMappingMap = new Map<String, Integration_Staging_Table_Field_Mapping__mdt>();
     private static Map<String, ForeignKeyWrapper> foreignKeyWrapperMap = new Map<String, ForeignKeyWrapper>();
@@ -22,7 +23,7 @@ public without sharing class ContactStagingConversion {
             Map<String, Object> fieldValueMap = new Map<String, Object>();
             if (contactStagingTable.MergeContactId__c != null) {
                 List<String> mergeFieldList = contactStagingTable.MergeFields__c.split(';');
-                mergeFieldList.add('MergeContactId__c');
+                mergeFieldList.add(MERGECONTACTID);
 
                 for (String mergeField : mergeFieldList) {
                     fieldValueMap.put(mergeField, contactStagingTable.get(mergeField));
@@ -106,7 +107,7 @@ public without sharing class ContactStagingConversion {
         }
         delete deleteRecordList;
         update updateRecordList;
-		insert insertProgramAttendeeList;
+        insert insertProgramAttendeeList;
 
         return resultMap;
     }

@@ -226,6 +226,135 @@
       "relationshipName": null,
       "sortable": false,
       "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Sequence",
+      "name": "Sequence__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Session",
+      "name": "Session__c",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session I",
+          "validFor": null,
+          "value": "Session I"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session II",
+          "validFor": null,
+          "value": "Session II"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session III",
+          "validFor": null,
+          "value": "Session III"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session IV",
+          "validFor": null,
+          "value": "Session IV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session V",
+          "validFor": null,
+          "value": "Session V"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session VI",
+          "validFor": null,
+          "value": "Session VI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session VII",
+          "validFor": null,
+          "value": "Session VII"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session VIII",
+          "validFor": null,
+          "value": "Session VIII"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session IX",
+          "validFor": null,
+          "value": "Session IX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session X",
+          "validFor": null,
+          "value": "Session X"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session XI",
+          "validFor": null,
+          "value": "Session XI"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Title",
+      "name": "Title__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
   "label": "Program Session",
@@ -448,6 +577,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "OpenActivities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {

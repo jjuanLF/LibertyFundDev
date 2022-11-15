@@ -50,13 +50,13 @@ declare module "@salesforce/schema/ProgramChecklist__c.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
-declare module "@salesforce/schema/ProgramChecklist__c.Programid__r" {
-  const Programid__r:any;
-  export default Programid__r;
+declare module "@salesforce/schema/ProgramChecklist__c.ProgramId__r" {
+  const ProgramId__r:any;
+  export default ProgramId__r;
 }
-declare module "@salesforce/schema/ProgramChecklist__c.Programid__c" {
-  const Programid__c:any;
-  export default Programid__c;
+declare module "@salesforce/schema/ProgramChecklist__c.ProgramId__c" {
+  const ProgramId__c:any;
+  export default ProgramId__c;
 }
 declare module "@salesforce/schema/ProgramChecklist__c.ChecklistId__r" {
   const ChecklistId__r:any;

@@ -4,10 +4,7 @@
 
         <div class="slds-p-horizontal_small">
             <lightning-layout>
-                <lightning-layout-item
-                    padding="around-small"
-                    flexibility="auto"
-                >
+                <lightning-layout-item padding="around-small" flexibility="auto">
                     <div onkeyup={handleKeyUp}>
                         <lightning-input
                             name="keywords"
@@ -21,11 +18,7 @@
                         </lightning-input>
                     </div>
                 </lightning-layout-item>
-                <lightning-layout-item
-                    padding="around-small"
-                    flexibility="no-grow"
-                    alignment-bump="left"
-                >
+                <lightning-layout-item padding="around-small" flexibility="no-grow" alignment-bump="left">
                     <div style="margin-top: 23px; margin-left: -17px">
                         <lightning-helptext
                             content="Keyword Search Tips: 
@@ -37,11 +30,7 @@
                         </lightning-helptext>
                     </div>
                 </lightning-layout-item>
-                <lightning-layout-item
-                    padding="around-small"
-                    flexibility="no-grow"
-                    alignment-bump="left"
-                >
+                <lightning-layout-item padding="around-small" flexibility="no-grow" alignment-bump="left">
                     <div style="margin-top: 19px">
                         <lightning-button
                             label="Search"
@@ -53,11 +42,7 @@
                         </lightning-button>
                     </div>
                 </lightning-layout-item>
-                <lightning-layout-item
-                    padding="around-small"
-                    flexibility="no-grow"
-                    alignment-bump="left"
-                >
+                <lightning-layout-item padding="around-small" flexibility="no-grow" alignment-bump="left">
                     <div style="margin-top: 19px" if:true={queryResults}>
                         <lightning-button
                             label="Reset Search Filters"
@@ -103,16 +88,10 @@
             active-section-name={activeSections}
             class="slds-form-element_compound"
         >
-            <lightning-accordion-section
-                name="resultFilters"
-                label="Filter Your Results"
-            >
+            <lightning-accordion-section name="resultFilters" label="Filter Your Results">
                 <!--Contains the search filters-->
                 <lightning-layout multiple-rows="true" horizontal-align="space">
-                    <lightning-layout-item
-                        padding="around-small"
-                        flexibility="auto"
-                    >
+                    <lightning-layout-item padding="around-small" flexibility="auto">
                         <lightning-combobox
                             label="Person Type"
                             name="personType"
@@ -144,13 +123,8 @@
                         >
                         </lightning-input>
                     </lightning-layout-item>
-                    <lightning-layout-item
-                        padding="around-small"
-                        flexibility="auto"
-                    >
-                        <div style="margin-left: -7px">
-                            Number of Core Conferences Attended
-                        </div>
+                    <lightning-layout-item padding="around-small" flexibility="auto">
+                        <div style="margin-left: -7px">Number of Core Conferences Attended</div>
                         <div class="slds-form__row">
                             <lightning-input
                                 name="minCoreConf"
@@ -178,9 +152,7 @@
                             </lightning-input>
                         </div>
                         <br />
-                        <div style="margin-left: -7px; margin-top: -17px">
-                            Geography
-                        </div>
+                        <div style="margin-left: -7px; margin-top: -17px">Geography</div>
                         <lightning-input
                             name="country"
                             type="text"
@@ -214,10 +186,7 @@
                             </lightning-combobox>
                         </div>
                     </lightning-layout-item>
-                    <lightning-layout-item
-                        padding="around-small"
-                        flexibility="auto"
-                    >
+                    <lightning-layout-item padding="around-small" flexibility="auto">
                         <h2>Only include people who are:</h2>
                         <lightning-input
                             label="Core Program Network"
@@ -296,10 +265,7 @@
                         >
                         </lightning-input>
                     </lightning-layout-item>
-                    <lightning-layout-item
-                        padding="around-small"
-                        flexibility="auto"
-                    >
+                    <lightning-layout-item padding="around-small" flexibility="auto">
                         <h2>Include evaluation ratings:</h2>
                         <lightning-input
                             label="Exceptional"
@@ -358,26 +324,13 @@
                     </lightning-layout-item>
                 </lightning-layout>
             </lightning-accordion-section>
-            <lightning-accordion-section
-                name="results"
-                label="View Your Results"
-            >
-                <template 
-                    if:true={queryResults}
-                >
-                    <lightning-layout 
-                        vertical-align="center" 
-                        multiple-rows
-                    >
-                        <lightning-layout-item
-                            alignment-bump="right"
-                            padding="around-small"
-                        >
-                                Your search returned {queryResultCount} results
+            <lightning-accordion-section name="results" label="View Your Results">
+                <template if:true={queryResults}>
+                    <lightning-layout vertical-align="center" multiple-rows>
+                        <lightning-layout-item alignment-bump="right" padding="around-small">
+                            Your search returned {queryResultCount} results
                         </lightning-layout-item>
-                        <lightning-layout-item
-                            padding="around-small"
-                        >
+                        <lightning-layout-item padding="around-small">
                             <lightning-button
                                 label="Suggest Conferees"
                                 title="suggestConferees"
@@ -399,10 +352,7 @@
                             >
                             </lightning-button>
                         </lightning-layout-item> -->
-                        <lightning-layout-item
-                            padding="around-small"
-                            if:false={searchByLeads}
-                        >
+                        <lightning-layout-item padding="around-small" if:false={searchByLeads}>
                             <lightning-button
                                 label="Request Merge"
                                 title="requestMerge"
@@ -413,7 +363,7 @@
                             </lightning-button>
                         </lightning-layout-item>
                     </lightning-layout>
-                    <br>
+                    <br />
                     <div style="height: 300px">
                         <lightning-datatable
                             key-field="id"
@@ -430,9 +380,7 @@
                         >
                         </lightning-datatable>
                     </div>
-                    <div align="center">
-                        {loadMoreStatus}
-                    </div>
+                    <div align="center">{loadMoreStatus}</div>
                 </template>
             </lightning-accordion-section>
         </lightning-accordion>

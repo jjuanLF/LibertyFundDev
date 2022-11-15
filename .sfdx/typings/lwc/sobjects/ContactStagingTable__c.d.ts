@@ -226,3 +226,11 @@ declare module "@salesforce/schema/ContactStagingTable__c.ErrorMessage__c" {
   const ErrorMessage__c:string;
   export default ErrorMessage__c;
 }
+declare module "@salesforce/schema/ContactStagingTable__c.ProgramId__r" {
+  const ProgramId__r:any;
+  export default ProgramId__r;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.ProgramId__c" {
+  const ProgramId__c:any;
+  export default ProgramId__c;
+}

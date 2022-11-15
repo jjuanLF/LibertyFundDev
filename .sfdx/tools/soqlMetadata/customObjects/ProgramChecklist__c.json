@@ -200,13 +200,13 @@
       "groupable": true,
       "inlineHelpText": null,
       "label": "Program",
-      "name": "Programid__c",
+      "name": "ProgramId__c",
       "nillable": false,
       "picklistValues": [],
       "referenceTo": [
         "Program__c"
       ],
-      "relationshipName": "Programid__r",
+      "relationshipName": "ProgramId__r",
       "sortable": true,
       "type": "reference"
     },
@@ -218,7 +218,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Id",
+      "label": "Checklist",
       "name": "ChecklistId__c",
       "nillable": false,
       "picklistValues": [],
@@ -501,6 +501,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "OpenActivities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
