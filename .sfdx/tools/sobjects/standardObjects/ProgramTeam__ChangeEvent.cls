@@ -19,6 +19,7 @@ global class ProgramTeam__ChangeEvent {
     global Id LastModifiedById;
     global Program__c ProgramId__c;
     global User UserId__c;
+    global String Role__c;
 
     global ProgramTeam__ChangeEvent () 
     {

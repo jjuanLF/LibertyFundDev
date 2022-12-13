@@ -38,9 +38,9 @@ declare module "@salesforce/schema/ProgramChecklist__ChangeEvent.LastModifiedByI
   const LastModifiedById:any;
   export default LastModifiedById;
 }
-declare module "@salesforce/schema/ProgramChecklist__ChangeEvent.Programid__c" {
-  const Programid__c:any;
-  export default Programid__c;
+declare module "@salesforce/schema/ProgramChecklist__ChangeEvent.ProgramId__c" {
+  const ProgramId__c:any;
+  export default ProgramId__c;
 }
 declare module "@salesforce/schema/ProgramChecklist__ChangeEvent.ChecklistId__c" {
   const ChecklistId__c:any;
@@ -57,4 +57,8 @@ declare module "@salesforce/schema/ProgramChecklist__ChangeEvent.LastEmailDate__
 declare module "@salesforce/schema/ProgramChecklist__ChangeEvent.LastEmailType__c" {
   const LastEmailType__c:string;
   export default LastEmailType__c;
+}
+declare module "@salesforce/schema/ProgramChecklist__ChangeEvent.DueDate__c" {
+  const DueDate__c:any;
+  export default DueDate__c;
 }

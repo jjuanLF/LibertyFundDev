@@ -26,6 +26,7 @@ global class ProgramSession__c {
     global Double Sequence__c;
     global String Session__c;
     global String Title__c;
+    global String ExternalId__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;

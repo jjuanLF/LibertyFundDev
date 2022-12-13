@@ -54,3 +54,7 @@ declare module "@salesforce/schema/NarrativeType__ChangeEvent.Type__c" {
   const Type__c:string;
   export default Type__c;
 }
+declare module "@salesforce/schema/NarrativeType__ChangeEvent.SortOrder__c" {
+  const SortOrder__c:number;
+  export default SortOrder__c;
+}

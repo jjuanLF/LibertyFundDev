@@ -210,6 +210,222 @@
       "relationshipName": null,
       "sortable": true,
       "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active",
+      "name": "Active__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Body",
+      "name": "Body__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Days Task Due",
+      "name": "DaysTaskDue__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Send Reminder Email Every X Days",
+      "name": "EmailReminderDays__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": "Exploratory - Initiated",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sub Stage",
+      "name": "SubStage__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Exploratory - Initiated",
+          "validFor": null,
+          "value": "Exploratory - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Rep",
+          "validFor": null,
+          "value": "Exploratory - Rep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Committee",
+          "validFor": null,
+          "value": "Exploratory - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Board",
+          "validFor": null,
+          "value": "Exploratory - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Initiated",
+          "validFor": null,
+          "value": "Project - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Committee",
+          "validFor": null,
+          "value": "Project - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Board",
+          "validFor": null,
+          "value": "Project - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer",
+          "validFor": null,
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Agreement",
+          "validFor": null,
+          "value": "ProgramAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Development",
+          "validFor": null,
+          "value": "Development"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Completed",
+          "validFor": null,
+          "value": "Completed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed",
+          "validFor": null,
+          "value": "Closed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Converted",
+          "validFor": null,
+          "value": "Converted"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "Type__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Co-Sponsor",
+          "validFor": null,
+          "value": "Co-Sponsor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Core",
+          "validFor": null,
+          "value": "Core"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
     }
   ],
   "label": "Checklist",

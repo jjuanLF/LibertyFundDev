@@ -24,6 +24,7 @@ global class NarrativeType__c {
     global Datetime LastReferencedDate;
     global Boolean Active__c;
     global String Type__c;
+    global Double SortOrder__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;

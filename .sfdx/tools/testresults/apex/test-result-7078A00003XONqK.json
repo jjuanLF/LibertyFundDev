@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 6:45:35 PM",
+    "testExecutionTimeInMs": 123,
+    "testTotalTimeInMs": 123,
+    "commandTimeInMs": 193,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XONqK",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LZyPVUA1",
+      "queueItemId": "7098A000002C5bvQAC",
+      "stackTrace": "Class.TestDataFactoryHandler.createRecords: line 108, column 1\nClass.TestContactStagingController.makeData: line 57, column 1\nClass.TestContactStagingController.testImportContact: line 7, column 1",
+      "message": "System.ListException: List index out of bounds: 1",
+      "asyncApexJobId": "7078A00003XONqKQAX",
+      "methodName": "testImportContact",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LV0DfUAL",
+      "apexClass": {
+        "id": "01p8A00000Iwt6yQAB",
+        "name": "TestContactStagingController",
+        "namespacePrefix": null,
+        "fullName": "TestContactStagingController"
+      },
+      "runTime": 123,
+      "testTimestamp": "2022-12-13T02:45:36.000+0000",
+      "fullName": "TestContactStagingController.testImportContact",
+      "diagnostic": {
+        "exceptionMessage": "System.ListException: List index out of bounds: 1",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createRecords: line 108, column 1\nClass.TestContactStagingController.makeData: line 57, column 1\nClass.TestContactStagingController.testImportContact: line 7, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 108,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

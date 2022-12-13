@@ -25,7 +25,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program ID",
+      "label": "Campaign ID",
       "name": "CampaignId",
       "nillable": false,
       "picklistValues": [],
@@ -64,7 +64,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program Access",
+      "label": "Campaign Access",
       "name": "CampaignAccessLevel",
       "nillable": false,
       "picklistValues": [

@@ -111,6 +111,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "ExternalId",
+          "validFor": null,
+          "value": "ExternalId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Feed event",
           "validFor": null,
           "value": "feedEvent"
@@ -170,6 +177,27 @@
           "label": "Record unlocked.",
           "validFor": null,
           "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session",
+          "validFor": null,
+          "value": "Session__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sort Order",
+          "validFor": null,
+          "value": "Sequence__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Title__c"
         }
       ],
       "referenceTo": [],

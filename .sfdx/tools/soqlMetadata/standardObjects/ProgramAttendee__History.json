@@ -118,6 +118,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "ExternalId",
+          "validFor": null,
+          "value": "ExternalId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Feed event",
           "validFor": null,
           "value": "feedEvent"

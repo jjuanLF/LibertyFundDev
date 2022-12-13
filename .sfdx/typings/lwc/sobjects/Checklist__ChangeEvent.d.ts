@@ -46,3 +46,27 @@ declare module "@salesforce/schema/Checklist__ChangeEvent.LastModifiedById" {
   const LastModifiedById:any;
   export default LastModifiedById;
 }
+declare module "@salesforce/schema/Checklist__ChangeEvent.Active__c" {
+  const Active__c:boolean;
+  export default Active__c;
+}
+declare module "@salesforce/schema/Checklist__ChangeEvent.Body__c" {
+  const Body__c:string;
+  export default Body__c;
+}
+declare module "@salesforce/schema/Checklist__ChangeEvent.DaysTaskDue__c" {
+  const DaysTaskDue__c:number;
+  export default DaysTaskDue__c;
+}
+declare module "@salesforce/schema/Checklist__ChangeEvent.EmailReminderDays__c" {
+  const EmailReminderDays__c:number;
+  export default EmailReminderDays__c;
+}
+declare module "@salesforce/schema/Checklist__ChangeEvent.SubStage__c" {
+  const SubStage__c:string;
+  export default SubStage__c;
+}
+declare module "@salesforce/schema/Checklist__ChangeEvent.Type__c" {
+  const Type__c:string;
+  export default Type__c;
+}

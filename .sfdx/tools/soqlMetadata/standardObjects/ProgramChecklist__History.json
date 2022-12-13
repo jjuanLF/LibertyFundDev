@@ -104,6 +104,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Checklist",
+          "validFor": null,
+          "value": "ChecklistId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Completed",
           "validFor": null,
           "value": "Completed__c"
@@ -128,13 +135,6 @@
           "label": "Feed event",
           "validFor": null,
           "value": "feedEvent"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Id",
-          "validFor": null,
-          "value": "ChecklistId__c"
         },
         {
           "active": true,
@@ -169,7 +169,7 @@
           "defaultValue": false,
           "label": "Program",
           "validFor": null,
-          "value": "Programid__c"
+          "value": "ProgramId__c"
         },
         {
           "active": true,

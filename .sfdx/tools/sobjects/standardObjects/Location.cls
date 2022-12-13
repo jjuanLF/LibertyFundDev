@@ -53,6 +53,7 @@ global class Location {
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
     global List<Location> RootLocation;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Location () 

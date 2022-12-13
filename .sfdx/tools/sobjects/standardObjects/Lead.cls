@@ -109,6 +109,7 @@ global class Lead {
     global List<Note> Notes;
     global List<NoteAndAttachment> NotesAndAttachments;
     global List<OpenActivity> OpenActivities;
+    global List<OutgoingEmailRelation> OutgoingEmailRelations;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
@@ -129,7 +130,7 @@ global class Lead {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
-    global List<TaskChangeEvent> Who;
+    global List<OutgoingEmail> Who;
 
     global Lead () 
     {

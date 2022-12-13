@@ -82,3 +82,15 @@ declare module "@salesforce/schema/ProgramSessionReading__c.PublicationTitle__c"
   const PublicationTitle__c:string;
   export default PublicationTitle__c;
 }
+declare module "@salesforce/schema/ProgramSessionReading__c.ExternalId__c" {
+  const ExternalId__c:string;
+  export default ExternalId__c;
+}
+declare module "@salesforce/schema/ProgramSessionReading__c.Citation__c" {
+  const Citation__c:string;
+  export default Citation__c;
+}
+declare module "@salesforce/schema/ProgramSessionReading__c.ReadingListType__c" {
+  const ReadingListType__c:string;
+  export default ReadingListType__c;
+}

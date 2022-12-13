@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 4:00:30 PM",
+    "testExecutionTimeInMs": 4114,
+    "testTotalTimeInMs": 4114,
+    "commandTimeInMs": 212,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XOLqj",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LZyOmUAL",
+      "queueItemId": "7098A000002C5b2QAC",
+      "stackTrace": "Class.TestDataFactoryHandler.createTestData: line 19, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testProgram: line 20, column 1",
+      "message": "System.NullPointerException: Attempt to de-reference a null object",
+      "asyncApexJobId": "7078A00003XOLqjQAH",
+      "methodName": "testProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LV0A7UAL",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 4114,
+      "testTimestamp": "2022-12-13T00:00:30.000+0000",
+      "fullName": "TestProgram.testProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.NullPointerException: Attempt to de-reference a null object",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createTestData: line 19, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testProgram: line 20, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 19,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

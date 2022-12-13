@@ -389,6 +389,48 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Snippet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Macro"
         },
         {

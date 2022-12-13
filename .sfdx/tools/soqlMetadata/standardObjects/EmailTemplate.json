@@ -3720,6 +3720,16 @@
       "junctionReferenceTo": [],
       "relationshipName": null,
       "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "EmailTemplateId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
     }
   ],
   "custom": false,

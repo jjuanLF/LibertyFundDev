@@ -153,6 +153,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Document Version",
+          "validFor": null,
+          "value": "DocumentVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "End Date",
           "validFor": null,
           "value": "EndDate__c"
@@ -244,6 +251,27 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Proposed City Country",
+          "validFor": null,
+          "value": "ProposedCityCountry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposed Date",
+          "validFor": null,
+          "value": "ProposedDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposed Timeline",
+          "validFor": null,
+          "value": "ProposedTimeline__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Record locked.",
           "validFor": null,
           "value": "locked"
@@ -272,7 +300,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Repeat",
+          "label": "Repeat Program",
           "validFor": null,
           "value": "RepeatProgramId__c"
         },

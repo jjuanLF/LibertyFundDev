@@ -8,7 +8,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program Field History ID",
+      "label": "Campaign Field History ID",
       "name": "Id",
       "nillable": false,
       "picklistValues": [],
@@ -42,7 +42,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program ID",
+      "label": "Campaign ID",
       "name": "CampaignId",
       "nillable": false,
       "picklistValues": [],
@@ -111,7 +111,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Actual Cost in Program",
+          "label": "Actual Cost in Campaign",
           "validFor": null,
           "value": "ActualCost"
         },
@@ -139,7 +139,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Budgeted Cost in Program",
+          "label": "Budgeted Cost in Campaign",
           "validFor": null,
           "value": "BudgetedCost"
         },
@@ -153,9 +153,30 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Campaign ID",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Campaign Member Type",
           "validFor": null,
           "value": "CampaignMemberRecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign Owner",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign Record Type",
+          "validFor": null,
+          "value": "RecordType"
         },
         {
           "active": true,
@@ -279,7 +300,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Expected Revenue in Program",
+          "label": "Expected Revenue in Campaign",
           "validFor": null,
           "value": "ExpectedRevenue"
         },
@@ -363,7 +384,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Num Sent in Program",
+          "label": "Num Sent in Campaign",
           "validFor": null,
           "value": "NumberSent"
         },
@@ -391,7 +412,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Parent Program",
+          "label": "Parent Campaign",
           "validFor": null,
           "value": "Parent"
         },
@@ -412,30 +433,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Program ID",
-          "validFor": null,
-          "value": "Name"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Program Invite Settings",
           "validFor": null,
           "value": "Program_Invite_Settings__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Program Owner",
-          "validFor": null,
-          "value": "Owner"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Program Record Type",
-          "validFor": null,
-          "value": "RecordType"
         },
         {
           "active": true,
@@ -583,7 +583,7 @@
       "type": "anyType"
     }
   ],
-  "label": "Program Field History",
+  "label": "Campaign Field History",
   "childRelationships": [],
   "custom": false,
   "name": "CampaignHistory",

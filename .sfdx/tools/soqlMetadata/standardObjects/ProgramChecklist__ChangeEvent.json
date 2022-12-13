@@ -149,7 +149,7 @@
       "groupable": false,
       "inlineHelpText": null,
       "label": "Program",
-      "name": "Programid__c",
+      "name": "ProgramId__c",
       "nillable": true,
       "picklistValues": [],
       "referenceTo": [
@@ -167,7 +167,7 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Id",
+      "label": "Checklist",
       "name": "ChecklistId__c",
       "nillable": true,
       "picklistValues": [],
@@ -228,6 +228,23 @@
       "relationshipName": null,
       "sortable": false,
       "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Due Date",
+      "name": "DueDate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
     }
   ],
   "label": "Change Event: Program Checklist",

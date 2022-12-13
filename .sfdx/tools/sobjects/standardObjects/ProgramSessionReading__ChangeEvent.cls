@@ -18,20 +18,14 @@ global class ProgramSessionReading__ChangeEvent {
     global User LastModifiedBy;
     global Id LastModifiedById;
     global ProgramSession__c ProgramSessionId__c;
-    global String Annotation__c;
-    global String BibliographyId__c;
     global String Chapter__c;
-    global Citation__c Citation__c;
-    global Conference_Citation__c ConferenceCitation__c;
-    global String CopyPurchase__c;
-    global String CreditLine__c;
-    global Boolean ExcludeFlag__c;
-    global String LegacyReadingID__c;
-    global String Notes__c;
-    global Double PageCount__c;
+    global Citation__c CitationId__c;
     global String Pages__c;
     global Double SortOrder__c;
     global String PublicationTitle__c;
+    global String ExternalId__c;
+    global String Citation__c;
+    global String ReadingListType__c;
 
     global ProgramSessionReading__ChangeEvent () 
     {

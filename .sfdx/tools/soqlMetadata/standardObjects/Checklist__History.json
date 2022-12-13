@@ -181,7 +181,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Reminder Email",
+          "label": "Send Reminder Email Every X Days",
           "validFor": null,
           "value": "EmailReminderDays__c"
         },

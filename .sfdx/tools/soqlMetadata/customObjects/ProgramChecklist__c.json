@@ -279,6 +279,23 @@
       "relationshipName": null,
       "sortable": true,
       "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Due Date",
+      "name": "DueDate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
     }
   ],
   "label": "Program Checklist",

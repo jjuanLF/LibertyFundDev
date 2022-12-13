@@ -32,10 +32,10 @@ public without sharing class CalculateFullNameForDuplicateCheck implements Trigg
         List<SObject> newTriggerList = new List<SObject>();
 
         for (Id id : newTriggerMap.keySet()) {
-            if (
-                newTriggerMap.get(id).get(NAMESORTKEYFIELD) != oldTriggerMap.get(id).get(NAMESORTKEYFIELD)
-            ) {
-                newTriggerList.add(newTriggerMap.get(id));
+            if (id.getSObjectType().getDescribe().getName() == CONTACTOBJECT) {
+                if (newTriggerMap.get(id).get(NAMESORTKEYFIELD) != oldTriggerMap.get(id).get(NAMESORTKEYFIELD)) {
+                    newTriggerList.add(newTriggerMap.get(id));
+                }
             }
         }
         calculateFullName(newTriggerList);

@@ -586,6 +586,16 @@
       "restrictedDelete": true
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "PricebookEntry",
       "deprecatedAndHidden": false,

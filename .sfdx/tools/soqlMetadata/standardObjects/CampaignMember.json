@@ -8,7 +8,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program Participation ID",
+      "label": "Campaign Participation ID",
       "name": "Id",
       "nillable": false,
       "picklistValues": [],
@@ -42,7 +42,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program ID",
+      "label": "Campaign ID",
       "name": "CampaignId",
       "nillable": false,
       "picklistValues": [],
@@ -1176,7 +1176,7 @@
       "type": "reference"
     }
   ],
-  "label": "Program Participation",
+  "label": "Campaign Participation",
   "childRelationships": [
     {
       "cascadeDelete": false,

@@ -24,6 +24,7 @@ global class ProgramTeam__c {
     global Id ProgramId__c;
     global User UserId__r;
     global Id UserId__c;
+    global String Role__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;

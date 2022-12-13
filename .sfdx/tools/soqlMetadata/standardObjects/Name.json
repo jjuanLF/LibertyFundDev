@@ -403,13 +403,6 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "CoSponsorTeam__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
           "value": "Dashboard"
         },
         {
@@ -788,6 +781,132 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__EnvelopeHistory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Step__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Snippet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Macro"
         },
         {
@@ -991,6 +1110,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Program_Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramAttendee__c"
         },
         {
@@ -1005,6 +1131,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramDocumentGeneration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramDocumentGenerationSubStage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramMemberStagingTable__c"
         },
         {
@@ -1013,6 +1153,13 @@
           "label": null,
           "validFor": null,
           "value": "ProgramNarrative__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramPartnerTeam__c"
         },
         {
           "active": true,

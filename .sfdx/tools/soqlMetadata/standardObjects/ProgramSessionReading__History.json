@@ -104,20 +104,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Annotation",
-          "validFor": null,
-          "value": "Annotation__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "BibliographyId",
-          "validFor": null,
-          "value": "BibliographyId__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Chapter",
           "validFor": null,
           "value": "Chapter__c"
@@ -132,16 +118,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Conference Citation",
+          "label": "Citation",
           "validFor": null,
-          "value": "ConferenceCitation__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Copy/Purchase",
-          "validFor": null,
-          "value": "CopyPurchase__c"
+          "value": "CitationId__c"
         },
         {
           "active": true,
@@ -153,16 +132,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Credit Line",
+          "label": "ExternalId",
           "validFor": null,
-          "value": "CreditLine__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Exclude Flag",
-          "validFor": null,
-          "value": "ExcludeFlag__c"
+          "value": "ExternalId__c"
         },
         {
           "active": true,
@@ -181,20 +153,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Legacy Reading ID",
-          "validFor": null,
-          "value": "LegacyReadingID__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Notes",
-          "validFor": null,
-          "value": "Notes__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Owner (Accepted)",
           "validFor": null,
           "value": "ownerAccepted"
@@ -205,13 +163,6 @@
           "label": "Owner (Assignment)",
           "validFor": null,
           "value": "ownerAssignment"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Page Count",
-          "validFor": null,
-          "value": "PageCount__c"
         },
         {
           "active": true,
@@ -233,6 +184,13 @@
           "label": "Program Session Reading",
           "validFor": null,
           "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reading List Type",
+          "validFor": null,
+          "value": "ReadingListType__c"
         },
         {
           "active": true,

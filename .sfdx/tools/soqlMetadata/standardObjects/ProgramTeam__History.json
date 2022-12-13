@@ -167,6 +167,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Role",
+          "validFor": null,
+          "value": "Role__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "User",
           "validFor": null,
           "value": "UserId__c"

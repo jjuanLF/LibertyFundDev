@@ -484,6 +484,27 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Component",
+          "validFor": null,
+          "value": "Loop__Text_Snippet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Component Group",
+          "validFor": null,
+          "value": "Loop__Text_Group__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Component Group Component",
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Conference Citation",
           "validFor": null,
           "value": "Conference_Citation__c"
@@ -494,6 +515,13 @@
           "label": "Conference Citation Staging Table",
           "validFor": null,
           "value": "ConferenceCitationStagingTable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connected Component Group",
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__c"
         },
         {
           "active": true,
@@ -526,9 +554,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "CoSponsor Team",
+          "label": "Create/Edit Record",
           "validFor": null,
-          "value": "CoSponsorTeam__c"
+          "value": "Loop__Insert_Update__c"
         },
         {
           "active": true,
@@ -536,6 +564,13 @@
           "label": "Data Use Purpose",
           "validFor": null,
           "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Delivery Option",
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c"
         },
         {
           "active": true,
@@ -561,6 +596,20 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "DocGen Package",
+          "validFor": null,
+          "value": "Loop__DDP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DocGen Package Template",
+          "validFor": null,
+          "value": "Loop__DDP_File__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Document",
           "validFor": null,
           "value": "Documents__c"
@@ -575,6 +624,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Document Request",
+          "validFor": null,
+          "value": "Loop__Document_Request__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Email Address",
           "validFor": null,
           "value": "Email_Address__c"
@@ -585,6 +641,13 @@
           "label": "Engagement Channel Type",
           "validFor": null,
           "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Envelope History",
+          "validFor": null,
+          "value": "Loop__EnvelopeHistory__c"
         },
         {
           "active": true,
@@ -662,6 +725,27 @@
           "label": "FlowTableViewDefinition",
           "validFor": null,
           "value": "FlowTableViewDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Form Field",
+          "validFor": null,
+          "value": "Loop__Form_Field__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Form Rule",
+          "validFor": null,
+          "value": "Loop__Form_Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Form Step",
+          "validFor": null,
+          "value": "Loop__Form_Step__c"
         },
         {
           "active": true,
@@ -827,6 +911,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Nintex AssureSign Envelope",
+          "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Notes",
           "validFor": null,
           "value": "Notes__c"
@@ -904,6 +995,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "PDF Stamp",
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "People",
           "validFor": null,
           "value": "Contact"
@@ -974,6 +1072,20 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Program Document Generation",
+          "validFor": null,
+          "value": "ProgramDocumentGeneration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Document Generation Sub Stage",
+          "validFor": null,
+          "value": "ProgramDocumentGenerationSubStage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Program Exp Report",
           "validFor": null,
           "value": "Program_Exp_Report__c"
@@ -1005,6 +1117,13 @@
           "label": "Program Narrative",
           "validFor": null,
           "value": "ProgramNarrative__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Partner Team",
+          "validFor": null,
+          "value": "ProgramPartnerTeam__c"
         },
         {
           "active": true,
@@ -1044,6 +1163,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Program Template",
+          "validFor": null,
+          "value": "Program_Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Project",
           "validFor": null,
           "value": "sf_devops__Project__c"
@@ -1079,9 +1205,23 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Recipient",
+          "validFor": null,
+          "value": "Loop__dsRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Region",
           "validFor": null,
           "value": "Region__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relationship",
+          "validFor": null,
+          "value": "Loop__Related_Object__c"
         },
         {
           "active": true,
@@ -1096,6 +1236,13 @@
           "label": "Repository",
           "validFor": null,
           "value": "sf_devops__Repository__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Secure Field",
+          "validFor": null,
+          "value": "Loop__SecureField__c"
         },
         {
           "active": true,

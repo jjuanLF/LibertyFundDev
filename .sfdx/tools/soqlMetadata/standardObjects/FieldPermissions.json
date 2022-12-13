@@ -3844,6 +3844,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.Address1__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ContactStagingTable__c.AddressType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Affiliation_Name__c"
         },
         {
@@ -3879,6 +3893,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.City__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Conferences_Attended_Past_Year__c"
         },
         {
@@ -3908,6 +3929,13 @@
           "label": null,
           "validFor": null,
           "value": "ContactStagingTable__c.Count_as_Discussion_Leader__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ContactStagingTable__c.Country__c"
         },
         {
           "active": true,
@@ -4075,6 +4103,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.PostalCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Primary_Expertise__c"
         },
         {
@@ -4103,7 +4138,21 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ContactStagingTable__c.ShortBio__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ContactStagingTable__c.Staging_Batch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ContactStagingTable__c.State__c"
         },
         {
           "active": true,
@@ -6238,6 +6287,2365 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c.Loop__CompletedDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c.Loop__Enable_In_Person_Signing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c.Loop__Envelope_ID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c.Loop__ExpirationDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__AssureSign_Envelope__c.Loop__Status__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__AddendumDocIdField__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__AdHoc_Apex_Class__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Allow_Attachments__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Allow_UserId_Override__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__AllowOutputAttachment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Attach_As__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Business_User__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Case_Articles__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Content_Workspace__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Day__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__DDP_Additional_To__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__DDP_BCC__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__DDP_CC__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Default_Email_Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Description__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Document_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Email_Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Enclosure_Folder_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Enclosure_Limit__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Exclude_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Exclude_LOOP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Exclude_Queue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Filter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Frequency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Industry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__IsActive__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__KA_Optional__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__KA_Required__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__KA_Separate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Keep_Word_Formulas__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__LastSent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Limit_Availability__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Limit_Deployment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Locale__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Mass_Email_Report_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Mass_Email_Report_to__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__MassEmailReport__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Object_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Object_Name_Link__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Office_Version__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Org_Wide_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__OrgWideEmailAddress__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__OrgWideEmailId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__OrgWideEmailName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Output__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Output_Filename__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Preview_URL__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__ProcessingText__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Published__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Queue_Folder_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Quote_Attachments__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__RelatedContent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__RelatedObjects__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Remove_Invalid_Characters__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__RenameLOOP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__ReportStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__RequireAttachment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__RequireContact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__RequireOutputAttachment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Scheduled_Delivery_Option__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Security__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__SecurityType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Skip_AdHoc_Processing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Time__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__WorkspaceId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__c.Loop__WorkspaceName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Advanced_Optional__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Advanced_Section__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Bookmark__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Compare_Field__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Compare_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Compare_Value__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Description__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Document_ID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Email_As__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Excel_Print_Titles__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Excel_Sheets__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Excel_Sheets_Option__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__File_Operations__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__First_Page__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Last_Page__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Long_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Merge_with_Previous__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Optional__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Pause_to_Edit__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__ReportIds__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Section_Label__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Skip_Processing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Sort_with_Previous__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Type2__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Vf_Parameters__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__c.Loop__Visualforce_Content_Output_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Agreement_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__AllowOutputAttachment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Attach_As__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__AttachDocsTo__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Authoritative_Copy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Brand_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__CC__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__CI_Additional_To__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__CI_BCC__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__CI_CC__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Content_Workspace__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Data_Mapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Data_Mapping_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Data_Mapping_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__DDP_File_Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Decryption_Required__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Delivery_Data__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Description_Hover__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Disable_Wet_Sign__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsAllowEmailCustomizations__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsCustomFields__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsEmailText__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsExpireAfter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsExpireWarn__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsExposeExpirations__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsReminderDelay__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsReminderFrequency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsSubject__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__dsTemplateId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Email_Doc_Links__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Email_Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Enable_In_Person_Signing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Enable_Revisions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Encrypted_Token__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__EnforceSignerVisibility__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__FTP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__FTPDomain__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__FTPUserName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Hosted_Signing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__HTML_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Internal_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Language__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Limit_Availability__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Location__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Message__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Org_Wide_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__OrgWideEmailAddress__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__OrgWideEmailId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__OrgWideEmailName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Output__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Password__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__PasswordonPDF__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__PasswordtoSign__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__PDF_Option__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__PostParameters__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Preview_Step_Help_Text__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Queue_Folder_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Redirect_URL__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Remind_Recipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__RequireOutputAttachment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__SenderSigns__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Signature_Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Signature_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__SkipPreview__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__SMTP_Password__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__SMTP_Username__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__SMTPDomain__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__SMTPUserName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__SSL__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Storage_Data__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Storage_Folder__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Storage_Location__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Tag_Before_Sending__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__TurnTrackingOn__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__Wait__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__WorkspaceId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__c.Loop__WorkspaceName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__c.Loop__Advanced_Filter_Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__c.Loop__Delete_Empty_Containers__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__c.Loop__Field_Tag__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__c.Loop__Filter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__c.Loop__Filters__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Contact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Document_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Document_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Document_Name_Link__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Email_Link__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Error_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Error_Message__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Job_Queue_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__LOOP__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Object_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__c.Loop__Status__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Address__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Calc_Signing_Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__CustomAccessCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__DisplayTitle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsAllowAccessCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsCheckId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsContact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsRequired__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsRoleName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsRoutingOrder__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsSignOptions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsStaticRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__dsUser__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__EmailText__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Embedded_Signer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Host_Address__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Host_Contact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Host_Role_Group_Names__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Host_Static_Email__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Host_Static_Name__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Host_User__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__IntegrationOption__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Language__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnAccessCodeFailed__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnCancel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnDecline__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnException__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnIdCheckFailed__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnSessionTimeout__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnSigningComplete__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnTTLExpired__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__OnViewingComplete__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__RoleGroupNames__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__SigningGroupId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__SigningGroupName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__SigningOrder__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Specified_Host__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__StaticEmail__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__StaticName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__c.Loop__Subject__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__EnvelopeHistory__c.Loop__AssureSign_ID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__EnvelopeHistory__c.Loop__Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__EnvelopeHistory__c.Loop__Details__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__EnvelopeHistory__c.Loop__Event__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Default_Value__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Error_Message__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Form_Step__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Help_Text__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Ignored__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__List_Values__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__SfDefault_Value__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Tag__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__TagView__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__c.Loop__Validation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Rule__c.Loop__Actions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Rule__c.Loop__Advanced_Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Rule__c.Loop__Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Step__c.Loop__Input_Column_Width__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Step__c.Loop__Label_Column_Width__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Step__c.Loop__Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Advanced_Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Attach__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Delivery_Methods__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Description__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Field_Value_Pairs__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Run_at_Beginning__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Submit_for_Approval__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__c.Loop__Use_Admin_Credentials__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Background_Color__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Background_Padding__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__DDP_Files__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Delivery_Methods__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Description__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Font__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__FontSize__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__HAlign__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Height__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Opacity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Pages__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__RGB_Color__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Rotation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Scale_By__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Stamp_Text__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Style__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__VAlign__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__Width__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__XOffset__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__c.Loop__YOffset__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Advanced_Filter_Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Copy_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Delete_Table__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Filter_Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Group_By_Fields__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Group_By_SortOrders__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Hierarchy_Field__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Hierarchy_Node_Type_Field__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Index__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Order_By__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Parent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Parent_Object__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Parent_Object_Field__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Parent_Relationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Record_Limit__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__Related_Object_Alias__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__c.Loop__SOQL__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Conceal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__dsParentField__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__dsParentValue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Font__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__GroupName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Height__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__ListItems__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Locked__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Required__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Selected__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__ToolTip__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Update_Field__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__ValidationMessage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__ValidationPattern__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Value__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Width__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__X_Offset__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__c.Loop__Y_Offset__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group__c.Loop__Description__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group__c.Loop__External_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__c.Loop__Advanced_Filter_Conditions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__c.Loop__External_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__c.Loop__Filter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__c.Loop__Level__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__c.Loop__Order__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Snippet__c.Loop__Body__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Snippet__c.Loop__External_Id__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "MyList__c.Campaign__c"
         },
         {
@@ -6931,6 +9339,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Program__c.DocumentVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Program__c.EndDate__c"
         },
         {
@@ -6974,6 +9389,27 @@
           "label": null,
           "validFor": null,
           "value": "Program__c.ProgramId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.ProposedCityCountry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.ProposedDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program__c.ProposedTimeline__c"
         },
         {
           "active": true,
@@ -7114,6 +9550,13 @@
           "label": null,
           "validFor": null,
           "value": "Program_Documents__c.PDF_Url__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program_Documents__c.Program__c"
         },
         {
           "active": true,
@@ -7344,7 +9787,28 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Program_Template__c.DriveID__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Program_Template__c.Is_Template__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramAttendee__c.AttendanceStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramAttendee__c.ExternalId__c"
         },
         {
           "active": true,
@@ -7365,6 +9829,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramChecklist__c.DueDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramChecklist__c.LastEmailDate__c"
         },
         {
@@ -7373,6 +9844,13 @@
           "label": null,
           "validFor": null,
           "value": "ProgramChecklist__c.LastEmailType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramDocumentGeneration__c.Active__c"
         },
         {
           "active": true,
@@ -7442,21 +9920,21 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramPartnerTeam__c.SendEmail__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSession__c.ExternalId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramSession__c.Narrative__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "ProgramSessionReading__c.Annotation__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "ProgramSessionReading__c.BibliographyId__c"
         },
         {
           "active": true,
@@ -7477,49 +9955,14 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "ProgramSessionReading__c.ConferenceCitation__c"
+          "value": "ProgramSessionReading__c.CitationId__c"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "ProgramSessionReading__c.CopyPurchase__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "ProgramSessionReading__c.CreditLine__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "ProgramSessionReading__c.ExcludeFlag__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "ProgramSessionReading__c.LegacyReadingID__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "ProgramSessionReading__c.Notes__c"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "ProgramSessionReading__c.PageCount__c"
+          "value": "ProgramSessionReading__c.ExternalId__c"
         },
         {
           "active": true,
@@ -10243,6 +12686,27 @@
           "label": null,
           "validFor": null,
           "value": "TMap_Data__c.Years_of_Experience__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "User.Loop__dsPassword__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "User.Loop__dsToken__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "User.Loop__LOOPlus_Tester__c"
         }
       ],
       "referenceTo": [],

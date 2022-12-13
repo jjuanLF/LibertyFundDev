@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 3:12:50 PM",
+    "testExecutionTimeInMs": 5168,
+    "testTotalTimeInMs": 5168,
+    "commandTimeInMs": 205,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XOL0l",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LZyNyUAL",
+      "queueItemId": "7098A000002C5a4QAC",
+      "stackTrace": "Class.TestProgram.testProgram: line 19, column 1",
+      "message": "System.SObjectException: Invalid field Budget for ProgramChecklist__c",
+      "asyncApexJobId": "7078A00003XOL0lQAH",
+      "methodName": "testProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LV061UAD",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 5168,
+      "testTimestamp": "2022-12-12T23:12:50.000+0000",
+      "fullName": "TestProgram.testProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: Invalid field Budget for ProgramChecklist__c",
+        "exceptionStackTrace": "Class.TestProgram.testProgram: line 19, column 1",
+        "className": "TestProgram",
+        "compileProblem": "",
+        "lineNumber": 19,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

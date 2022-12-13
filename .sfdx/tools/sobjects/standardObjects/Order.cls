@@ -92,6 +92,7 @@ global class Order {
     global List<FlowRecordRelation> RelatedRecord;
     global List<OrderChangeEvent> OriginalOrder;
     global List<OrderItemChangeEvent> Order;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Order () 

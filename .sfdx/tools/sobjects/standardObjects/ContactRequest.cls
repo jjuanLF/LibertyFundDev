@@ -41,6 +41,7 @@ global class ContactRequest {
     global List<EventChangeEvent> What;
     global List<EventRelationChangeEvent> Relation;
     global List<FlowRecordRelation> RelatedRecord;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global ContactRequest () 

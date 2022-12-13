@@ -21,6 +21,8 @@ global class Program_Documents__c {
     global Datetime SystemModstamp;
     global Campaign Program__r;
     global Id Program__c;
+    global Program__c ProgramNew__r;
+    global Id ProgramNew__c;
     global String External_ID__c;
     global String Icon__c;
     global String MimeType__c;

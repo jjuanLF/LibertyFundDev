@@ -82,9 +82,9 @@ declare module "@salesforce/schema/Program__c.ConfereeType__c" {
   const ConfereeType__c:string;
   export default ConfereeType__c;
 }
-declare module "@salesforce/schema/Program__c.ConferenceType__c" {
-  const ConferenceType__c:string;
-  export default ConferenceType__c;
+declare module "@salesforce/schema/Program__c.ProposedDate__c" {
+  const ProposedDate__c:string;
+  export default ProposedDate__c;
 }
 declare module "@salesforce/schema/Program__c.EndDate__c" {
   const EndDate__c:any;
@@ -138,13 +138,9 @@ declare module "@salesforce/schema/Program__c.Region__c" {
   const Region__c:string;
   export default Region__c;
 }
-declare module "@salesforce/schema/Program__c.RepeatProgramId__r" {
-  const RepeatProgramId__r:any;
-  export default RepeatProgramId__r;
-}
-declare module "@salesforce/schema/Program__c.RepeatProgramId__c" {
-  const RepeatProgramId__c:any;
-  export default RepeatProgramId__c;
+declare module "@salesforce/schema/Program__c.DocumentVersion__c" {
+  const DocumentVersion__c:string;
+  export default DocumentVersion__c;
 }
 declare module "@salesforce/schema/Program__c.Stage__c" {
   const Stage__c:string;
@@ -165,4 +161,24 @@ declare module "@salesforce/schema/Program__c.VenueId__c" {
 declare module "@salesforce/schema/Program__c.SubStage__c" {
   const SubStage__c:string;
   export default SubStage__c;
+}
+declare module "@salesforce/schema/Program__c.RepeatProgramId__r" {
+  const RepeatProgramId__r:any;
+  export default RepeatProgramId__r;
+}
+declare module "@salesforce/schema/Program__c.RepeatProgramId__c" {
+  const RepeatProgramId__c:any;
+  export default RepeatProgramId__c;
+}
+declare module "@salesforce/schema/Program__c.ConferenceType__c" {
+  const ConferenceType__c:string;
+  export default ConferenceType__c;
+}
+declare module "@salesforce/schema/Program__c.ProposedCityCountry__c" {
+  const ProposedCityCountry__c:string;
+  export default ProposedCityCountry__c;
+}
+declare module "@salesforce/schema/Program__c.ProposedTimeline__c" {
+  const ProposedTimeline__c:string;
+  export default ProposedTimeline__c;
 }

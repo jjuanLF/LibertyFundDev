@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "outcome": "Skipped",
+    "testsRan": 0,
+    "passing": 0,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 5:45:32 PM",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 184,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XON8v",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": []
+}

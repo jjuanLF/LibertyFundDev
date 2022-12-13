@@ -186,6 +186,25 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
+      "label": "Program",
+      "name": "ProgramNew__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Program__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
       "label": "External ID",
       "name": "External_ID__c",
       "nillable": true,

@@ -234,3 +234,31 @@ declare module "@salesforce/schema/ContactStagingTable__c.ProgramId__c" {
   const ProgramId__c:any;
   export default ProgramId__c;
 }
+declare module "@salesforce/schema/ContactStagingTable__c.ShortBio__c" {
+  const ShortBio__c:string;
+  export default ShortBio__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.Address1__c" {
+  const Address1__c:string;
+  export default Address1__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.City__c" {
+  const City__c:string;
+  export default City__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.State__c" {
+  const State__c:string;
+  export default State__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.Country__c" {
+  const Country__c:string;
+  export default Country__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.PostalCode__c" {
+  const PostalCode__c:string;
+  export default PostalCode__c;
+}
+declare module "@salesforce/schema/ContactStagingTable__c.AddressType__c" {
+  const AddressType__c:string;
+  export default AddressType__c;
+}

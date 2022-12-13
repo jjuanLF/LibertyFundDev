@@ -51,27 +51,31 @@ public with sharing class ProgramRepeatProgam implements TriggerHandlerInterface
             List<ProgramNarrative__c> newProgramNarrativeList = new List<ProgramNarrative__c>();
 
             for (Id id : idMap.keySet()) {
-                for (ProgramSession__c programSession : programSessionMap.get(id)) {
-                    ProgramSession__c newProgramSession = programSession.clone();
-                    List<ProgramSessionReading__c> newProgramSessionReadingList = programSession.ProgramSessionReading__r.deepClone();
+                if (programSessionMap.get(id) != null) {
+                    for (ProgramSession__c programSession : programSessionMap.get(id)) {
+                        ProgramSession__c newProgramSession = programSession.clone();
+                        List<ProgramSessionReading__c> newProgramSessionReadingList = programSession.ProgramSessionReading__r.deepClone();
 
-                    newProgramSession.ProgramId__c = idMap.get(id);
-                    this.newProgramSessionMap.put(programSession.Id, newProgramSession);
+                        newProgramSession.ProgramId__c = idMap.get(id);
+                        this.newProgramSessionMap.put(programSession.Id, newProgramSession);
 
-                    this.newProgramSessionReadingMap.put(programSession.Id, newProgramSessionReadingList);
+                        this.newProgramSessionReadingMap.put(programSession.Id, newProgramSessionReadingList);
+                    }
+                }
+                if (programNarrativeMap.get(id) != null) {
+                    for (ProgramNarrative__c programNarrative : programNarrativeMap.get(id)) {
+                        ProgramNarrative__c newProgramNarrative = programNarrative.clone();
+                        newProgramNarrative.ProgramId__c = idMap.get(id);
+                        newProgramNarrativeList.add(newProgramNarrative);
+                    }
                 }
 
-                for (ProgramNarrative__c programNarrative : programNarrativeMap.get(id)) {
-                    ProgramNarrative__c newProgramNarrative = programNarrative.clone();
-                    newProgramNarrative.ProgramId__c = idMap.get(id);
-                    newProgramNarrativeList.add(newProgramNarrative);
+                if (this.newProgramSessionMap.size() > 0) {
+                    insert this.newProgramSessionMap.values();
+                    this.updateProgramSessionId();
                 }
             }
 
-            if (this.newProgramSessionMap.size() > 0) {
-                insert this.newProgramSessionMap.values();
-                this.updateProgramSessionId();
-            }
             if (newProgramNarrativeList.size() > 0) {
                 List<ProgramNarrative__c> deleteProgramNarrativeList = new List<ProgramNarrative__c>();
                 delete new QueriesbyProgramObjects.QueriesProgramNarrative()

@@ -21,6 +21,7 @@ global class ProgramAttendee__ChangeEvent {
     global Contact ContactId__c;
     global String AttendanceStatus__c;
     global String ParticipationType__c;
+    global String ExternalId__c;
 
     global ProgramAttendee__ChangeEvent () 
     {

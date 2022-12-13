@@ -26,6 +26,7 @@ global class ProgramAttendee__c {
     global Id ContactId__c;
     global String AttendanceStatus__c;
     global String ParticipationType__c;
+    global String ExternalId__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;

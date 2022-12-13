@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 2,
+    "passing": 0,
+    "failing": 2,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 4:02:05 PM",
+    "testExecutionTimeInMs": 6478,
+    "testTotalTimeInMs": 6478,
+    "commandTimeInMs": 199,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XOM2m",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LZyOrUAL",
+      "queueItemId": "7098A000002C5b7QAC",
+      "stackTrace": "Class.TestDataFactoryHandler.createTestData: line 54, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testProgram: line 20, column 1",
+      "message": "System.SObjectException: Field Name is not editable",
+      "asyncApexJobId": "7078A00003XOM2mQAH",
+      "methodName": "testProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LV0AHUA1",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 4915,
+      "testTimestamp": "2022-12-13T00:02:06.000+0000",
+      "fullName": "TestProgram.testProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: Field Name is not editable",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createTestData: line 54, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testProgram: line 20, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 54,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M8A00000LZyOsUAL",
+      "queueItemId": "7098A000002C5b7QAC",
+      "stackTrace": "Class.TestDataFactoryHandler.createTestData: line 54, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testRepeatProgram: line 29, column 1",
+      "message": "System.SObjectException: Field Name is not editable",
+      "asyncApexJobId": "7078A00003XOM2mQAH",
+      "methodName": "testRepeatProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LV0AHUA1",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 1563,
+      "testTimestamp": "2022-12-13T00:02:20.000+0000",
+      "fullName": "TestProgram.testRepeatProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: Field Name is not editable",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createTestData: line 54, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testRepeatProgram: line 29, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 54,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

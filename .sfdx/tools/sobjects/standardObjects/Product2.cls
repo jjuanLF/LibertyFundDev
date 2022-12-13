@@ -58,6 +58,7 @@ global class Product2 {
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
     global List<OpportunityLineItem> Product2;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Product2 () 

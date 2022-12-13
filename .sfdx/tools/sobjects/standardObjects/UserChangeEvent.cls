@@ -170,6 +170,11 @@ global class UserChangeEvent {
     global Boolean IsProfilePhotoActive;
     global Individual Individual;
     global Id IndividualId;
+    /* Checking this box will allow this user to run DocGen Packages on the Nintex DocGen next-release environment when it is available for testing.
+    */
+    global Boolean Loop__LOOPlus_Tester__c;
+    global String Loop__dsPassword__c;
+    global String Loop__dsToken__c;
 
     global UserChangeEvent () 
     {

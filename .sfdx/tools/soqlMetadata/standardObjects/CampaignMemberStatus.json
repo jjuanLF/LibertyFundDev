@@ -8,7 +8,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program Participation Status ID",
+      "label": "Campaign Participation Status ID",
       "name": "Id",
       "nillable": false,
       "picklistValues": [],
@@ -42,7 +42,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program ID",
+      "label": "Campaign ID",
       "name": "CampaignId",
       "nillable": false,
       "picklistValues": [],
@@ -211,7 +211,7 @@
       "type": "datetime"
     }
   ],
-  "label": "Program Participation Status",
+  "label": "Campaign Participation Status",
   "childRelationships": [],
   "custom": false,
   "name": "CampaignMemberStatus",

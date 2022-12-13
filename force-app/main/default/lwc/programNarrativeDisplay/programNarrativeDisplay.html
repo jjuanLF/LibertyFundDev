@@ -1,0 +1,13 @@
+<template>
+    <template if:true={renderLWC}>
+        <c-tab-generator
+            records-from-salesforce={records}
+            object-api-name={objectApiName}
+            parent-object-name={parentObjectName}
+            child-object-names={childObjectNames}
+            layouts-to-get={layouts}
+            record-id={recordId}
+            ontransactioncomplete={onTransactionComplete}
+        ></c-tab-generator>
+    </template>
+</template>

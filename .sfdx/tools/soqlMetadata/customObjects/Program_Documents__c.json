@@ -169,12 +169,31 @@
       "inlineHelpText": null,
       "label": "Program",
       "name": "Program__c",
-      "nillable": false,
+      "nillable": true,
       "picklistValues": [],
       "referenceTo": [
         "Campaign"
       ],
       "relationshipName": "Program__r",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Program",
+      "name": "ProgramNew__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Program__c"
+      ],
+      "relationshipName": "ProgramNew__r",
       "sortable": true,
       "type": "reference"
     },

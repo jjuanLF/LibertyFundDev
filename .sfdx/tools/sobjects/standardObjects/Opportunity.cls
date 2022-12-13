@@ -95,6 +95,7 @@ global class Opportunity {
     global List<FlowRecordRelation> RelatedRecord;
     global List<Lead> ConvertedOpportunity;
     global List<OpportunityContactRoleChangeEvent> Opportunity;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Opportunity () 

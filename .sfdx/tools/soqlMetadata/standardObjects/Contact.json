@@ -3187,16 +3187,6 @@
     },
     {
       "cascadeDelete": true,
-      "childSObject": "CoSponsorTeam__c",
-      "deprecatedAndHidden": false,
-      "field": "ContactId__c",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "CoSponsor_Teams__r",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
       "childSObject": "CollaborationGroupRecord",
       "deprecatedAndHidden": false,
       "field": "RecordId",
@@ -3546,6 +3536,36 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "Loop__Document_Request__c",
+      "deprecatedAndHidden": false,
+      "field": "Loop__Contact__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Loop__Document_Queue__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Loop__dsRecipient__c",
+      "deprecatedAndHidden": false,
+      "field": "Loop__Host_Contact__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Loop__Host_Recipients__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Loop__dsRecipient__c",
+      "deprecatedAndHidden": false,
+      "field": "Loop__dsContact__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Loop__Recipients__r",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "MatchingInformation",
       "deprecatedAndHidden": false,
@@ -3666,6 +3686,26 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmailRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "OutgoingEmailRelations",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "PID_History__c",
       "deprecatedAndHidden": false,
@@ -3712,7 +3752,17 @@
       "field": "ContactId__c",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": "Program_Attendees__r",
+      "relationshipName": "ProgramAttendee__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProgramPartnerTeam__c",
+      "deprecatedAndHidden": false,
+      "field": "ContactId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProgramCoSponsorTeam__r",
       "restrictedDelete": false
     },
     {

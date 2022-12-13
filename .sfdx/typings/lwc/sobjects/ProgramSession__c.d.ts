@@ -74,3 +74,7 @@ declare module "@salesforce/schema/ProgramSession__c.Title__c" {
   const Title__c:string;
   export default Title__c;
 }
+declare module "@salesforce/schema/ProgramSession__c.ExternalId__c" {
+  const ExternalId__c:string;
+  export default ExternalId__c;
+}

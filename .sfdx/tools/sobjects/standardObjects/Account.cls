@@ -156,6 +156,8 @@ global class Account {
     global List<FlowRecordRelation> RelatedRecord;
     global List<Lead> ConvertedAccount;
     global List<OpportunityChangeEvent> Account;
+    global List<OutgoingEmail> RelatedTo;
+    global List<Task> Account;
     global List<TaskChangeEvent> What;
     global List<UserChangeEvent> Account;
     global List<UserRole> PortalAccount;

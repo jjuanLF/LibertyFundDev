@@ -623,7 +623,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Program ID",
+      "label": "Campaign ID",
       "name": "CampaignId",
       "nillable": true,
       "picklistValues": [],
@@ -1300,6 +1300,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {

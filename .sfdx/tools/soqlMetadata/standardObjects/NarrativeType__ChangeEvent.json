@@ -214,6 +214,23 @@
       "relationshipName": null,
       "sortable": false,
       "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Sort Order",
+      "name": "SortOrder__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
     }
   ],
   "label": "Change Event: Narrative Type",

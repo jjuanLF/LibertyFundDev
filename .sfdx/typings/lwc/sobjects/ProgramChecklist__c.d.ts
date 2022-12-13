@@ -78,3 +78,7 @@ declare module "@salesforce/schema/ProgramChecklist__c.LastEmailType__c" {
   const LastEmailType__c:string;
   export default LastEmailType__c;
 }
+declare module "@salesforce/schema/ProgramChecklist__c.DueDate__c" {
+  const DueDate__c:any;
+  export default DueDate__c;
+}

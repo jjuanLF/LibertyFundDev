@@ -846,6 +846,66 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "Loop__AssureSign_Envelope__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Loop__DDP__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Loop__Document_Request__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Loop__Text_Group__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Loop__Text_Snippet__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Loop__dsRecipient__Share",
+      "deprecatedAndHidden": false,
+      "field": "UserOrGroupId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "MacroShare",
       "deprecatedAndHidden": false,
       "field": "UserOrGroupId",

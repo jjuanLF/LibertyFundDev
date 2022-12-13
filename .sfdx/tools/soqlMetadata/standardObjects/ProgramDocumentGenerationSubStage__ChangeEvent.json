@@ -1,0 +1,418 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event ID",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Replay ID",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event Header",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "<Entity>",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": "Exploratory - Initiated",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Previous Sub Stage",
+      "name": "PreviousSubStage__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Exploratory - Initiated",
+          "validFor": null,
+          "value": "Exploratory - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Rep",
+          "validFor": null,
+          "value": "Exploratory - Rep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Committee",
+          "validFor": null,
+          "value": "Exploratory - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Board",
+          "validFor": null,
+          "value": "Exploratory - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Initiated",
+          "validFor": null,
+          "value": "Project - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Committee",
+          "validFor": null,
+          "value": "Project - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Board",
+          "validFor": null,
+          "value": "Project - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer",
+          "validFor": null,
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Agreement",
+          "validFor": null,
+          "value": "ProgramAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Development",
+          "validFor": null,
+          "value": "Development"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Completed",
+          "validFor": null,
+          "value": "Completed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed",
+          "validFor": null,
+          "value": "Closed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Converted",
+          "validFor": null,
+          "value": "Converted"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": "Exploratory - Initiated",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Current Sub Stage",
+      "name": "CurrentSubStage__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Exploratory - Initiated",
+          "validFor": null,
+          "value": "Exploratory - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Rep",
+          "validFor": null,
+          "value": "Exploratory - Rep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Committee",
+          "validFor": null,
+          "value": "Exploratory - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exploratory - Board",
+          "validFor": null,
+          "value": "Exploratory - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Initiated",
+          "validFor": null,
+          "value": "Project - Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Committee",
+          "validFor": null,
+          "value": "Project - Committee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project - Board",
+          "validFor": null,
+          "value": "Project - Board"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer",
+          "validFor": null,
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Program Agreement",
+          "validFor": null,
+          "value": "ProgramAgreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Development",
+          "validFor": null,
+          "value": "Development"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Completed",
+          "validFor": null,
+          "value": "Completed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed",
+          "validFor": null,
+          "value": "Closed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Converted",
+          "validFor": null,
+          "value": "Converted"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Program Document Generation",
+      "name": "ProgramDocumentGenerationId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ProgramDocumentGeneration__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Version",
+      "name": "Version__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Draft",
+          "validFor": null,
+          "value": "Draft"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Final",
+          "validFor": null,
+          "value": "Final"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    }
+  ],
+  "label": "Change Event: Program Document Generation Sub Stage",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ProgramDocumentGenerationSubStage__ChangeEvent",
+  "queryable": false
+}

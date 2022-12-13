@@ -20,6 +20,7 @@ global class Program_Documents__ChangeEvent {
     global User LastModifiedBy;
     global Id LastModifiedById;
     global Campaign Program__c;
+    global Program__c ProgramNew__c;
     global String External_ID__c;
     global String Icon__c;
     global String MimeType__c;

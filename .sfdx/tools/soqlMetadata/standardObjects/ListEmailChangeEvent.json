@@ -356,7 +356,7 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Program",
+      "label": "Campaign ID",
       "name": "CampaignId",
       "nillable": true,
       "picklistValues": [],

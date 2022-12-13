@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 6:46:31 PM",
+    "testExecutionTimeInMs": 4680,
+    "testTotalTimeInMs": 4680,
+    "commandTimeInMs": 188,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XONuy",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LZyPaUAL",
+      "queueItemId": "7098A000002C5c0QAC",
+      "stackTrace": "Class.TestContactStagingController.testImportContact: line 11, column 1",
+      "message": "System.AssertException: Assertion Failed",
+      "asyncApexJobId": "7078A00003XONuyQAH",
+      "methodName": "testImportContact",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LV0DpUAL",
+      "apexClass": {
+        "id": "01p8A00000Iwt6yQAB",
+        "name": "TestContactStagingController",
+        "namespacePrefix": null,
+        "fullName": "TestContactStagingController"
+      },
+      "runTime": 4680,
+      "testTimestamp": "2022-12-13T02:46:32.000+0000",
+      "fullName": "TestContactStagingController.testImportContact",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed",
+        "exceptionStackTrace": "Class.TestContactStagingController.testImportContact: line 11, column 1",
+        "className": "TestContactStagingController",
+        "compileProblem": "",
+        "lineNumber": 11,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

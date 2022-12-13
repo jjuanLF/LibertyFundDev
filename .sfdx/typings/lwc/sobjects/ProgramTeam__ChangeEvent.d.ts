@@ -46,3 +46,7 @@ declare module "@salesforce/schema/ProgramTeam__ChangeEvent.UserId__c" {
   const UserId__c:any;
   export default UserId__c;
 }
+declare module "@salesforce/schema/ProgramTeam__ChangeEvent.Role__c" {
+  const Role__c:string;
+  export default Role__c;
+}

@@ -154,7 +154,6 @@
         "CitationStagingTable__c",
         "Citation_Author__c",
         "Citation__c",
-        "CoSponsorTeam__c",
         "CollaborationGroup",
         "ConferenceCitationStagingTable__c",
         "Conference_Citation__c",
@@ -187,6 +186,26 @@
         "LID__User_OAuth__c",
         "Lead",
         "Location",
+        "Loop__AssureSign_Envelope__c",
+        "Loop__AssureSign_User_Settings__c",
+        "Loop__DDP_File__c",
+        "Loop__DDP_Integration_Option__c",
+        "Loop__DDP_Text_Group__c",
+        "Loop__DDP__c",
+        "Loop__Document_Request__c",
+        "Loop__EnvelopeHistory__c",
+        "Loop__Form_Field__c",
+        "Loop__Form_Rule__c",
+        "Loop__Form_Step__c",
+        "Loop__Insert_Update__c",
+        "Loop__LoopSettings__c",
+        "Loop__PDF_Stamp__c",
+        "Loop__Related_Object__c",
+        "Loop__SecureField__c",
+        "Loop__Text_Group_Text_Snippet__c",
+        "Loop__Text_Group__c",
+        "Loop__Text_Snippet__c",
+        "Loop__dsRecipient__c",
         "MyList_Conferee__c",
         "MyList__c",
         "NarrativeType__c",
@@ -204,8 +223,11 @@
         "Product2",
         "ProgramAttendee__c",
         "ProgramChecklist__c",
+        "ProgramDocumentGenerationSubStage__c",
+        "ProgramDocumentGeneration__c",
         "ProgramMemberStagingTable__c",
         "ProgramNarrative__c",
+        "ProgramPartnerTeam__c",
         "ProgramSessionReading__c",
         "ProgramSession__c",
         "ProgramStagingTable__c",
@@ -216,6 +238,7 @@
         "Program_Exp_Report__c",
         "Program_Invite_Settings__c",
         "Program_Payments__c",
+        "Program_Template__c",
         "Program__c",
         "Proposal_Author__c",
         "Publication_Role__c",
@@ -371,6 +394,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "FinishProgramSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Give_Feedback"
         },
         {
@@ -413,7 +443,35 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProcessIncompleteProgramChecklistItems"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramApprovals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramPopulateProposalInfo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Programs_Before_Save_actions"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReadingInsertorUpdateTrigger"
         },
         {
           "active": true,
@@ -512,6 +570,13 @@
           "label": null,
           "validFor": null,
           "value": "Update_TMap_Indicators"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "UpdatedorCreatedProgramFlow"
         },
         {
           "active": true,
@@ -794,6 +859,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "FinishProgramSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Give_Feedback"
         },
         {
@@ -836,7 +908,35 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProcessIncompleteProgramChecklistItems"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramApprovals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramPopulateProposalInfo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Programs_Before_Save_actions"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramSessionReadingInsertorUpdateTrigger"
         },
         {
           "active": true,
@@ -983,6 +1083,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "QuickActionDefinition.Contact.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "QuickActionDefinition.Contact.slackv2__Send_to_Slack"
         },
         {
@@ -1088,6 +1195,34 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "QuickActionDefinition.Loop__AssureSign_Envelope__c.Loop__Cancel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "QuickActionDefinition.Loop__AssureSign_Envelope__c.Loop__DeleteQA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "QuickActionDefinition.Loop__AssureSign_Envelope__c.Loop__Download"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "QuickActionDefinition.Loop__NintexForms"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "QuickActionDefinition.MyList__c.Send_to_Conf_DB"
         },
         {
@@ -1158,6 +1293,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "QuickActionDefinition.Opportunity.Loop__RunDDP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "QuickActionDefinition.Opportunity.slackv2__Send_to_Slack"
         },
         {
@@ -1173,6 +1315,20 @@
           "label": null,
           "validFor": null,
           "value": "QuickActionDefinition.Provide_Feedback"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "QuickActionDefinition.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "QuickActionDefinition.SendEmail1"
         },
         {
           "active": true,
@@ -1292,6 +1448,13 @@
           "label": null,
           "validFor": null,
           "value": "Update_TMap_Indicators"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "UpdatedorCreatedProgramFlow"
         },
         {
           "active": true,

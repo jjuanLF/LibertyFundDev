@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 7:04:32 PM",
+    "testExecutionTimeInMs": 21528,
+    "testTotalTimeInMs": 21528,
+    "commandTimeInMs": 215,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XOODN",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LZyPpUAL",
+      "queueItemId": "7098A000002C5cFQAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7078A00003XOODNQA5",
+      "methodName": "testImportContact",
+      "outcome": "Pass",
+      "apexLogId": "07L8A00000LV0EYUA1",
+      "apexClass": {
+        "id": "01p8A00000Iwt6yQAB",
+        "name": "TestContactStagingController",
+        "namespacePrefix": null,
+        "fullName": "TestContactStagingController"
+      },
+      "runTime": 21528,
+      "testTimestamp": "2022-12-13T03:04:32.000+0000",
+      "fullName": "TestContactStagingController.testImportContact"
+    }
+  ]
+}

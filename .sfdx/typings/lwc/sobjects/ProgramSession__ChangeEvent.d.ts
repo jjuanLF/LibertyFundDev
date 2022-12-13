@@ -46,3 +46,19 @@ declare module "@salesforce/schema/ProgramSession__ChangeEvent.Narrative__c" {
   const Narrative__c:string;
   export default Narrative__c;
 }
+declare module "@salesforce/schema/ProgramSession__ChangeEvent.Sequence__c" {
+  const Sequence__c:number;
+  export default Sequence__c;
+}
+declare module "@salesforce/schema/ProgramSession__ChangeEvent.Session__c" {
+  const Session__c:string;
+  export default Session__c;
+}
+declare module "@salesforce/schema/ProgramSession__ChangeEvent.Title__c" {
+  const Title__c:string;
+  export default Title__c;
+}
+declare module "@salesforce/schema/ProgramSession__ChangeEvent.ExternalId__c" {
+  const ExternalId__c:string;
+  export default ExternalId__c;
+}

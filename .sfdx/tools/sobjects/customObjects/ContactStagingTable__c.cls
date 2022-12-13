@@ -68,6 +68,13 @@ global class ContactStagingTable__c {
     global String ErrorMessage__c;
     global Program__c ProgramId__r;
     global Id ProgramId__c;
+    global String ShortBio__c;
+    global String Address1__c;
+    global String City__c;
+    global String State__c;
+    global String Country__c;
+    global String PostalCode__c;
+    global String AddressType__c;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;
     global List<Attachment> Attachments;

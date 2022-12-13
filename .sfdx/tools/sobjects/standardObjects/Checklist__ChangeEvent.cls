@@ -19,6 +19,12 @@ global class Checklist__ChangeEvent {
     global Datetime LastModifiedDate;
     global User LastModifiedBy;
     global Id LastModifiedById;
+    global Boolean Active__c;
+    global String Body__c;
+    global Double DaysTaskDue__c;
+    global Double EmailReminderDays__c;
+    global String SubStage__c;
+    global String Type__c;
 
     global Checklist__ChangeEvent () 
     {

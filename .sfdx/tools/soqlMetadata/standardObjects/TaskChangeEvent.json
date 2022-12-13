@@ -100,7 +100,6 @@
         "CitationStagingTable__c",
         "Citation_Author__c",
         "Citation__c",
-        "CoSponsorTeam__c",
         "ConferenceCitationStagingTable__c",
         "Conference_Citation__c",
         "ContactRequest",
@@ -131,6 +130,26 @@
         "LID__User_OAuth__c",
         "ListEmail",
         "Location",
+        "Loop__AssureSign_Envelope__c",
+        "Loop__AssureSign_User_Settings__c",
+        "Loop__DDP_File__c",
+        "Loop__DDP_Integration_Option__c",
+        "Loop__DDP_Text_Group__c",
+        "Loop__DDP__c",
+        "Loop__Document_Request__c",
+        "Loop__EnvelopeHistory__c",
+        "Loop__Form_Field__c",
+        "Loop__Form_Rule__c",
+        "Loop__Form_Step__c",
+        "Loop__Insert_Update__c",
+        "Loop__LoopSettings__c",
+        "Loop__PDF_Stamp__c",
+        "Loop__Related_Object__c",
+        "Loop__SecureField__c",
+        "Loop__Text_Group_Text_Snippet__c",
+        "Loop__Text_Group__c",
+        "Loop__Text_Snippet__c",
+        "Loop__dsRecipient__c",
         "MyList_Conferee__c",
         "MyList__c",
         "NarrativeType__c",
@@ -146,8 +165,11 @@
         "Product2",
         "ProgramAttendee__c",
         "ProgramChecklist__c",
+        "ProgramDocumentGenerationSubStage__c",
+        "ProgramDocumentGeneration__c",
         "ProgramMemberStagingTable__c",
         "ProgramNarrative__c",
+        "ProgramPartnerTeam__c",
         "ProgramSessionReading__c",
         "ProgramSession__c",
         "ProgramStagingTable__c",
@@ -158,6 +180,7 @@
         "Program_Exp_Report__c",
         "Program_Invite_Settings__c",
         "Program_Payments__c",
+        "Program_Template__c",
         "Program__c",
         "Proposal_Author__c",
         "Publication_Role__c",
@@ -792,6 +815,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT+13:00) Fiji Summer Time (Pacific/Fiji)",
+          "validFor": null,
+          "value": "Pacific/Fiji"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT+13:00) Tonga Standard Time (Pacific/Tongatapu)",
           "validFor": null,
           "value": "Pacific/Tongatapu"
@@ -802,13 +832,6 @@
           "label": "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)",
           "validFor": null,
           "value": "Asia/Kamchatka"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+12:00) Fiji Standard Time (Pacific/Fiji)",
-          "validFor": null,
-          "value": "Pacific/Fiji"
         },
         {
           "active": true,
@@ -1254,23 +1277,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-02:30) Newfoundland Daylight Time (America/St_Johns)",
-          "validFor": null,
-          "value": "America/St_Johns"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/Buenos_Aires)",
           "validFor": null,
           "value": "America/Argentina/Buenos_Aires"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT-03:00) Atlantic Daylight Time (America/Halifax)",
-          "validFor": null,
-          "value": "America/Halifax"
         },
         {
           "active": true,
@@ -1289,9 +1298,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-03:00) Atlantic Daylight Time (Atlantic/Bermuda)",
+          "label": "(GMT-03:30) Newfoundland Standard Time (America/St_Johns)",
           "validFor": null,
-          "value": "Atlantic/Bermuda"
+          "value": "America/St_Johns"
         },
         {
           "active": true,
@@ -1303,16 +1312,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Indianapolis)",
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Halifax)",
           "validFor": null,
-          "value": "America/Indiana/Indianapolis"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT-04:00) Eastern Daylight Time (America/New_York)",
-          "validFor": null,
-          "value": "America/New_York"
+          "value": "America/Halifax"
         },
         {
           "active": true,
@@ -1324,6 +1326,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT-04:00) Atlantic Standard Time (Atlantic/Bermuda)",
+          "validFor": null,
+          "value": "Atlantic/Bermuda"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT-05:00) Colombia Standard Time (America/Bogota)",
           "validFor": null,
           "value": "America/Bogota"
@@ -1331,9 +1340,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-05:00) Central Daylight Time (America/Chicago)",
+          "label": "(GMT-05:00) Eastern Standard Time (America/Indiana/Indianapolis)",
           "validFor": null,
-          "value": "America/Chicago"
+          "value": "America/Indiana/Indianapolis"
         },
         {
           "active": true,
@@ -1345,6 +1354,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT-05:00) Eastern Standard Time (America/New_York)",
+          "validFor": null,
+          "value": "America/New_York"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT-05:00) Eastern Standard Time (America/Panama)",
           "validFor": null,
           "value": "America/Panama"
@@ -1352,9 +1368,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-06:00) Mountain Daylight Time (America/Denver)",
+          "label": "(GMT-06:00) Central Standard Time (America/Chicago)",
           "validFor": null,
-          "value": "America/Denver"
+          "value": "America/Chicago"
         },
         {
           "active": true,
@@ -1373,9 +1389,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)",
+          "label": "(GMT-07:00) Mountain Standard Time (America/Denver)",
           "validFor": null,
-          "value": "America/Los_Angeles"
+          "value": "America/Denver"
         },
         {
           "active": true,
@@ -1394,16 +1410,16 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-07:00) Pacific Daylight Time (America/Tijuana)",
+          "label": "(GMT-08:00) Pacific Standard Time (America/Los_Angeles)",
           "validFor": null,
-          "value": "America/Tijuana"
+          "value": "America/Los_Angeles"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-08:00) Alaska Daylight Time (America/Anchorage)",
+          "label": "(GMT-08:00) Pacific Standard Time (America/Tijuana)",
           "validFor": null,
-          "value": "America/Anchorage"
+          "value": "America/Tijuana"
         },
         {
           "active": true,
@@ -1415,9 +1431,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-09:00) Hawaii-Aleutian Daylight Time (America/Adak)",
+          "label": "(GMT-09:00) Alaska Standard Time (America/Anchorage)",
           "validFor": null,
-          "value": "America/Adak"
+          "value": "America/Anchorage"
         },
         {
           "active": true,
@@ -1432,6 +1448,13 @@
           "label": "(GMT-09:30) Marquesas Time (Pacific/Marquesas)",
           "validFor": null,
           "value": "Pacific/Marquesas"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-10:00) Hawaii-Aleutian Standard Time (America/Adak)",
+          "validFor": null,
+          "value": "America/Adak"
         },
         {
           "active": true,

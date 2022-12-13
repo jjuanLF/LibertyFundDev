@@ -22,6 +22,12 @@ global class Checklist__c {
     global Date LastActivityDate;
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
+    global Boolean Active__c;
+    global String Body__c;
+    global Double DaysTaskDue__c;
+    global Double EmailReminderDays__c;
+    global String SubStage__c;
+    global String Type__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;

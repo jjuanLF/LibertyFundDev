@@ -5106,6 +5106,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "clients:iftManager"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "clients:insightAggregator"
         },
         {
@@ -44936,6 +44943,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "runtime_cdp:dataShareAssociateDataShareTargetAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_cdp:dataShareAssociateDataShareTargetDialog"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "runtime_cdp:dataShareCloneAction"
         },
         {
@@ -53309,6 +53330,13 @@
           "label": null,
           "validFor": null,
           "value": "runtime_sales_easy:eacEditConfigSetupStepWrapper"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_sales_easy:easyChart"
         },
         {
           "active": true,
@@ -65874,6 +65902,13 @@
           "label": null,
           "validFor": null,
           "value": "setup_service:liveMessageEnhancedMessaging"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "setup_service:liveMessageFacebookTerms"
         },
         {
           "active": true,
@@ -81578,6 +81613,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "clients:iftManager"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "clients:insightAggregator"
         },
         {
@@ -121408,6 +121450,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "runtime_cdp:dataShareAssociateDataShareTargetAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_cdp:dataShareAssociateDataShareTargetDialog"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "runtime_cdp:dataShareCloneAction"
         },
         {
@@ -129781,6 +129837,13 @@
           "label": null,
           "validFor": null,
           "value": "runtime_sales_easy:eacEditConfigSetupStepWrapper"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "runtime_sales_easy:easyChart"
         },
         {
           "active": true,
@@ -142346,6 +142409,13 @@
           "label": null,
           "validFor": null,
           "value": "setup_service:liveMessageEnhancedMessaging"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "setup_service:liveMessageFacebookTerms"
         },
         {
           "active": true,

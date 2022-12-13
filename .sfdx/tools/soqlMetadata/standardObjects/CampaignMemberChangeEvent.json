@@ -59,7 +59,7 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Program ID",
+      "label": "Campaign ID",
       "name": "CampaignId",
       "nillable": true,
       "picklistValues": [],
@@ -692,7 +692,7 @@
       "type": "reference"
     }
   ],
-  "label": "Program Participation Change Event",
+  "label": "Campaign Participation Change Event",
   "childRelationships": [],
   "custom": false,
   "name": "CampaignMemberChangeEvent",

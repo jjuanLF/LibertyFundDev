@@ -28,6 +28,9 @@ global class ProgramSessionReading__c {
     global String Pages__c;
     global Double SortOrder__c;
     global String PublicationTitle__c;
+    global String ExternalId__c;
+    global String Citation__c;
+    global String ReadingListType__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;

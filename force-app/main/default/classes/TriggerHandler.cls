@@ -11,6 +11,7 @@ public without sharing class TriggerHandler {
         if (hasDataContainer) {
             objectDataContainer = (DataContainerInterface) Type.forName(table.replace('__c', '') + 'DataContainer')
                 .newInstance();
+            objectDataContainer.intialize();
         }
 
         for (TriggerHandlerFunction__mdt triggerHandlerFunction : triggerHandlerFunctionList) {

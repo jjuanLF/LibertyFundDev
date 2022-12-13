@@ -17,11 +17,12 @@ global class ProgramChecklist__ChangeEvent {
     global Datetime LastModifiedDate;
     global User LastModifiedBy;
     global Id LastModifiedById;
-    global Program__c Programid__c;
+    global Program__c ProgramId__c;
     global Checklist__c ChecklistId__c;
     global Boolean Completed__c;
     global Date LastEmailDate__c;
     global String LastEmailType__c;
+    global Date DueDate__c;
 
     global ProgramChecklist__ChangeEvent () 
     {

@@ -27,6 +27,7 @@ global class ProgramChecklist__c {
     global Boolean Completed__c;
     global Date LastEmailDate__c;
     global String LastEmailType__c;
+    global Date DueDate__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<AttachedContentNote> AttachedContentNotes;

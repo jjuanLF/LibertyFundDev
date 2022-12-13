@@ -690,3 +690,15 @@ declare module "@salesforce/schema/User.IndividualId" {
   const IndividualId:any;
   export default IndividualId;
 }
+declare module "@salesforce/schema/User.Loop__LOOPlus_Tester__c" {
+  const Loop__LOOPlus_Tester__c:boolean;
+  export default Loop__LOOPlus_Tester__c;
+}
+declare module "@salesforce/schema/User.Loop__dsPassword__c" {
+  const Loop__dsPassword__c:string;
+  export default Loop__dsPassword__c;
+}
+declare module "@salesforce/schema/User.Loop__dsToken__c" {
+  const Loop__dsToken__c:string;
+  export default Loop__dsToken__c;
+}

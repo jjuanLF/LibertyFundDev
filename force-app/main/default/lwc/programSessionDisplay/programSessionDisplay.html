@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-clearfix">
+        <div class="slds-float_right">
+            <template if:true={showSessionButton}>
+                <lightning-button
+                    title="Finish Session"
+                    label="Finish Session"
+                    onclick={finishSession}
+                ></lightning-button>
+            </template>
+        </div>
+    </div>
+
+    <template if:true={renderLWC}>
+        <c-tab-generator
+            records-from-salesforce={records}
+            object-api-name={objectApiName}
+            parent-object-name={parentObjectName}
+            child-object-names={childObjectNames}
+            layouts-to-get={layouts}
+            record-id={recordId}
+            ontransactioncomplete={onTransactionComplete}
+        ></c-tab-generator>
+    </template>
+</template>

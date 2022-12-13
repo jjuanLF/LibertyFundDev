@@ -2383,6 +2383,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "Partner",
       "deprecatedAndHidden": false,

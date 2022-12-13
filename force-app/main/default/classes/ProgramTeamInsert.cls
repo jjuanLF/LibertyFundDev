@@ -26,9 +26,10 @@ public without sharing class ProgramTeamInsert implements TriggerHandlerInterfac
         this.programTeamMap = new QueriesbyProgramObjects.QueriesProgramTeam().getProgramTeamByProgram(idSet);
 
         for (SObject program : newTriggerMap.values()) {
-            if (this.programDataContainer.groupMemberList.size() > 0) {
+            if (this.programDataContainer.groupMemberList != null && this.programDataContainer.groupMemberList.size() > 0) {
                 for (GroupMember groupMember : this.programDataContainer.groupMemberList) {
-                    if (groupMember.Group.DeveloperName == ProgramConstants.COSPONSORGROUP) {
+                    if (groupMember.Group.DeveloperName == ProgramConstants.COSPONSORGROUP ||
+                    groupMember.Group.DeveloperName == ProgramConstants.COSPONSORADMIN) {
                         checkProgramTeam(program.Id, groupMember.UserOrGroupId);
                     }
                 }

@@ -175,7 +175,6 @@ global class Campaign {
     global List<Program_Invite_Settings__c> Program_Invite_Settings__r;
     global List<Program_Payments__c> Program_Payments__r;
     global List<Program__c> Programs1__r;
-    global List<Program__c> Programs__r;
     global List<Proposal_Author__c> Authors__r;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
@@ -191,6 +190,7 @@ global class Campaign {
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
     global List<ListEmailChangeEvent> Campaign;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Campaign () 

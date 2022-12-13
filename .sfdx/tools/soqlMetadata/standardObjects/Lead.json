@@ -1959,6 +1959,26 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmailRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "OutgoingEmailRelations",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ProcessInstance",
       "deprecatedAndHidden": false,

@@ -58,3 +58,27 @@ declare module "@salesforce/schema/Checklist__c.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
+declare module "@salesforce/schema/Checklist__c.Active__c" {
+  const Active__c:boolean;
+  export default Active__c;
+}
+declare module "@salesforce/schema/Checklist__c.Body__c" {
+  const Body__c:string;
+  export default Body__c;
+}
+declare module "@salesforce/schema/Checklist__c.DaysTaskDue__c" {
+  const DaysTaskDue__c:number;
+  export default DaysTaskDue__c;
+}
+declare module "@salesforce/schema/Checklist__c.EmailReminderDays__c" {
+  const EmailReminderDays__c:number;
+  export default EmailReminderDays__c;
+}
+declare module "@salesforce/schema/Checklist__c.SubStage__c" {
+  const SubStage__c:string;
+  export default SubStage__c;
+}
+declare module "@salesforce/schema/Checklist__c.Type__c" {
+  const Type__c:string;
+  export default Type__c;
+}

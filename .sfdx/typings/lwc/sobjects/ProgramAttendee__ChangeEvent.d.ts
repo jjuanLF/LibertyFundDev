@@ -54,3 +54,7 @@ declare module "@salesforce/schema/ProgramAttendee__ChangeEvent.ParticipationTyp
   const ParticipationType__c:string;
   export default ParticipationType__c;
 }
+declare module "@salesforce/schema/ProgramAttendee__ChangeEvent.ExternalId__c" {
+  const ExternalId__c:string;
+  export default ExternalId__c;
+}

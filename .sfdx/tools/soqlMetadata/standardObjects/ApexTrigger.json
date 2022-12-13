@@ -754,13 +754,6 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "CoSponsorTeam__ChangeEvent"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
           "value": "Customer"
         },
         {
@@ -1237,6 +1230,132 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Loop__AssureSign_Envelope__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_File__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Integration_Option__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__DDP_Text_Group__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Document_Request__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__dsRecipient__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__EnvelopeHistory__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Field__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Rule__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Form_Step__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Insert_Update__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__PDF_Stamp__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Related_Object__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__SecureField__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Group_Text_Snippet__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Loop__Text_Snippet__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Macro"
         },
         {
@@ -1650,6 +1769,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Program_Template__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramAttendee__ChangeEvent"
         },
         {
@@ -1664,6 +1790,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "ProgramDocumentGeneration__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramDocumentGenerationSubStage__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "ProgramMemberStagingTable__ChangeEvent"
         },
         {
@@ -1672,6 +1812,13 @@
           "label": null,
           "validFor": null,
           "value": "ProgramNarrative__ChangeEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ProgramPartnerTeam__ChangeEvent"
         },
         {
           "active": true,

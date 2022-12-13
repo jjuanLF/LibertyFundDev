@@ -21,6 +21,7 @@ global class NarrativeType__ChangeEvent {
     global Id LastModifiedById;
     global Boolean Active__c;
     global String Type__c;
+    global Double SortOrder__c;
 
     global NarrativeType__ChangeEvent () 
     {

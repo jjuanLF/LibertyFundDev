@@ -262,6 +262,23 @@
       "relationshipName": null,
       "sortable": false,
       "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ExternalId",
+      "name": "ExternalId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
     }
   ],
   "label": "Change Event: Program Attendee",

@@ -92,6 +92,7 @@ global class Contract {
     global List<FeedComment> Parent;
     global List<FlowRecordRelation> RelatedRecord;
     global List<OpportunityChangeEvent> Contract;
+    global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;
 
     global Contract () 

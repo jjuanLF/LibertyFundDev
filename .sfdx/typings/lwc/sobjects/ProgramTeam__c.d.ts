@@ -66,3 +66,7 @@ declare module "@salesforce/schema/ProgramTeam__c.UserId__c" {
   const UserId__c:any;
   export default UserId__c;
 }
+declare module "@salesforce/schema/ProgramTeam__c.Role__c" {
+  const Role__c:string;
+  export default Role__c;
+}

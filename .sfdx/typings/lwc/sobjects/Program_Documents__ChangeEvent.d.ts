@@ -50,6 +50,10 @@ declare module "@salesforce/schema/Program_Documents__ChangeEvent.Program__c" {
   const Program__c:any;
   export default Program__c;
 }
+declare module "@salesforce/schema/Program_Documents__ChangeEvent.ProgramNew__c" {
+  const ProgramNew__c:any;
+  export default ProgramNew__c;
+}
 declare module "@salesforce/schema/Program_Documents__ChangeEvent.External_ID__c" {
   const External_ID__c:string;
   export default External_ID__c;

@@ -66,3 +66,7 @@ declare module "@salesforce/schema/ProgramCoSponsorTeam__c.ProgramId__c" {
   const ProgramId__c:any;
   export default ProgramId__c;
 }
+declare module "@salesforce/schema/ProgramCoSponsorTeam__c.Role__c" {
+  const Role__c:string;
+  export default Role__c;
+}

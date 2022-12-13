@@ -288,44 +288,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Academic/Professional",
-          "validFor": null,
-          "value": "Academic/Professional"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Cosponsor",
-          "validFor": null,
-          "value": "Cosponsor"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Graduate Student",
           "validFor": null,
           "value": "Graduate Student"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "HS Teacher",
-          "validFor": null,
-          "value": "HS Teacher"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Judge",
-          "validFor": null,
-          "value": "Judge"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Non-Academic",
-          "validFor": null,
-          "value": "Non-Academic"
         },
         {
           "active": true,
@@ -337,37 +302,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Student, Academic & Professional",
+          "label": "Combination",
           "validFor": null,
-          "value": "Student, Academic & Professional"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Students & Academics",
-          "validFor": null,
-          "value": "Students & Academics"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Undergrad & Grad Students",
-          "validFor": null,
-          "value": "Undergrad & Grad Students"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Undergraduate",
-          "validFor": null,
-          "value": "Undergraduate"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Young Scholar",
-          "validFor": null,
-          "value": "Young Scholar"
+          "value": "Combination"
         }
       ],
       "referenceTo": [],
@@ -383,8 +320,8 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Conference Type",
-      "name": "ConferenceType__c",
+      "label": "Proposed Date",
+      "name": "ProposedDate__c",
       "nillable": true,
       "picklistValues": [],
       "referenceTo": [],
@@ -421,6 +358,48 @@
       "name": "FiscalYear__c",
       "nillable": true,
       "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2029-25",
+          "validFor": null,
+          "value": "2029-25"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2028-29",
+          "validFor": null,
+          "value": "2028-29"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2027-28",
+          "validFor": null,
+          "value": "2027-28"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2026-27",
+          "validFor": null,
+          "value": "2026-27"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2025-26",
+          "validFor": null,
+          "value": "2025-26"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2024-25",
+          "validFor": null,
+          "value": "2024-25"
+        },
         {
           "active": true,
           "defaultValue": false,
@@ -1040,16 +1019,14 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Repeat",
-      "name": "RepeatProgramId__c",
+      "label": "Document Version",
+      "name": "DocumentVersion__c",
       "nillable": true,
       "picklistValues": [],
-      "referenceTo": [
-        "Campaign"
-      ],
-      "relationshipName": "RepeatProgramId__r",
+      "referenceTo": [],
+      "relationshipName": null,
       "sortable": true,
-      "type": "reference"
+      "type": "string"
     },
     {
       "aggregatable": true,
@@ -1129,7 +1106,7 @@
     {
       "aggregatable": true,
       "custom": true,
-      "defaultValue": "PEP - Initiated",
+      "defaultValue": "Exploratory - Initiated",
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
@@ -1141,65 +1118,51 @@
         {
           "active": true,
           "defaultValue": true,
-          "label": "PEP - Initiated",
+          "label": "Exploratory - Initiated",
           "validFor": "gAAA",
-          "value": "PEP - Initiated"
+          "value": "Exploratory - Initiated"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "PEP - Rep",
+          "label": "Exploratory - Rep",
           "validFor": "gAAA",
-          "value": "PEP - Rep"
+          "value": "Exploratory - Rep"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "PEP - Committee",
+          "label": "Exploratory - Committee",
           "validFor": "gAAA",
-          "value": "PEP - Committee"
+          "value": "Exploratory - Committee"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "PEP - Board",
+          "label": "Exploratory - Board",
           "validFor": "gAAA",
-          "value": "PEP - Board"
+          "value": "Exploratory - Board"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "PEP - Approved",
-          "validFor": "gAAA",
-          "value": "PEP - Approved"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "PCP - Initiated",
+          "label": "Project - Initiated",
           "validFor": "QAAA",
-          "value": "PCP - Initiated"
+          "value": "Project - Initiated"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "PCP - Committee",
+          "label": "Project - Committee",
           "validFor": "QAAA",
-          "value": "PCP - Committee"
+          "value": "Project - Committee"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "PCP - Board",
+          "label": "Project - Board",
           "validFor": "QAAA",
-          "value": "PCP - Board"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "PCP - Approved",
-          "validFor": "QAAA",
-          "value": "PCP - Approved"
+          "value": "Project - Board"
         },
         {
           "active": true,
@@ -1242,19 +1205,118 @@
           "label": "Converted",
           "validFor": "",
           "value": "Converted"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Abandoned",
-          "validFor": "4AAA",
-          "value": "Abandoned"
         }
       ],
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
       "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Repeat Program",
+      "name": "RepeatProgramId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Program__c"
+      ],
+      "relationshipName": "RepeatProgramId__r",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": "Colloquium",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Conference Type",
+      "name": "ConferenceType__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Colloquium",
+          "validFor": null,
+          "value": "Colloquium"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Experimental",
+          "validFor": null,
+          "value": "Experimental"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Socratic",
+          "validFor": null,
+          "value": "Socratic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Weeklong",
+          "validFor": null,
+          "value": "Weeklong"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Proposed City Country",
+      "name": "ProposedCityCountry__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Proposed Timeline",
+      "name": "ProposedTimeline__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
   "label": "Program",
@@ -1541,22 +1603,22 @@
     },
     {
       "cascadeDelete": true,
-      "childSObject": "ProgramCoSponsorTeam__c",
-      "deprecatedAndHidden": false,
-      "field": "ProgramId__c",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "ProgramCoSponsorTeam__r",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
       "childSObject": "ProgramNarrative__c",
       "deprecatedAndHidden": false,
       "field": "ProgramId__c",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ProgramNarrative__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProgramPartnerTeam__c",
+      "deprecatedAndHidden": false,
+      "field": "ProgramId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProgramCoSponsorTeam__r",
       "restrictedDelete": false
     },
     {
@@ -1581,6 +1643,26 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "Program_Documents__c",
+      "deprecatedAndHidden": false,
+      "field": "ProgramNew__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Program_Documents__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Program_Template__c",
+      "deprecatedAndHidden": false,
+      "field": "Program__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Program_Templates__r",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "Program__History",
       "deprecatedAndHidden": false,
       "field": "ParentId",
@@ -1597,6 +1679,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Program__c",
+      "deprecatedAndHidden": false,
+      "field": "RepeatProgramId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RepeatProgram__r",
       "restrictedDelete": false
     },
     {

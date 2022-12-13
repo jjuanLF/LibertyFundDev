@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Dec 12 2022 2:40:13 PM",
+    "testExecutionTimeInMs": 4945,
+    "testTotalTimeInMs": 4945,
+    "commandTimeInMs": 177,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003XOKMO",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LZyN0UAL",
+      "queueItemId": "7098A000002C5ZQQA0",
+      "stackTrace": "Class.TestDataFactoryHandler.createTestData: line 51, column 1\nClass.TestDataFactoryHandler.createRecords: line 116, column 1\nClass.TestProgram.makeData: line 77, column 1\nClass.TestProgram.testProgram: line 17, column 1",
+      "message": "System.SObjectException: Illegal assignment from String to Decimal",
+      "asyncApexJobId": "7078A00003XOKMOQA5",
+      "methodName": "testProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LV04TUAT",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 4945,
+      "testTimestamp": "2022-12-12T22:40:13.000+0000",
+      "fullName": "TestProgram.testProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: Illegal assignment from String to Decimal",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createTestData: line 51, column 1\nClass.TestDataFactoryHandler.createRecords: line 116, column 1\nClass.TestProgram.makeData: line 77, column 1\nClass.TestProgram.testProgram: line 17, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 51,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

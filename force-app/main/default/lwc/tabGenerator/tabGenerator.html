@@ -1,0 +1,102 @@
+<template>
+    <template if:true={labels}>
+        <lightning-card variant="narrow" title={labels.parent} icon-name="standard:catalog">
+            <lightning-button-menu
+                alternative-text="Show menu"
+                slot="actions"
+                value={objectApiName}
+                menu-alignment="auto"
+            >
+                <lightning-menu-item
+                    label={labels.parentButton}
+                    onclick={addRecord}
+                    value={recordId}
+                    title={parentObjectName}
+                ></lightning-menu-item>
+            </lightning-button-menu>
+            <template if:true={records}>
+                <template for:each={records.records} for:item="record">
+                    <div class="c-container" key={record.Id}>
+                        <lightning-layout multiple-rows="true">
+                            <lightning-layout-item class="slds-card_boundary slds-var-p-around_x-small">
+                                <div class="page-section page-main">
+                                    <c-form-generator
+                                        record={record}
+                                        fields={records.fields}
+                                        object-name={records.objectName}
+                                        ontransactioncomplete={transactionCompleted}
+                                    >
+                                    </c-form-generator>
+                                </div>
+                            </lightning-layout-item>
+                            <template if:true={labels.child}>
+                                <lightning-layout-item>
+                                    <div class="page-footer page-section">
+                                        <lightning-accordion
+                                            title={labels.child}
+                                            active-section-name={activeSection}
+                                            onsectiontoggle={handleSectionToggle}
+                                            allow-multiple-sections-open
+                                        >
+                                            <lightning-accordion-section name="A" label={labels.child}>
+                                                <lightning-button-menu
+                                                    alternative-text="Show menu"
+                                                    value={parentObjectName}
+                                                    slot="actions"
+                                                    icon-size="x-small"
+                                                    menu-alignment="auto"
+                                                >
+                                                    <lightning-menu-item
+                                                        label={labels.childButton}
+                                                        onclick={addRecord}
+                                                        value={record.Id}
+                                                        title={labels.childTable}
+                                                    ></lightning-menu-item>
+                                                </lightning-button-menu>
+                                                <lightning-layout
+                                                    multiple-rows="true"
+                                                    vertical-align="start"
+                                                    class="slds-card_boundary slds-var-p-around_x-small"
+                                                >
+                                                    <template if:true={record.children}>
+                                                        <template for:each={record.children} for:item="children">
+                                                            <template for:each={children.records} for:item="child">
+                                                                <lightning-layout-item key={child.Id}>
+                                                                    <c-form-generator
+                                                                        record={child}
+                                                                        fields={children.fields}
+                                                                        object-name={children.objectName}
+                                                                        ontransactioncomplete={transactionCompleted}
+                                                                    >
+                                                                    </c-form-generator>
+                                                                </lightning-layout-item>
+                                                            </template>
+                                                        </template>
+                                                    </template>
+                                                </lightning-layout>
+                                            </lightning-accordion-section>
+                                        </lightning-accordion>
+                                    </div>
+                                </lightning-layout-item>
+                            </template>
+                        </lightning-layout>
+                    </div>
+                </template>
+            </template>
+
+            <template if:true={add}>
+                <template for:each={recordset.records} for:item="record">
+                    <c-form-generator
+                        key={record.objectName}
+                        record={record}
+                        fields={recordset.fields}
+                        object-name={recordset.objectName}
+                        add="true"
+                        ontransactioncomplete={transactionCompleted}
+                    >
+                    </c-form-generator>
+                </template>
+            </template>
+        </lightning-card>
+    </template>
+</template>

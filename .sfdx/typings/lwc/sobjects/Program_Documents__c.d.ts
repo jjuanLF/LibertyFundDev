@@ -54,6 +54,14 @@ declare module "@salesforce/schema/Program_Documents__c.Program__c" {
   const Program__c:any;
   export default Program__c;
 }
+declare module "@salesforce/schema/Program_Documents__c.ProgramNew__r" {
+  const ProgramNew__r:any;
+  export default ProgramNew__r;
+}
+declare module "@salesforce/schema/Program_Documents__c.ProgramNew__c" {
+  const ProgramNew__c:any;
+  export default ProgramNew__c;
+}
 declare module "@salesforce/schema/Program_Documents__c.External_ID__c" {
   const External_ID__c:string;
   export default External_ID__c;

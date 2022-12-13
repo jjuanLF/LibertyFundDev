@@ -296,6 +296,72 @@
       "relationshipName": null,
       "sortable": true,
       "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ExternalId",
+      "name": "ExternalId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "richtextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Citation",
+      "name": "Citation__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Reading List Type",
+      "name": "ReadingListType__c",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Book",
+          "validFor": null,
+          "value": "Book"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reader",
+          "validFor": null,
+          "value": "Reader"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
     }
   ],
   "label": "Program Session Reading",

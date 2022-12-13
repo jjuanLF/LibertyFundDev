@@ -66,3 +66,7 @@ declare module "@salesforce/schema/NarrativeType__c.Type__c" {
   const Type__c:string;
   export default Type__c;
 }
+declare module "@salesforce/schema/NarrativeType__c.SortOrder__c" {
+  const SortOrder__c:number;
+  export default SortOrder__c;
+}

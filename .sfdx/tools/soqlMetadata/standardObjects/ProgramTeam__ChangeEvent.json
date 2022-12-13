@@ -177,6 +177,45 @@
       "relationshipName": null,
       "sortable": false,
       "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": "Team",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Role",
+      "name": "Role__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fellow",
+          "validFor": null,
+          "value": "Fellow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rep",
+          "validFor": null,
+          "value": "Rep"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Team",
+          "validFor": null,
+          "value": "Team"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
     }
   ],
   "label": "Change Event: Program Team",

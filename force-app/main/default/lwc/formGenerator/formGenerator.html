@@ -1,11 +1,88 @@
 <template>
-    <div class="slds-p-bottom_large slds-p-left_large" style="width: 500px">
-        <lightning-record-edit-form object-api-name="Account">
-            <lightning-messages></lightning-messages>
-            <lightning-input-field field-name="Name"> </lightning-input-field>
-            <lightning-input-field field-name="Phone"> </lightning-input-field>
-            <lightning-input-field field-name="BillingAddress"> </lightning-input-field>
-            <lightning-button type="submit" name="submit" label="Create Account"> </lightning-button>
-        </lightning-record-edit-form>
+    <div class="slds-var-p-bottom_large slds-var-p-left_large" style="width: 500px">
+        <template if:true={formElements}>
+            <lightning-record-edit-form
+                object-api-name={objectName}
+                record-id={record.Id}
+                onsuccess={onSaveSuccess}
+                onerror={onSaveError}
+            >
+                <lightning-messages></lightning-messages>
+                <template for:each={formElements} for:item="formElement">
+                    <lightning-input-field field-name={formElement.field} key={formElement.id}></lightning-input-field>
+                </template>
+                <div class="slds-p-around_small lgc-bg slds-float_right">
+                    <!-- sldsValidatorIgnoreNextLine -->
+                    <lightning-button-icon
+                        icon-name="utility:delete"
+                        alternative-text="Delete"
+                        class="slds-m-left_xx-small"
+                        title="Delete"
+                        value={record.Id}
+                        onclick={deleteRecord}
+                    ></lightning-button-icon>
+                    <lightning-button-icon
+                        icon-name="utility:save"
+                        alternative-text="Save"
+                        class="slds-m-left_xx-small"
+                        type="submit"
+                        title="Save"
+                    ></lightning-button-icon>
+                </div>
+            </lightning-record-edit-form>
+        </template>
+        <template if:true={show}>
+            <section
+                role="dialog"
+                tabindex="-1"
+                aria-labelledby="modal-heading-01"
+                aria-modal="true"
+                aria-describedby="modal-content-id-1"
+                class="slds-modal slds-fade-in-open"
+            >
+                <!-- sldsValidatorIgnore -->
+                <div class="slds-modal__container">
+                    <button
+                        class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close"
+                        onclick={close}
+                    >
+                        <lightning-icon
+                            icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small"
+                        ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+
+                    <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1">
+                        <lightning-record-edit-form object-api-name={objectName} onsuccess={handleOnSuccess}>
+                            <template for:each={formElements} for:item="formElement">
+                                <lightning-input-field
+                                    field-name={formElement.field}
+                                    key={formElement.id}
+                                    value={formElement.value}
+                                ></lightning-input-field>
+                            </template>
+                            <lightning-button
+                                variant="brand"
+                                label="Create Record"
+                                title="New"
+                                type="submit"
+                                class="slds-m-left_x-small"
+                            ></lightning-button>
+                            <lightning-button
+                                variant="brand"
+                                label="Cancel"
+                                onclick={close}
+                                class="slds-m-left_x-small"
+                            ></lightning-button>
+                        </lightning-record-edit-form>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
     </div>
 </template>

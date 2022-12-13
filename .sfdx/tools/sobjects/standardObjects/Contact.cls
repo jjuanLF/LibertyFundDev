@@ -190,7 +190,6 @@ global class Contact {
     global List<Case> Cases;
     global List<CaseContactRole> CaseContactRoles;
     global List<Category__c> Categories__r;
-    global List<CoSponsorTeam__c> CoSponsor_Teams__r;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContactFeed> Feeds;
@@ -214,6 +213,9 @@ global class Contact {
     global List<Invitation__c> Invitations__r;
     global List<LF_Web_Contributor__c> LF_Web_Contributors__r;
     global List<ListEmailIndividualRecipient> ListEmailIndividualRecipients;
+    global List<Loop__Document_Request__c> Loop__Document_Queue__r;
+    global List<Loop__dsRecipient__c> Loop__Host_Recipients__r;
+    global List<Loop__dsRecipient__c> Loop__Recipients__r;
     global List<MyList_Conferee__c> Suggested_Conferees__r;
     global List<Note> Notes;
     global List<NoteAndAttachment> NotesAndAttachments;
@@ -221,11 +223,13 @@ global class Contact {
     global List<Opportunity> Opportunities;
     global List<OpportunityContactRole> OpportunityContactRoles;
     global List<Other_Event_Participation__c> Other_Event_Participations__r;
+    global List<OutgoingEmailRelation> OutgoingEmailRelations;
     global List<PID_History__c> PID_Histories__r;
     global List<Payment__c> Payments__r;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
-    global List<ProgramAttendee__c> Program_Attendees__r;
+    global List<ProgramAttendee__c> ProgramAttendee__r;
+    global List<ProgramPartnerTeam__c> ProgramCoSponsorTeam__r;
     global List<Program_Exp_Report__c> Program_Exp_Reports__r;
     global List<Program_Payments__c> Program_Payments__r;
     global List<Program__c> Program1__r;
@@ -258,7 +262,7 @@ global class Contact {
     global List<MatchingInformation> SFDCId;
     global List<OpportunityChangeEvent> Contact;
     global List<Order> CustomerAuthorizedBy;
-    global List<TaskChangeEvent> Who;
+    global List<OutgoingEmail> Who;
     global List<UserChangeEvent> Contact;
 
     global Contact () 

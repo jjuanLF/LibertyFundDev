@@ -8,19 +8,20 @@
                             <div class="slds-path__scroller" tabindex="-1" role="application">
                                 <div class="slds-path__scroller_inner">
                                     <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
-                                        <template for:each={valueList} for:item="value">
+                                        <template iterator:it={valueList}>
                                             <li
-                                                class={value.class}
+                                                class={it.value.class}
                                                 role="presentation"
-                                                key={value.label}
+                                                key={it.value.label}
                                                 onclick={handleValueClick}
+                                                value={it.index}
                                             >
                                                 <a
                                                     class="slds-path__link"
-                                                    tabindex="-1"
+                                                    tabindex="0"
                                                     role="option"
-                                                    title={value.label}
-                                                    aria-selected={value.ariaSelected}
+                                                    title={it.value.label}
+                                                    aria-selected={it.value.ariaSelected}
                                                 >
                                                     <span class="slds-path__stage">
                                                         <lightning-icon
@@ -28,10 +29,10 @@
                                                             class="slds-button__icon"
                                                             icon-name="utility:check"
                                                             size="x-small"
-                                                            alternative-text={stage}
+                                                            alternative-text={it.index}
                                                         ></lightning-icon>
                                                     </span>
-                                                    <span class="slds-path__title">{value.label}</span>
+                                                    <span class="slds-path__title">{it.value.label}</span>
                                                 </a>
                                             </li>
                                         </template>

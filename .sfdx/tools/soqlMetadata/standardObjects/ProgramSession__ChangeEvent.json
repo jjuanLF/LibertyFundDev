@@ -175,6 +175,152 @@
       "relationshipName": null,
       "sortable": false,
       "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Sort Order",
+      "name": "Sequence__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Session",
+      "name": "Session__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session I",
+          "validFor": null,
+          "value": "Session I"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session II",
+          "validFor": null,
+          "value": "Session II"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session III",
+          "validFor": null,
+          "value": "Session III"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session IV",
+          "validFor": null,
+          "value": "Session IV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session V",
+          "validFor": null,
+          "value": "Session V"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session VI",
+          "validFor": null,
+          "value": "Session VI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session VII",
+          "validFor": null,
+          "value": "Session VII"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session VIII",
+          "validFor": null,
+          "value": "Session VIII"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session IX",
+          "validFor": null,
+          "value": "Session IX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session X",
+          "validFor": null,
+          "value": "Session X"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session XI",
+          "validFor": null,
+          "value": "Session XI"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Title",
+      "name": "Title__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ExternalId",
+      "name": "ExternalId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
     }
   ],
   "label": "Change Event: Program Session",

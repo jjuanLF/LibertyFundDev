@@ -81,20 +81,7 @@ public without sharing class QueriesbyProgramObjects {
         public Map<Id, List<ProgramSession__c>> getProgramSessionsSessionReadingsByProgram(Set<Id> idSet) {
             Map<Id, List<ProgramSession__c>> programSessionMap = new Map<Id, List<ProgramSession__c>>();
 
-            List<ProgramSession__c> programSessionList = [
-                SELECT
-                    Session__c,
-                    Title__c,
-                    Narrative__c,
-                    Sequence__c,
-                    ProgramId__c,
-                    (
-                        SELECT Id, Chapter__c, CitationId__c, ProgramSessionId__c, PublicationTitle__c, SortOrder__c, Pages__c
-                        FROM ProgramSessionReading__r
-                    )
-                FROM ProgramSession__c
-                WHERE ProgramId__c IN :idSet
-            ];
+            List<ProgramSession__c> programSessionList = this.privateGetProgramSessionByProgram(idSet);
 
             for (ProgramSession__c programSession : programSessionList) {
                 if (programSessionMap.get(programSession.ProgramId__c) != null) {
@@ -105,6 +92,67 @@ public without sharing class QueriesbyProgramObjects {
             }
 
             return programSessionMap;
+        }
+
+        public List<ProgramSession__c> getProgramSessionsSessionReadingsByProgram(Id id) {
+            return this.privateGetProgramSessionByProgram(new Set<Id>{ id });
+        }
+
+        private List<ProgramSession__c> privateGetProgramSessionByProgram(Set<Id> idSet) {
+            return [
+                SELECT
+                    Session__c,
+                    Title__c,
+                    Narrative__c,
+                    Sequence__c,
+                    ProgramId__c,
+                    (
+                        SELECT
+                            Id,
+                            Chapter__c,
+                            CitationId__c,
+                            ProgramSessionId__c,
+                            PublicationTitle__c,
+                            ReadingListType__c,
+                            SortOrder__c,
+                            Pages__c
+                        FROM ProgramSessionReading__r
+                    )
+                FROM ProgramSession__c
+                WHERE ProgramId__c IN :idSet
+            ];
+        }
+    }
+
+    public class QueriesProgramChecklist {
+        public Map<Id, List<ProgramChecklist__c>> getProgramChecklistByProgram(Set<Id> idSet) {
+            Map<Id, List<ProgramChecklist__c>> programChecklistMap = new Map<Id, List<ProgramChecklist__c>>();
+
+            List<ProgramChecklist__c> programChecklistList = this.privateGetProgramChecklistByProgram(idSet);
+
+            for (ProgramChecklist__c programChecklist : programChecklistList) {
+                if (programChecklistMap.get(programChecklist.ProgramId__c) != null) {
+                    programChecklistMap.get(programChecklist.ProgramId__c).add(programChecklist);
+                } else {
+                    programChecklistMap.put(programChecklist.ProgramId__c, new List<ProgramChecklist__c>{ programChecklist });
+                }
+            }
+
+            return programChecklistMap;
+        }
+
+        private List<ProgramChecklist__c> privateGetProgramChecklistByProgram(Set<Id> idSet) {
+            return [
+                SELECT
+                    Id,
+                    ProgramId__C,
+                    LastEmailType__c,
+                    LastEmailDate__c,
+                    ChecklistId__r.EmailReminderDays__c,
+                    ChecklistId__r.DaysTaskDue__c
+                FROM ProgramChecklist__c
+                WHERE ProgramId__c = :idSet
+            ];
         }
     }
 }

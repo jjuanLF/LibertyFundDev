@@ -1,0 +1,39 @@
+<template>
+    <c-custom-path
+        record-id={recordId}
+        object-api-name={objectApiName}
+        parent-field="Stage__c"
+        child-field="SubStage__c"
+    ></c-custom-path>
+
+    <template if:true={show}>
+        <section
+            role="dialog"
+            tabindex="-1"
+            aria-labelledby="modal-heading-01"
+            aria-modal="true"
+            aria-describedby="modal-content-id-1"
+            class="slds-modal slds-fade-in-open"
+        >
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                        Warning! Information Required
+                    </h2>
+                    <!-- sldsValidatorIgnore -->
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1">
+                    <p>Please populate the following fields in order to begin data capture for Exploratory phase.</p>
+                    <p>You will not be allowed to continue until all fields are updated. Thank you.</p>
+                    <lightning-flow
+                        if:true={show}
+                        flow-api-name="ProgramPopulateProposalInfo"
+                        flow-input-variables={inputVariables}
+                        onstatuschange={handleStatusChange}
+                    ></lightning-flow>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

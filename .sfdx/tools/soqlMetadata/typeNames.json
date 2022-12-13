@@ -2056,6 +2056,190 @@
     "custom": false
   },
   {
+    "name": "Loop__AssureSign_Envelope__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__AssureSign_Envelope__Share",
+    "custom": false
+  },
+  {
+    "name": "Loop__AssureSign_Envelope__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__AssureSign_User_Settings__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__AssureSign_User_Settings__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__DDP_File__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__DDP_File__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__DDP_Integration_Option__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__DDP_Integration_Option__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__DDP_Text_Group__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__DDP_Text_Group__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__DDP__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__DDP__Share",
+    "custom": false
+  },
+  {
+    "name": "Loop__DDP__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Document_Request__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Document_Request__Share",
+    "custom": false
+  },
+  {
+    "name": "Loop__Document_Request__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__EnvelopeHistory__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__EnvelopeHistory__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Form_Field__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Form_Field__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Form_Rule__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Form_Rule__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Form_Step__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Form_Step__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Insert_Update__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Insert_Update__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__LoopSettings__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__LoopSettings__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__PDF_Stamp__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__PDF_Stamp__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Related_Object__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Related_Object__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__SecureField__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__SecureField__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Text_Group_Text_Snippet__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Text_Group_Text_Snippet__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Text_Group__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Text_Group__Share",
+    "custom": false
+  },
+  {
+    "name": "Loop__Text_Group__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__Text_Snippet__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__Text_Snippet__Share",
+    "custom": false
+  },
+  {
+    "name": "Loop__Text_Snippet__c",
+    "custom": true
+  },
+  {
+    "name": "Loop__dsRecipient__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Loop__dsRecipient__Share",
+    "custom": false
+  },
+  {
+    "name": "Loop__dsRecipient__c",
+    "custom": true
+  },
+  {
     "name": "MLField",
     "custom": false
   },
@@ -2656,15 +2840,19 @@
     "custom": true
   },
   {
-    "name": "ProgramCoSponsorTeam__ChangeEvent",
+    "name": "ProgramDocumentGenerationSubStage__ChangeEvent",
     "custom": false
   },
   {
-    "name": "ProgramCoSponsorTeam__History",
+    "name": "ProgramDocumentGenerationSubStage__c",
+    "custom": true
+  },
+  {
+    "name": "ProgramDocumentGeneration__ChangeEvent",
     "custom": false
   },
   {
-    "name": "ProgramCoSponsorTeam__c",
+    "name": "ProgramDocumentGeneration__c",
     "custom": true
   },
   {
@@ -2689,6 +2877,18 @@
   },
   {
     "name": "ProgramNarrative__c",
+    "custom": true
+  },
+  {
+    "name": "ProgramPartnerTeam__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "ProgramPartnerTeam__History",
+    "custom": false
+  },
+  {
+    "name": "ProgramPartnerTeam__c",
     "custom": true
   },
   {
@@ -2797,6 +2997,14 @@
   },
   {
     "name": "Program_Payments__c",
+    "custom": true
+  },
+  {
+    "name": "Program_Template__ChangeEvent",
+    "custom": false
+  },
+  {
+    "name": "Program_Template__c",
     "custom": true
   },
   {

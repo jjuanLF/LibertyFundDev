@@ -24,7 +24,7 @@ global class Program__ChangeEvent {
     global Decimal BudgetAmount__c;
     global Campaign CampaignId__c;
     global String ConfereeType__c;
-    global String ConferenceType__c;
+    global String ProposedDate__c;
     global Date EndDate__c;
     global String FiscalYear__c;
     global User LFRepId__c;
@@ -35,11 +35,15 @@ global class Program__ChangeEvent {
     global String ProgramTitle__c;
     global String ProposalId__c;
     global String Region__c;
-    global Campaign RepeatProgramId__c;
+    global String DocumentVersion__c;
     global String Stage__c;
     global Date StartDate__c;
     global Account VenueId__c;
     global String SubStage__c;
+    global Program__c RepeatProgramId__c;
+    global String ConferenceType__c;
+    global String ProposedCityCountry__c;
+    global String ProposedTimeline__c;
 
     global Program__ChangeEvent () 
     {

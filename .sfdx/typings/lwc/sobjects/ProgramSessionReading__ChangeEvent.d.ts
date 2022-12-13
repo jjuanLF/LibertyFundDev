@@ -42,49 +42,13 @@ declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.ProgramSes
   const ProgramSessionId__c:any;
   export default ProgramSessionId__c;
 }
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.Annotation__c" {
-  const Annotation__c:string;
-  export default Annotation__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.BibliographyId__c" {
-  const BibliographyId__c:string;
-  export default BibliographyId__c;
-}
 declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.Chapter__c" {
   const Chapter__c:string;
   export default Chapter__c;
 }
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.Citation__c" {
-  const Citation__c:any;
-  export default Citation__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.ConferenceCitation__c" {
-  const ConferenceCitation__c:any;
-  export default ConferenceCitation__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.CopyPurchase__c" {
-  const CopyPurchase__c:string;
-  export default CopyPurchase__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.CreditLine__c" {
-  const CreditLine__c:string;
-  export default CreditLine__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.ExcludeFlag__c" {
-  const ExcludeFlag__c:boolean;
-  export default ExcludeFlag__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.LegacyReadingID__c" {
-  const LegacyReadingID__c:string;
-  export default LegacyReadingID__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.Notes__c" {
-  const Notes__c:string;
-  export default Notes__c;
-}
-declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.PageCount__c" {
-  const PageCount__c:number;
-  export default PageCount__c;
+declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.CitationId__c" {
+  const CitationId__c:any;
+  export default CitationId__c;
 }
 declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.Pages__c" {
   const Pages__c:string;
@@ -97,4 +61,16 @@ declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.SortOrder_
 declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.PublicationTitle__c" {
   const PublicationTitle__c:string;
   export default PublicationTitle__c;
+}
+declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.ExternalId__c" {
+  const ExternalId__c:string;
+  export default ExternalId__c;
+}
+declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.Citation__c" {
+  const Citation__c:string;
+  export default Citation__c;
+}
+declare module "@salesforce/schema/ProgramSessionReading__ChangeEvent.ReadingListType__c" {
+  const ReadingListType__c:string;
+  export default ReadingListType__c;
 }

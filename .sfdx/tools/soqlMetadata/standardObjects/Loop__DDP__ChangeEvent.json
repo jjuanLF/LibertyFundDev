@@ -1,0 +1,2322 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event ID",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Replay ID",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event Header",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "<Entity>",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AdHoc Apex Class",
+      "name": "Loop__AdHoc_Apex_Class__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Enter the field name that stores a Document Id to include the document(s) in the DocGen Package. (Use the Field Tagger with Document Type set to Excel.)",
+      "label": "Addendum Doc Id Field",
+      "name": "Loop__AddendumDocIdField__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Allows the user to choose to store the DocGen Package output as determined by the Attach As field.",
+      "label": "Allow output to be attached",
+      "name": "Loop__AllowOutputAttachment__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This allows the user to add attachments from the associated objects to the end of the DocGen Package.",
+      "label": "Allow Attachments",
+      "name": "Loop__Allow_Attachments__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Allow UserId Override",
+      "name": "Loop__Allow_UserId_Override__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Attachment will create a Salesforce attachment; LOOP Storage will create a document in the LOOP Storage interface; Content and Content - User Selected will create a Content document in the appropriate Workspace.",
+      "label": "Store As",
+      "name": "Loop__Attach_As__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attachment",
+          "validFor": null,
+          "value": "Attachment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activity History",
+          "validFor": null,
+          "value": "Activity History"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LOOP Storage",
+          "validFor": null,
+          "value": "LOOP Storage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Box",
+          "validFor": null,
+          "value": "Box"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Content",
+          "validFor": null,
+          "value": "Content"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Content - User Selected",
+          "validFor": null,
+          "value": "Content - User Selected"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Business User",
+      "name": "Loop__Business_User__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sales",
+          "validFor": null,
+          "value": "Sales"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Legal",
+          "validFor": null,
+          "value": "Legal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Procurement",
+          "validFor": null,
+          "value": "Procurement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Management",
+          "validFor": null,
+          "value": "Management"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Field Service",
+          "validFor": null,
+          "value": "Field Service"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Support",
+          "validFor": null,
+          "value": "Support"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finance",
+          "validFor": null,
+          "value": "Finance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HR",
+          "validFor": null,
+          "value": "HR"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "multipicklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This will default the 'Additional To' field when delivering the DocGen Package via email. Use the Field Tagger to use dynamic email addresses.",
+      "label": "Additional To",
+      "name": "Loop__DDP_Additional_To__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This will default the 'BCC' field when delivering the DocGen Package via email. Use the Field Tagger to use dynamic email addresses.",
+      "label": "BCC",
+      "name": "Loop__DDP_BCC__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This will default the 'CC' field when delivering the DocGen Package via email.Use the Field Tagger to use dynamic email addresses.",
+      "label": "CC",
+      "name": "Loop__DDP_CC__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "For internal use.",
+      "label": "Description",
+      "name": "Loop__Description__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Document Type",
+      "name": "Loop__Document_Type__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Word",
+          "validFor": null,
+          "value": "Word"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Excel",
+          "validFor": null,
+          "value": "Excel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PowerPoint",
+          "validFor": null,
+          "value": "PowerPoint"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PDF",
+          "validFor": null,
+          "value": "PDF"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "multipicklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Email Template",
+      "name": "Loop__Email_Template__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Enclosure Folder Id",
+      "name": "Loop__Enclosure_Folder_Id__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Limit the number of enclosures that can be selected.",
+      "label": "Enclosure Limit",
+      "name": "Loop__Enclosure_Limit__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": true,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If selected, the user cannot send this DocGen Package to a Salesforce email template.",
+      "label": "Exclude Email Delivery",
+      "name": "Loop__Exclude_Email__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": true,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If selected, the user cannot send this DocGen Package to LOOP. LOOP is a PDF conversion service. It can be used to upload ad hoc documents to convert to PDF and combine with other documents into one PDF.",
+      "label": "Exclude LOOP Delivery",
+      "name": "Loop__Exclude_LOOP__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": true,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If selected, the user cannot send this DocGen Package to the DocGen Queue. The DocGen Queue allows DocGen Packages to be generated behind the scenes and allows for inter-department fulfillment options.",
+      "label": "Exclude DocGen Queue Delivery",
+      "name": "Loop__Exclude_Queue__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Use this value with the filter and filtertype querystring parameters on your custom button or link to filter which DocGen Packages are listed. Filtertype options are equals, doesnotequal, startswith, endswith, contains, and doesnotcontain.",
+      "label": "Filter",
+      "name": "Loop__Filter__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Once activated, your report will be emailed out at this frequency.",
+      "label": "Frequency",
+      "name": "Loop__Frequency__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Daily",
+          "validFor": null,
+          "value": "Daily"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Weekly",
+          "validFor": null,
+          "value": "Weekly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monthly",
+          "validFor": null,
+          "value": "Monthly"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Industry",
+      "name": "Loop__Industry__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Any",
+          "validFor": null,
+          "value": "Any"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Agriculture",
+          "validFor": null,
+          "value": "Agriculture"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apparel",
+          "validFor": null,
+          "value": "Apparel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Banking",
+          "validFor": null,
+          "value": "Banking"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Biotechnology",
+          "validFor": null,
+          "value": "Biotechnology"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chemicals",
+          "validFor": null,
+          "value": "Chemicals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communications",
+          "validFor": null,
+          "value": "Communications"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Construction",
+          "validFor": null,
+          "value": "Construction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consulting",
+          "validFor": null,
+          "value": "Consulting"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Education",
+          "validFor": null,
+          "value": "Education"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Electronics",
+          "validFor": null,
+          "value": "Electronics"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Energy",
+          "validFor": null,
+          "value": "Energy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engineering",
+          "validFor": null,
+          "value": "Engineering"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Entertainment",
+          "validFor": null,
+          "value": "Entertainment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Environmental",
+          "validFor": null,
+          "value": "Environmental"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finance",
+          "validFor": null,
+          "value": "Finance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Food & Beverage",
+          "validFor": null,
+          "value": "Food & Beverage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Government",
+          "validFor": null,
+          "value": "Government"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Healthcare",
+          "validFor": null,
+          "value": "Healthcare"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hospitality",
+          "validFor": null,
+          "value": "Hospitality"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insurance",
+          "validFor": null,
+          "value": "Insurance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Machinery",
+          "validFor": null,
+          "value": "Machinery"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manufacturing",
+          "validFor": null,
+          "value": "Manufacturing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Media",
+          "validFor": null,
+          "value": "Media"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Not For Profit",
+          "validFor": null,
+          "value": "Not For Profit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recreation",
+          "validFor": null,
+          "value": "Recreation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Retail",
+          "validFor": null,
+          "value": "Retail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shipping",
+          "validFor": null,
+          "value": "Shipping"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Technology",
+          "validFor": null,
+          "value": "Technology"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telecommunications",
+          "validFor": null,
+          "value": "Telecommunications"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transportation",
+          "validFor": null,
+          "value": "Transportation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilities",
+          "validFor": null,
+          "value": "Utilities"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Active",
+      "name": "Loop__IsActive__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Files from selected article types can be included at DocGen Package run time.\n\nUse Shift or Ctrl to select multiple options. Use Ctrl to deselect.",
+      "label": "Optional Articles",
+      "name": "Loop__KA_Optional__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "All files from selected Article Types will be included with the DocGen Package automatically.\n\nUse Shift or Ctrl to select multiple options. Use Ctrl to deselect.",
+      "label": "Required Articles",
+      "name": "Loop__KA_Required__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Files from selected article types can be included as separate attachments at run time. (If an article has more than one file field, the files will be listed as separate options.)\n\nUse Shift or Ctrl to select multiple options. Use Ctrl to deselect.",
+      "label": "Separate Optional Articles",
+      "name": "Loop__KA_Separate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Keep Word Formulas",
+      "name": "Loop__Keep_Word_Formulas__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Once activated, this field will be updated each time the report is sent out.",
+      "label": "Last Sent",
+      "name": "Loop__LastSent__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If no options are selected, the DocGen Package will be available for all deployment types.",
+      "label": "Limit Availability",
+      "name": "Loop__Limit_Availability__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mass Only",
+          "validFor": null,
+          "value": "Mass Only"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Non Mass Only",
+          "validFor": null,
+          "value": "Non Mass Only"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Use Limit Availability instead.",
+      "label": "Limit Deployment (Deprecated)",
+      "name": "Loop__Limit_Deployment__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Web",
+          "validFor": null,
+          "value": "Web"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mass",
+          "validFor": null,
+          "value": "Mass"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "iPad",
+          "validFor": null,
+          "value": "iPad"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Public",
+          "validFor": null,
+          "value": "Public"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "multipicklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This will override the user's locale when running a DocGen Package. The value must be a valid locale (e.g. en-us, en-uk, fr-ca, etc.). Use the Field Tagger to dynamically set the locale.",
+      "label": "Locale",
+      "name": "Loop__Locale__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This is a Salesforce Report Id. The first column (# zero) of the report must be the lead, contact, or user id that the report will be emailed to. Each consecutive column can be used in a report filter as !param# where # is the column number.",
+      "label": "Mass Email Report to",
+      "name": "Loop__MassEmailReport__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Mass Email Report Name",
+      "name": "Loop__Mass_Email_Report_Name__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Enter the API name of the custom object this DocGen Package should be available from.",
+      "label": "Object API Name",
+      "name": "Loop__Object_Name__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": "2010",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "DocGen Package Templates will be processed using this version of Office. This does not need to match the version that the DocGen Package Templates were created/modified in.",
+      "label": "Office Version",
+      "name": "Loop__Office_Version__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2003",
+          "validFor": null,
+          "value": "2003"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "2010",
+          "validFor": null,
+          "value": "2010"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "OrgWideEmailAddress",
+      "name": "Loop__OrgWideEmailAddress__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Org-Wide Email Id",
+      "name": "Loop__OrgWideEmailId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "OrgWideEmailName",
+      "name": "Loop__OrgWideEmailName__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This is the name for the DocGen Package output file. Use the Field Tagger to make this dynamic. Examples: \"Quote <<Opportunity_Quote_Num>>\" or \"<<Account_Name>> Proposal\".",
+      "label": "Output Filename",
+      "name": "Loop__Output_Filename__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Document Output Type",
+      "name": "Loop__Output__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PDF",
+          "validFor": null,
+          "value": "PDF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Originals",
+          "validFor": null,
+          "value": "Originals"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Preview URL",
+      "name": "Loop__Preview_URL__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "url"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Semi-colon delimited list of at most 6 values. Defaults to: initializing docgen package; security check; acquiring data; looping documents; combining docgen package; routing docgen package. For no processing text, type null.",
+      "label": "Processing Text",
+      "name": "Loop__ProcessingText__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Published",
+      "name": "Loop__Published__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Documents sent to the Queue from this DocGen Package will be stored in this Document Folder.",
+      "label": "Queue Folder Id",
+      "name": "Loop__Queue_Folder_Id__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Quote Attachments",
+      "name": "Loop__Quote_Attachments__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allow",
+          "validFor": null,
+          "value": "Allow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Require",
+          "validFor": null,
+          "value": "Require"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Related Content",
+      "name": "Loop__RelatedContent__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allow",
+          "validFor": null,
+          "value": "Allow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Require",
+          "validFor": null,
+          "value": "Require"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This field has been deprecated. Use the Related Object list instead. (Values in this field will overwrite the Related Object list.)",
+      "label": "Related Objects (Deprecated)",
+      "name": "Loop__RelatedObjects__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If data in a Salesforce report contains bad/invalid characters, checking this option will remove them from the data.",
+      "label": "Remove Invalid Characters",
+      "name": "Loop__Remove_Invalid_Characters__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The LOOP It delivery option will be renamed to this value.",
+      "label": "Rename LOOP It",
+      "name": "Loop__RenameLOOP__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If selected, the user must select an attachment to be appended to the DocGen Package. This option requires Allow Attachments to also be selected.",
+      "label": "Require Attachment",
+      "name": "Loop__RequireAttachment__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If selected, the user must select a contact to be used with this DocGen Package.",
+      "label": "Require Contact Selection",
+      "name": "Loop__RequireContact__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The DocGen Package output will be stored as specified in the Attach As field.",
+      "label": "Require output to be attached",
+      "name": "Loop__RequireOutputAttachment__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Scheduled Delivery Option",
+      "name": "Loop__Scheduled_Delivery_Option__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Loop__DDP_Integration_Option__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "SecurityType",
+      "name": "Loop__SecurityType__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": true,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Skip AdHoc Processing",
+      "name": "Loop__Skip_AdHoc_Processing__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Time",
+      "name": "Loop__Time__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "12AM",
+          "validFor": null,
+          "value": "12AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1AM",
+          "validFor": null,
+          "value": "1AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2AM",
+          "validFor": null,
+          "value": "2AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "3AM",
+          "validFor": null,
+          "value": "3AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "4AM",
+          "validFor": null,
+          "value": "4AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5AM",
+          "validFor": null,
+          "value": "5AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "6AM",
+          "validFor": null,
+          "value": "6AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "7AM",
+          "validFor": null,
+          "value": "7AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "8AM",
+          "validFor": null,
+          "value": "8AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "9AM",
+          "validFor": null,
+          "value": "9AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "10AM",
+          "validFor": null,
+          "value": "10AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "11AM",
+          "validFor": null,
+          "value": "11AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "12PM",
+          "validFor": null,
+          "value": "12PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1PM",
+          "validFor": null,
+          "value": "1PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2PM",
+          "validFor": null,
+          "value": "2PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "3PM",
+          "validFor": null,
+          "value": "3PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "4PM",
+          "validFor": null,
+          "value": "4PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5PM",
+          "validFor": null,
+          "value": "5PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "6PM",
+          "validFor": null,
+          "value": "6PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "7PM",
+          "validFor": null,
+          "value": "7PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "8PM",
+          "validFor": null,
+          "value": "8PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "9PM",
+          "validFor": null,
+          "value": "9PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "10PM",
+          "validFor": null,
+          "value": "10PM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "11PM",
+          "validFor": null,
+          "value": "11PM"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "Loop__Type__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote",
+          "validFor": null,
+          "value": "Quote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal",
+          "validFor": null,
+          "value": "Proposal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract",
+          "validFor": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Agreement",
+          "validFor": null,
+          "value": "Service Agreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Legal Agreement",
+          "validFor": null,
+          "value": "Legal Agreement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Letter",
+          "validFor": null,
+          "value": "Letter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Plan Summary",
+          "validFor": null,
+          "value": "Account Plan Summary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice",
+          "validFor": null,
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reporting",
+          "validFor": null,
+          "value": "Reporting"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Information",
+          "validFor": null,
+          "value": "Product Information"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "WorkspaceId",
+      "name": "Loop__WorkspaceId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "WorkspaceName",
+      "name": "Loop__WorkspaceName__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Case Articles",
+      "name": "Loop__Case_Articles__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Content Library",
+      "name": "Loop__Content_Workspace__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "If monthly is selected and you specify a day between 29 and 31, the report runs only in the months that contain that day.",
+      "label": "Day",
+      "name": "Loop__Day__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monday",
+          "validFor": "QAAA",
+          "value": "Monday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tuesday",
+          "validFor": "QAAA",
+          "value": "Tuesday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Wednesday",
+          "validFor": "QAAA",
+          "value": "Wednesday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thursday",
+          "validFor": "QAAA",
+          "value": "Thursday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Friday",
+          "validFor": "QAAA",
+          "value": "Friday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saturday",
+          "validFor": "QAAA",
+          "value": "Saturday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sunday",
+          "validFor": "QAAA",
+          "value": "Sunday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1",
+          "validFor": "IAAA",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2",
+          "validFor": "IAAA",
+          "value": "2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "3",
+          "validFor": "IAAA",
+          "value": "3"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "4",
+          "validFor": "IAAA",
+          "value": "4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5",
+          "validFor": "IAAA",
+          "value": "5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "6",
+          "validFor": "IAAA",
+          "value": "6"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "7",
+          "validFor": "IAAA",
+          "value": "7"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "8",
+          "validFor": "IAAA",
+          "value": "8"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "9",
+          "validFor": "IAAA",
+          "value": "9"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "10",
+          "validFor": "IAAA",
+          "value": "10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "11",
+          "validFor": "IAAA",
+          "value": "11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "12",
+          "validFor": "IAAA",
+          "value": "12"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "13",
+          "validFor": "IAAA",
+          "value": "13"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "14",
+          "validFor": "IAAA",
+          "value": "14"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "15",
+          "validFor": "IAAA",
+          "value": "15"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "16",
+          "validFor": "IAAA",
+          "value": "16"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "17",
+          "validFor": "IAAA",
+          "value": "17"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "18",
+          "validFor": "IAAA",
+          "value": "18"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "19",
+          "validFor": "IAAA",
+          "value": "19"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "20",
+          "validFor": "IAAA",
+          "value": "20"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "21",
+          "validFor": "IAAA",
+          "value": "21"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "22",
+          "validFor": "IAAA",
+          "value": "22"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "23",
+          "validFor": "IAAA",
+          "value": "23"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "24",
+          "validFor": "IAAA",
+          "value": "24"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "25",
+          "validFor": "IAAA",
+          "value": "25"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "26",
+          "validFor": "IAAA",
+          "value": "26"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "27",
+          "validFor": "IAAA",
+          "value": "27"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "28",
+          "validFor": "IAAA",
+          "value": "28"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "29",
+          "validFor": "IAAA",
+          "value": "29"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "30",
+          "validFor": "IAAA",
+          "value": "30"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "31",
+          "validFor": "IAAA",
+          "value": "31"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Default Email Template",
+      "name": "Loop__Default_Email_Template__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "This is a Salesforce Report. The first column (# zero) of the report must be the lead, contact, or user id that the report will be emailed to. Each consecutive column can be used in a report filter as !param# where # is the column number.",
+      "label": "Mass Recipient Report",
+      "name": "Loop__Mass_Email_Report_to__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Object Name",
+      "name": "Loop__Object_Name_Link__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "For information on Organization-Wide Addresses, search the Salesforce Help site for organization-wide addresses.",
+      "label": "Org-Wide Email",
+      "name": "Loop__Org_Wide_Email__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "Loop__ReportStatus__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Security",
+      "name": "Loop__Security__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    }
+  ],
+  "label": "Change Event: DocGen Package",
+  "childRelationships": [],
+  "custom": false,
+  "name": "Loop__DDP__ChangeEvent",
+  "queryable": false
+}
