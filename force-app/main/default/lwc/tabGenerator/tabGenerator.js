@@ -12,6 +12,8 @@ export default class TabGenerator extends LightningElement {
     @api childObjectNames;
     @api layoutsToGet;
     @api recordId;
+    @api columns;
+    @api excludeFields;
     @track add;
     @track labels = {};
     @track records;
@@ -97,12 +99,17 @@ export default class TabGenerator extends LightningElement {
     getFields() {
         const helperFunction = new HelperFunctions();
         if (this.layouts && this.recordset.objectName) {
-            this.recordset.fields = helperFunction.getLayoutFields(this.layouts, this.recordset.objectName);
+            this.recordset.fields = helperFunction.getLayoutFields(
+                this.layouts,
+                this.recordset.objectName,
+                this.excludeFields
+            );
             for (let i = 0; i < this.recordset.records.length; i++) {
                 for (let ii = 0; ii < this.recordset.records[i].children.length; ii++) {
                     this.recordset.records[i].children[ii].fields = helperFunction.getLayoutFields(
                         this.layouts,
-                        this.recordset.records[i].children[ii].objectName
+                        this.recordset.records[i].children[ii].objectName,
+                        this.excludeFields
                     );
                 }
             }

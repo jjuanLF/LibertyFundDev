@@ -1,5 +1,5 @@
 export default class HelperFunctions {
-    getLayoutFields(layouts, objectName) {
+    getLayoutFields(layouts, objectName, excludeFields) {
         let fields = [];
         for (let i = 0; i < layouts.length; i++) {
             if (layouts[i].fullName.includes(objectName)) {
@@ -12,8 +12,9 @@ export default class HelperFunctions {
                                 iv++
                             ) {
                                 if (
-                                    layouts[i].layoutSections[ii].layoutColumns[iii].layoutItems[iv].behavior !=
-                                    "Readonly"
+                                    !excludeFields.includes(
+                                        layouts[i].layoutSections[ii].layoutColumns[iii].layoutItems[iv].field
+                                    )
                                 ) {
                                     fields.push(layouts[i].layoutSections[ii].layoutColumns[iii].layoutItems[iv].field);
                                 }

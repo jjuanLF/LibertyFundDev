@@ -7,6 +7,8 @@ export default class FormGenerator extends LightningElement {
     @api record;
     @api fields;
     @api add;
+    @api width;
+    @api columns;
     @track show;
     @track formElements;
 

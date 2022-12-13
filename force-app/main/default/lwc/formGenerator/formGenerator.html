@@ -1,35 +1,16 @@
 <template>
-    <div class="slds-var-p-bottom_large slds-var-p-left_large" style="width: 500px">
+    <div class="slds-var-p-bottom_large slds-var-p-left_large" style={width}>
         <template if:true={formElements}>
-            <lightning-record-edit-form
+            <lightning-record-form
                 object-api-name={objectName}
                 record-id={record.Id}
                 onsuccess={onSaveSuccess}
                 onerror={onSaveError}
+                columns={columns}
+                mode="view"
+                fields={fields}
             >
-                <lightning-messages></lightning-messages>
-                <template for:each={formElements} for:item="formElement">
-                    <lightning-input-field field-name={formElement.field} key={formElement.id}></lightning-input-field>
-                </template>
-                <div class="slds-p-around_small lgc-bg slds-float_right">
-                    <!-- sldsValidatorIgnoreNextLine -->
-                    <lightning-button-icon
-                        icon-name="utility:delete"
-                        alternative-text="Delete"
-                        class="slds-m-left_xx-small"
-                        title="Delete"
-                        value={record.Id}
-                        onclick={deleteRecord}
-                    ></lightning-button-icon>
-                    <lightning-button-icon
-                        icon-name="utility:save"
-                        alternative-text="Save"
-                        class="slds-m-left_xx-small"
-                        type="submit"
-                        title="Save"
-                    ></lightning-button-icon>
-                </div>
-            </lightning-record-edit-form>
+            </lightning-record-form>
         </template>
         <template if:true={show}>
             <section
