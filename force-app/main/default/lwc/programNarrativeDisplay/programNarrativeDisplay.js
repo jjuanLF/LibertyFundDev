@@ -10,7 +10,7 @@ export default class ProgramNarrativeDisplay extends LightningElement {
     parentObjectName = "ProgramNarrative__c";
     childObjectNames = [];
     columns = 2;
-    excludeFields = ["ProgramId__c", "CreatedById", "LastModifiedById"];
+    excludeFields = ["CreatedById", "LastModifiedById"];
     layouts = ["ProgramNarrative__c-Program Narrative Layout"];
     error;
     _wiredProgramNarrative;

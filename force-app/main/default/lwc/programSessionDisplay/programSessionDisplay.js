@@ -16,7 +16,7 @@ export default class ProgramSessionDisplay extends LightningElement {
     childObjectNames = ["ProgramSessionReading__c"];
     layouts = ["ProgramSession__c-Program Session Layout", "ProgramSessionReading__c-Program Session Reading Layout"];
     columns = 2;
-    excludeFields = ["ProgramId__c", "CreatedById", "LastModifiedById", "ProgramSessionId__c"];
+    excludeFields = ["CreatedById", "LastModifiedById"];
     error;
     _wiredProgramSession;
     showSessionButton;

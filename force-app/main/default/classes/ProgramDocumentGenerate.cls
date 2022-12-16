@@ -34,10 +34,7 @@ public without sharing class ProgramDocumentGenerate implements TriggerHandlerIn
                         programDocumentGenerationSubStage.PreviousSubStage__c
                     ) {
                         Set<String> attachmentIdSet = new Set<String>();
-                        String recordType = programDocumentGenerationSubStage.Version__c ==
-                            ProgramConstants.DRAFTVERSION
-                            ? 'Email'
-                            : 'Email-Final';
+                        String recordType = 'Email-' + programDocumentGenerationSubStage.Version__c;
                         runDocGenPackage(
                             program.Id,
                             programDocumentGeneration.DocGenPackageId__c,
@@ -58,7 +55,8 @@ public without sharing class ProgramDocumentGenerate implements TriggerHandlerIn
 
             Map<String, String> variablesMap = new Map<String, String>{
                 'deploy' => loopDDPIntegrationOption.Id,
-                'attachIds' => String.join(new List<String>(attachmentIdSet), '|')
+                'attachIds' => String.join(new List<String>(attachmentIdSet), '|'),
+                'deploytype' => 'autoemail'
             };
 
             Loop.loopMessage.send(id, docGenPackageId, variablesMap);

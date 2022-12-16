@@ -83,6 +83,7 @@ public without sharing class ContactStagingConversion {
                 }
                 insertProgramAttendeeList.add(
                     new ProgramAttendee__c(
+                        Name = contactStagingTableList[i].First_Name__c + ' ' + contactStagingTableList[i].Last_Name__c,
                         ProgramId__c = contactStagingTableList[i].ProgramId__c,
                         ContactId__c = upsertResult.id
                     )

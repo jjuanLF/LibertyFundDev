@@ -1,16 +1,30 @@
 <template>
     <div class="slds-var-p-bottom_large slds-var-p-left_large" style={width}>
         <template if:true={formElements}>
-            <lightning-record-form
-                object-api-name={objectName}
-                record-id={record.Id}
-                onsuccess={onSaveSuccess}
-                onerror={onSaveError}
-                columns={columns}
-                mode="view"
-                fields={fields}
-            >
-            </lightning-record-form>
+            <div class="slds-grid slds-grid_vertical">
+                <div class="slds-col">
+                    <lightning-record-form
+                        object-api-name={objectName}
+                        record-id={record.Id}
+                        onsuccess={onSaveSuccess}
+                        onerror={onSaveError}
+                        columns={columns}
+                        mode="view"
+                        fields={fields}
+                    >
+                    </lightning-record-form>
+                </div>
+                <div class="slds-col">
+                    <button
+                        class="slds-button slds-button_brand"
+                        title="Delete"
+                        value={record.Id}
+                        onclick={deleteRecord}
+                    >
+                        Delete
+                    </button>
+                </div>
+            </div>
         </template>
         <template if:true={show}>
             <section

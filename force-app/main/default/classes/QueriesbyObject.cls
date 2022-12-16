@@ -97,7 +97,7 @@ public without sharing class QueriesbyObject {
             return [
                 SELECT Id
                 FROM Loop__DDP_Integration_Option__c
-                WHERE Loop__DDP__c = :loopDDPId AND RecordType.Name = :recordType
+                WHERE Loop__DDP__c = :loopDDPId AND Name = :recordType
                 LIMIT 1
             ];
         }
