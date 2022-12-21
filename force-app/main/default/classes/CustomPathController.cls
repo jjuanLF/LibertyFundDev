@@ -11,7 +11,7 @@ public without sharing class CustomPathController {
     @AuraEnabled
     public static string updateSubStage(Id id, String value) {
         try {
-            update new Program__c(Id = id, SubStage__c = value, DocumentVersion__c = 'Draft');
+            update new Program__c(Id = id, SubStage__c = value);
             return 'Success';
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());

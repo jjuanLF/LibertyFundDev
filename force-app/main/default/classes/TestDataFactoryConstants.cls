@@ -1,5 +1,6 @@
 public without sharing class TestDataFactoryConstants {
     public final static String ACCOUNTOBJECT = 'Account';
+    public final static String ACCOUNTCONTACTRELATIONOBJECT = 'AccountContactRelation';
     public final static String CONTACTOBJECT = 'Contact';
     public final static String CONTACTSTAGINGTABLEOBJECT = 'ContactStagingTable__c';
     public final static String CHECKLISTOBJECT = 'Checklist__c';

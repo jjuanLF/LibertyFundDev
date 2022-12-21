@@ -7,7 +7,8 @@ public without sharing class QueriesbyObject {
             List<NarrativeType__c> narrativeTypeList = [
                 SELECT Id, Type__c
                 FROM NarrativeType__c
-                WHERE Active__c = TRUE ORDER BY SortOrder__c
+                WHERE Active__c = TRUE
+                ORDER BY SortOrder__c
             ];
 
             List<RecordType> recordTypeList = new QueriesbyObject.QueriesRecordType()
@@ -85,7 +86,10 @@ public without sharing class QueriesbyObject {
             return [
                 SELECT
                     DocGenPackageId__c,
-                    (SELECT PreviousSubStage__c, CurrentSubStage__c, Version__c FROM ProgramDocumentGenerationSubStages__r)
+                    (
+                        SELECT PreviousSubStage__c, CurrentSubStage__c, Version__c
+                        FROM ProgramDocumentGenerationSubStages__r
+                    )
                 FROM ProgramDocumentGeneration__c
                 WHERE Active__c = TRUE
             ];
@@ -100,6 +104,36 @@ public without sharing class QueriesbyObject {
                 WHERE Loop__DDP__c = :loopDDPId AND Name = :recordType
                 LIMIT 1
             ];
+        }
+    }
+
+    public class QueriesAccountContactRelation {
+        public Map<Id, List<AccountContactRelation>> getAccountContactRelationInId(Set<Id> idSet) {
+            Map<Id, List<AccountContactRelation>> accountContactRelationMap = new Map<Id, List<AccountContactRelation>>();
+            List<AccountContactRelation> accountContactRelationList = [
+                SELECT AccountId, ContactId, Roles, Contact.Name
+                FROM AccountContactRelation
+                WHERE
+                    AccountId IN :idSet
+                    AND IsActive = TRUE
+                    AND Roles IN ('CS Admin Contact', 'CS Rep Contact', 'CS Program Signer', 'CS Support')
+                ORDER BY AccountId
+            ];
+
+            if (accountContactRelationList.size() > 0) {
+                for (AccountContactRelation accountContactRelation : accountContactRelationList) {
+                    if (accountContactRelationMap.get(accountContactRelation.AccountId) == null) {
+                        accountContactRelationMap.put(
+                            accountContactRelation.AccountId,
+                            new List<AccountContactRelation>{ accountContactRelation }
+                        );
+                    } else {
+                        accountContactRelationMap.get(accountContactRelation.AccountId).add(accountContactRelation);
+                    }
+                }
+            }
+
+            return accountContactRelationMap;
         }
     }
 }

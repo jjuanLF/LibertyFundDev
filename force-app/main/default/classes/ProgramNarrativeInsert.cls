@@ -39,7 +39,7 @@ public without sharing class ProgramNarrativeInsert implements TriggerHandlerInt
                             (Id) program.get(ProgramConstants.RECORDTYPEIDFIELD)
                         )
                     ) {
-                        checkProgramNarrative(program.Id, Id);
+                        checkProgramNarrative(program.Id, id);
                     }
                 }
         }

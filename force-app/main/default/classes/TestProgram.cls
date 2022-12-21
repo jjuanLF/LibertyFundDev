@@ -5,11 +5,7 @@ private class TestProgram {
     @Istest
     static void testProgram() {
         makeData();
-        for (SObject program : sObjectMap.get(TestDataFactoryConstants.PROGRAMOBJECT)) {
-            program.put(TestDataFactoryConstants.BUDGETAMOUNTFIELD, 200);
-        }
-
-        update sObjectMap.get(TestDataFactoryConstants.PROGRAMOBJECT);
+        updateProgram();
     }
     @Istest
     static void testRepeatProgram() {
@@ -19,7 +15,7 @@ private class TestProgram {
             new Map<String, List<String>>{
                 TestDataFactoryConstants.PROGRAMOBJECT => new List<String>{
                     'BudgetAmount__c=100,PartnerId__c=Index=0,PartnerRepId__c=Index=0,ConfereeType__c=Academic,' +
-                    'ConferenceType__c=Colloquium,DocumentVersion__c=Draft,FiscalYear__c=2023-24,LFRepId__c=Index=0,OwnerId=Index=0,' +
+                    'ConferenceType__c=Colloquium,FiscalYear__c=2023-24,LFRepId__c=Index=0,OwnerId=Index=0,' +
                     'Name=Repeat,ProgramTitle__c=Repeat,ProposalId__c=4231-123,ProposedCityCountry__c=Anywhere USA,ProposedDate__c=Summer 2022,' +
                     'ProposedTimeline__c=1 Week,RecordTypeId=' +
                     TestDataFactoryHandler.getRecordType(TestDataFactoryConstants.PROGRAMOBJECT, 'Co_Sponsor').Id +
@@ -30,9 +26,22 @@ private class TestProgram {
             }
         );
     }
+    
+    @isTest
+    static void testProgramPartnerTeam() {
+        makeData();
+        List<AccountContactRelation> accountContactRelationList = [SELECT Id, Roles FROM AccountContactRelation];
+
+        for (AccountContactRelation accountContactRelation : accountContactRelationList) {
+            accountContactRelation.Roles = 'CS Admin Contact';
+        }
+
+        update accountContactRelationList;
+        updateProgram();
+    }
 
     static void makeData() {
-        Id profileId = TestDataFactoryHandler.getProfileByName(PROFILELFADMIN).Id;
+        Id profileId = TestDataFactoryHandler.getProfileByName(TestDataFactoryConstants.PROFILELFADMIN).Id;
         Map<String, List<String>> setupDataMap = new Map<String, List<String>>{
             'User' => TestDataFactoryHandler.duplicateData(
                 2,
@@ -44,7 +53,8 @@ private class TestProgram {
             ),
             TestDataFactoryConstants.ACCOUNTOBJECT => new List<String>{ 'Name=LF' },
             TestDataFactoryConstants.CONTACTOBJECT => new List<String>{
-                'FirstName=Liberty,LastName=Fund,AccountId=Index=0,Email=test@libertyfund.org'
+                'FirstName=Liberty,LastName=Fund,AccountId=Index=0,Email=test@libertyfund.org',
+                'FirstName=Liberties,LastName=Funding,AccountId=Index=0,Email=testings1@libertyfund.org'
             },
             TestDataFactoryConstants.CHECKLISTOBJECT => new List<String>{
                 'Active__c=TRUE,Body__c=Test,DaysTaskDue__c=1,EmailReminderDays__c=1,Name=Test,' +
@@ -69,7 +79,7 @@ private class TestProgram {
             },
             TestDataFactoryConstants.PROGRAMOBJECT => new List<String>{
                 'BudgetAmount__c=100,PartnerId__c=Index=0,PartnerRepId__c=Index=0,ConfereeType__c=Academic,' +
-                'ConferenceType__c=Colloquium,DocumentVersion__c=Draft,FiscalYear__c=2023-24,LFRepId__c=Index=0,OwnerId=Index=0,' +
+                'ConferenceType__c=Colloquium,FiscalYear__c=2023-24,LFRepId__c=Index=0,OwnerId=Index=0,' +
                 'Name=Testing,ProgramTitle__c=Testing,ProposalId__c=1234-556,ProposedCityCountry__c=Anywhere USA,ProposedDate__c=Summer 2022,' +
                 'ProposedTimeline__c=1 Week,RecordTypeId=' +
                 TestDataFactoryHandler.getRecordType(TestDataFactoryConstants.PROGRAMOBJECT, 'Co_Sponsor').Id +
@@ -93,5 +103,13 @@ private class TestProgram {
         };
 
         sObjectMap = TestDataFactoryHandler.createRecords(setupDataMap);
+    }
+
+    private static void updateProgram() {
+        for (SObject program : sObjectMap.get(TestDataFactoryConstants.PROGRAMOBJECT)) {
+            program.put(TestDataFactoryConstants.BUDGETAMOUNTFIELD, 200);
+        }
+
+        update sObjectMap.get(TestDataFactoryConstants.PROGRAMOBJECT);
     }
 }

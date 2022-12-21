@@ -22,9 +22,13 @@ public without sharing class ContactStagingConversion {
         for (ContactStagingTable__c contactStagingTable : contactStagingTableList) {
             Map<String, Object> fieldValueMap = new Map<String, Object>();
             if (contactStagingTable.MergeContactId__c != null) {
-                List<String> mergeFieldList = contactStagingTable.MergeFields__c.split(';');
-                mergeFieldList.add(MERGECONTACTID);
+                List<String> mergeFieldList = new List<String>();
 
+                if (contactStagingTable.MergeFields__c != null) {
+                    mergeFieldList = contactStagingTable.MergeFields__c.split(';');
+                }
+
+                mergeFieldList.add(MERGECONTACTID);
                 for (String mergeField : mergeFieldList) {
                     fieldValueMap.put(mergeField, contactStagingTable.get(mergeField));
                 }
@@ -45,8 +49,9 @@ public without sharing class ContactStagingConversion {
             if (fieldMappingMap.get(field) != null) {
                 contact.put(fieldMappingMap.get(field).Target_Field__c, fieldValueMap.get(field));
                 if (fieldMappingMap.get(field).Query_Object__c != null) {
-                    if (foreignKeyWrapperMap.get(field) != null) {
-                        foreignKeyWrapperMap.get(field).lookupSet.add(fieldValueMap.get(field));
+                    if (foreignKeyWrapperMap.get(fieldMappingMap.get(field).Target_Field__c) != null) {
+                        foreignKeyWrapperMap.get(fieldMappingMap.get(field).Target_Field__c)
+                            .lookupSet.add(fieldValueMap.get(field));
                     } else {
                         ForeignKeyWrapper foreignKeyWrapper = new ForeignKeyWrapper();
                         foreignKeyWrapper.table = fieldMappingMap.get(field).Query_Object__c;
@@ -150,9 +155,7 @@ public without sharing class ContactStagingConversion {
             Map<String, Object> populatedFieldsMap = contact.getPopulatedFieldsAsMap();
             for (String field : populatedFieldsMap.keySet()) {
                 if (foreignKeyWrapperMap.get(field) != null) {
-                    for (Object value : foreignKeyWrapperMap.get(field).queryResultMap.keySet()) {
-                        contact.put(field, foreignKeyWrapperMap.get(field).queryResultMap.get(value));
-                    }
+                    contact.put(field, foreignKeyWrapperMap.get(field).queryResultMap.get(contact.get(field)));
                 }
             }
         }

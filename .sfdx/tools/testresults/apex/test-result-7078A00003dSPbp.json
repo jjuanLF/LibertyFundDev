@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Dec 21 2022 12:25:32 PM",
+    "testExecutionTimeInMs": 3166,
+    "testTotalTimeInMs": 3166,
+    "commandTimeInMs": 199,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003dSPbp",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LaC7LUAV",
+      "queueItemId": "7098A000002C7lGQAS",
+      "stackTrace": "Class.TestDataFactoryHandler.createTestData: line 54, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testProgram: line 20, column 1",
+      "message": "System.SObjectException: Field DocumentVersion__c is not editable",
+      "asyncApexJobId": "7078A00003dSPbpQAG",
+      "methodName": "testProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LVFi5UAH",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 3166,
+      "testTimestamp": "2022-12-21T20:25:32.000+0000",
+      "fullName": "TestProgram.testProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: Field DocumentVersion__c is not editable",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createTestData: line 54, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 108, column 1\nClass.TestProgram.testProgram: line 20, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 54,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

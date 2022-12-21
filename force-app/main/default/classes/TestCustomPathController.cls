@@ -23,7 +23,7 @@ private class TestCustomPathController {
     }
 
     static void makeData() {
-        Id profileId = TestDataFactoryHandler.getProfileByName(PROFILELFADMIN).Id;
+        Id profileId = TestDataFactoryHandler.getProfileByName(TestDataFactoryConstants.PROFILELFADMIN).Id;
         Map<String, List<String>> setupDataMap = new Map<String, List<String>>{
             TestDataFactoryConstants.USEROBJECT => TestDataFactoryHandler.duplicateData(
                 2,
@@ -39,10 +39,10 @@ private class TestCustomPathController {
             },
             TestDataFactoryConstants.PROGRAMOBJECT => new List<String>{
                 'BudgetAmount__c=100,PartnerId__c=Index=0,PartnerRepId__c=Index=0,ConfereeType__c=Academic,' +
-                'ConferenceType__c=Colloquium,DocumentVersion__c=Draft,FiscalYear__c=2023-24,LFRepId__c=Index=0,OwnerId=Index=0,' +
+                'ConferenceType__c=Colloquium,FiscalYear__c=2023-24,LFRepId__c=Index=0,OwnerId=Index=0,' +
                 'Name=Testing,ProgramTitle__c=Testing,ProposalId__c=1234-556,ProposedCityCountry__c=Anywhere USA,ProposedDate__c=Summer 2022,' +
                 'ProposedTimeline__c=1 Week,RecordTypeId=' +
-                TestDataFactoryHandler.getRecordType(PROGRAMOBJECT, 'Co_Sponsor').Id +
+                TestDataFactoryHandler.getRecordType(TestDataFactoryConstants.PROGRAMOBJECT, 'Co_Sponsor').Id +
                 ',' +
                 'Region__c=North America,Stage__c=Proposal,SubStage__c=Exploratory - Initiated'
             }

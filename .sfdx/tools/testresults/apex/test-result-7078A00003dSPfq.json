@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 2,
+    "passing": 0,
+    "failing": 2,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Dec 21 2022 12:36:04 PM",
+    "testExecutionTimeInMs": 5357,
+    "testTotalTimeInMs": 5357,
+    "commandTimeInMs": 191,
+    "hostname": "https://libertyfund--jason.sandbox.my.salesforce.com",
+    "orgId": "00D8A000000Mjv2UAC",
+    "username": "jason.juan@libertyfund.org.jason",
+    "testRunId": "7078A00003dSPfq",
+    "userId": "0054S000000JwFCQA0"
+  },
+  "tests": [
+    {
+      "id": "07M8A00000LaC7aUAF",
+      "queueItemId": "7098A000002C7lVQAS",
+      "stackTrace": "Class.TestDataFactoryHandler.createTestData: line 59, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 98, column 1\nClass.TestProgram.testProgram: line 7, column 1",
+      "message": "System.DmlException: Insert failed. First exception on row 0; first error: DUPLICATE_VALUE, This people already has a relationship with this account.: [ContactId]",
+      "asyncApexJobId": "7078A00003dSPfqQAG",
+      "methodName": "testProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LVFmBUAX",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 4210,
+      "testTimestamp": "2022-12-21T20:36:04.000+0000",
+      "fullName": "TestProgram.testProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Insert failed. First exception on row 0; first error: DUPLICATE_VALUE, This people already has a relationship with this account.: [ContactId]",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createTestData: line 59, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 98, column 1\nClass.TestProgram.testProgram: line 7, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 59,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M8A00000LaC7bUAF",
+      "queueItemId": "7098A000002C7lVQAS",
+      "stackTrace": "Class.TestDataFactoryHandler.createTestData: line 59, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 98, column 1\nClass.TestProgram.testRepeatProgram: line 16, column 1",
+      "message": "System.DmlException: Insert failed. First exception on row 0; first error: DUPLICATE_VALUE, This people already has a relationship with this account.: [ContactId]",
+      "asyncApexJobId": "7078A00003dSPfqQAG",
+      "methodName": "testRepeatProgram",
+      "outcome": "Fail",
+      "apexLogId": "07L8A00000LVFmBUAX",
+      "apexClass": {
+        "id": "01p8A00000Iwt6eQAB",
+        "name": "TestProgram",
+        "namespacePrefix": null,
+        "fullName": "TestProgram"
+      },
+      "runTime": 1147,
+      "testTimestamp": "2022-12-21T20:36:21.000+0000",
+      "fullName": "TestProgram.testRepeatProgram",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Insert failed. First exception on row 0; first error: DUPLICATE_VALUE, This people already has a relationship with this account.: [ContactId]",
+        "exceptionStackTrace": "Class.TestDataFactoryHandler.createTestData: line 59, column 1\nClass.TestDataFactoryHandler.createRecords: line 119, column 1\nClass.TestProgram.makeData: line 98, column 1\nClass.TestProgram.testRepeatProgram: line 16, column 1",
+        "className": "TestDataFactoryHandler",
+        "compileProblem": "",
+        "lineNumber": 59,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

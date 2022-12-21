@@ -134,7 +134,10 @@ public without sharing class QueriesbyProgramObjects {
                 if (programChecklistMap.get(programChecklist.ProgramId__c) != null) {
                     programChecklistMap.get(programChecklist.ProgramId__c).add(programChecklist);
                 } else {
-                    programChecklistMap.put(programChecklist.ProgramId__c, new List<ProgramChecklist__c>{ programChecklist });
+                    programChecklistMap.put(
+                        programChecklist.ProgramId__c,
+                        new List<ProgramChecklist__c>{ programChecklist }
+                    );
                 }
             }
 
@@ -151,6 +154,35 @@ public without sharing class QueriesbyProgramObjects {
                     ChecklistId__r.EmailReminderDays__c,
                     ChecklistId__r.DaysTaskDue__c
                 FROM ProgramChecklist__c
+                WHERE ProgramId__c = :idSet
+            ];
+        }
+    }
+
+    public class QueriesProgramPartnerTeam {
+        public Map<Id, List<Id>> getProgramPartnerTeamByProgram(Set<Id> idSet) {
+            Map<Id, List<Id>> programPartnerTeamMap = new Map<Id, List<Id>>();
+
+            List<ProgramPartnerTeam__c> programPartnerTeamList = this.privateGetProgramPartnerTeamByProgram(idSet);
+
+            for (ProgramPartnerTeam__c programPartnerTeam : programPartnerTeamList) {
+                if (programPartnerTeamMap.get(programPartnerTeam.ProgramId__c) != null) {
+                    programPartnerTeamMap.get(programPartnerTeam.ProgramId__c).add(programPartnerTeam.ContactId__c);
+                } else {
+                    programPartnerTeamMap.put(
+                        programPartnerTeam.ProgramId__c,
+                        new List<Id>{ programPartnerTeam.ContactId__c }
+                    );
+                }
+            }
+
+            return programPartnerTeamMap;
+        }
+
+        private List<ProgramPartnerTeam__c> privateGetProgramPartnerTeamByProgram(Set<Id> idSet) {
+            return [
+                SELECT ProgramId__c, ContactId__c, Role__c
+                FROM ProgramPartnerTeam__c
                 WHERE ProgramId__c = :idSet
             ];
         }
